@@ -319,15 +319,13 @@
     FLAT5: { type: "flat", value: 5 },
   };
 
-
-function parseUnitPrice(raw) {
-  // Accept numbers or strings like "12.34" or "1,234.56"
-  if (raw === null || raw === undefined) return 0;
-  var s = String(raw).replace(/,/g, "").trim();
-  var v = parseFloat(s);
-  return isNaN(v) ? 0 : v;
-}
-
+  function parseUnitPrice(raw) {
+    // Accept numbers or strings like "12.34" or "1,234.56"
+    if (raw == null) return 0;
+    var s = String(raw).replace(/,/g, "").trim();
+    var v = parseFloat(s);
+    return isNaN(v) ? 0 : v;
+  }
 
   function recalcRow($row) {
     var unit = parseUnitPrice($row.data("unit-price"));
