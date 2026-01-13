@@ -6,3 +6,34 @@
 .hero-section-5__wrapper {
     padding-bottom: 100px;
 }
+#qoute-form {
+    border: 1px solid #cecece;
+    padding: 14px;
+    border-radius: 10px;
+    background-color: #f7f6f656;
+    box-shadow: 0 4px 15px #0000001a;
+}
+#qoute-form h3 {
+    font-weight: bold;
+    font-size: 50px;
+}
+#qoute-form .form-group {
+    margin-top: 8px;
+}
+#qoute-form .form-control {
+    font-size: 18px;
+    background: transparent;
+    border: 1px solid #cecece;
+    font-weight: normal;
+    padding: 10px;
+}
+.footer-area6__top {
+    padding: 40px 0px;
+    text-align: center;
+    align-items: center;
+}
+.footer-area6-main {
+    padding: 30px 70px 0px;
+    border-radius: 20px 20px 0 0;
+    background: #101010;
+}
