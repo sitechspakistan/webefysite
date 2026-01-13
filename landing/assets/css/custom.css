@@ -3,3 +3,6 @@
     background: oklch(98.2% .004 91.4);
     overflow: hidden;
 }
+.hero-section-5__wrapper {
+    padding-bottom: 100px;
+}
