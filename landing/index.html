@@ -1,423 +1,619 @@
 <!DOCTYPE html>
 <html lang="zxx">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Trexa – AI Agency & SaaS HTML Template" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Trexa – AI Agency & SaaS HTML Template" />
+    <title>Webefy Today</title>
 
-  <title>Webefy Today</title>
+    <!-- Fav Icon -->
+    <link rel="icon" type="image/x-icon" href="assets/imgs/fav.png" />
 
-  <!-- Fav Icon -->
-  <link rel="icon" type="image/x-icon" href="assets/imgs/fav.png" />
+    <!-- Dependencies CSS Files -->
+    <link rel="stylesheet" href="assets/vandor/bootstrap/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="assets/vandor/fontawesome/fontawesome-pro.min.css"
+    />
+    <link rel="stylesheet" href="assets/vandor/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="assets/vandor/menu/meanmenu.min.css" />
+    <link rel="stylesheet" href="assets/vandor/popup/magnific-popup.css" />
+    <link rel="stylesheet" href="assets/vandor/nice-select/nice-select.css" />
+    <link rel="stylesheet" href="assets/vandor/wow/animate.css" />
+    <link
+      rel="stylesheet"
+      href="assets/vandor/odometer/odometer-theme-default.css"
+    />
 
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/custom.css" />
+  </head>
 
-  <!-- Dependencies CSS Files -->
-  <link rel="stylesheet" href="assets/vandor/bootstrap/bootstrap.min.css" />
-  <link rel="stylesheet" href="assets/vandor/fontawesome/fontawesome-pro.min.css" />
-  <link rel="stylesheet" href="assets/vandor/swiper/swiper-bundle.min.css" />
-  <link rel="stylesheet" href="assets/vandor/menu/meanmenu.min.css" />
-  <link rel="stylesheet" href="assets/vandor/popup/magnific-popup.css" />
-  <link rel="stylesheet" href="assets/vandor/nice-select/nice-select.css" />
-  <link rel="stylesheet" href="assets/vandor/wow/animate.css" />
-  <link rel="stylesheet" href="assets/vandor/odometer/odometer-theme-default.css">
-  
-  <link rel="stylesheet" href="assets/css/style.css" />
-  <link rel="stylesheet" href="assets/css/custom.css">
-</head>
+  <body style="background: #f6f0e9">
+    <div class="loader-wrap">
+      <svg viewBox="0 0 1000 1000" preserveAspectRatio="none">
+        <path id="svg" d="M0,1005S175,995,500,995s500,5,500,5V0H0Z"></path>
+      </svg>
 
-<body style="
-  background: #f6f0e9;">
-  <div class="loader-wrap">
-    <svg viewBox="0 0 1000 1000" preserveAspectRatio="none">
-      <path id="svg" d="M0,1005S175,995,500,995s500,5,500,5V0H0Z"></path>
-    </svg>
-
-    <div class="loader-wrap-heading">
-      <div class="load-text">
-        <span>W</span>
-        <span>E</span>
-        <span>B</span>
-        <span>E</span>
-        <span>F</span>
-        <span>Y</span>
+      <div class="loader-wrap-heading">
+        <div class="load-text">
+          <span>W</span>
+          <span>E</span>
+          <span>B</span>
+          <span>E</span>
+          <span>F</span>
+          <span>Y</span>
+        </div>
       </div>
     </div>
-  </div>
 
-  <!-- Sroll to top -->
-  <div class="progress-wrap">
-    <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
-      <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"></path>
-    </svg>
-  </div>
+    <!-- Sroll to top -->
+    <div class="progress-wrap">
+      <svg
+        class="progress-circle svg-content"
+        width="100%"
+        height="100%"
+        viewBox="-1 -1 102 102"
+      >
+        <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"></path>
+      </svg>
+    </div>
 
-  <!-- side toggle start -->
-  <aside class="fix">
-    <div class="side-info">
-      <div class="side-info-content">
-        <div class="offset-widget offset-header">
-          <div class="offset-logo">
-            <a href="index.html">
-              <img class="show-light" src="assets/imgs/logo.png" alt="Webefy Today" />
+    <!-- side toggle start -->
+    <aside class="fix">
+      <div class="side-info">
+        <div class="side-info-content">
+          <div class="offset-widget offset-header">
+            <div class="offset-logo">
+              <a href="index.html">
+                <img
+                  class="show-light"
+                  src="assets/imgs/logo.png"
+                  alt="Webefy Today"
+                />
+              </a>
+            </div>
+            <button id="side-info-close" class="side-info-close">
+              <i class="fas fa-times"></i>
+            </button>
+          </div>
+          <div class="mobile-menu d-xl-none fix"></div>
+          <div class="offset-button">
+            <a href="contact.html" class="rr-btn">
+              <span class="btn-wrap">
+                <span class="text-one">Let's Talk</span>
+                <span class="text-two">Let's Talk</span>
+              </span>
             </a>
           </div>
-          <button id="side-info-close" class="side-info-close">
-            <i class="fas fa-times"></i>
-          </button>
-        </div>
-        <div class="mobile-menu d-xl-none fix"></div>
-        <div class="offset-button">
-          <a href="contact.html" class="rr-btn">
-            <span class="btn-wrap">
-              <span class="text-one">Let's Talk</span>
-              <span class="text-two">Let's Talk</span>
-            </span>
-          </a>
-        </div>
-        <div class="offset-widget-box">
-          <h2 class="title">Contact US</h2>
-          <div class="contact-meta">
-            <div class="contact-item">
-              <span class="icon"><i class="fa-solid fa-location-dot"></i></span>
-              <span class="text">3891 Ranchview Dr. Richardson</span>
-            </div>
-            <div class="contact-item">
-              <span class="icon"><i class="fa-solid fa-envelope"></i></span>
-              <span class="text"><a href="mailto:hello@Archidex.com">hello@Archidex.com</a></span>
-            </div>
-            <div class="contact-item">
-              <span class="icon"><i class="fa-solid fa-phone"></i></span>
-              <span class="text"><a href="tel:(505)555-0125">(505) 555-0125</a></span>
+          <div class="offset-widget-box">
+            <h2 class="title">Contact US</h2>
+            <div class="contact-meta">
+              <div class="contact-item">
+                <span class="icon"
+                  ><i class="fa-solid fa-location-dot"></i
+                ></span>
+                <span class="text">3891 Ranchview Dr. Richardson</span>
+              </div>
+              <div class="contact-item">
+                <span class="icon"><i class="fa-solid fa-envelope"></i></span>
+                <span class="text"
+                  ><a href="mailto:hello@Archidex.com"
+                    >hello@Archidex.com</a
+                  ></span
+                >
+              </div>
+              <div class="contact-item">
+                <span class="icon"><i class="fa-solid fa-phone"></i></span>
+                <span class="text"
+                  ><a href="tel:(505)555-0125">(505) 555-0125</a></span
+                >
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </aside>
-  <div class="offcanvas-overlay"></div>
-  <!-- side toggle end -->
+    </aside>
+    <div class="offcanvas-overlay"></div>
+    <!-- side toggle end -->
 
-
-
-  <div class="has-smooth" id="has_smooth"></div>
-  <div id="smooth-wrapper">
-    <div id="smooth-content">
-      <header class="header-area">
-        <div class="header-main">
-          <div class="container rr-container-1800">
-            <div class="header-area__inner">
-              <div class="header__logo">
-                <a href="index.html">
-                  <img src="assets/imgs/logo.png" class="normal-logo" alt="Webefy Today" />
-                </a>
-              </div>
-              <div class="header__nav">
-                <nav class="main-menu">
-                  <ul>
-                    <li class="menu-item-has-children">
-                      <a href="#">Home</a>
-                      <ul class="dp-menu column-2">
-                        <li>
-                          <a href="ai-agency.html">Ai Agency</a>
-                        </li>
-                        <li>
-                          <a href="ai-robotic.html">Ai Robotics</a>
-                        </li>
-                        <li>
-                          <a href="it-solution.html">It Solution</a>
-                        </li>
-                        <li>
-                          <a href="sofware.html">Software Agency</a>
-                        </li>
-                        <li>
-                          <a href="digital-marketing-agency.html">Marketing Agency</a>
-                        </li>
-                        <li>
-                          <a href="seo-agency.html">Seo Agency</a>
-                        </li>
-                        <li>
-                          <a href="cyber-security.html">Cyber Security Agency</a>
-                        </li>
-                        <li>
-                          <a href="sass.html">Sass & Startup</a>
-                        </li>
-                      </ul>
-                    </li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li class="menu-item-has-children">
-                      <a href="#">Service</a>
-                      <ul class="dp-menu">
-                        <li><a href="service.html">Services</a></li>
-                        <li>
-                          <a href="service-details.html">Services Details</a>
-                        </li>
-                      </ul>
-                    </li>
-                    <li class="menu-item-has-children">
-                      <a href="#">Shop</a>
-                      <ul class="dp-menu">
-                        <li><a href="shop.html">Shop</a></li>
-                        <li>
-                          <a href="shop-details.html">Shop Details</a>
-                        </li>
-                        <li><a href="cart.html">Cart</a></li>
-                        <li><a href="checkout.html">Checkout</a></li>
-                      </ul>
-                    </li>
-                    <li class="menu-item-has-children">
-                      <a href="#">Blog</a>
-                      <ul class="dp-menu">
-                        <li><a href="blog.html">Blog</a></li>
-                        <li><a href="blog-list.html">Blog List</a></li>
-                        <li><a href="blog-details.html">Blog Details</a></li>
-                      </ul>
-                    </li>
-                    <li class="menu-item-has-children">
-                      <a href="#">Pages</a>
-                      <ul class="dp-menu">
-                        <li><a href="portfolio-grid.html">Portfolio Grid</a></li>
-                        <li>
-                          <a href="portfolio-list.html">Portfolio List</a>
-                        </li>
-                        <li>
-                          <a href="portfolio-details.html">Portfolio Details</a>
-                        </li>
-                        <li><a href="team.html">Team</a></li>
-                        <li><a href="team-details.html">Team Details</a></li>
-                        <li><a href="faq.html">Faq</a></li>
-                        <li><a href="404.html">Error Page</a></li>
-                      </ul>
-                    </li>
-                    <li><a href="contact.html">Contact</a></li>
-                  </ul>
-                </nav>
-              </div>
-              <div class="header-right">
-                <a href="#" class="rr-btn-border">
-                  <span class="text mr-2">hello@webefytoday.com</span>
-                  <span class="icon"><i class="fa-solid fa-envelope"></i></span>
-                </a>
-
-                <div class="header__navicon d-xl-none">
-                  <div class="side-toggle">
-                    <a class="bar-icon" href="javascript:void(0)">
-                      <span></span>
-                      <span></span>
-                    </a>
-                  </div>
+    <div class="has-smooth" id="has_smooth"></div>
+    <div id="smooth-wrapper">
+      <div id="smooth-content">
+        <header class="header-area">
+          <div class="header-main">
+            <div class="container rr-container-1800">
+              <div class="header-area__inner">
+                <div class="header__logo">
+                  <a href="index.html">
+                    <img
+                      src="assets/imgs/logo.png"
+                      class="normal-logo"
+                      alt="Webefy Today"
+                    />
+                  </a>
                 </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </header>
-      <!-- Header area end -->
-
-      <main>
-
-        <!-- Intro area start -->
-        <section class="hero-section-5">
-          <div class="hero-section-5__wrapper" data-background="assets/imgs/bg/banner-bg_01.png">
-            <div class="container container-1800">
-              <div class="row">
-                <div class="col-md-7">
-                  <span class="hero-section-5__subtitle">
-                    <script type="text/javascript" src="https://widget.clutch.co/static/js/widget.js"></script> <div class="clutch-widget" data-url="https://widget.clutch.co" data-widget-type="1" data-height="40" data-nofollow="false" data-expandifr="true" data-clutchcompany-id="1810871"></div>
-                  </span>
-                  <h1 class="hero-section-5__title wow fadeInUp" data-wow-delay="0.4s">
-                    Award-Winning <strong> Digital  <br>
-                      Marketing Agency</strong> defined by Results
-                  </h1>
-                  
+                <div class="header__nav">
+                  <nav class="main-menu">
+                    <ul>
+                      <li class="menu-item-has-children">
+                        <a href="#">Home</a>
+                        <ul class="dp-menu column-2">
+                          <li>
+                            <a href="ai-agency.html">Ai Agency</a>
+                          </li>
+                          <li>
+                            <a href="ai-robotic.html">Ai Robotics</a>
+                          </li>
+                          <li>
+                            <a href="it-solution.html">It Solution</a>
+                          </li>
+                          <li>
+                            <a href="sofware.html">Software Agency</a>
+                          </li>
+                          <li>
+                            <a href="digital-marketing-agency.html"
+                              >Marketing Agency</a
+                            >
+                          </li>
+                          <li>
+                            <a href="seo-agency.html">Seo Agency</a>
+                          </li>
+                          <li>
+                            <a href="cyber-security.html"
+                              >Cyber Security Agency</a
+                            >
+                          </li>
+                          <li>
+                            <a href="sass.html">Sass & Startup</a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li><a href="about.html">About Us</a></li>
+                      <li class="menu-item-has-children">
+                        <a href="#">Service</a>
+                        <ul class="dp-menu">
+                          <li><a href="service.html">Services</a></li>
+                          <li>
+                            <a href="service-details.html">Services Details</a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="menu-item-has-children">
+                        <a href="#">Shop</a>
+                        <ul class="dp-menu">
+                          <li><a href="shop.html">Shop</a></li>
+                          <li>
+                            <a href="shop-details.html">Shop Details</a>
+                          </li>
+                          <li><a href="cart.html">Cart</a></li>
+                          <li><a href="checkout.html">Checkout</a></li>
+                        </ul>
+                      </li>
+                      <li class="menu-item-has-children">
+                        <a href="#">Blog</a>
+                        <ul class="dp-menu">
+                          <li><a href="blog.html">Blog</a></li>
+                          <li><a href="blog-list.html">Blog List</a></li>
+                          <li><a href="blog-details.html">Blog Details</a></li>
+                        </ul>
+                      </li>
+                      <li class="menu-item-has-children">
+                        <a href="#">Pages</a>
+                        <ul class="dp-menu">
+                          <li>
+                            <a href="portfolio-grid.html">Portfolio Grid</a>
+                          </li>
+                          <li>
+                            <a href="portfolio-list.html">Portfolio List</a>
+                          </li>
+                          <li>
+                            <a href="portfolio-details.html"
+                              >Portfolio Details</a
+                            >
+                          </li>
+                          <li><a href="team.html">Team</a></li>
+                          <li><a href="team-details.html">Team Details</a></li>
+                          <li><a href="faq.html">Faq</a></li>
+                          <li><a href="404.html">Error Page</a></li>
+                        </ul>
+                      </li>
+                      <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                  </nav>
                 </div>
-                <div class="col-md-5">
-                  <div id="qoute-form">
-                    <h3 class="text-center mb-4">Get a Free Quote</h3>
-                    <form action="#">
-                      <div class="row">
-                        <div class="form-group col-md-6">
-                          <input type="text" id="name" name="name" placeholder="Enter your name" class="form-control">
-                        </div>
-                        <div class="form-group col-md-6">
-                          <input type="email" id="email" name="email" placeholder="Enter your email" class="form-control">
-                        </div>
-                        <div class="form-group col-md-6">
-                          <input type="tel" id="phone" name="phone" placeholder="Enter your phone" class="form-control">
-                        </div>
-                        <div class="form-group col-md-6">
-                          <select id="service" name="service" class="form-control">
-                            <option value="website-development">Website Development</option>
-                            <option value="logo-design">Logo Design</option>
-                            <option value="branding">Branding</option>
-                          </select>
-                        </div>
-                        <div class="form-group col-md-12">
-                          <textarea id="message" name="message" placeholder="Enter your message" class="form-control"></textarea>
-                        </div>
-                        <div class="form-group col-md-12 text-center mt-3">
-                          <button type="submit" class="rr-btn-border btn-purple">
-                            <span class="text">Submit</span>
-                            <span class="icon">
-                              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
-                                <g clip-path="url(#clip0_337_619)">
-                                  <path d="M22.0004 10.9995C16.6011 10.9995 12.2227 6.0753 12.2227 -0.000488281" stroke="black" stroke-width="2" stroke-miterlimit="10"></path>
-                                  <path d="M12.2227 21.9995C12.2227 15.9253 16.5997 10.9995 22.0004 10.9995" stroke="black" stroke-width="2" stroke-miterlimit="10"></path>
-                                  <path d="M22.001 10.9995H0.000976562" stroke="black" stroke-width="2" stroke-miterlimit="10"></path>
-                                </g>
-                                <defs>
-                                  <clipPath id="clip0_337_619">
-                                    <rect width="22" height="22" fill="white"></rect>
-                                  </clipPath>
-                                </defs>
-                              </svg>
-                            </span>
-                          </button>
-                        </div>
-                      </div>
-                    </form>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+                <div class="header-right">
+                  <a href="#" class="rr-btn-border">
+                    <span class="text mr-2">hello@webefytoday.com</span>
+                    <span class="icon"
+                      ><i class="fa-solid fa-envelope"></i
+                    ></span>
+                  </a>
 
-        <!-- About area start -->
-        <div class="about-area8 section-spacing">
-          <div class="container-1600">
-            <div class="about-area8__thumb">
-              <img src="assets/imgs/home-8/about/about-shape1_1.png" alt="shape">
-              <img src="assets/imgs/about-shape1_2.png" alt="shape">
-              <img src="assets/imgs/home-8/about/about-shape1_3.png" alt="shape">
-            </div>
-            <h2 class="about-area8__title rr-title-anim-2">
-              Our SaaS for startup businesses delivers cost-effective,
-              scalable, and user-friendly solutions, giving them easy
-              access to the software tools they need while supporting
-              growth with powerful technology.
-            </h2>
-            <div class="about-area8__bottom section-spacing pb-0">
-              <div class="row gy-4">
-                <div class="col-xl-7">
-                  <div class="about-area8__project wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="about-area8__project-content">
-                      <h3 class="about-area8__project-title">Detailing of our Project</h3>
-                      <p class="about-area8__project-text">Our project focuses on delivering innovative IT solutions
-                        tailored to streamline business processes, efficiency, and
-                        digital transformation.</p>
-                      <div class="about-area8__feature">
-                        <div class="about-area8__feature-item">
-                          <div class="about-area8__feature-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="41" viewBox="0 0 40 41"
-                              fill="none">
-                              <path
-                                d="M28.3333 35.3228C27.8611 35.3228 27.4656 35.1628 27.1467 34.8428C26.8278 34.5228 26.6678 34.1272 26.6667 33.6561V16.9894C26.6667 16.0728 26.3406 15.2883 25.6883 14.6361C25.0361 13.9839 24.2511 13.6572 23.3333 13.6561H17.5C17.0278 13.6561 16.6322 13.4961 16.3133 13.1761C15.9944 12.8561 15.8344 12.4605 15.8333 11.9894V6.98942C15.8333 6.5172 15.9933 6.12164 16.3133 5.80275C16.6333 5.48387 17.0289 5.32387 17.5 5.32275H33.3333C33.8056 5.32275 34.2017 5.48275 34.5217 5.80275C34.8417 6.12275 35.0011 6.51831 35 6.98942V33.6561C35 34.1283 34.84 34.5244 34.52 34.8444C34.2 35.1644 33.8044 35.3239 33.3333 35.3228H28.3333ZM17.5 35.3228C17.0278 35.3228 16.6322 35.1628 16.3133 34.8428C15.9944 34.5228 15.8344 34.1272 15.8333 33.6561V18.6561C15.8333 18.1839 15.9933 17.7883 16.3133 17.4694C16.6333 17.1505 17.0289 16.9905 17.5 16.9894H21.6667C22.1389 16.9894 22.535 17.1494 22.855 17.4694C23.175 17.7894 23.3344 18.185 23.3333 18.6561V33.6561C23.3333 34.1283 23.1733 34.5244 22.8533 34.8444C22.5333 35.1644 22.1378 35.3239 21.6667 35.3228H17.5ZM6.66667 35.3228C6.19444 35.3228 5.79889 35.1628 5.48 34.8428C5.16111 34.5228 5.00111 34.1272 5 33.6561V18.6561C5 18.1839 5.16 17.7883 5.48 17.4694C5.8 17.1505 6.19556 16.9905 6.66667 16.9894H10.8333C11.3056 16.9894 11.7017 17.1494 12.0217 17.4694C12.3417 17.7894 12.5011 18.185 12.5 18.6561V33.6561C12.5 34.1283 12.34 34.5244 12.02 34.8444C11.7 35.1644 11.3044 35.3239 10.8333 35.3228H6.66667Z"
-                                fill="black" />
-                            </svg>
-                          </div>
-                          <p class="about-area8__feature-text">Responsive Website</p>
-                        </div>
-                        <div class="about-area8__feature-item">
-                          <div class="about-area8__feature-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="42" height="43" viewBox="0 0 42 43"
-                              fill="none">
-                              <path fill-rule="evenodd" clip-rule="evenodd"
-                                d="M25.375 9.9477C25.375 6.56498 22.6327 3.82275 19.25 3.82275L18.9139 3.83178C15.6874 4.00626 13.1249 6.67777 13.1249 9.9477C13.1249 13.3305 15.8673 16.0727 19.25 16.0727L19.5861 16.0636C22.8125 15.8892 25.375 13.2177 25.375 9.9477ZM20.9999 30.0728C20.9999 31.9852 21.5112 33.7784 22.4046 35.3228H7V29.0228C7 23.9341 10.9103 19.7849 15.8088 19.5806L16.1874 19.5728H22.3124C23.9066 19.5728 25.406 19.9904 26.7128 20.725C23.3209 22.4657 20.9999 25.9982 20.9999 30.0728ZM26.3568 37.1516L31.4999 34.0103L36.6431 37.1516L35.2448 31.2894L39.8217 27.3688L33.8144 26.8872L31.4999 21.3227L29.1855 26.8872L23.1782 27.3688L27.7551 31.2894L26.3568 37.1516Z"
-                                fill="black" />
-                            </svg>
-                          </div>
-                          <p class="about-area8__feature-text">99% Customers Satisfaction</p>
-                        </div>
-                      </div>
-                      <a href="#" class="rr-btn-border btn-purple">
-                        <span class="text">CONTACT US TODAY</span>
-                        <span class="icon">
-                          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22"
-                            fill="none">
-                            <g clip-path="url(#clip0_337_619)">
-                              <path d="M22.0004 10.9995C16.6011 10.9995 12.2227 6.0753 12.2227 -0.000488281"
-                                stroke="black" stroke-width="2" stroke-miterlimit="10" />
-                              <path d="M12.2227 21.9995C12.2227 15.9253 16.5997 10.9995 22.0004 10.9995" stroke="black"
-                                stroke-width="2" stroke-miterlimit="10" />
-                              <path d="M22.001 10.9995H0.000976562" stroke="black" stroke-width="2"
-                                stroke-miterlimit="10" />
-                            </g>
-                            <defs>
-                              <clipPath id="clip0_337_619">
-                                <rect width="22" height="22" fill="white" />
-                              </clipPath>
-                            </defs>
-                          </svg>
-                        </span>
+                  <div class="header__navicon d-xl-none">
+                    <div class="side-toggle">
+                      <a class="bar-icon" href="javascript:void(0)">
+                        <span></span>
+                        <span></span>
                       </a>
                     </div>
-                    <div class="about-area8__project-thumb">
-                      <img src="assets/imgs/home-8/about/about-project-thumb1.jpg" alt="thumb">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </header>
+        <!-- Header area end -->
+
+        <main>
+          <!-- Intro area start -->
+          <section class="hero-section-5">
+            <div
+              class="hero-section-5__wrapper"
+              data-background="assets/imgs/bg/banner-bg_01.png"
+            >
+              <div class="container container-1800">
+                <div class="row">
+                  <div class="col-md-7">
+                    <span class="hero-section-5__subtitle">
+                      <script
+                        type="text/javascript"
+                        src="https://widget.clutch.co/static/js/widget.js"
+                      ></script>
+                      <div
+                        class="clutch-widget"
+                        data-url="https://widget.clutch.co"
+                        data-widget-type="1"
+                        data-height="40"
+                        data-nofollow="false"
+                        data-expandifr="true"
+                        data-clutchcompany-id="1810871"
+                      ></div>
+                    </span>
+                    <h1
+                      class="hero-section-5__title wow fadeInUp"
+                      data-wow-delay="0.4s"
+                    >
+                      Award-Winning
+                      <strong>
+                        Digital <br />
+                        Marketing Agency</strong
+                      >
+                      defined by Results
+                    </h1>
+                  </div>
+                  <div class="col-md-5">
+                    <div id="qoute-form">
+                      <h3 class="text-center mb-4">Get a Free Quote</h3>
+                      <form action="#">
+                        <div class="row">
+                          <div class="form-group col-md-6">
+                            <input
+                              type="text"
+                              id="name"
+                              name="name"
+                              placeholder="Enter your name"
+                              class="form-control"
+                            />
+                          </div>
+                          <div class="form-group col-md-6">
+                            <input
+                              type="email"
+                              id="email"
+                              name="email"
+                              placeholder="Enter your email"
+                              class="form-control"
+                            />
+                          </div>
+                          <div class="form-group col-md-6">
+                            <input
+                              type="tel"
+                              id="phone"
+                              name="phone"
+                              placeholder="Enter your phone"
+                              class="form-control"
+                            />
+                          </div>
+                          <div class="form-group col-md-6">
+                            <select
+                              id="service"
+                              name="service"
+                              class="form-control"
+                            >
+                              <option value="website-development">
+                                Website Development
+                              </option>
+                              <option value="logo-design">Logo Design</option>
+                              <option value="branding">Branding</option>
+                            </select>
+                          </div>
+                          <div class="form-group col-md-12">
+                            <textarea
+                              id="message"
+                              name="message"
+                              placeholder="Enter your message"
+                              class="form-control"
+                            ></textarea>
+                          </div>
+                          <div class="form-group col-md-12 text-center mt-3">
+                            <button
+                              type="submit"
+                              class="rr-btn-border btn-purple"
+                            >
+                              <span class="text">Submit</span>
+                              <span class="icon">
+                                <svg
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  width="22"
+                                  height="22"
+                                  viewBox="0 0 22 22"
+                                  fill="none"
+                                >
+                                  <g clip-path="url(#clip0_337_619)">
+                                    <path
+                                      d="M22.0004 10.9995C16.6011 10.9995 12.2227 6.0753 12.2227 -0.000488281"
+                                      stroke="black"
+                                      stroke-width="2"
+                                      stroke-miterlimit="10"
+                                    ></path>
+                                    <path
+                                      d="M12.2227 21.9995C12.2227 15.9253 16.5997 10.9995 22.0004 10.9995"
+                                      stroke="black"
+                                      stroke-width="2"
+                                      stroke-miterlimit="10"
+                                    ></path>
+                                    <path
+                                      d="M22.001 10.9995H0.000976562"
+                                      stroke="black"
+                                      stroke-width="2"
+                                      stroke-miterlimit="10"
+                                    ></path>
+                                  </g>
+                                  <defs>
+                                    <clipPath id="clip0_337_619">
+                                      <rect
+                                        width="22"
+                                        height="22"
+                                        fill="white"
+                                      ></rect>
+                                    </clipPath>
+                                  </defs>
+                                </svg>
+                              </span>
+                            </button>
+                          </div>
+                        </div>
+                      </form>
                     </div>
                   </div>
                 </div>
-                <div class="col-xl-5">
-                  <div class="about-area8__counters">
-                    <div class="about-area8__counters-item">
-                      <!--  -->
-                      <div class="about-area8__counter">
-                        <div class="about-area8__counter-number"><span class="odometer" data-count="25">0</span>+</div>
-                        <p class="about-area8__counter-text wow fadeInUp" data-wow-delay="0.2s">Years Of Experience</p>
+              </div>
+            </div>
+          </section>
+
+          <!-- About area start -->
+          <div class="about-area8 section-spacing">
+            <div class="container-1600">
+              <div class="about-area8__thumb">
+                <img
+                  src="assets/imgs/home-8/about/about-shape1_1.png"
+                  alt="shape"
+                />
+                <img src="assets/imgs/about-shape1_2.png" alt="shape" />
+                <img
+                  src="assets/imgs/home-8/about/about-shape1_3.png"
+                  alt="shape"
+                />
+              </div>
+              <h2 class="about-area8__title rr-title-anim-2">
+                Our SaaS for startup businesses delivers cost-effective,
+                scalable, and user-friendly solutions, giving them easy access
+                to the software tools they need while supporting growth with
+                powerful technology.
+              </h2>
+              <div class="about-area8__bottom section-spacing pb-0">
+                <div class="row gy-4">
+                  <div class="col-xl-7">
+                    <div
+                      class="about-area8__project wow fadeInUp"
+                      data-wow-delay="0.3s"
+                    >
+                      <div class="about-area8__project-content">
+                        <h3 class="about-area8__project-title">
+                          Detailing of our Project
+                        </h3>
+                        <p class="about-area8__project-text">
+                          Our project focuses on delivering innovative IT
+                          solutions tailored to streamline business processes,
+                          efficiency, and digital transformation.
+                        </p>
+                        <div class="about-area8__feature">
+                          <div class="about-area8__feature-item">
+                            <div class="about-area8__feature-icon">
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="40"
+                                height="41"
+                                viewBox="0 0 40 41"
+                                fill="none"
+                              >
+                                <path
+                                  d="M28.3333 35.3228C27.8611 35.3228 27.4656 35.1628 27.1467 34.8428C26.8278 34.5228 26.6678 34.1272 26.6667 33.6561V16.9894C26.6667 16.0728 26.3406 15.2883 25.6883 14.6361C25.0361 13.9839 24.2511 13.6572 23.3333 13.6561H17.5C17.0278 13.6561 16.6322 13.4961 16.3133 13.1761C15.9944 12.8561 15.8344 12.4605 15.8333 11.9894V6.98942C15.8333 6.5172 15.9933 6.12164 16.3133 5.80275C16.6333 5.48387 17.0289 5.32387 17.5 5.32275H33.3333C33.8056 5.32275 34.2017 5.48275 34.5217 5.80275C34.8417 6.12275 35.0011 6.51831 35 6.98942V33.6561C35 34.1283 34.84 34.5244 34.52 34.8444C34.2 35.1644 33.8044 35.3239 33.3333 35.3228H28.3333ZM17.5 35.3228C17.0278 35.3228 16.6322 35.1628 16.3133 34.8428C15.9944 34.5228 15.8344 34.1272 15.8333 33.6561V18.6561C15.8333 18.1839 15.9933 17.7883 16.3133 17.4694C16.6333 17.1505 17.0289 16.9905 17.5 16.9894H21.6667C22.1389 16.9894 22.535 17.1494 22.855 17.4694C23.175 17.7894 23.3344 18.185 23.3333 18.6561V33.6561C23.3333 34.1283 23.1733 34.5244 22.8533 34.8444C22.5333 35.1644 22.1378 35.3239 21.6667 35.3228H17.5ZM6.66667 35.3228C6.19444 35.3228 5.79889 35.1628 5.48 34.8428C5.16111 34.5228 5.00111 34.1272 5 33.6561V18.6561C5 18.1839 5.16 17.7883 5.48 17.4694C5.8 17.1505 6.19556 16.9905 6.66667 16.9894H10.8333C11.3056 16.9894 11.7017 17.1494 12.0217 17.4694C12.3417 17.7894 12.5011 18.185 12.5 18.6561V33.6561C12.5 34.1283 12.34 34.5244 12.02 34.8444C11.7 35.1644 11.3044 35.3239 10.8333 35.3228H6.66667Z"
+                                  fill="black"
+                                />
+                              </svg>
+                            </div>
+                            <p class="about-area8__feature-text">
+                              Responsive Website
+                            </p>
+                          </div>
+                          <div class="about-area8__feature-item">
+                            <div class="about-area8__feature-icon">
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="42"
+                                height="43"
+                                viewBox="0 0 42 43"
+                                fill="none"
+                              >
+                                <path
+                                  fill-rule="evenodd"
+                                  clip-rule="evenodd"
+                                  d="M25.375 9.9477C25.375 6.56498 22.6327 3.82275 19.25 3.82275L18.9139 3.83178C15.6874 4.00626 13.1249 6.67777 13.1249 9.9477C13.1249 13.3305 15.8673 16.0727 19.25 16.0727L19.5861 16.0636C22.8125 15.8892 25.375 13.2177 25.375 9.9477ZM20.9999 30.0728C20.9999 31.9852 21.5112 33.7784 22.4046 35.3228H7V29.0228C7 23.9341 10.9103 19.7849 15.8088 19.5806L16.1874 19.5728H22.3124C23.9066 19.5728 25.406 19.9904 26.7128 20.725C23.3209 22.4657 20.9999 25.9982 20.9999 30.0728ZM26.3568 37.1516L31.4999 34.0103L36.6431 37.1516L35.2448 31.2894L39.8217 27.3688L33.8144 26.8872L31.4999 21.3227L29.1855 26.8872L23.1782 27.3688L27.7551 31.2894L26.3568 37.1516Z"
+                                  fill="black"
+                                />
+                              </svg>
+                            </div>
+                            <p class="about-area8__feature-text">
+                              99% Customers Satisfaction
+                            </p>
+                          </div>
+                        </div>
+                        <a href="#" class="rr-btn-border btn-purple">
+                          <span class="text">CONTACT US TODAY</span>
+                          <span class="icon">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="22"
+                              height="22"
+                              viewBox="0 0 22 22"
+                              fill="none"
+                            >
+                              <g clip-path="url(#clip0_337_619)">
+                                <path
+                                  d="M22.0004 10.9995C16.6011 10.9995 12.2227 6.0753 12.2227 -0.000488281"
+                                  stroke="black"
+                                  stroke-width="2"
+                                  stroke-miterlimit="10"
+                                />
+                                <path
+                                  d="M12.2227 21.9995C12.2227 15.9253 16.5997 10.9995 22.0004 10.9995"
+                                  stroke="black"
+                                  stroke-width="2"
+                                  stroke-miterlimit="10"
+                                />
+                                <path
+                                  d="M22.001 10.9995H0.000976562"
+                                  stroke="black"
+                                  stroke-width="2"
+                                  stroke-miterlimit="10"
+                                />
+                              </g>
+                              <defs>
+                                <clipPath id="clip0_337_619">
+                                  <rect width="22" height="22" fill="white" />
+                                </clipPath>
+                              </defs>
+                            </svg>
+                          </span>
+                        </a>
                       </div>
-                      <!--  -->
-                      <!--  -->
-                      <div class="about-area8__counter-features">
-                        <div class="about-area8__counter-feature">
-                          <span>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="19" height="20" viewBox="0 0 19 20"
-                              fill="none">
-                              <path
-                                d="M15.1244 5.03705C15.2054 4.95436 15.3021 4.88867 15.4089 4.84382C15.5156 4.79898 15.6302 4.77588 15.746 4.77588C15.8618 4.77588 15.9764 4.79898 16.0832 4.84382C16.1899 4.88867 16.2866 4.95436 16.3677 5.03705C16.7073 5.38024 16.7121 5.9348 16.3796 6.28393L9.35787 14.5846C9.27815 14.6721 9.18141 14.7425 9.07356 14.7913C8.96571 14.8402 8.84903 14.8665 8.73064 14.8688C8.61226 14.871 8.49467 14.849 8.38506 14.8043C8.27545 14.7595 8.17614 14.6928 8.09319 14.6083L3.82056 10.2787C3.65578 10.1106 3.56348 9.88466 3.56348 9.6493C3.56348 9.41394 3.65578 9.18797 3.82056 9.01993C3.9016 8.93724 3.99833 8.87154 4.10507 8.8267C4.21182 8.78185 4.32643 8.75875 4.44222 8.75875C4.558 8.75875 4.67262 8.78185 4.77936 8.8267C4.88611 8.87154 4.98283 8.93724 5.06387 9.01993L8.68812 12.6929L15.1006 5.06318L15.1244 5.03705Z"
-                                fill="white" />
-                            </svg>
-                          </span>
-
-                          24/7 Customer Support
-                        </div>
-                        <div class="about-area8__counter-feature">
-                          <span>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="19" height="20" viewBox="0 0 19 20"
-                              fill="none">
-                              <path
-                                d="M15.1244 5.03705C15.2054 4.95436 15.3021 4.88867 15.4089 4.84382C15.5156 4.79898 15.6302 4.77588 15.746 4.77588C15.8618 4.77588 15.9764 4.79898 16.0832 4.84382C16.1899 4.88867 16.2866 4.95436 16.3677 5.03705C16.7073 5.38024 16.7121 5.9348 16.3796 6.28393L9.35787 14.5846C9.27815 14.6721 9.18141 14.7425 9.07356 14.7913C8.96571 14.8402 8.84903 14.8665 8.73064 14.8688C8.61226 14.871 8.49467 14.849 8.38506 14.8043C8.27545 14.7595 8.17614 14.6928 8.09319 14.6083L3.82056 10.2787C3.65578 10.1106 3.56348 9.88466 3.56348 9.6493C3.56348 9.41394 3.65578 9.18797 3.82056 9.01993C3.9016 8.93724 3.99833 8.87154 4.10507 8.8267C4.21182 8.78185 4.32643 8.75875 4.44222 8.75875C4.558 8.75875 4.67262 8.78185 4.77936 8.8267C4.88611 8.87154 4.98283 8.93724 5.06387 9.01993L8.68812 12.6929L15.1006 5.06318L15.1244 5.03705Z"
-                                fill="white" />
-                            </svg>
-                          </span>
-
-                          Real-Time Sync
-                        </div>
-                        <div class="about-area8__counter-feature">
-                          <span>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="19" height="20" viewBox="0 0 19 20"
-                              fill="none">
-                              <path
-                                d="M15.1244 5.03705C15.2054 4.95436 15.3021 4.88867 15.4089 4.84382C15.5156 4.79898 15.6302 4.77588 15.746 4.77588C15.8618 4.77588 15.9764 4.79898 16.0832 4.84382C16.1899 4.88867 16.2866 4.95436 16.3677 5.03705C16.7073 5.38024 16.7121 5.9348 16.3796 6.28393L9.35787 14.5846C9.27815 14.6721 9.18141 14.7425 9.07356 14.7913C8.96571 14.8402 8.84903 14.8665 8.73064 14.8688C8.61226 14.871 8.49467 14.849 8.38506 14.8043C8.27545 14.7595 8.17614 14.6928 8.09319 14.6083L3.82056 10.2787C3.65578 10.1106 3.56348 9.88466 3.56348 9.6493C3.56348 9.41394 3.65578 9.18797 3.82056 9.01993C3.9016 8.93724 3.99833 8.87154 4.10507 8.8267C4.21182 8.78185 4.32643 8.75875 4.44222 8.75875C4.558 8.75875 4.67262 8.78185 4.77936 8.8267C4.88611 8.87154 4.98283 8.93724 5.06387 9.01993L8.68812 12.6929L15.1006 5.06318L15.1244 5.03705Z"
-                                fill="white" />
-                            </svg>
-                          </span>
-
-                          Quick Task Search
-                        </div>
+                      <div class="about-area8__project-thumb">
+                        <img
+                          src="assets/imgs/home-8/about/about-project-thumb1.jpg"
+                          alt="thumb"
+                        />
                       </div>
-                      <!--  -->
                     </div>
+                  </div>
+                  <div class="col-xl-5">
+                    <div class="about-area8__counters">
+                      <div class="about-area8__counters-item">
+                        <!--  -->
+                        <div class="about-area8__counter">
+                          <div class="about-area8__counter-number">
+                            <span class="odometer" data-count="25">0</span>+
+                          </div>
+                          <p
+                            class="about-area8__counter-text wow fadeInUp"
+                            data-wow-delay="0.2s"
+                          >
+                            Years Of Experience
+                          </p>
+                        </div>
+                        <!--  -->
+                        <!--  -->
+                        <div class="about-area8__counter-features">
+                          <div class="about-area8__counter-feature">
+                            <span>
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="19"
+                                height="20"
+                                viewBox="0 0 19 20"
+                                fill="none"
+                              >
+                                <path
+                                  d="M15.1244 5.03705C15.2054 4.95436 15.3021 4.88867 15.4089 4.84382C15.5156 4.79898 15.6302 4.77588 15.746 4.77588C15.8618 4.77588 15.9764 4.79898 16.0832 4.84382C16.1899 4.88867 16.2866 4.95436 16.3677 5.03705C16.7073 5.38024 16.7121 5.9348 16.3796 6.28393L9.35787 14.5846C9.27815 14.6721 9.18141 14.7425 9.07356 14.7913C8.96571 14.8402 8.84903 14.8665 8.73064 14.8688C8.61226 14.871 8.49467 14.849 8.38506 14.8043C8.27545 14.7595 8.17614 14.6928 8.09319 14.6083L3.82056 10.2787C3.65578 10.1106 3.56348 9.88466 3.56348 9.6493C3.56348 9.41394 3.65578 9.18797 3.82056 9.01993C3.9016 8.93724 3.99833 8.87154 4.10507 8.8267C4.21182 8.78185 4.32643 8.75875 4.44222 8.75875C4.558 8.75875 4.67262 8.78185 4.77936 8.8267C4.88611 8.87154 4.98283 8.93724 5.06387 9.01993L8.68812 12.6929L15.1006 5.06318L15.1244 5.03705Z"
+                                  fill="white"
+                                />
+                              </svg>
+                            </span>
 
-                    <div class="about-area8__counters-item wow fadeInUp" data-wow-delay="0.3s">
-                      <div class="about-area8__counter-two">
-                        <div class="about-area8__counter-title"><span class="odometer" data-count="85">0</span>K+</div>
-                        <p class="about-area8__counter-desc">Unique & new business tips
-                          for our clients</p>
+                            24/7 Customer Support
+                          </div>
+                          <div class="about-area8__counter-feature">
+                            <span>
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="19"
+                                height="20"
+                                viewBox="0 0 19 20"
+                                fill="none"
+                              >
+                                <path
+                                  d="M15.1244 5.03705C15.2054 4.95436 15.3021 4.88867 15.4089 4.84382C15.5156 4.79898 15.6302 4.77588 15.746 4.77588C15.8618 4.77588 15.9764 4.79898 16.0832 4.84382C16.1899 4.88867 16.2866 4.95436 16.3677 5.03705C16.7073 5.38024 16.7121 5.9348 16.3796 6.28393L9.35787 14.5846C9.27815 14.6721 9.18141 14.7425 9.07356 14.7913C8.96571 14.8402 8.84903 14.8665 8.73064 14.8688C8.61226 14.871 8.49467 14.849 8.38506 14.8043C8.27545 14.7595 8.17614 14.6928 8.09319 14.6083L3.82056 10.2787C3.65578 10.1106 3.56348 9.88466 3.56348 9.6493C3.56348 9.41394 3.65578 9.18797 3.82056 9.01993C3.9016 8.93724 3.99833 8.87154 4.10507 8.8267C4.21182 8.78185 4.32643 8.75875 4.44222 8.75875C4.558 8.75875 4.67262 8.78185 4.77936 8.8267C4.88611 8.87154 4.98283 8.93724 5.06387 9.01993L8.68812 12.6929L15.1006 5.06318L15.1244 5.03705Z"
+                                  fill="white"
+                                />
+                              </svg>
+                            </span>
+
+                            Real-Time Sync
+                          </div>
+                          <div class="about-area8__counter-feature">
+                            <span>
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="19"
+                                height="20"
+                                viewBox="0 0 19 20"
+                                fill="none"
+                              >
+                                <path
+                                  d="M15.1244 5.03705C15.2054 4.95436 15.3021 4.88867 15.4089 4.84382C15.5156 4.79898 15.6302 4.77588 15.746 4.77588C15.8618 4.77588 15.9764 4.79898 16.0832 4.84382C16.1899 4.88867 16.2866 4.95436 16.3677 5.03705C16.7073 5.38024 16.7121 5.9348 16.3796 6.28393L9.35787 14.5846C9.27815 14.6721 9.18141 14.7425 9.07356 14.7913C8.96571 14.8402 8.84903 14.8665 8.73064 14.8688C8.61226 14.871 8.49467 14.849 8.38506 14.8043C8.27545 14.7595 8.17614 14.6928 8.09319 14.6083L3.82056 10.2787C3.65578 10.1106 3.56348 9.88466 3.56348 9.6493C3.56348 9.41394 3.65578 9.18797 3.82056 9.01993C3.9016 8.93724 3.99833 8.87154 4.10507 8.8267C4.21182 8.78185 4.32643 8.75875 4.44222 8.75875C4.558 8.75875 4.67262 8.78185 4.77936 8.8267C4.88611 8.87154 4.98283 8.93724 5.06387 9.01993L8.68812 12.6929L15.1006 5.06318L15.1244 5.03705Z"
+                                  fill="white"
+                                />
+                              </svg>
+                            </span>
+
+                            Quick Task Search
+                          </div>
+                        </div>
+                        <!--  -->
                       </div>
-                      <div class="about-area8__counter-three">
-                        <div class="about-area8__counter-number"><span class="odometer" data-count="25">0</span>+</div>
-                        <p class="about-area8__counter-text">Years Of Experience</p>
+
+                      <div
+                        class="about-area8__counters-item wow fadeInUp"
+                        data-wow-delay="0.3s"
+                      >
+                        <div class="about-area8__counter-two">
+                          <div class="about-area8__counter-title">
+                            <span class="odometer" data-count="85">0</span>K+
+                          </div>
+                          <p class="about-area8__counter-desc">
+                            Unique & new business tips for our clients
+                          </p>
+                        </div>
+                        <div class="about-area8__counter-three">
+                          <div class="about-area8__counter-number">
+                            <span class="odometer" data-count="25">0</span>+
+                          </div>
+                          <p class="about-area8__counter-text">
+                            Years Of Experience
+                          </p>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -425,458 +621,949 @@
               </div>
             </div>
           </div>
-        </div>
-        <!-- About area end -->
+          <!-- About area end -->
 
-        <div class="pricing-area8 section-spacing"
-          style="background-image: url(assets/imgs/home-8/pricing/pricing-bg6_1.jpg);">
-          <div class="container-1600">
-            <div class="row g-4 d-flex justify-content-center">
-              <div class="col-xl-8 text-center">
-                <h2 class="section-title rr-title-anim-2">
-                  Flexible Plans for Every Business,
-                  Designed to Scale and Grow
-                </h2>
-              </div>
-            </div>
-            <div class="row g-4 justify-content-center">
-              <div class="col-xl-4 col-lg-5 col-md-6">
-                <div class="pricing-area8__card wow fadeInUp" data-wow-delay="0.2s">
-                  <div class="pricing-area8__card-header">
-                    <h3 class="pricing-area8__card-title">Website Development</h3>
-                    <p class="pricing-area8__card-subtitle">
-                      Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
-                    </p>
-                  </div>
-
-                  <div class="pricing-area8__card-price">
-                    <div class="pricing-area8__card-bill">Starting from</div>
-                    <span class="pricing-area8__amount">99 USD</span>
-                  </div>
-
-                  <a href="#" class="pricing-area8__card-btn w-100">Choose Your Plan</a>
-
-                  <div class="pricing-area8__features">
-                    <h4 class="pricing-area8__features-title">Included Features:</h4>
-                    <ul class="pricing-area8__features-list">
-                      <li class="pricing-area8__features-item">All messages dashboard</li>
-                      <li class="pricing-area8__features-item">Robust customer data</li>
-                      <li class="pricing-area8__features-item">Intuitive enhancements</li>
-                      <li class="pricing-area8__features-item">Efficient management tools</li>
-                      <li class="pricing-area8__features-item">Bookmark Plugin</li>
-                    </ul>
-                  </div>
+          <div
+            class="pricing-area8 section-spacing"
+            style="
+              background-image: url(assets/imgs/home-8/pricing/pricing-bg6_1.jpg);
+            "
+          >
+            <div class="container-1600">
+              <div class="row g-4 d-flex justify-content-center">
+                <div class="col-xl-8 text-center">
+                  <h2 class="section-title rr-title-anim-2">
+                    Flexible Plans for Every Business, Designed to Scale and
+                    Grow
+                  </h2>
                 </div>
               </div>
-              <div class="col-xl-4 col-lg-5 col-md-6">
-                <div class="pricing-area8__card pricing-area8__card--bg-active wow fadeInUp" data-wow-delay="0.4s">
-                  <div class="pricing-area8__card-header">
-                    <h3 class="pricing-area8__card-title">Logo Design</h3>
-                    <p class="pricing-area8__card-subtitle">
-                      Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
-                    </p>
-                  </div>
+              <div class="row g-4 justify-content-center">
+                <div class="col-xl-4 col-lg-5 col-md-6">
+                  <div
+                    class="pricing-area8__card wow fadeInUp"
+                    data-wow-delay="0.2s"
+                  >
+                    <div class="pricing-area8__card-header">
+                      <h3 class="pricing-area8__card-title">
+                        Website Development
+                      </h3>
+                      <p class="pricing-area8__card-subtitle">
+                        Neque porro quisquam est, qui dolorem ipsum quia dolor
+                        sit amet, consectetur, adipisci velit,
+                      </p>
+                    </div>
 
-                  <div class="pricing-area8__card-price">
-                    <div class="pricing-area8__card-bill">Starting from</div>
-                    <span class="pricing-area8__amount">59 USD</span>
-                  </div>
+                    <div class="pricing-area8__card-price">
+                      <div class="pricing-area8__card-bill">Starting from</div>
+                      <span class="pricing-area8__amount">99 USD</span>
+                    </div>
 
-                  <a href="#" class="pricing-area8__card-btn w-100">Choose Your Plan</a>
+                    <a href="#" class="pricing-area8__card-btn w-100"
+                      >Choose Your Plan</a
+                    >
 
-                  <div class="pricing-area8__features">
-                    <h4 class="pricing-area8__features-title">Included Features:</h4>
-                    <ul class="pricing-area8__features-list">
-                      <li class="pricing-area8__features-item">All messages dashboard</li>
-                      <li class="pricing-area8__features-item">Robust customer data</li>
-                      <li class="pricing-area8__features-item">Intuitive enhancements</li>
-                      <li class="pricing-area8__features-item">Efficient management tools</li>
-                      <li class="pricing-area8__features-item">Bookmark Plugin</li>
-                    </ul>
+                    <div class="pricing-area8__features">
+                      <h4 class="pricing-area8__features-title">
+                        Included Features:
+                      </h4>
+                      <ul class="pricing-area8__features-list">
+                        <li class="pricing-area8__features-item">
+                          All messages dashboard
+                        </li>
+                        <li class="pricing-area8__features-item">
+                          Robust customer data
+                        </li>
+                        <li class="pricing-area8__features-item">
+                          Intuitive enhancements
+                        </li>
+                        <li class="pricing-area8__features-item">
+                          Efficient management tools
+                        </li>
+                        <li class="pricing-area8__features-item">
+                          Bookmark Plugin
+                        </li>
+                      </ul>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="col-xl-4 col-lg-5 col-md-6">
-                <div class="pricing-area8__card wow fadeInUp" data-wow-delay="0.6s">
-                  <div class="pricing-area8__card-header">
-                    <h3 class="pricing-area8__card-title">Branding</h3>
-                    <p class="pricing-area8__card-subtitle">
-                      Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
-                    </p>
-                  </div>
+                <div class="col-xl-4 col-lg-5 col-md-6">
+                  <div
+                    class="pricing-area8__card pricing-area8__card--bg-active wow fadeInUp"
+                    data-wow-delay="0.4s"
+                  >
+                    <div class="pricing-area8__card-header">
+                      <h3 class="pricing-area8__card-title">Logo Design</h3>
+                      <p class="pricing-area8__card-subtitle">
+                        Neque porro quisquam est, qui dolorem ipsum quia dolor
+                        sit amet, consectetur, adipisci velit,
+                      </p>
+                    </div>
 
-                  <div class="pricing-area8__card-price">
-                    <div class="pricing-area8__card-bill">Starting from</div>
-                    <span class="pricing-area8__amount">99 USD</span>
-                  </div>
+                    <div class="pricing-area8__card-price">
+                      <div class="pricing-area8__card-bill">Starting from</div>
+                      <span class="pricing-area8__amount">59 USD</span>
+                    </div>
 
-                  <a href="#" class="pricing-area8__card-btn w-100">Choose Your Plan</a>
+                    <a href="#" class="pricing-area8__card-btn w-100"
+                      >Choose Your Plan</a
+                    >
 
-                  <div class="pricing-area8__features">
-                    <h4 class="pricing-area8__features-title">Included Features:</h4>
-                    <ul class="pricing-area8__features-list">
-                      <li class="pricing-area8__features-item">All messages dashboard</li>
-                      <li class="pricing-area8__features-item">Robust customer data</li>
-                      <li class="pricing-area8__features-item">Intuitive enhancements</li>
-                      <li class="pricing-area8__features-item">Efficient management tools</li>
-                      <li class="pricing-area8__features-item">Bookmark Plugin</li>
-                    </ul>
+                    <div class="pricing-area8__features">
+                      <h4 class="pricing-area8__features-title">
+                        Included Features:
+                      </h4>
+                      <ul class="pricing-area8__features-list">
+                        <li class="pricing-area8__features-item">
+                          All messages dashboard
+                        </li>
+                        <li class="pricing-area8__features-item">
+                          Robust customer data
+                        </li>
+                        <li class="pricing-area8__features-item">
+                          Intuitive enhancements
+                        </li>
+                        <li class="pricing-area8__features-item">
+                          Efficient management tools
+                        </li>
+                        <li class="pricing-area8__features-item">
+                          Bookmark Plugin
+                        </li>
+                      </ul>
+                    </div>
                   </div>
                 </div>
-              </div>
-            </div>
-          </div>
-        </div>
+                <div class="col-xl-4 col-lg-5 col-md-6">
+                  <div
+                    class="pricing-area8__card wow fadeInUp"
+                    data-wow-delay="0.6s"
+                  >
+                    <div class="pricing-area8__card-header">
+                      <h3 class="pricing-area8__card-title">Branding</h3>
+                      <p class="pricing-area8__card-subtitle">
+                        Neque porro quisquam est, qui dolorem ipsum quia dolor
+                        sit amet, consectetur, adipisci velit,
+                      </p>
+                    </div>
 
-        <!-- Testimonial area start -->
-        <section class="testimonial-area8 section-spacing">
-          <div class="container">
-            <div class="row d-flex justify-content-center">
-              <div class="col-xl-8 text-center">
-                <h2 class="section-title rr-title-anim-2"> Client Experiences That Speak for Themselves on Trexa </h2>
-              </div>
-            </div>
-            <div class="swiper testimonial-area8__active">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <div class="testimonial-area8__card">
-                    <div class="row g-0 align-items-stretch"> <!-- Aside -->
-                      <div class="col-12 col-md-2">
-                        <aside class="testimonial-area8__aside">
-                          <div class="testimonial-area8__person">
-                            <div class="testimonial-area8__name">Emily Brown</div>
-                            <div class="testimonial-area8__role">Customer</div>
-                          </div>
-                          <div class="testimonial-area8__avatar-wrap"> <img class="testimonial-area8__avatar"
-                              src="assets/imgs/home-8/testimonial/testimonial-thumb1.png" alt="Emily Brown" /> </div>
-                        </aside>
-                      </div> <!-- Divider -->
-                      <div class="col-12 d-md-none">
-                        <hr class="testimonial-area8__divider--hr" />
-                      </div>
-                      <div class="d-none d-md-block col-md-1"> <span class="testimonial-area8__divider"></span> </div>
-                      <!-- Content -->
-                      <div class="col-12 col-md-8">
-                        <div class="testimonial-area8__body">
-                          <div class="testimonial-area8__rating">
-                            <div class="testimonial-area8__score">5.0</div>
-                            <div class="testimonial-area8__meta"> <span class="testimonial-area8__label">Rating</span>
-                              <span class="testimonial-area8__stars"> <svg viewBox="0 0 24 24"
-                                  class="testimonial-area8__star">
-                                  <path
-                                    d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
-                                </svg> <svg viewBox="0 0 24 24" class="testimonial-area8__star">
-                                  <path
-                                    d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
-                                </svg> <svg viewBox="0 0 24 24" class="testimonial-area8__star">
-                                  <path
-                                    d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
-                                </svg> <svg viewBox="0 0 24 24" class="testimonial-area8__star">
-                                  <path
-                                    d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
-                                </svg> <svg viewBox="0 0 24 24" class="testimonial-area8__star">
-                                  <path
-                                    d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
-                                </svg> </span>
-                            </div>
-                          </div>
-                          <p class="testimonial-area8__text"> Nemo enim ipsam voluptatem quia voluptas odit aut fugit,
-                            sed quia consequuntur magni in ratione voluptatem sequi nesciunt. neque porro quisquam est,
-                            qui dolorem ipsum quia dolor sit amet, </p>
-                        </div>
-                      </div>
-                    </div> <!-- Decorative quote --> <span class="testimonial-area8__quote" aria-hidden="true"> <svg
-                        xmlns="http://www.w3.org/2000/svg" width="158" height="125" viewBox="0 0 158 125" fill="none">
-                        <path
-                          d="M67.4352 8.91278L61.7022 0C22.0365 26.9593 0 59.7157 0 86.675C0 112.743 18.9549 125 35.0399 125C55.3134 125 69.6353 107.616 69.6353 89.3488C69.6353 73.9762 59.9393 60.828 46.9361 55.9224C43.1915 54.5819 39.6657 53.4696 39.6657 47.0095C39.6657 38.7671 45.6174 26.5173 67.4352 8.91278ZM154.918 8.91278L149.185 0C109.957 26.9593 87.4832 59.7157 87.4832 86.675C87.4832 112.743 106.875 125 122.96 125C143.452 125 158 107.616 158 89.3488C158 73.9762 148.085 60.828 134.638 55.9224C130.893 54.5819 127.586 53.4696 127.586 47.0095C127.586 38.7671 133.756 26.5101 154.911 8.90565L154.918 8.91278Z"
-                          fill="#E9E2D9" />
-                      </svg> </span>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="testimonial-area8__card">
-                    <div class="row g-0 align-items-stretch"> <!-- Aside -->
-                      <div class="col-12 col-md-2">
-                        <aside class="testimonial-area8__aside">
-                          <div class="testimonial-area8__person">
-                            <div class="testimonial-area8__name">Emily Brown</div>
-                            <div class="testimonial-area8__role">Customer</div>
-                          </div>
-                          <div class="testimonial-area8__avatar-wrap"> <img class="testimonial-area8__avatar"
-                              src="assets/imgs/home-8/testimonial/testimonial-thumb2.png" alt="Emily Brown" /> </div>
-                        </aside>
-                      </div> <!-- Divider -->
-                      <div class="col-12 d-md-none">
-                        <hr class="testimonial-area8__divider--hr" />
-                      </div>
-                      <div class="d-none d-md-block col-md-1"> <span class="testimonial-area8__divider"></span> </div>
-                      <!-- Content -->
-                      <div class="col-12 col-md-8">
-                        <div class="testimonial-area8__body">
-                          <div class="testimonial-area8__rating">
-                            <div class="testimonial-area8__score">5.0</div>
-                            <div class="testimonial-area8__meta"> <span class="testimonial-area8__label">Rating</span>
-                              <span class="testimonial-area8__stars"> <svg viewBox="0 0 24 24"
-                                  class="testimonial-area8__star">
-                                  <path
-                                    d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
-                                </svg> <svg viewBox="0 0 24 24" class="testimonial-area8__star">
-                                  <path
-                                    d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
-                                </svg> <svg viewBox="0 0 24 24" class="testimonial-area8__star">
-                                  <path
-                                    d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
-                                </svg> <svg viewBox="0 0 24 24" class="testimonial-area8__star">
-                                  <path
-                                    d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
-                                </svg> <svg viewBox="0 0 24 24" class="testimonial-area8__star">
-                                  <path
-                                    d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
-                                </svg> </span>
-                            </div>
-                          </div>
-                          <p class="testimonial-area8__text"> Nemo enim ipsam voluptatem quia voluptas odit aut fugit,
-                            sed quia consequuntur magni in ratione voluptatem sequi nesciunt. neque porro quisquam est,
-                            qui dolorem ipsum quia dolor sit amet, </p>
-                        </div>
-                      </div>
-                    </div> <!-- Decorative quote --> <span class="testimonial-area8__quote" aria-hidden="true"> <svg
-                        xmlns="http://www.w3.org/2000/svg" width="158" height="125" viewBox="0 0 158 125" fill="none">
-                        <path
-                          d="M67.4352 8.91278L61.7022 0C22.0365 26.9593 0 59.7157 0 86.675C0 112.743 18.9549 125 35.0399 125C55.3134 125 69.6353 107.616 69.6353 89.3488C69.6353 73.9762 59.9393 60.828 46.9361 55.9224C43.1915 54.5819 39.6657 53.4696 39.6657 47.0095C39.6657 38.7671 45.6174 26.5173 67.4352 8.91278ZM154.918 8.91278L149.185 0C109.957 26.9593 87.4832 59.7157 87.4832 86.675C87.4832 112.743 106.875 125 122.96 125C143.452 125 158 107.616 158 89.3488C158 73.9762 148.085 60.828 134.638 55.9224C130.893 54.5819 127.586 53.4696 127.586 47.0095C127.586 38.7671 133.756 26.5101 154.911 8.90565L154.918 8.91278Z"
-                          fill="#E9E2D9" />
-                      </svg> </span>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="testimonial-area8__card">
-                    <div class="row g-0 align-items-stretch"> <!-- Aside -->
-                      <div class="col-12 col-md-2">
-                        <aside class="testimonial-area8__aside">
-                          <div class="testimonial-area8__person">
-                            <div class="testimonial-area8__name">Emily Brown</div>
-                            <div class="testimonial-area8__role">Customer</div>
-                          </div>
-                          <div class="testimonial-area8__avatar-wrap"> <img class="testimonial-area8__avatar"
-                              src="assets/imgs/home-8/testimonial/testimonial-thumb1.png" alt="Emily Brown" /> </div>
-                        </aside>
-                      </div> <!-- Divider -->
-                      <div class="col-12 d-md-none">
-                        <hr class="testimonial-area8__divider--hr" />
-                      </div>
-                      <div class="d-none d-md-block col-md-1"> <span class="testimonial-area8__divider"></span> </div>
-                      <!-- Content -->
-                      <div class="col-12 col-md-8">
-                        <div class="testimonial-area8__body">
-                          <div class="testimonial-area8__rating">
-                            <div class="testimonial-area8__score">5.0</div>
-                            <div class="testimonial-area8__meta"> <span class="testimonial-area8__label">Rating</span>
-                              <span class="testimonial-area8__stars"> <svg viewBox="0 0 24 24"
-                                  class="testimonial-area8__star">
-                                  <path
-                                    d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
-                                </svg> <svg viewBox="0 0 24 24" class="testimonial-area8__star">
-                                  <path
-                                    d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
-                                </svg> <svg viewBox="0 0 24 24" class="testimonial-area8__star">
-                                  <path
-                                    d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
-                                </svg> <svg viewBox="0 0 24 24" class="testimonial-area8__star">
-                                  <path
-                                    d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
-                                </svg> <svg viewBox="0 0 24 24" class="testimonial-area8__star">
-                                  <path
-                                    d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
-                                </svg> </span>
-                            </div>
-                          </div>
-                          <p class="testimonial-area8__text"> Nemo enim ipsam voluptatem quia voluptas odit aut fugit,
-                            sed quia consequuntur magni in ratione voluptatem sequi nesciunt. neque porro quisquam est,
-                            qui dolorem ipsum quia dolor sit amet, </p>
-                        </div>
-                      </div>
-                    </div> <!-- Decorative quote --> <span class="testimonial-area8__quote" aria-hidden="true"> <svg
-                        xmlns="http://www.w3.org/2000/svg" width="158" height="125" viewBox="0 0 158 125" fill="none">
-                        <path
-                          d="M67.4352 8.91278L61.7022 0C22.0365 26.9593 0 59.7157 0 86.675C0 112.743 18.9549 125 35.0399 125C55.3134 125 69.6353 107.616 69.6353 89.3488C69.6353 73.9762 59.9393 60.828 46.9361 55.9224C43.1915 54.5819 39.6657 53.4696 39.6657 47.0095C39.6657 38.7671 45.6174 26.5173 67.4352 8.91278ZM154.918 8.91278L149.185 0C109.957 26.9593 87.4832 59.7157 87.4832 86.675C87.4832 112.743 106.875 125 122.96 125C143.452 125 158 107.616 158 89.3488C158 73.9762 148.085 60.828 134.638 55.9224C130.893 54.5819 127.586 53.4696 127.586 47.0095C127.586 38.7671 133.756 26.5101 154.911 8.90565L154.918 8.91278Z"
-                          fill="#E9E2D9" />
-                      </svg> </span>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="testimonial-area8__card">
-                    <div class="row g-0 align-items-stretch"> <!-- Aside -->
-                      <div class="col-12 col-md-2">
-                        <aside class="testimonial-area8__aside">
-                          <div class="testimonial-area8__person">
-                            <div class="testimonial-area8__name">Emily Brown</div>
-                            <div class="testimonial-area8__role">Customer</div>
-                          </div>
-                          <div class="testimonial-area8__avatar-wrap"> <img class="testimonial-area8__avatar"
-                              src="assets/imgs/home-8/testimonial/testimonial-thumb1.png" alt="Emily Brown" /> </div>
-                        </aside>
-                      </div> <!-- Divider -->
-                      <div class="col-12 d-md-none">
-                        <hr class="testimonial-area8__divider--hr" />
-                      </div>
-                      <div class="d-none d-md-block col-md-1"> <span class="testimonial-area8__divider"></span> </div>
-                      <!-- Content -->
-                      <div class="col-12 col-md-8">
-                        <div class="testimonial-area8__body">
-                          <div class="testimonial-area8__rating">
-                            <div class="testimonial-area8__score">5.0</div>
-                            <div class="testimonial-area8__meta"> <span class="testimonial-area8__label">Rating</span>
-                              <span class="testimonial-area8__stars"> <svg viewBox="0 0 24 24"
-                                  class="testimonial-area8__star">
-                                  <path
-                                    d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
-                                </svg> <svg viewBox="0 0 24 24" class="testimonial-area8__star">
-                                  <path
-                                    d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
-                                </svg> <svg viewBox="0 0 24 24" class="testimonial-area8__star">
-                                  <path
-                                    d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
-                                </svg> <svg viewBox="0 0 24 24" class="testimonial-area8__star">
-                                  <path
-                                    d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
-                                </svg> <svg viewBox="0 0 24 24" class="testimonial-area8__star">
-                                  <path
-                                    d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
-                                </svg> </span>
-                            </div>
-                          </div>
-                          <p class="testimonial-area8__text"> Nemo enim ipsam voluptatem quia voluptas odit aut fugit,
-                            sed quia consequuntur magni in ratione voluptatem sequi nesciunt. neque porro quisquam est,
-                            qui dolorem ipsum quia dolor sit amet, </p>
-                        </div>
-                      </div>
-                    </div> <!-- Decorative quote --> <span class="testimonial-area8__quote" aria-hidden="true"> <svg
-                        xmlns="http://www.w3.org/2000/svg" width="158" height="125" viewBox="0 0 158 125" fill="none">
-                        <path
-                          d="M67.4352 8.91278L61.7022 0C22.0365 26.9593 0 59.7157 0 86.675C0 112.743 18.9549 125 35.0399 125C55.3134 125 69.6353 107.616 69.6353 89.3488C69.6353 73.9762 59.9393 60.828 46.9361 55.9224C43.1915 54.5819 39.6657 53.4696 39.6657 47.0095C39.6657 38.7671 45.6174 26.5173 67.4352 8.91278ZM154.918 8.91278L149.185 0C109.957 26.9593 87.4832 59.7157 87.4832 86.675C87.4832 112.743 106.875 125 122.96 125C143.452 125 158 107.616 158 89.3488C158 73.9762 148.085 60.828 134.638 55.9224C130.893 54.5819 127.586 53.4696 127.586 47.0095C127.586 38.7671 133.756 26.5101 154.911 8.90565L154.918 8.91278Z"
-                          fill="#E9E2D9" />
-                      </svg> </span>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="testimonial-area8__card">
-                    <div class="row g-0 align-items-stretch"> <!-- Aside -->
-                      <div class="col-12 col-md-2">
-                        <aside class="testimonial-area8__aside">
-                          <div class="testimonial-area8__person">
-                            <div class="testimonial-area8__name">Emily Brown</div>
-                            <div class="testimonial-area8__role">Customer</div>
-                          </div>
-                          <div class="testimonial-area8__avatar-wrap"> <img class="testimonial-area8__avatar"
-                              src="assets/imgs/home-8/testimonial/testimonial-thumb2.png" alt="Emily Brown" /> </div>
-                        </aside>
-                      </div> <!-- Divider -->
-                      <div class="col-12 d-md-none">
-                        <hr class="testimonial-area8__divider--hr" />
-                      </div>
-                      <div class="d-none d-md-block col-md-1"> <span class="testimonial-area8__divider"></span> </div>
-                      <!-- Content -->
-                      <div class="col-12 col-md-8">
-                        <div class="testimonial-area8__body">
-                          <div class="testimonial-area8__rating">
-                            <div class="testimonial-area8__score">5.0</div>
-                            <div class="testimonial-area8__meta"> <span class="testimonial-area8__label">Rating</span>
-                              <span class="testimonial-area8__stars"> <svg viewBox="0 0 24 24"
-                                  class="testimonial-area8__star">
-                                  <path
-                                    d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
-                                </svg> <svg viewBox="0 0 24 24" class="testimonial-area8__star">
-                                  <path
-                                    d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
-                                </svg> <svg viewBox="0 0 24 24" class="testimonial-area8__star">
-                                  <path
-                                    d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
-                                </svg> <svg viewBox="0 0 24 24" class="testimonial-area8__star">
-                                  <path
-                                    d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
-                                </svg> <svg viewBox="0 0 24 24" class="testimonial-area8__star">
-                                  <path
-                                    d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
-                                </svg> </span>
-                            </div>
-                          </div>
-                          <p class="testimonial-area8__text"> Nemo enim ipsam voluptatem quia voluptas odit aut fugit,
-                            sed quia consequuntur magni in ratione voluptatem sequi nesciunt. neque porro quisquam est,
-                            qui dolorem ipsum quia dolor sit amet, </p>
-                        </div>
-                      </div>
-                    </div> <!-- Decorative quote --> <span class="testimonial-area8__quote" aria-hidden="true"> <svg
-                        xmlns="http://www.w3.org/2000/svg" width="158" height="125" viewBox="0 0 158 125" fill="none">
-                        <path
-                          d="M67.4352 8.91278L61.7022 0C22.0365 26.9593 0 59.7157 0 86.675C0 112.743 18.9549 125 35.0399 125C55.3134 125 69.6353 107.616 69.6353 89.3488C69.6353 73.9762 59.9393 60.828 46.9361 55.9224C43.1915 54.5819 39.6657 53.4696 39.6657 47.0095C39.6657 38.7671 45.6174 26.5173 67.4352 8.91278ZM154.918 8.91278L149.185 0C109.957 26.9593 87.4832 59.7157 87.4832 86.675C87.4832 112.743 106.875 125 122.96 125C143.452 125 158 107.616 158 89.3488C158 73.9762 148.085 60.828 134.638 55.9224C130.893 54.5819 127.586 53.4696 127.586 47.0095C127.586 38.7671 133.756 26.5101 154.911 8.90565L154.918 8.91278Z"
-                          fill="#E9E2D9" />
-                      </svg> </span>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="testimonial-area8__card">
-                    <div class="row g-0 align-items-stretch"> <!-- Aside -->
-                      <div class="col-12 col-md-2">
-                        <aside class="testimonial-area8__aside">
-                          <div class="testimonial-area8__person">
-                            <div class="testimonial-area8__name">Emily Brown</div>
-                            <div class="testimonial-area8__role">Customer</div>
-                          </div>
-                          <div class="testimonial-area8__avatar-wrap"> <img class="testimonial-area8__avatar"
-                              src="assets/imgs/home-8/testimonial/testimonial-thumb1.png" alt="Emily Brown" /> </div>
-                        </aside>
-                      </div> <!-- Divider -->
-                      <div class="col-12 d-md-none">
-                        <hr class="testimonial-area8__divider--hr" />
-                      </div>
-                      <div class="d-none d-md-block col-md-1"> <span class="testimonial-area8__divider"></span> </div>
-                      <!-- Content -->
-                      <div class="col-12 col-md-8">
-                        <div class="testimonial-area8__body">
-                          <div class="testimonial-area8__rating">
-                            <div class="testimonial-area8__score">5.0</div>
-                            <div class="testimonial-area8__meta"> <span class="testimonial-area8__label">Rating</span>
-                              <span class="testimonial-area8__stars"> <svg viewBox="0 0 24 24"
-                                  class="testimonial-area8__star">
-                                  <path
-                                    d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
-                                </svg> <svg viewBox="0 0 24 24" class="testimonial-area8__star">
-                                  <path
-                                    d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
-                                </svg> <svg viewBox="0 0 24 24" class="testimonial-area8__star">
-                                  <path
-                                    d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
-                                </svg> <svg viewBox="0 0 24 24" class="testimonial-area8__star">
-                                  <path
-                                    d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
-                                </svg> <svg viewBox="0 0 24 24" class="testimonial-area8__star">
-                                  <path
-                                    d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
-                                </svg> </span>
-                            </div>
-                          </div>
-                          <p class="testimonial-area8__text"> Nemo enim ipsam voluptatem quia voluptas odit aut fugit,
-                            sed quia consequuntur magni in ratione voluptatem sequi nesciunt. neque porro quisquam est,
-                            qui dolorem ipsum quia dolor sit amet, </p>
-                        </div>
-                      </div>
-                    </div> <!-- Decorative quote --> <span class="testimonial-area8__quote" aria-hidden="true"> <svg
-                        xmlns="http://www.w3.org/2000/svg" width="158" height="125" viewBox="0 0 158 125" fill="none">
-                        <path
-                          d="M67.4352 8.91278L61.7022 0C22.0365 26.9593 0 59.7157 0 86.675C0 112.743 18.9549 125 35.0399 125C55.3134 125 69.6353 107.616 69.6353 89.3488C69.6353 73.9762 59.9393 60.828 46.9361 55.9224C43.1915 54.5819 39.6657 53.4696 39.6657 47.0095C39.6657 38.7671 45.6174 26.5173 67.4352 8.91278ZM154.918 8.91278L149.185 0C109.957 26.9593 87.4832 59.7157 87.4832 86.675C87.4832 112.743 106.875 125 122.96 125C143.452 125 158 107.616 158 89.3488C158 73.9762 148.085 60.828 134.638 55.9224C130.893 54.5819 127.586 53.4696 127.586 47.0095C127.586 38.7671 133.756 26.5101 154.911 8.90565L154.918 8.91278Z"
-                          fill="#E9E2D9" />
-                      </svg> </span>
+                    <div class="pricing-area8__card-price">
+                      <div class="pricing-area8__card-bill">Starting from</div>
+                      <span class="pricing-area8__amount">99 USD</span>
+                    </div>
+
+                    <a href="#" class="pricing-area8__card-btn w-100"
+                      >Choose Your Plan</a
+                    >
+
+                    <div class="pricing-area8__features">
+                      <h4 class="pricing-area8__features-title">
+                        Included Features:
+                      </h4>
+                      <ul class="pricing-area8__features-list">
+                        <li class="pricing-area8__features-item">
+                          All messages dashboard
+                        </li>
+                        <li class="pricing-area8__features-item">
+                          Robust customer data
+                        </li>
+                        <li class="pricing-area8__features-item">
+                          Intuitive enhancements
+                        </li>
+                        <li class="pricing-area8__features-item">
+                          Efficient management tools
+                        </li>
+                        <li class="pricing-area8__features-item">
+                          Bookmark Plugin
+                        </li>
+                      </ul>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </section>
-        <!-- Testimonial area End -->
 
+          <!-- Testimonial area start -->
+          <section class="testimonial-area8 section-spacing">
+            <div class="container">
+              <div class="row d-flex justify-content-center">
+                <div class="col-xl-8 text-center">
+                  <h2 class="section-title rr-title-anim-2">
+                    Client Experiences That Speak for Themselves on Webefy
+                  </h2>
+                </div>
+              </div>
+              <div class="swiper testimonial-area8__active">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="testimonial-area8__card">
+                      <div class="row g-0 align-items-stretch">
+                        <!-- Aside -->
+                        <div class="col-12 col-md-2">
+                          <aside class="testimonial-area8__aside">
+                            <div class="testimonial-area8__person">
+                              <div class="testimonial-area8__name">
+                                Founder & CEO
+                              </div>
+                              <div class="testimonial-area8__role">
+                                Mental Health Therapy Company
+                              </div>
+                            </div>
+                            <div class="testimonial-area8__avatar-wrap">
+                              <img
+                                class="testimonial-area8__avatar"
+                                src="assets/imgs/home-8/testimonial/testimonial-thumb1.png"
+                                alt="Emily Brown"
+                              />
+                            </div>
+                          </aside>
+                        </div>
+                        <!-- Divider -->
+                        <div class="col-12 d-md-none">
+                          <hr class="testimonial-area8__divider--hr" />
+                        </div>
+                        <div class="d-none d-md-block col-md-1">
+                          <span class="testimonial-area8__divider"></span>
+                        </div>
+                        <!-- Content -->
+                        <div class="col-12 col-md-8">
+                          <div class="testimonial-area8__body">
+                            <div class="testimonial-area8__rating">
+                              <div class="testimonial-area8__score">5.0</div>
+                              <div class="testimonial-area8__meta">
+                                <span class="testimonial-area8__label"
+                                  >Rating</span
+                                >
+                                <span class="testimonial-area8__stars">
+                                  <svg
+                                    viewBox="0 0 24 24"
+                                    class="testimonial-area8__star"
+                                  >
+                                    <path
+                                      d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+                                    />
+                                  </svg>
+                                  <svg
+                                    viewBox="0 0 24 24"
+                                    class="testimonial-area8__star"
+                                  >
+                                    <path
+                                      d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+                                    />
+                                  </svg>
+                                  <svg
+                                    viewBox="0 0 24 24"
+                                    class="testimonial-area8__star"
+                                  >
+                                    <path
+                                      d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+                                    />
+                                  </svg>
+                                  <svg
+                                    viewBox="0 0 24 24"
+                                    class="testimonial-area8__star"
+                                  >
+                                    <path
+                                      d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+                                    />
+                                  </svg>
+                                  <svg
+                                    viewBox="0 0 24 24"
+                                    class="testimonial-area8__star"
+                                  >
+                                    <path
+                                      d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+                                    />
+                                  </svg>
+                                </span>
+                              </div>
+                            </div>
+                            <p class="testimonial-area8__text">
+                              Webefy Today delivered a beautiful logo and
+                              website for us. Their team efficiently handled all
+                              content and tasks, going above and beyond with
+                              excellent customer service and support. We're very
+                              pleased with their work.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Decorative quote -->
+                      <span class="testimonial-area8__quote" aria-hidden="true">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="158"
+                          height="125"
+                          viewBox="0 0 158 125"
+                          fill="none"
+                        >
+                          <path
+                            d="M67.4352 8.91278L61.7022 0C22.0365 26.9593 0 59.7157 0 86.675C0 112.743 18.9549 125 35.0399 125C55.3134 125 69.6353 107.616 69.6353 89.3488C69.6353 73.9762 59.9393 60.828 46.9361 55.9224C43.1915 54.5819 39.6657 53.4696 39.6657 47.0095C39.6657 38.7671 45.6174 26.5173 67.4352 8.91278ZM154.918 8.91278L149.185 0C109.957 26.9593 87.4832 59.7157 87.4832 86.675C87.4832 112.743 106.875 125 122.96 125C143.452 125 158 107.616 158 89.3488C158 73.9762 148.085 60.828 134.638 55.9224C130.893 54.5819 127.586 53.4696 127.586 47.0095C127.586 38.7671 133.756 26.5101 154.911 8.90565L154.918 8.91278Z"
+                            fill="#E9E2D9"
+                          />
+                        </svg>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="testimonial-area8__card">
+                      <div class="row g-0 align-items-stretch">
+                        <!-- Aside -->
+                        <div class="col-12 col-md-2">
+                          <aside class="testimonial-area8__aside">
+                            <div class="testimonial-area8__person">
+                              <div class="testimonial-area8__name">CEO</div>
+                              <div class="testimonial-area8__role">
+                                Pilgrimage Company
+                              </div>
+                            </div>
+                            <div class="testimonial-area8__avatar-wrap">
+                              <img
+                                class="testimonial-area8__avatar"
+                                src="assets/imgs/home-8/testimonial/testimonial-thumb2.png"
+                                alt="Emily Brown"
+                              />
+                            </div>
+                          </aside>
+                        </div>
+                        <!-- Divider -->
+                        <div class="col-12 d-md-none">
+                          <hr class="testimonial-area8__divider--hr" />
+                        </div>
+                        <div class="d-none d-md-block col-md-1">
+                          <span class="testimonial-area8__divider"></span>
+                        </div>
+                        <!-- Content -->
+                        <div class="col-12 col-md-8">
+                          <div class="testimonial-area8__body">
+                            <div class="testimonial-area8__rating">
+                              <div class="testimonial-area8__score">5.0</div>
+                              <div class="testimonial-area8__meta">
+                                <span class="testimonial-area8__label"
+                                  >Rating</span
+                                >
+                                <span class="testimonial-area8__stars">
+                                  <svg
+                                    viewBox="0 0 24 24"
+                                    class="testimonial-area8__star"
+                                  >
+                                    <path
+                                      d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+                                    />
+                                  </svg>
+                                  <svg
+                                    viewBox="0 0 24 24"
+                                    class="testimonial-area8__star"
+                                  >
+                                    <path
+                                      d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+                                    />
+                                  </svg>
+                                  <svg
+                                    viewBox="0 0 24 24"
+                                    class="testimonial-area8__star"
+                                  >
+                                    <path
+                                      d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+                                    />
+                                  </svg>
+                                  <svg
+                                    viewBox="0 0 24 24"
+                                    class="testimonial-area8__star"
+                                  >
+                                    <path
+                                      d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+                                    />
+                                  </svg>
+                                  <svg
+                                    viewBox="0 0 24 24"
+                                    class="testimonial-area8__star"
+                                  >
+                                    <path
+                                      d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+                                    />
+                                  </svg>
+                                </span>
+                              </div>
+                            </div>
+                            <p class="testimonial-area8__text">
+                              Our experience with Webefy Today exceeded
+                              expectations. They delivered a functional website
+                              on time that boosted our traffic and search
+                              rankings. Their responsive team addressed feedback
+                              quickly and maintained proactive communication
+                              throughout.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Decorative quote -->
+                      <span class="testimonial-area8__quote" aria-hidden="true">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="158"
+                          height="125"
+                          viewBox="0 0 158 125"
+                          fill="none"
+                        >
+                          <path
+                            d="M67.4352 8.91278L61.7022 0C22.0365 26.9593 0 59.7157 0 86.675C0 112.743 18.9549 125 35.0399 125C55.3134 125 69.6353 107.616 69.6353 89.3488C69.6353 73.9762 59.9393 60.828 46.9361 55.9224C43.1915 54.5819 39.6657 53.4696 39.6657 47.0095C39.6657 38.7671 45.6174 26.5173 67.4352 8.91278ZM154.918 8.91278L149.185 0C109.957 26.9593 87.4832 59.7157 87.4832 86.675C87.4832 112.743 106.875 125 122.96 125C143.452 125 158 107.616 158 89.3488C158 73.9762 148.085 60.828 134.638 55.9224C130.893 54.5819 127.586 53.4696 127.586 47.0095C127.586 38.7671 133.756 26.5101 154.911 8.90565L154.918 8.91278Z"
+                            fill="#E9E2D9"
+                          />
+                        </svg>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="testimonial-area8__card">
+                      <div class="row g-0 align-items-stretch">
+                        <!-- Aside -->
+                        <div class="col-12 col-md-2">
+                          <aside class="testimonial-area8__aside">
+                            <div class="testimonial-area8__person">
+                              <div class="testimonial-area8__name">
+                                Executive
+                              </div>
+                              <div class="testimonial-area8__role">VersaFi</div>
+                            </div>
+                            <div class="testimonial-area8__avatar-wrap">
+                              <img
+                                class="testimonial-area8__avatar"
+                                src="assets/imgs/home-8/testimonial/testimonial-thumb1.png"
+                                alt="Emily Brown"
+                              />
+                            </div>
+                          </aside>
+                        </div>
+                        <!-- Divider -->
+                        <div class="col-12 d-md-none">
+                          <hr class="testimonial-area8__divider--hr" />
+                        </div>
+                        <div class="d-none d-md-block col-md-1">
+                          <span class="testimonial-area8__divider"></span>
+                        </div>
+                        <!-- Content -->
+                        <div class="col-12 col-md-8">
+                          <div class="testimonial-area8__body">
+                            <div class="testimonial-area8__rating">
+                              <div class="testimonial-area8__score">5.0</div>
+                              <div class="testimonial-area8__meta">
+                                <span class="testimonial-area8__label"
+                                  >Rating</span
+                                >
+                                <span class="testimonial-area8__stars">
+                                  <svg
+                                    viewBox="0 0 24 24"
+                                    class="testimonial-area8__star"
+                                  >
+                                    <path
+                                      d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+                                    />
+                                  </svg>
+                                  <svg
+                                    viewBox="0 0 24 24"
+                                    class="testimonial-area8__star"
+                                  >
+                                    <path
+                                      d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+                                    />
+                                  </svg>
+                                  <svg
+                                    viewBox="0 0 24 24"
+                                    class="testimonial-area8__star"
+                                  >
+                                    <path
+                                      d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+                                    />
+                                  </svg>
+                                  <svg
+                                    viewBox="0 0 24 24"
+                                    class="testimonial-area8__star"
+                                  >
+                                    <path
+                                      d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+                                    />
+                                  </svg>
+                                  <svg
+                                    viewBox="0 0 24 24"
+                                    class="testimonial-area8__star"
+                                  >
+                                    <path
+                                      d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+                                    />
+                                  </svg>
+                                </span>
+                              </div>
+                            </div>
+                            <p class="testimonial-area8__text">
+                              Webefy delivered outstanding results, positively
+                              improving our response and conversion rates. Their
+                              team exceeded expectations by completing tasks on
+                              time, maintaining clear communication, and
+                              providing an impressive turnaround time.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Decorative quote -->
+                      <span class="testimonial-area8__quote" aria-hidden="true">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="158"
+                          height="125"
+                          viewBox="0 0 158 125"
+                          fill="none"
+                        >
+                          <path
+                            d="M67.4352 8.91278L61.7022 0C22.0365 26.9593 0 59.7157 0 86.675C0 112.743 18.9549 125 35.0399 125C55.3134 125 69.6353 107.616 69.6353 89.3488C69.6353 73.9762 59.9393 60.828 46.9361 55.9224C43.1915 54.5819 39.6657 53.4696 39.6657 47.0095C39.6657 38.7671 45.6174 26.5173 67.4352 8.91278ZM154.918 8.91278L149.185 0C109.957 26.9593 87.4832 59.7157 87.4832 86.675C87.4832 112.743 106.875 125 122.96 125C143.452 125 158 107.616 158 89.3488C158 73.9762 148.085 60.828 134.638 55.9224C130.893 54.5819 127.586 53.4696 127.586 47.0095C127.586 38.7671 133.756 26.5101 154.911 8.90565L154.918 8.91278Z"
+                            fill="#E9E2D9"
+                          />
+                        </svg>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="testimonial-area8__card">
+                      <div class="row g-0 align-items-stretch">
+                        <!-- Aside -->
+                        <div class="col-12 col-md-2">
+                          <aside class="testimonial-area8__aside">
+                            <div class="testimonial-area8__person">
+                              <div class="testimonial-area8__name">
+                                Founder & Director
+                              </div>
+                              <div class="testimonial-area8__role">
+                                3D Printing Company
+                              </div>
+                            </div>
+                            <div class="testimonial-area8__avatar-wrap">
+                              <img
+                                class="testimonial-area8__avatar"
+                                src="assets/imgs/home-8/testimonial/testimonial-thumb1.png"
+                                alt="Emily Brown"
+                              />
+                            </div>
+                          </aside>
+                        </div>
+                        <!-- Divider -->
+                        <div class="col-12 d-md-none">
+                          <hr class="testimonial-area8__divider--hr" />
+                        </div>
+                        <div class="d-none d-md-block col-md-1">
+                          <span class="testimonial-area8__divider"></span>
+                        </div>
+                        <!-- Content -->
+                        <div class="col-12 col-md-8">
+                          <div class="testimonial-area8__body">
+                            <div class="testimonial-area8__rating">
+                              <div class="testimonial-area8__score">5.0</div>
+                              <div class="testimonial-area8__meta">
+                                <span class="testimonial-area8__label"
+                                  >Rating</span
+                                >
+                                <span class="testimonial-area8__stars">
+                                  <svg
+                                    viewBox="0 0 24 24"
+                                    class="testimonial-area8__star"
+                                  >
+                                    <path
+                                      d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+                                    />
+                                  </svg>
+                                  <svg
+                                    viewBox="0 0 24 24"
+                                    class="testimonial-area8__star"
+                                  >
+                                    <path
+                                      d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+                                    />
+                                  </svg>
+                                  <svg
+                                    viewBox="0 0 24 24"
+                                    class="testimonial-area8__star"
+                                  >
+                                    <path
+                                      d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+                                    />
+                                  </svg>
+                                  <svg
+                                    viewBox="0 0 24 24"
+                                    class="testimonial-area8__star"
+                                  >
+                                    <path
+                                      d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+                                    />
+                                  </svg>
+                                  <svg
+                                    viewBox="0 0 24 24"
+                                    class="testimonial-area8__star"
+                                  >
+                                    <path
+                                      d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+                                    />
+                                  </svg>
+                                </span>
+                              </div>
+                            </div>
+                            <p class="testimonial-area8__text">
+                              Webefy Today brought our vision to life with a
+                              website where every detail matched our concept
+                              exactly. Their strong project management and clear
+                              communication ensured a successful outcome.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Decorative quote -->
+                      <span class="testimonial-area8__quote" aria-hidden="true">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="158"
+                          height="125"
+                          viewBox="0 0 158 125"
+                          fill="none"
+                        >
+                          <path
+                            d="M67.4352 8.91278L61.7022 0C22.0365 26.9593 0 59.7157 0 86.675C0 112.743 18.9549 125 35.0399 125C55.3134 125 69.6353 107.616 69.6353 89.3488C69.6353 73.9762 59.9393 60.828 46.9361 55.9224C43.1915 54.5819 39.6657 53.4696 39.6657 47.0095C39.6657 38.7671 45.6174 26.5173 67.4352 8.91278ZM154.918 8.91278L149.185 0C109.957 26.9593 87.4832 59.7157 87.4832 86.675C87.4832 112.743 106.875 125 122.96 125C143.452 125 158 107.616 158 89.3488C158 73.9762 148.085 60.828 134.638 55.9224C130.893 54.5819 127.586 53.4696 127.586 47.0095C127.586 38.7671 133.756 26.5101 154.911 8.90565L154.918 8.91278Z"
+                            fill="#E9E2D9"
+                          />
+                        </svg>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="testimonial-area8__card">
+                      <div class="row g-0 align-items-stretch">
+                        <!-- Aside -->
+                        <div class="col-12 col-md-2">
+                          <aside class="testimonial-area8__aside">
+                            <div class="testimonial-area8__person">
+                              <div class="testimonial-area8__name">Owner</div>
+                              <div class="testimonial-area8__role">
+                                Mortgage Services Company
+                              </div>
+                            </div>
+                            <div class="testimonial-area8__avatar-wrap">
+                              <img
+                                class="testimonial-area8__avatar"
+                                src="assets/imgs/home-8/testimonial/testimonial-thumb2.png"
+                                alt="Emily Brown"
+                              />
+                            </div>
+                          </aside>
+                        </div>
+                        <!-- Divider -->
+                        <div class="col-12 d-md-none">
+                          <hr class="testimonial-area8__divider--hr" />
+                        </div>
+                        <div class="d-none d-md-block col-md-1">
+                          <span class="testimonial-area8__divider"></span>
+                        </div>
+                        <!-- Content -->
+                        <div class="col-12 col-md-8">
+                          <div class="testimonial-area8__body">
+                            <div class="testimonial-area8__rating">
+                              <div class="testimonial-area8__score">5.0</div>
+                              <div class="testimonial-area8__meta">
+                                <span class="testimonial-area8__label"
+                                  >Rating</span
+                                >
+                                <span class="testimonial-area8__stars">
+                                  <svg
+                                    viewBox="0 0 24 24"
+                                    class="testimonial-area8__star"
+                                  >
+                                    <path
+                                      d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+                                    />
+                                  </svg>
+                                  <svg
+                                    viewBox="0 0 24 24"
+                                    class="testimonial-area8__star"
+                                  >
+                                    <path
+                                      d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+                                    />
+                                  </svg>
+                                  <svg
+                                    viewBox="0 0 24 24"
+                                    class="testimonial-area8__star"
+                                  >
+                                    <path
+                                      d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+                                    />
+                                  </svg>
+                                  <svg
+                                    viewBox="0 0 24 24"
+                                    class="testimonial-area8__star"
+                                  >
+                                    <path
+                                      d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+                                    />
+                                  </svg>
+                                  <svg
+                                    viewBox="0 0 24 24"
+                                    class="testimonial-area8__star"
+                                  >
+                                    <path
+                                      d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+                                    />
+                                  </svg>
+                                </span>
+                              </div>
+                            </div>
+                            <p class="testimonial-area8__text">
+                              Webefy Today delivered our platform swiftly,
+                              receiving excellent feedback from industry
+                              colleagues and customers alike. Their highly
+                              accessible team was receptive to concerns, and
+                              their depth of support and timeliness truly
+                              impressed our stakeholders.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Decorative quote -->
+                      <span class="testimonial-area8__quote" aria-hidden="true">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="158"
+                          height="125"
+                          viewBox="0 0 158 125"
+                          fill="none"
+                        >
+                          <path
+                            d="M67.4352 8.91278L61.7022 0C22.0365 26.9593 0 59.7157 0 86.675C0 112.743 18.9549 125 35.0399 125C55.3134 125 69.6353 107.616 69.6353 89.3488C69.6353 73.9762 59.9393 60.828 46.9361 55.9224C43.1915 54.5819 39.6657 53.4696 39.6657 47.0095C39.6657 38.7671 45.6174 26.5173 67.4352 8.91278ZM154.918 8.91278L149.185 0C109.957 26.9593 87.4832 59.7157 87.4832 86.675C87.4832 112.743 106.875 125 122.96 125C143.452 125 158 107.616 158 89.3488C158 73.9762 148.085 60.828 134.638 55.9224C130.893 54.5819 127.586 53.4696 127.586 47.0095C127.586 38.7671 133.756 26.5101 154.911 8.90565L154.918 8.91278Z"
+                            fill="#E9E2D9"
+                          />
+                        </svg>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="testimonial-area8__card">
+                      <div class="row g-0 align-items-stretch">
+                        <!-- Aside -->
+                        <div class="col-12 col-md-2">
+                          <aside class="testimonial-area8__aside">
+                            <div class="testimonial-area8__person">
+                              <div class="testimonial-area8__name">
+                                Founder & Trustee
+                              </div>
+                              <div class="testimonial-area8__role">
+                                Non-profit Organization
+                              </div>
+                            </div>
+                            <div class="testimonial-area8__avatar-wrap">
+                              <img
+                                class="testimonial-area8__avatar"
+                                src="assets/imgs/home-8/testimonial/testimonial-thumb1.png"
+                                alt="Emily Brown"
+                              />
+                            </div>
+                          </aside>
+                        </div>
+                        <!-- Divider -->
+                        <div class="col-12 d-md-none">
+                          <hr class="testimonial-area8__divider--hr" />
+                        </div>
+                        <div class="d-none d-md-block col-md-1">
+                          <span class="testimonial-area8__divider"></span>
+                        </div>
+                        <!-- Content -->
+                        <div class="col-12 col-md-8">
+                          <div class="testimonial-area8__body">
+                            <div class="testimonial-area8__rating">
+                              <div class="testimonial-area8__score">5.0</div>
+                              <div class="testimonial-area8__meta">
+                                <span class="testimonial-area8__label"
+                                  >Rating</span
+                                >
+                                <span class="testimonial-area8__stars">
+                                  <svg
+                                    viewBox="0 0 24 24"
+                                    class="testimonial-area8__star"
+                                  >
+                                    <path
+                                      d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+                                    />
+                                  </svg>
+                                  <svg
+                                    viewBox="0 0 24 24"
+                                    class="testimonial-area8__star"
+                                  >
+                                    <path
+                                      d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+                                    />
+                                  </svg>
+                                  <svg
+                                    viewBox="0 0 24 24"
+                                    class="testimonial-area8__star"
+                                  >
+                                    <path
+                                      d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+                                    />
+                                  </svg>
+                                  <svg
+                                    viewBox="0 0 24 24"
+                                    class="testimonial-area8__star"
+                                  >
+                                    <path
+                                      d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+                                    />
+                                  </svg>
+                                  <svg
+                                    viewBox="0 0 24 24"
+                                    class="testimonial-area8__star"
+                                  >
+                                    <path
+                                      d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+                                    />
+                                  </svg>
+                                </span>
+                              </div>
+                            </div>
+                            <p class="testimonial-area8__text">
+                              Webefy Today's expertise and work ethic made it
+                              easy for the client to launch a professional
+                              website. They were excellent communicators who
+                              immediately answered queries and were always
+                              available.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Decorative quote -->
+                      <span class="testimonial-area8__quote" aria-hidden="true">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="158"
+                          height="125"
+                          viewBox="0 0 158 125"
+                          fill="none"
+                        >
+                          <path
+                            d="M67.4352 8.91278L61.7022 0C22.0365 26.9593 0 59.7157 0 86.675C0 112.743 18.9549 125 35.0399 125C55.3134 125 69.6353 107.616 69.6353 89.3488C69.6353 73.9762 59.9393 60.828 46.9361 55.9224C43.1915 54.5819 39.6657 53.4696 39.6657 47.0095C39.6657 38.7671 45.6174 26.5173 67.4352 8.91278ZM154.918 8.91278L149.185 0C109.957 26.9593 87.4832 59.7157 87.4832 86.675C87.4832 112.743 106.875 125 122.96 125C143.452 125 158 107.616 158 89.3488C158 73.9762 148.085 60.828 134.638 55.9224C130.893 54.5819 127.586 53.4696 127.586 47.0095C127.586 38.7671 133.756 26.5101 154.911 8.90565L154.918 8.91278Z"
+                            fill="#E9E2D9"
+                          />
+                        </svg>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="testimonial-area8__card">
+                      <div class="row g-0 align-items-stretch">
+                        <!-- Aside -->
+                        <div class="col-12 col-md-2">
+                          <aside class="testimonial-area8__aside">
+                            <div class="testimonial-area8__person">
+                              <div class="testimonial-area8__name">
+                                VP of Marketing
+                              </div>
+                              <div class="testimonial-area8__role">
+                                Kazoni Construction
+                              </div>
+                            </div>
+                            <div class="testimonial-area8__avatar-wrap">
+                              <img
+                                class="testimonial-area8__avatar"
+                                src="assets/imgs/home-8/testimonial/testimonial-thumb1.png"
+                                alt="Emily Brown"
+                              />
+                            </div>
+                          </aside>
+                        </div>
+                        <!-- Divider -->
+                        <div class="col-12 d-md-none">
+                          <hr class="testimonial-area8__divider--hr" />
+                        </div>
+                        <div class="d-none d-md-block col-md-1">
+                          <span class="testimonial-area8__divider"></span>
+                        </div>
+                        <!-- Content -->
+                        <div class="col-12 col-md-8">
+                          <div class="testimonial-area8__body">
+                            <div class="testimonial-area8__rating">
+                              <div class="testimonial-area8__score">4.5</div>
+                              <div class="testimonial-area8__meta">
+                                <span class="testimonial-area8__label"
+                                  >Rating</span
+                                >
+                                <span class="testimonial-area8__stars">
+                                  <!-- <svg viewBox="0 0 12 24"
+                                  class="testimonial-area8__star">
+                                  <path
+                                    d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                                </svg> -->
+                                  <svg
+                                    viewBox="0 0 24 24"
+                                    class="testimonial-area8__star"
+                                  >
+                                    <path
+                                      d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+                                    />
+                                  </svg>
+                                  <svg
+                                    viewBox="0 0 24 24"
+                                    class="testimonial-area8__star"
+                                  >
+                                    <path
+                                      d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+                                    />
+                                  </svg>
+                                  <svg
+                                    viewBox="0 0 24 24"
+                                    class="testimonial-area8__star"
+                                  >
+                                    <path
+                                      d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+                                    />
+                                  </svg>
+                                  <svg
+                                    viewBox="0 0 24 24"
+                                    class="testimonial-area8__star"
+                                  >
+                                    <path
+                                      d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+                                    />
+                                  </svg>
+                                </span>
+                              </div>
+                            </div>
+                            <p class="testimonial-area8__text">
+                              The team worked in an organized manner, they
+                              divided the project into three phases with
+                              different objectives. They were also efficient,
+                              communicative, and results-driven throughout.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Decorative quote -->
+                      <span class="testimonial-area8__quote" aria-hidden="true">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="158"
+                          height="125"
+                          viewBox="0 0 158 125"
+                          fill="none"
+                        >
+                          <path
+                            d="M67.4352 8.91278L61.7022 0C22.0365 26.9593 0 59.7157 0 86.675C0 112.743 18.9549 125 35.0399 125C55.3134 125 69.6353 107.616 69.6353 89.3488C69.6353 73.9762 59.9393 60.828 46.9361 55.9224C43.1915 54.5819 39.6657 53.4696 39.6657 47.0095C39.6657 38.7671 45.6174 26.5173 67.4352 8.91278ZM154.918 8.91278L149.185 0C109.957 26.9593 87.4832 59.7157 87.4832 86.675C87.4832 112.743 106.875 125 122.96 125C143.452 125 158 107.616 158 89.3488C158 73.9762 148.085 60.828 134.638 55.9224C130.893 54.5819 127.586 53.4696 127.586 47.0095C127.586 38.7671 133.756 26.5101 154.911 8.90565L154.918 8.91278Z"
+                            fill="#E9E2D9"
+                          />
+                        </svg>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- Testimonial area End -->
 
-        <!-- Feature area start -->
-        <!-- <div class="feature-area8 section-spacing pt-0">
+          <!-- Feature area start -->
+          <!-- <div class="feature-area8 section-spacing pt-0">
           <div class="container-1600">
             <div class="feature-area8__wrap">
               <div class="row">
@@ -936,201 +1623,298 @@
 
           </div>
         </div> -->
-        <!-- Feature area end -->
+          <!-- Feature area end -->
 
-        <!-- Why Choose area start -->
-        <div class="whychoose-area8 section-spacing pt-0">
-          <div class="container-1600">
-            <div class="whychoose-area8__wrap">
-              <div class="row align-items-center justify-content-between gy-4 gy-lg-0">
+          <!-- Why Choose area start -->
+          <div class="whychoose-area8 section-spacing pt-0">
+            <div class="container-1600">
+              <div class="whychoose-area8__wrap">
+                <div
+                  class="row align-items-center justify-content-between gy-4 gy-lg-0"
+                >
+                  <!-- Left Content -->
+                  <div class="col-lg-6">
+                    <h2
+                      class="section-title text-start text-black mb-4 rr-title-anim-2"
+                    >
+                      Why Choose Us: experience excellence, drive results, and
+                      achieve more
+                    </h2>
 
-                <!-- Left Content -->
-                <div class="col-lg-6">
-                  <h2 class="section-title text-start text-black mb-4 rr-title-anim-2">
-                    Why Choose Us: experience excellence, drive results, and achieve more
-                  </h2>
-
-                  <div class="accordion whychoose-area8__accordion" id="whychooseAccordion">
-                    <!-- Item 1 -->
-                    <div class="accordion-item whychoose-area8__item wow fadeInUp" data-wow-delay="0.3s">
-                      <h2 class="accordion-header" id="headingOne">
-                        <button class="accordion-button collapsed whychoose-area8__item-header" type="button"
-                          data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false"
-                          aria-controls="collapseOne">
-                          <span class="whychoose-area8__item-title">Scalable Solutions</span>
-                        </button>
-                      </h2>
-                      <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
-                        data-bs-parent="#whychooseAccordion">
-                        <div class="accordion-body whychoose-area8__item-body">
-                          <p class="whychoose-area8__item-desc">
-                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                            pariatur.
-                            Excepteur sint occaecat cupidatat non proident in sunt in culpa qui officia deserunt.
-                          </p>
-                          <a href="#" class="whychoose-area8__item-link">➜</a>
+                    <div
+                      class="accordion whychoose-area8__accordion"
+                      id="whychooseAccordion"
+                    >
+                      <!-- Item 1 -->
+                      <div
+                        class="accordion-item whychoose-area8__item wow fadeInUp"
+                        data-wow-delay="0.3s"
+                      >
+                        <h2 class="accordion-header" id="headingOne">
+                          <button
+                            class="accordion-button collapsed whychoose-area8__item-header"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne"
+                            aria-expanded="false"
+                            aria-controls="collapseOne"
+                          >
+                            <span class="whychoose-area8__item-title"
+                              >Scalable Solutions</span
+                            >
+                          </button>
+                        </h2>
+                        <div
+                          id="collapseOne"
+                          class="accordion-collapse collapse"
+                          aria-labelledby="headingOne"
+                          data-bs-parent="#whychooseAccordion"
+                        >
+                          <div
+                            class="accordion-body whychoose-area8__item-body"
+                          >
+                            <p class="whychoose-area8__item-desc">
+                              Duis aute irure dolor in reprehenderit in
+                              voluptate velit esse cillum dolore eu fugiat nulla
+                              pariatur. Excepteur sint occaecat cupidatat non
+                              proident in sunt in culpa qui officia deserunt.
+                            </p>
+                            <a href="#" class="whychoose-area8__item-link">➜</a>
+                          </div>
                         </div>
                       </div>
-                    </div>
 
-                    <!-- Item 2 (Open by default) -->
-                    <div class="accordion-item whychoose-area8__item wow fadeInUp" data-wow-delay="0.4s">
-                      <h2 class="accordion-header" id="headingTwo">
-                        <button class="accordion-button whychoose-area8__item-header" type="button"
-                          data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true"
-                          aria-controls="collapseTwo">
-                          <span class="whychoose-area8__item-title">User-Friendly Experience</span>
-                        </button>
-                      </h2>
-                      <div id="collapseTwo" class="accordion-collapse collapse show" aria-labelledby="headingTwo"
-                        data-bs-parent="#whychooseAccordion">
-                        <div class="accordion-body whychoose-area8__item-body">
-                          <p class="whychoose-area8__item-desc">
-                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                            pariatur.
-                            Excepteur sint occaecat cupidatat non proident in sunt in culpa qui officia deserunt.
-                          </p>
-                          <a href="#" class="whychoose-area8__item-link">➜</a>
+                      <!-- Item 2 (Open by default) -->
+                      <div
+                        class="accordion-item whychoose-area8__item wow fadeInUp"
+                        data-wow-delay="0.4s"
+                      >
+                        <h2 class="accordion-header" id="headingTwo">
+                          <button
+                            class="accordion-button whychoose-area8__item-header"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwo"
+                            aria-expanded="true"
+                            aria-controls="collapseTwo"
+                          >
+                            <span class="whychoose-area8__item-title"
+                              >User-Friendly Experience</span
+                            >
+                          </button>
+                        </h2>
+                        <div
+                          id="collapseTwo"
+                          class="accordion-collapse collapse show"
+                          aria-labelledby="headingTwo"
+                          data-bs-parent="#whychooseAccordion"
+                        >
+                          <div
+                            class="accordion-body whychoose-area8__item-body"
+                          >
+                            <p class="whychoose-area8__item-desc">
+                              Duis aute irure dolor in reprehenderit in
+                              voluptate velit esse cillum dolore eu fugiat nulla
+                              pariatur. Excepteur sint occaecat cupidatat non
+                              proident in sunt in culpa qui officia deserunt.
+                            </p>
+                            <a href="#" class="whychoose-area8__item-link">➜</a>
+                          </div>
                         </div>
                       </div>
-                    </div>
 
-                    <!-- Item 3 -->
-                    <div class="accordion-item whychoose-area8__item wow fadeInUp" data-wow-delay="0.6s">
-                      <h2 class="accordion-header" id="headingThree">
-                        <button class="accordion-button collapsed whychoose-area8__item-header" type="button"
-                          data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
-                          aria-controls="collapseThree">
-                          <span class="whychoose-area8__item-title">Reliable Performance & Support</span>
-                        </button>
-                      </h2>
-                      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
-                        data-bs-parent="#whychooseAccordion">
-                        <div class="accordion-body whychoose-area8__item-body">
-                          <p class="whychoose-area8__item-desc">
-                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                            pariatur.
-                            Excepteur sint occaecat cupidatat non proident in sunt in culpa qui officia deserunt.
-                          </p>
-                          <a href="#" class="whychoose-area8__item-link">➜</a>
+                      <!-- Item 3 -->
+                      <div
+                        class="accordion-item whychoose-area8__item wow fadeInUp"
+                        data-wow-delay="0.6s"
+                      >
+                        <h2 class="accordion-header" id="headingThree">
+                          <button
+                            class="accordion-button collapsed whychoose-area8__item-header"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#collapseThree"
+                            aria-expanded="false"
+                            aria-controls="collapseThree"
+                          >
+                            <span class="whychoose-area8__item-title"
+                              >Reliable Performance & Support</span
+                            >
+                          </button>
+                        </h2>
+                        <div
+                          id="collapseThree"
+                          class="accordion-collapse collapse"
+                          aria-labelledby="headingThree"
+                          data-bs-parent="#whychooseAccordion"
+                        >
+                          <div
+                            class="accordion-body whychoose-area8__item-body"
+                          >
+                            <p class="whychoose-area8__item-desc">
+                              Duis aute irure dolor in reprehenderit in
+                              voluptate velit esse cillum dolore eu fugiat nulla
+                              pariatur. Excepteur sint occaecat cupidatat non
+                              proident in sunt in culpa qui officia deserunt.
+                            </p>
+                            <a href="#" class="whychoose-area8__item-link">➜</a>
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
-                </div>
 
-                <!-- Right Image -->
-                <div class="col-lg-5">
-                  <div class="whychoose-area8__image rr-ov-hidden">
-                    <img data-speed="0.9" src="assets/imgs/home-8/wcu/wcu-thumb6_1.jpg" alt="why choose us">
-                    <div class="whychoose-area8__image-two wow fadeInUp" data-wow-delay="0.3s">
-                      <img src="assets/imgs/home-8/wcu/wcu-thumb6_2.png" alt="thumb">
-                    </div>
-                  </div>
-                </div>
-
-              </div>
-            </div>
-
-          </div>
-        </div>
-        <!-- Why Choose area end -->
-
-        <!-- Pricing area start -->
-        
-        <!-- Pricing area end -->
-
-        <!-- Integration area start -->
-        <div class="integration-area8 section-spacing">
-          <div class="container-1600">
-            <div class="integration-area8__wrap section-spacing text-center">
-              <h2 class="section-title text-black rr-title-anim-2">Seamlessly links with 3k+ applications to
-                streamline workflows & productivity.</h2>
-              <div class="integration-area8__thumb d-flex align-items-center justify-content-center">
-                <img src="assets/imgs/home-8/integration/intregation-thumb.png" alt="thumb">
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Integration area end -->
-
-      </main>
-
-
-      
-
-      <!-- Footer area start -->
-      <footer class="footer-area6 rr-ov-hidden">
-        <div class="container rr-container-1600">
-          <div class="footer-area6__top">
-            <div class="row gy-5 d-flex align-items-center justify-content-center">
-              <div class="col-xl-5 col-lg-7 col-md-7 wow fadeInUp" data-wow-delay=".3s">
-                <h4 class="footer-area6__top-title rr-title-anim-2">Have an idea in your mind? Let,s make something great together
-                </h4>
-                <div class="footer-area6__button">
-                  <a href="#" class="rr-btn-button2 btn-purple">
-                    <span class="text">more about us</span>
-                    <span class="icon">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
-                        <g clip-path="url(#clip0_246_218)">
-                          <path d="M22.0004 11C16.6011 11 12.2227 6.07578 12.2227 0" stroke="white" stroke-width="2"
-                            stroke-miterlimit="10" />
-                          <path d="M12.2227 22C12.2227 15.9258 16.5997 11 22.0004 11" stroke="white" stroke-width="2"
-                            stroke-miterlimit="10" />
-                          <path d="M22.0005 11H0.000488281" stroke="white" stroke-width="2" stroke-miterlimit="10" />
-                        </g>
-                        <defs>
-                          <clipPath id="clip0_246_218">
-                            <rect width="22" height="22" fill="white" />
-                          </clipPath>
-                        </defs>
-                      </svg>
-                    </span>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="footer-area6-main">          
-            <div class="footer-area4-bottom">
-              <div class="container">
-                <div class="row g-5 d-flex align-items-center justify-content-center">
-                  <div class="col-xl-11 col-lg-12 col-md-12">
-                    <div class="footer-area4-bottom__wrapper">
-                      <div class="footer-area4-bottom__copyright text-center">Copyright © Webefy Today 2026, All rights reserved</div>
+                  <!-- Right Image -->
+                  <div class="col-lg-5">
+                    <div class="whychoose-area8__image rr-ov-hidden">
+                      <img
+                        data-speed="0.9"
+                        src="assets/imgs/home-8/wcu/wcu-thumb6_1.jpg"
+                        alt="why choose us"
+                      />
+                      <div
+                        class="whychoose-area8__image-two wow fadeInUp"
+                        data-wow-delay="0.3s"
+                      >
+                        <img
+                          src="assets/imgs/home-8/wcu/wcu-thumb6_2.png"
+                          alt="thumb"
+                        />
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </footer>
-      <!-- Footer area end -->
+          <!-- Why Choose area end -->
+
+          <!-- Pricing area start -->
+
+          <!-- Pricing area end -->
+
+          <!-- Integration area start -->
+          <div class="integration-area8 section-spacing">
+            <div class="container-1600">
+              <div class="integration-area8__wrap section-spacing text-center">
+                <h2 class="section-title text-black rr-title-anim-2">
+                  Seamlessly links with 3k+ applications to streamline workflows
+                  & productivity.
+                </h2>
+                <div
+                  class="integration-area8__thumb d-flex align-items-center justify-content-center"
+                >
+                  <img
+                    src="assets/imgs/home-8/integration/intregation-thumb.png"
+                    alt="thumb"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Integration area end -->
+        </main>
+
+        <!-- Footer area start -->
+        <footer class="footer-area6 rr-ov-hidden">
+          <div class="container rr-container-1600">
+            <div class="footer-area6__top">
+              <div
+                class="row gy-5 d-flex align-items-center justify-content-center"
+              >
+                <div
+                  class="col-xl-5 col-lg-7 col-md-7 wow fadeInUp"
+                  data-wow-delay=".3s"
+                >
+                  <h4 class="footer-area6__top-title rr-title-anim-2">
+                    Have an idea in your mind? Let,s make something great
+                    together
+                  </h4>
+                  <div class="footer-area6__button">
+                    <a href="#" class="rr-btn-button2 btn-purple">
+                      <span class="text">more about us</span>
+                      <span class="icon">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="22"
+                          height="22"
+                          viewBox="0 0 22 22"
+                          fill="none"
+                        >
+                          <g clip-path="url(#clip0_246_218)">
+                            <path
+                              d="M22.0004 11C16.6011 11 12.2227 6.07578 12.2227 0"
+                              stroke="white"
+                              stroke-width="2"
+                              stroke-miterlimit="10"
+                            />
+                            <path
+                              d="M12.2227 22C12.2227 15.9258 16.5997 11 22.0004 11"
+                              stroke="white"
+                              stroke-width="2"
+                              stroke-miterlimit="10"
+                            />
+                            <path
+                              d="M22.0005 11H0.000488281"
+                              stroke="white"
+                              stroke-width="2"
+                              stroke-miterlimit="10"
+                            />
+                          </g>
+                          <defs>
+                            <clipPath id="clip0_246_218">
+                              <rect width="22" height="22" fill="white" />
+                            </clipPath>
+                          </defs>
+                        </svg>
+                      </span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="footer-area6-main">
+              <div class="footer-area4-bottom">
+                <div class="container">
+                  <div
+                    class="row g-5 d-flex align-items-center justify-content-center"
+                  >
+                    <div class="col-xl-11 col-lg-12 col-md-12">
+                      <div class="footer-area4-bottom__wrapper">
+                        <div class="footer-area4-bottom__copyright text-center">
+                          Copyright © Webefy Today 2026, All rights reserved
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
+        <!-- Footer area end -->
+      </div>
     </div>
-  </div>
 
-
-  <!-- Dependencies JS Files -->
-  <script src="assets/vandor/jquery/jquery.js"></script>
-  <script src="assets/vandor/bootstrap/bootstrap.bundle.min.js"></script>
-  <script src="assets/vandor/popup/jquery.magnific-popup.min.js"></script>
-  <script src="assets/vandor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vandor/gsap/gsap.min.js"></script>
-  <script src="assets/vandor/gsap/ScrollSmoother.min.js"></script>
-  <script src="assets/vandor/gsap/ScrollTrigger.min.js"></script>
-  <script src="assets/vandor/gsap/SplitText.min.js"></script>
-  <script src="assets/vandor/gsap/SplitType.js"></script>
-  <script src="assets/vandor/gsap/customEase.js"></script>
-  <script src="assets/vandor/odometer/odometer.min.js"></script>
-  <script src="assets/vandor/odometer/waypoints.min.js"></script>
-  <script src="assets/vandor/menu/jquery.meanmenu.min.js"></script>
-  <script src="assets/vandor/backtop/backToTop.js"></script>
-  <script src="assets/vandor/nice-select/nice-select.js"></script>
-  <script src="assets/vandor/wow/wow.min.js"></script>
-  <!-- Template Main JS File -->
-  <script src="assets/vandor/common-js/common.js"></script>
-  <script src="assets/js/main.js"></script>
-</body>
-
+    <!-- Dependencies JS Files -->
+    <script src="assets/vandor/jquery/jquery.js"></script>
+    <script src="assets/vandor/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="assets/vandor/popup/jquery.magnific-popup.min.js"></script>
+    <script src="assets/vandor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vandor/gsap/gsap.min.js"></script>
+    <script src="assets/vandor/gsap/ScrollSmoother.min.js"></script>
+    <script src="assets/vandor/gsap/ScrollTrigger.min.js"></script>
+    <script src="assets/vandor/gsap/SplitText.min.js"></script>
+    <script src="assets/vandor/gsap/SplitType.js"></script>
+    <script src="assets/vandor/gsap/customEase.js"></script>
+    <script src="assets/vandor/odometer/odometer.min.js"></script>
+    <script src="assets/vandor/odometer/waypoints.min.js"></script>
+    <script src="assets/vandor/menu/jquery.meanmenu.min.js"></script>
+    <script src="assets/vandor/backtop/backToTop.js"></script>
+    <script src="assets/vandor/nice-select/nice-select.js"></script>
+    <script src="assets/vandor/wow/wow.min.js"></script>
+    <!-- Template Main JS File -->
+    <script src="assets/vandor/common-js/common.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
 </html>
