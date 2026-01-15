@@ -37,3 +37,63 @@
     border-radius: 20px 20px 0 0;
     background: #101010;
 }
+.pricing-area8__card--bg-active {
+    color: #fff;
+    background: #d7078c;
+}
+.pricing-area8__card--bg-active .pricing-area8__card-header .pricing-area8__card-title {
+    color: #fff;
+}
+.pricing-area8__card-bill {
+    margin-bottom: 0;
+}
+.pricing-area8__card-btn {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.about-area8__counter-number {
+    color: #ffffff;
+}
+.about-area8__counter-three {
+    background:linear-gradient(137deg, #3c489d 3.6%, #fff 100%);
+}
+
+
+.about-area8__counter {
+    background: linear-gradient(109deg, #d7078c 4.72%, #fff 100%);
+}
+.about-area8__counter-feature span {
+    background: #dc2699;
+}
+.intro-area6__content-newsletter-box select {
+    color: #000;
+    font-family: Kanit;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 162.5%;
+    border-radius: 20px;
+    border: 1px solid #000;
+    background: rgba(217, 217, 217, 0);
+    box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.15);
+    padding: 10px 30px;
+}
+.intro-area6__content-newsletter-box {
+    display: flex;
+    gap: 10px;
+    width: 610px;
+    position: relative;
+    z-index: 5;
+    border-radius: 35px;
+    background: #fff;
+    padding: 26px 25px;
+    flex-direction: column;
+}
+.rr-btn-border {
+    text-transform: lowercase;
+    padding: 7px 15px 7px 15px;
+    gap: 10px;
+}
+.rr-btn-border .icon {
+    background: #db058d;
+}

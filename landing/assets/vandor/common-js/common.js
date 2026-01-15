@@ -279,7 +279,7 @@ if (document.querySelectorAll(".loader-wrap").length > 0) {
     });
 
     /* === Nice Select Js (index 11) === */
-    $("select").niceSelect();
+    // $("select").niceSelect();
 
 
     /* ========  main Js ======== */
