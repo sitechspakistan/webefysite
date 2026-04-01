@@ -2,10 +2,10 @@ import SecondHero from "@/app/component/SecondHero";
 import portfolioData from "@/data/portfoliodata"
 
 export default async function Page({ params }) {
-    const { id } = await params;
+    const { slug } = await params;
 
     const project = portfolioData.find(
-        (item) => item.id === Number(id)
+        (item) => item.slug === (slug)
     );
 
     if (!project) {
@@ -14,16 +14,17 @@ export default async function Page({ params }) {
 
     return (
         <>
-            <SecondHero Subheading={"Portfolio Detail"} Heading1={"Completed Work"} Heading2={"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"} description={"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"} />
+            <SecondHero Subheading={"Portfolio Detail"} />
 
             <div id="works" className="section-work-single flat-spacing pt-0">
                 <div className="container">
                     <div className="row mb-32">
+                        <h2 className="heading fw-semibold mb-32 effectFade fadeUp text-center text-white pt-4 pb-0">{project.title}</h2>
+
                         <div className="col-12">
-                            <div className="wrap-image mb-60 effectFade fadeZoom">
+                            <div className="wrap-image mb-60 effectFade fadeZoom text-center">
                                 <img src={project.image} alt="" />
                             </div>
-                            <h2 className="heading fw-semibold mb-32 effectFade fadeUp">{project.title}</h2>
                             <p className="text-secondary effectFade fadeUp">
                                 {project.description}
                             </p>
@@ -42,15 +43,15 @@ export default async function Page({ params }) {
                     </div>
                     <div className="row mb-60">
                         <div className="col-12">
-                            <h2 className="heading fw-semibold mb-20 effectFade fadeUp">Project Research</h2>
+                            <h2 className="heading fw-semibold mb-20 effectFade fadeUp">Our Solution</h2>
                             <p className="text-secondary effectFade fadeUp">
-                                {project.solution?.map((s, i) => <li key={i}>{s}</li>)}
+                                {project.solution}
                             </p>
                         </div>
                     </div>
                     <div className="row mb-60">
                         <div className="col-12">
-                            <h2 className="heading fw-semibold mb-20 effectFade fadeUp">Project  Results</h2>
+                            <h2 className="heading fw-semibold mb-20 effectFade fadeUp">Results</h2>
                             <p className="text-secondary effectFade fadeUp">
                                 {project.result}                </p>
                         </div>

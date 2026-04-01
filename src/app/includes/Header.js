@@ -3,7 +3,7 @@ export default function Header() {
         <header className="tf-header header2 sticky">
             <div className="header-inner">
                 <a href="/" className="logo-site">
-                    <img src="assets/images/logo/webefy-logo.png" alt="" />
+                    <img src="/assets/images/logo/webefy-logo.png" alt="Webefy Today" />
                 </a>
                 <div className="box-navigation">
                     <ul className="nav-menu-main">
@@ -14,7 +14,7 @@ export default function Header() {
                             <a href="/services" className="item-link link1">Services</a>
                         </li>
                         <li className="menu-item">
-                            <a href="/portfolio" className="item-link link1">Portfolio</a>
+                            <a href="/case-studies" className="item-link link1">Portfolio</a>
                         </li>
                         <li className="menu-item">
                             <a href="?" className="item-link link1">Blog</a>
