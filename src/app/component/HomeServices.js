@@ -1,5 +1,5 @@
-"use client"
-import { useState } from "react";
+"use client";
+import { useState, useRef, useEffect } from "react";
 
 const services = [
     {
@@ -25,8 +25,61 @@ const services = [
     },
 ];
 
+// ✅ Alag ServiceItem component — har item ka apna ref
+function ServiceItem({ service, isOpen, onToggle }) {
+    const contentRef = useRef(null);
+    const [height, setHeight] = useState(0);
+
+    useEffect(() => {
+        if (isOpen) {
+            setHeight(contentRef.current.scrollHeight);
+        } else {
+            setHeight(0);
+        }
+    }, [isOpen]);
+
+    return (
+        <div
+            className="accordion-faq_item effectFade fadeUp"
+            role="presentation"
+        >
+            <div
+                className={`accordion-action services-image-btn ${isOpen ? "active-img" : "collapsed"}`}
+                data-img={service.img}
+                role="button"
+                onClick={() => onToggle(service.id)}
+            >
+                <h3 className="accordion-title">
+                    {service.title}
+                    <div className="text-body-1 num">{service.num}</div>
+                </h3>
+            </div>
+
+            {/* ✅ Height animate hogi */}
+            <div
+                ref={contentRef}
+                style={{
+                    height: `${height}px`,
+                    overflow: "hidden",
+                    transition: "height 0.4s ease",
+                }}
+            >
+                <div className="accordion-content">
+                    <div className="text-body-3 text-neutral-300 text">
+                        {service.text}
+                    </div>
+                    <a href="blog-single.html" className="tf-btn-2">
+                        Read more
+                        <i className="icon icon-arrow-top-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    );
+}
+
 export default function HomeService() {
-    const [openIndex, setOpenIndex] = useState(1); // default pehla open
+    const [openIndex, setOpenIndex] = useState(1);
 
     const toggle = (id) => {
         setOpenIndex(openIndex === id ? null : id);
@@ -50,7 +103,7 @@ export default function HomeService() {
                                         and powerful branding to position your business at the pinnacle
                                         of its industry.
                                     </p>
-                                    <a href="services.html" className="tf-btn-2 mt-4">
+                                    <a href="/services" className="tf-btn-2 mt-4">
                                         Our Services
                                         <i className="icon icon-arrow-top-right"></i>
                                     </a>
@@ -61,36 +114,12 @@ export default function HomeService() {
                         <div className="col-xxl-6 col-lg-6">
                             <div className="accordion-faq_list">
                                 {services.map((service) => (
-                                    <div
+                                    <ServiceItem
                                         key={service.id}
-                                        className="accordion-faq_item effectFade fadeUp"
-                                        role="presentation"
-                                    >
-                                        <div
-                                            className={`accordion-action services-image-btn ${openIndex === service.id ? "active-img" : "collapsed"
-                                                }`}
-                                            data-img={service.img}
-                                            role="button"
-                                            onClick={() => toggle(service.id)}
-                                        >
-                                            <h3 className="accordion-title">
-                                                {service.title}
-                                                <div className="text-body-1 num">{service.num}</div>
-                                            </h3>
-                                        </div>
-
-                                        {openIndex === service.id && (
-                                            <div className="accordion-content">
-                                                <div className="text-body-3 text-neutral-300 text">
-                                                    {service.text}
-                                                </div>
-                                                <a href="blog-single.html" className="tf-btn-2">
-                                                    Read more
-                                                    <i className="icon icon-arrow-top-right"></i>
-                                                </a>
-                                            </div>
-                                        )}
-                                    </div>
+                                        service={service}
+                                        isOpen={openIndex === service.id}
+                                        onToggle={toggle}
+                                    />
                                 ))}
                             </div>
                         </div>

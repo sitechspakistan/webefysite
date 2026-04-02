@@ -40,15 +40,15 @@ export default function HomeProcess() {
                                         prevEl: ".nav-prev-swiper",
                                         nextEl: ".nav-next-swiper",
                                     }}
-                                    slidesPerView={1.5}
-                                    spaceBetween={20}
+                                    slidesPerView={1.6}
+                                    spaceBetween={15}
                                     breakpoints={{
                                         1024: {
-                                            slidesPerView: 1.5,
+                                            slidesPerView: 1.6,
                                             spaceBetween: 30
                                         },
-                                        768: {
-                                            slidesPerView: 1.5
+                                        412: {
+                                            slidesPerView: 1
                                         },
                                     }}>
 
