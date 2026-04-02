@@ -12,8 +12,8 @@ const BlogDetails = () => {
           <div className="blog-single-wrap  mt-5 ">
             <div className="d-flex align-items-center  mt-5">
               <a href="/blog">
-                <div className="back-btn">
-                  <i className="fal fa-arrow-left fw-bold"></i>
+                <div className="tf-btn">
+                  <i className="icon icon-angle-left-solid"></i>
                 </div>
               </a>
               <span className="fw-bold fs-6 ms-3">March 16, 2026</span>

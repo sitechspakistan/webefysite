@@ -5,7 +5,9 @@ const BreadcrumHero = () => {
     <>
       <div className="section-page-title">
         <div className="container text-center">
-          <h1 className="page-title fw-semibold effectFade fadeZoom">Aigocy</h1>
+          <h1 className="page-title fw-semibold effectFade fadeZoom">
+            Webefy Today
+          </h1>
           <div className="breadcrumbs effectFade fadeUp">
             <a href="index.html" className="link1">
               Home
