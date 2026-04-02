@@ -18,15 +18,38 @@ export default function PortfolioWeb() {
             <div className="container-fluid px-3">
 
                 <div className="portfolio-filters text-center mb-4">
-                    {categories.map((cat) => (
-                        <button
-                            key={cat}
-                            onClick={() => setFilter(cat)}
-                            className={filter === cat ? "active" : ""}
-                        >
-                            {cat}
-                        </button>
-                    ))}
+
+                    {/* ✅ Desktop Buttons */}
+                    <div className="filters-desktop">
+                        {categories.map((cat) => (
+                            <button
+                                key={cat}
+                                onClick={() => setFilter(cat)}
+                                className={filter === cat ? "active" : ""}
+                            >
+                                {cat}
+                            </button>
+                        ))}
+                    </div>
+
+
+
+                </div>
+                {/* ✅ Mobile Dropdown */}
+                <div className="filters-mobile">
+                    <select
+                        value={filter}
+                        onChange={(e) => setFilter(e.target.value)}
+
+                    >
+
+                        {categories.map((cat) => (
+                            <option key={cat} value={cat}>
+                                {cat}
+                            </option>
+                        ))}
+                        <i className="fa fa-carrot"></i>
+                    </select>
                 </div>
 
                 <div className="portfolio-grid mt-5">
