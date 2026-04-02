@@ -23,7 +23,7 @@ export default function Header() {
               </a>
             </li>
             <li className="menu-item">
-              <a href="/blog" className="item-link link1">
+              <a href="?" className="item-link link1">
                 Blog
               </a>
             </li>
