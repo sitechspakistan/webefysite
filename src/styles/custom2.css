@@ -38,12 +38,17 @@
 
 .tf-header.header2 .header-inner {
   width: 807px;
+  transition: all 0.5s ease;
 }
 
-/* Scroll hone ke baad header chota ho jaayega */
 .tf-header.header-scrolled .header-inner {
   max-width: 550px;
-  /* gap: 15px; */
+  transition: all 0.5s ease;
+}
+
+.logo-site img {
+  height: 30px;
+  transition: all 0.1s ease;
 }
 
 .scrolled-nav .item-link {
@@ -68,6 +73,7 @@
 
 .tf-btn {
   transition: all 0.35s ease;
+  white-space: nowrap;
 }
 
 .btn-hide {
@@ -77,9 +83,9 @@
 .btn-show {
   display: inline-flex;
   justify-content: end;
+  width: 100%;
 }
 
 .header-actions {
   display: flex;
-  gap: 8px;
 }

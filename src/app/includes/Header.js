@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 import { useState, useEffect, useRef } from "react";
 
 export default function Header() {
@@ -23,86 +24,97 @@ export default function Header() {
   }, []);
 
   return (
-    <header className="tf-header header2">
+    <header className={`tf-header header2 ${scrolled && "header-scrolled"}`}>
       <div className="header-inner ">
-        <a href="/" className="logo-site">
-          <img src="/assets/images/logo/webefy-logo.png" alt="" />
-        </a>
+        {/* Header Logo */}
+        <Link href="/" className="logo-site">
+          {scrolled ? (
+            <img src="/assets/images/logo/fav.webp" alt="Webefy Logo" />
+          ) : (
+            <img src="/assets/images/logo/webefy-logo.png" alt="Webefy Logo" />
+          )}
+        </Link>
 
         {/* Navigation */}
         <div className={`box-navigation ${scrolled ? "nav-hide" : "nav-show"}`}>
           <ul className="nav-menu-main">
             <li className="menu-item">
-              <a href="/about" className="item-link link1">
+              <Link href="/about" className="item-link link1">
                 About
-              </a>
+              </Link>
             </li>
 
-            <li class="menu-item has-child">
-              <a href="#" class="item-link link1">
+            <li className="menu-item has-child">
+              <Link href="/services" className="item-link link1">
                 Services
-              </a>
-              <ul class="sub-menu">
-                <li class="sub-menu-item">
-                  <a href="services/web-development" class="item-link link1">
+              </Link>
+              <ul className="sub-menu">
+                <li className="sub-menu-item">
+                  <Link
+                    href="/services/web-development"
+                    className="item-link link1"
+                  >
                     Web Development
-                  </a>
+                  </Link>
                 </li>
-                <li class="sub-menu-item">
-                  <a href="services/ai-automation" class="item-link link1">
+                <li className="sub-menu-item">
+                  <Link
+                    href="/services/ai-automation"
+                    className="item-link link1"
+                  >
                     AI Automation
-                  </a>
+                  </Link>
                 </li>
-                <li class="sub-menu-item">
-                  <a href="services/branding" class="item-link link1">
-                    Branding{" "}
-                  </a>
+                <li className="sub-menu-item">
+                  <Link href="/services/branding" className="item-link link1">
+                    Branding
+                  </Link>
                 </li>
               </ul>
             </li>
 
             <li className="menu-item">
-              <a href="/case-studies" className="item-link link1">
+              <Link href="/case-studies" className="item-link link1">
                 Case Studies
-              </a>
+              </Link>
             </li>
 
-            <li className="menu-item">
-              <a href="/blog" className="item-link link1">
+            {/* <li className="menu-item">
+              <Link href="/blog" className="item-link link1">
                 Blog
-              </a>
-            </li>
+              </Link>
+            </li> */}
           </ul>
         </div>
 
         {/* Buttons */}
         <div className="header-actions">
-          <a
+          <Link
             href="/contact"
             className={`tf-btn  ${scrolled ? "btn-hide" : "btn-show"}`}
           >
             Start a Project
-          </a>
+          </Link>
 
-          <a
+          <Link
             href="/contact"
-            className={`tf-btn  ${scrolled ? "btn-show" : "btn-hide"}`}
+            className={`tf-btn me-2 ${scrolled ? "btn-show" : "btn-hide"}`}
           >
             Book a Call
-          </a>
-          <a
+          </Link>
+          <Link
             href="/contact"
             className={`tf-btn  ${scrolled ? "btn-show" : "btn-hide"}`}
           >
             Contact Us
-          </a>
+          </Link>
 
-          <a
+          <Link
             href="#"
             className="tf-btn open-mb-menu mobile-menu d-lg-none d-flex"
           >
             <i className="icon icon-grip-lines-solid"></i>{" "}
-          </a>
+          </Link>
         </div>
       </div>
     </header>
