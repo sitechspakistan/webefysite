@@ -21,10 +21,10 @@ export default function Hero() {
                         precision and purpose to help your business grow with confidence.
                     </p>
                     <div className="bot-btns effectFade fadeRotateX">
-                        <a href="service.html" className="tf-btn">
+                        <a href="/services" className="tf-btn">
                             Explore Our Work
                         </a>
-                        <a href="#pricing" className="tf-btn-2">
+                        <a href="/pricing" className="tf-btn-2">
                             View Pricing Plans
                         </a>
                     </div>

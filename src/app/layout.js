@@ -33,6 +33,12 @@ export default function RootLayout({ children }) {
         />
       </head>
       <body className="counter-scroll">
+        <button id="goTop">
+          <span className="border-progress"></span>
+          <span className="ic-wrap">
+            <span className="icon icon-long-arrow-alt-up-solid"></span>
+          </span>
+        </button>
         <Header />
         <main id="wrapper">{children}</main>
         <Footer />

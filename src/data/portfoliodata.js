@@ -2,13 +2,13 @@ const portfolioData = [
     {
         slug: "ai-email-automation",
         image: "/assets/images/portfolio/1.jpg",
-        description: ["A client came to Sitechs with a common challenge, missed follow-ups. They had a Google Sheet to track customers and an email inbox, but manually sending reminders was eating up valuable time."],
+        description: ["A client came to Webefy Today with a common challenge, missed follow-ups. They had a Google Sheet to track customers and an email inbox, but manually sending reminders was eating up valuable time."],
         category: ["AI Automation"],
         title: "AI Email Automation",
         deliverables: ["AI Integration"],
         solution: [
+            ["We built an AI - powered Follow - Up Agent that:"],
             <ul>
-                We built an AI - powered Follow - Up Agent that:
                 <li>Automatically identifies missed follow-ups</li>
                 <li>Sends timely reminders to customers</li>
                 <li>Improves customer satisfaction</li>
@@ -21,21 +21,21 @@ const portfolioData = [
     {
         slug: "hiller-media-group",
         image: "/assets/images/portfolio/2.jpg",
-        description: ["Hiller Media Group approached Sitechs to revamp their outdated website and improve their digital presence. They needed a modern, fast, and easy-to-manage platform that aligned with their brand and showcased their services effectively."],
+        description: ["Hiller Media Group approached Webefy Today to revamp their outdated website and improve their digital presence. They needed a modern, fast, and easy-to-manage platform that aligned with their brand and showcased their services effectively."],
         category: ["Website Development"],
         title: "Hiller Media Group",
         deliverables: ["Next.js"],
-        solution: ["We designed and developed a sleek, user-friendly WordPress website tailored to HMG’s media-focused audience. The new site features an intuitive layout, optimized loading speed, and SEO-friendly structure — making it easier for visitors to explore their portfolio and connect with the brand."],
-        result: ["A professional online presence that strengthened HMG’s credibility, improved user engagement, and simplified content management through WordPress’s easy backend system."]
+        solution: ["We designed and developed a sleek, user-friendly WordPress website tailored to HMG's media-focused audience. The new site features an intuitive layout, optimized loading speed, and SEO-friendly structure — making it easier for visitors to explore their portfolio and connect with the brand."],
+        result: ["A professional online presence that strengthened HMG's credibility, improved user engagement, and simplified content management through WordPress's easy backend system."]
     },
     {
         slug: "whatsapp-crm-bot",
         image: "/assets/images/portfolio/5.jpg ",
-        description: "A client approached Sitechs with a unique idea “Can my CRM talk on WhatsApp?” They wanted their customers to perform tasks directly from WhatsApp instead of logging into the CRM every time.",
+        description: "A client approached Webefy Today with a unique idea Can my CRM talk on WhatsApp? They wanted their customers to perform tasks directly from WhatsApp instead of logging into the CRM every time.",
         category: ["Website Development"],
         title: "WhatsApp CRM Bot",
         deliverables: ["CRM Integration"],
-        solution: ["We built Zoop, a WhatsApp-based AI Agent that connects directly with the client’s CRM. Customers can now interact naturally using simple messages like:",
+        solution: ["We built Zoop, a WhatsApp-based AI Agent that connects directly with the client's CRM. Customers can now interact naturally using simple messages like:",
 
             "Hey Zoop, create an invoice for order #1204 Hey Zoop, show my pending tickets",
             "Zoop understands each command, processes it in real time, and responds instantly all without requiring users to log in. From creating invoices to checking payments or adding notes, Zoop handles it all through a smooth conversational flow."
@@ -46,9 +46,10 @@ const portfolioData = [
                 <li>70% faster response times</li>
                 <li>Improved customer satisfaction</li>
                 <li>Zero repetitive work for internal teams</li>
-                <p>Zoop understands each command, processes it in real time, and responds instantly all without requiring users to log in.From creating invoices to checking payments or adding notes, Zoop handles it all through a smooth conversational flow
-                </p>
-            </ul>
+
+            </ul>,
+            <p>Zoop understands each command, processes it in real time, and responds instantly all without requiring users to log in.From creating invoices to checking payments or adding notes, Zoop handles it all through a smooth conversational flow
+            </p>
 
 
         ]
@@ -60,13 +61,13 @@ const portfolioData = [
         category: ["Website Development"],
         title: "Vezyon Dashboard",
         deliverables: ["Dashboard UI"],
-        solution: ["We developed a comprehensive Office Management Portal using PHP Laravel, seamlessly integrated with the client’s biometric attendance system. The platform enables real-time employee tracking, shift scheduling, and application management (leaves, late arrivals, and more). The admin dashboard provides instant visibility into workforce performance and attendance trends."],
+        solution: ["We developed a comprehensive Office Management Portal using PHP Laravel, seamlessly integrated with the client's biometric attendance system. The platform enables real-time employee tracking, shift scheduling, and application management (leaves, late arrivals, and more). The admin dashboard provides instant visibility into workforce performance and attendance trends."],
         result: "A fully automated office management system that reduced manual HR work, improved attendance accuracy, and enhanced operational transparency across departments."
     },
     {
         slug: "upfeeds",
         image: "/assets/images/portfolio/4.jpg",
-        description: "Creative Triplet approached Sitechs to develop a custom tool that could simplify Upwork job monitoring. They needed a system that delivers real-time, personalized job alerts directly to their desktop — helping them respond faster and never miss new opportunities.",
+        description: "Creative Triplet approached Webefy Today to develop a custom tool that could simplify Upwork job monitoring. They needed a system that delivers real-time, personalized job alerts directly to their desktop — helping them respond faster and never miss new opportunities.",
         category: ["AI Automation"],
         title: "Upfeeds",
         deliverables: ["Upwork Alerts Portal"],

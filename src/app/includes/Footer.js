@@ -7,16 +7,16 @@ export default function Footer() {
                 <div className="footer-bottom">
                     <ul className="footer-links d-flex gap-24 align-items-center">
                         <li>
-                            <a href="about.html" className="fw-semibold link-underline link1">About</a>
+                            <a href="/about" className="fw-semibold link-underline link1">About</a>
                         </li>
                         <li>
-                            <a href="services.html" className="fw-semibold link-underline link1">Services</a>
+                            <a href="/services" className="fw-semibold link-underline link1">Services</a>
                         </li>
                         <li>
-                            <a href="work.html" className="fw-semibold link-underline link1">Works</a>
+                            <a href="/case-stuidies" className="fw-semibold link-underline link1">Case Studies</a>
                         </li>
                         <li>
-                            <a href="contact.html" className="fw-semibold link-underline link1">Contact</a>
+                            <a href="/start-a-project" className="fw-semibold link-underline link1">Start a Project</a>
                         </li>
                     </ul>
                     <p className="text-secondary coppy-rights text-center">Copyright &copy; Webefy Today 2026, All rights

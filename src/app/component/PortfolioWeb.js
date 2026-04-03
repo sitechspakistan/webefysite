@@ -21,22 +21,26 @@ export default function PortfolioWeb() {
 
                     {/* ✅ Desktop Buttons */}
                     <div className="filters-desktop">
-                        {categories.map((cat) => (
-                            <button
-                                key={cat}
-                                onClick={() => setFilter(cat)}
-                                className={filter === cat ? "active" : ""}
-                            >
-                                {cat}
-                            </button>
+                        {categories.map((cat, index) => (
+                            <span key={cat}>
+                                <button
+                                    onClick={() => setFilter(cat)}
+                                    className={filter === cat ? "active" : ""}
+                                >
+                                    {cat}
+                                </button>
+                                {index < categories.length - 1 && (
+                                    <span className="filter-separator">/</span>
+                                )}
+                            </span>
                         ))}
                     </div>
 
 
 
-                </div>
+                </div >
                 {/* ✅ Mobile Dropdown */}
-                <div className="filters-mobile">
+                < div className="filters-mobile" >
                     <select
                         value={filter}
                         onChange={(e) => setFilter(e.target.value)}
@@ -61,8 +65,8 @@ export default function PortfolioWeb() {
                             <div className="overlay">
 
                                 <div className="overlay-title">
-                                    <h5>{item.title}</h5>
                                     <Link href={`/case-studies/${item.slug}/`}>
+                                        <h5>{item.title}</h5>
                                         <span className="view-btn">View Project →</span>
                                     </Link>
                                 </div>

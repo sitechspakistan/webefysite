@@ -4,6 +4,7 @@ import { useState, useRef, useEffect } from "react";
 const services = [
     {
         id: 1,
+        url: "web-development",
         title: "Website Development",
         num: "(01)",
         img: "assets/images/section/service-1.jpg",
@@ -11,6 +12,7 @@ const services = [
     },
     {
         id: 2,
+        url: "ai-automation",
         title: "AI Automation",
         num: "(02)",
         img: "assets/images/section/service-2.jpg",
@@ -18,6 +20,7 @@ const services = [
     },
     {
         id: 3,
+        url: "branding",
         title: "Branding",
         num: "(03)",
         img: "assets/images/section/service-3.jpg",
@@ -68,7 +71,7 @@ function ServiceItem({ service, isOpen, onToggle }) {
                     <div className="text-body-3 text-neutral-300 text">
                         {service.text}
                     </div>
-                    <a href="blog-single.html" className="tf-btn-2">
+                    <a href={`/services/${service.url}`} className="tf-btn-2">
                         Read more
                         <i className="icon icon-arrow-top-right"></i>
                     </a>
