@@ -3,14 +3,16 @@ import { useEffect } from "react";
 
 export default function ClutchWidget() {
     useEffect(() => {
+        if (document.querySelector('script[src="https://widget.clutch.co/static/js/widget.js"]')) {
+            if (window.CLUTCH) window.CLUTCH.init();
+            return;
+        }
+
         const script = document.createElement("script");
         script.src = "https://widget.clutch.co/static/js/widget.js";
         script.async = true;
         document.body.appendChild(script);
 
-        return () => {
-            document.body.removeChild(script);
-        };
     }, []);
 
     return (

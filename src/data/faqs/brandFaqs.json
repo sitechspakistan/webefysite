@@ -1,0 +1,27 @@
+[
+    {
+        "id": 1,
+        "question": "What does your branding service include?",
+        "answer": "We provide complete branding solutions including logo design, brand identity, messaging, and style guidelines to make your brand stand out."
+    },
+    {
+        "id": 2,
+        "question": "Can you rebrand an existing business?",
+        "answer": "Yes, we specialize in refreshing and modernizing brands while maintaining brand recognition and customer trust."
+    },
+    {
+        "id": 3,
+        "question": "How long does a branding project take?",
+        "answer": "Typically, branding projects take 3–6 weeks depending on complexity and deliverables."
+    },
+    {
+        "id": 4,
+        "question": "Do you provide print and digital branding?",
+        "answer": "Absolutely. We ensure your branding is consistent across websites, social media, business cards, brochures, and other marketing materials."
+    },
+    {
+        "id": 5,
+        "question": "Will you help define my brand’s voice and positioning?",
+        "answer": "Yes, we work closely with you to define your brand’s tone, messaging, and positioning for maximum impact."
+    }
+]

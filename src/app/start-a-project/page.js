@@ -1,6 +1,18 @@
 import SecondHero from "../component/SecondHero";
+export const metadata = {
+    title: "Start A Project | Webefy Today ",
+    description: "Trexa – AI Agency & SaaS HTML Template",
+    alternates: {
+        canonical: "https://webefytoday.com/start-a-project",
+    },
+    icons: {
+        icon: "/assets/images/webefy-lgo/about-shape1_2.png",
+    }
+};
 
 export default function StartProject() {
+
+
     return (
         <>
             <SecondHero Subheading={"Start Your Journey"} Heading1={"Built for the Bold."} Heading2={"Made for the Brave."}
@@ -23,7 +35,7 @@ export default function StartProject() {
                                         </div>
                                         <p className="text effectFade fadeUp">combining creativity, technology, and strategy to craft solutions that think, adapt, and inspire. Connect with us to turn visionary ideas into meaningful, data-driven realities.</p>
                                     </div>
-                                    <div className="row mb-60">
+                                    <div className="row mb-lg-60 mb-4">
                                         <div className="col-md-6 md-mb-24">
                                             <div className="box-contact-item text-center effectFade fadeUp">
                                                 <i className="icon icon-envelope-solid"></i>
@@ -74,7 +86,7 @@ export default function StartProject() {
                                     </div>
                                 </div>
                             </div>
-                            <div className="col-lg-6">
+                            <div className="col-lg-6 pt-lg-0 pt-3">
                                 <form className="form-contact m-0 effectFade fadeUp">
                                     <h4 className="heading fw-semibold">Fill this form below</h4>
                                     <fieldset className="mb-21">

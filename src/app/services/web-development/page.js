@@ -3,6 +3,18 @@ import Faqs from "@/app/component/Faqs";
 import HomePortfolio from "@/app/component/HomePortfolio";
 import SecondHero from "@/app/component/SecondHero";
 import ServiceSection from "@/app/component/ServiceSection";
+import webFaqs from "@/data/faqs/webFaqs"
+
+export const metadata = {
+    title: "Website Development | Webefy Today",
+    description: "Trexa – AI Agency & SaaS HTML Template",
+    alternates: {
+        canonical: "https://webefytoday.com/services/web-development",
+    },
+    icons: {
+        icon: "/assets/images/webefy-lgo/about-shape1_2.png",
+    }
+};
 
 export default function WebDevelopment() {
     return (
@@ -13,7 +25,6 @@ export default function WebDevelopment() {
                         We don't just write code. We craft fast, responsive, and conversion-driven websites <br /> designed to make your business impossible to ignore online.
                     </>
                 }
-
             />
             <ServiceSection Subtitle={"Web Experiences That Convert"} Image={"web.jpg"} Heading1={"Websites Built to"} Heading2={"Perform & Impress."}
                 Para={
@@ -24,7 +35,7 @@ export default function WebDevelopment() {
             />
             <HomePortfolio />
             <Cta />
-            <Faqs />
+            <Faqs faqs={webFaqs} />
         </>
     );
 }

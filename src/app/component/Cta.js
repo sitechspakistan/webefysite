@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Cta() {
     return (
         <div className="section-cta flat-spacing pt-5 pb-0">
@@ -9,10 +11,10 @@ export default function Cta() {
                         experiences.<br /> Let's
                         build something extraordinary together.</p>
 
-                    <div className="text-body-1 num"><a href="#" className="tf-btn-2">
+                    <div className="text-body-1 num"><Link href="/start-a-project" className="tf-btn-2">
                         Unleash Your Idea
                         <i className="icon icon-arrow-top-right"></i>
-                    </a>
+                    </Link>
                     </div>
                 </div>
             </div>

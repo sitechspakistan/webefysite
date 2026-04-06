@@ -4,7 +4,10 @@ import { useState, useEffect, useRef } from "react";
 
 export default function Header() {
   const [scrolled, setScrolled] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
   const lastScrollY = useRef(0);
+  const [servicesOpen, setServicesOpen] = useState(false);
+
 
   useEffect(() => {
     const handleScroll = () => {
@@ -96,7 +99,7 @@ export default function Header() {
           {/* Buttons */}
           <div className="header-actions">
             <Link
-              href="/contact"
+              href="/start-a-project"
               className={`tf-btn  ${scrolled ? "btn-hide" : "btn-show"}`}
             >
               Start a Project
@@ -119,137 +122,113 @@ export default function Header() {
           </div>
           <button
             className="tf-btn open-mb-menu mobile-menu d-lg-none d-flex"
-            data-bs-toggle="offcanvas"
-            data-bs-target="#settingColorMenu"
+            onClick={() => setMenuOpen(true)}
           >
             <i className="icon icon-grip-lines-solid"></i>
           </button>
         </div>
 
       </header>
-      <div className="offcanvas-menu">
+
+      <div className={`offcanvas-menu ${menuOpen ? "show" : ""}`}>
         <div className="offcanvas-content">
           <div className="container h-100">
             <div className="offcanvas-content_wrapin">
+
+              {/* Head */}
               <div className="canvas_head">
-                <a href="index.html" className="logo-site">
-                  <i className="icon icon-davies-logo"></i>
-                </a>
-                <div className="btn-mobile-menu close-mb-menu text-caption link">
-                  <i className="icon icon-close"></i>
-                  CLOSE
-                </div>
+                <Link href="/" className="logo-site">
+                  <img src="/assets/images/logo/webefy-logo.png" alt="Webefy Logo" />
+                </Link>
+                <button
+                  className="btn-mobile-menu close-mb-menu text-caption link"
+                  onClick={() => setMenuOpen(false)}  // ← close
+                >
+                  <i className="icon icon-close"></i> CLOSE
+                </button>
               </div>
+
+              {/* Menu Links */}
               <div className="canvas_center">
-                <ul className="nav-ul-mb" id="mobile-menu">
+                <ul className="nav-ul-mb">
                   <li>
-                    <div className="item">
-                      <div className="has-sub-menu">
-                        <a href="#dropdown-menu-index" className="mb-menu-link text-display-1 collapsed" data-bs-toggle="collapse"
-                          aria-expanded="false" aria-controls="dropdown-menu-index">
-                          <span className="text">Home</span>
-                        </a>
-                        <div id="dropdown-menu-index" className="collapse" data-bs-parent="#mobile-menu">
-                          <ul className="sub-nav-menu">
-                            <li><a href="index.html" className="sub-nav-link text-white">Home Gradient</a></li>
-                            <li><a href="index-v2.html" className="sub-nav-link text-white">Home Animated</a></li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
+                    <Link href="/about" className="mb-menu-link text-display-1" onClick={() => setMenuOpen(false)}>
+                      <span className="text">About</span>
+                    </Link>
                   </li>
                   <li>
-                    <div className="item">
-                      <a href="about.html" className="mb-menu-link text-display-1">
-                        <span className="text">About</span>
-                      </a>
-                    </div>
+                    <a
+                      className="mb-menu-link text-display-1"
+                      onClick={() => setServicesOpen(!servicesOpen)}
+                    >
+                      <span className="text">Services</span>
+                      <i className={`icon ${servicesOpen ? "icon-chevron-up" : "icon-chevron-down"}`}></i>
+                    </a>
+
+                    {servicesOpen && (
+                      <ul className="sub-nav-menu">
+                        <li>
+                          <Link href="/services" className="sub-nav-link text-white"
+                            onClick={() => { setMenuOpen(false); setServicesOpen(false); }}>
+                            All Services
+                          </Link>
+                        </li>
+                        <li>
+                          <Link href="/services/web-development" className="sub-nav-link text-white"
+                            onClick={() => { setMenuOpen(false); setServicesOpen(false); }}>
+                            Web Development
+                          </Link>
+                        </li>
+                        <li>
+                          <Link href="/services/ai-automation" className="sub-nav-link text-white"
+                            onClick={() => { setMenuOpen(false); setServicesOpen(false); }}>
+                            AI Automation
+                          </Link>
+                        </li>
+                        <li>
+                          <Link href="/services/branding" className="sub-nav-link text-white"
+                            onClick={() => { setMenuOpen(false); setServicesOpen(false); }}>
+                            Branding
+                          </Link>
+                        </li>
+                      </ul>
+                    )}
+                  </li>
+
+                  <li>
+                    <Link href="/pricing" className="mb-menu-link text-display-1" onClick={() => setMenuOpen(false)}>
+                      <span className="text">Pricing</span>
+                    </Link>
                   </li>
                   <li>
-                    <div className="item">
-                      <div className="has-sub-menu">
-                        <a href="#dropdown-menu-1" className="mb-menu-link text-display-1 collapsed" data-bs-toggle="collapse"
-                          aria-expanded="false" aria-controls="dropdown-menu-1">
-                          <span className="text">Works</span>
-                        </a>
-                        <div id="dropdown-menu-1" className="collapse" data-bs-parent="#mobile-menu">
-                          <ul className="sub-nav-menu">
-                            <li><a href="work.html" className="sub-nav-link text-white">Works</a></li>
-                            <li><a href="work-single.html" className="sub-nav-link text-white">Works Single</a></li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
+                    <Link href="/case-studies" className="mb-menu-link text-display-1" onClick={() => setMenuOpen(false)}>
+                      <span className="text">Case Studies</span>
+                    </Link>
                   </li>
                   <li>
-                    <div className="item">
-                      <div className="has-sub-menu">
-                        <a href="#dropdown-menu-2" className="mb-menu-link text-display-1 collapsed" data-bs-toggle="collapse"
-                          aria-expanded="false" aria-controls="dropdown-menu-2">
-                          <span className="text">Services</span>
-                        </a>
-                        <div id="dropdown-menu-2" className="collapse" data-bs-parent="#mobile-menu">
-                          <ul className="sub-nav-menu">
-                            <li><a href="service.html" className="sub-nav-link text-white">Services</a></li>
-                            <li><a href="service-single.html" className="sub-nav-link text-white">Services Single</a></li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </li>
-                  <li>
-                    <div className="item">
-                      <div className="has-sub-menu">
-                        <a href="#dropdown-menu-3" className="mb-menu-link text-display-1 collapsed" data-bs-toggle="collapse"
-                          aria-expanded="false" aria-controls="dropdown-menu-3">
-                          <span className="text">Blog</span>
-                        </a>
-                        <div id="dropdown-menu-3" className="collapse" data-bs-parent="#mobile-menu">
-                          <ul className="sub-nav-menu">
-                            <li><a href="blog-standard.html" className="sub-nav-link text-white">Blog Standard</a></li>
-                            <li><a href="blog-two-columns.html" className="sub-nav-link text-white">Blog Grid 2</a></li>
-                            <li><a href="blog-three-columns.html" className="sub-nav-link text-white">Blog Grid 3</a></li>
-                            <li><a href="blog-single.html" className="sub-nav-link text-white">Blog Single</a></li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </li>
-                  <li>
-                    <div className="item">
-                      <a href="contact.html" className="mb-menu-link text-display-1">
-                        <span className="text">Contact</span>
-                      </a>
-                    </div>
+                    <Link href="/start-a-project" className="mb-menu-link text-display-1" onClick={() => setMenuOpen(false)}>
+                      <span className="text">Contact</span>
+                    </Link>
                   </li>
                 </ul>
               </div>
+
+              {/* Footer */}
               <div className="canvas_foot">
                 <div className="left">
-                  <a href="mailto:aigocy@gmail.com" className="text-caption text-neutral-200">aigocy@gmail.com</a>
-                  <p className="text-caption text-neutral-200">
-                    CUP <span className="clock"></span>
-                  </p>
+                  <a href="mailto:hello@webefy.today" className="text-caption text-neutral-200">hello@webefy.today</a>
                 </div>
-                <div className="right">
-                  <a href="#" className="tf-link-icon text-caption text-neutral-200">
-                    <i className="icon icon-arrow-top-right"></i>
-                    TWITTER (X)
-                  </a>
-                  <a href="#" className="tf-link-icon text-caption text-neutral-200">
-                    <i className="icon icon-arrow-top-right"></i>
-                    DRIBBBLE
-                  </a>
-                  <a href="#" className="tf-link-icon text-caption text-neutral-200">
-                    <i className="icon icon-arrow-top-right"></i>
-                    LINKEDIN
-                  </a>
-                </div>
+                {/* <div className="right">
+                  <a href="#" className="tf-link-icon text-caption text-neutral-200"><i className="icon icon-arrow-top-right"></i> LINKEDIN</a>
+                  <a href="#" className="tf-link-icon text-caption text-neutral-200"><i className="icon icon-arrow-top-right"></i> INSTAGRAM</a>
+                </div> */}
               </div>
+
             </div>
           </div>
         </div>
       </div>
+
     </>
   );
 }

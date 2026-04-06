@@ -9,6 +9,7 @@
   height: 450px;
   object-fit: cover;
 }
+
 .back-btn {
   text-align: center;
   -o-border-radius: 7px;
@@ -23,6 +24,7 @@
   transition: all 0.3s;
   display: inline-block;
 }
+
 .blog-single-wrap .tf-btn {
   padding: 10px 15px;
 }
@@ -42,7 +44,7 @@
 }
 
 .tf-header.header-scrolled .header-inner {
-  max-width: 550px;
+  max-width: 500px;
   transition: all 0.5s ease;
 }
 
@@ -54,6 +56,7 @@
 .scrolled-nav .item-link {
   font-size: 14px;
 }
+
 .box-navigation {
   transition: all 0.35s ease;
 }
@@ -62,6 +65,7 @@
   opacity: 0;
   transform: translateY(-10px);
   pointer-events: none;
+  display: none;
 }
 
 .nav-show {

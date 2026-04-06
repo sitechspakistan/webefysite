@@ -1,0 +1,27 @@
+[
+    {
+        "id": 1,
+        "question": "Do you offer all three services together?",
+        "answer": "Yes! We offer bundled packages where web, AI automation, and branding work together for maximum impact."
+    },
+    {
+        "id": 2,
+        "question": "Which service should I start with? ",
+        "answer": "If you're just starting out, Branding is your first step. Already up and running? Web or AI Automation will grow you faster."
+    },
+    {
+        "id": 3,
+        "question": "How much do your services cost? ",
+        "answer": "Every project is unique. We offer custom quotes based on your scope, timeline, and goals."
+    },
+    {
+        "id": 4,
+        "question": "Can I upgrade or add a service later? ",
+        "answer": "Yes - many clients start with one service and expand as their business grows."
+    },
+    {
+        "id": 5,
+        "question": "What makes Webefy Today different from other agencies?",
+        "answer": "We combine tech, AI, and creativity under one roof  so you don't have to juggle multiple vendors."
+    }
+]

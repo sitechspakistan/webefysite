@@ -14,6 +14,8 @@ import Footer from "./includes/Footer";
 import "../styles/icon/icomoon/style.css";
 import "../../public/assets/fonts/fonts.css";
 import "../styles/animate.css";
+import "../styles/icon/icomoon/style.css"
+import GotoTop from "./component/GoToTop";
 <link
   rel="stylesheet"
   href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -33,24 +35,19 @@ export default function RootLayout({ children }) {
         />
       </head>
       <body className="counter-scroll">
-        <button id="goTop">
-          <span className="border-progress"></span>
-          <span className="ic-wrap">
-            <span className="icon icon-long-arrow-alt-up-solid"></span>
-          </span>
-        </button>
+        <GotoTop />
         <Header />
         <main id="wrapper">{children}</main>
         <Footer />
 
         <Script src="/assets/js/jquery.min.js" strategy="afterInteractive" />
-        <Script src="/assets/bootstrap.min.js" strategy="afterInteractive" />
+        {/* <Script src="/assets/bootstrap.min.js" strategy="afterInteractive" />
         <Script
           src="/assets/jquery.nice-select.min.js"
           strategy="afterInteractive"
-        />
+        /> */}
 
-        <Script
+        {/* <Script
           src="/assets/swiper-bundle.min.js"
           strategy="afterInteractive"
         />
@@ -71,7 +68,7 @@ export default function RootLayout({ children }) {
         />
 
         <Script src="/assets/gsapAnimation.js" strategy="afterInteractive" />
-        <Script src="/assets/main.js" strategy="afterInteractive" />
+        <Script src="/assets/main.js" strategy="afterInteractive" /> */}
       </body>
     </html>
   );

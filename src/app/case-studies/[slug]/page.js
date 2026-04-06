@@ -1,6 +1,48 @@
 import SecondHero from "@/app/component/SecondHero";
 import portfolioData from "@/data/portfoliodata"
 
+
+export async function generateMetadata({ params }) {
+    const { slug } = await params;
+
+    const project = portfolioData.find(
+        (item) => item.slug === slug
+    );
+
+    if (!project) {
+        return {
+            title: "Project Not Found",
+            description: "The requested project does not exist.",
+        };
+    }
+
+    return {
+        title: `${project.slug} | Case Studies`,
+        description: project.description?.slice(0, 150),
+
+        openGraph: {
+            title: project.title,
+            description: project.description,
+            images: [
+                {
+                    url: project.image,
+                    width: 1200,
+                    height: 630,
+                },
+            ],
+        },
+
+        alternates: {
+            canonical: `https://webefytoday.com/case-studies/${slug}`,
+        },
+        icons: {
+            icon: "/assets/images/webefy-lgo/about-shape1_2.png",
+        },
+    };
+
+}
+
+
 export default async function Page({ params }) {
     const { slug } = await params;
 

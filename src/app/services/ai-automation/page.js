@@ -3,6 +3,18 @@ import Faqs from "@/app/component/Faqs";
 import HomePortfolio from "@/app/component/HomePortfolio";
 import SecondHero from "@/app/component/SecondHero";
 import ServiceSection from "@/app/component/ServiceSection";
+import aiFaqs from "@/data/faqs/aiFaqs"
+
+export const metadata = {
+    title: "AI Automation | Webefy Today",
+    description: "Trexa – AI Agency & SaaS HTML Template",
+    alternates: {
+        canonical: "https://webefytoday.com/services/ai-automation",
+    },
+    icons: {
+        icon: "/assets/images/webefy-lgo/about-shape1_2.png",
+    }
+};
 
 export default function Automation() {
     return (
@@ -19,7 +31,7 @@ export default function Automation() {
             />
             <HomePortfolio />
             <Cta />
-            <Faqs />
+            <Faqs faqs={aiFaqs} />
 
         </>
     );

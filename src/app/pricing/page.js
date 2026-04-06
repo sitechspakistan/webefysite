@@ -4,6 +4,17 @@ import LogoPricing from "../component/LogoPricing";
 import SecondHero from "../component/SecondHero";
 import WebsitePricing from "../component/WebsitePricing";
 
+export const metadata = {
+    title: "Pricing | Webefy Today",
+    description: "Trexa – AI Agency & SaaS HTML Template",
+    alternates: {
+        canonical: "https://webefytoday.com/pricing",
+    },
+    icons: {
+        icon: "/assets/images/webefy-lgo/about-shape1_2.png",
+    }
+};
+
 export default function Pricing() {
     return (
         <>

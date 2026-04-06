@@ -1,0 +1,27 @@
+[
+    {
+        "id": 1,
+        "question": "What types of websites do you build?",
+        "answer": "We create responsive websites ranging from corporate sites and e-commerce platforms to custom web applications tailored to your business needs."
+    },
+    {
+        "id": 2,
+        "question": "Do you provide ongoing website maintenance?",
+        "answer": "Yes, we offer maintenance packages including security updates, content updates, and performance optimization to keep your website running smoothly."
+    },
+    {
+        "id": 3,
+        "question": "Can you integrate third-party tools into my website?",
+        "answer": "Absolutely. We can integrate APIs, payment gateways, CRM systems, and other third-party solutions seamlessly."
+    },
+    {
+        "id": 4,
+        "question": "How long does it take to build a website?",
+        "answer": "A simple website can take 2–4 weeks, while complex web applications may take 8–12 weeks depending on features and integrations."
+    },
+    {
+        "id": 5,
+        "question": "Will my website be SEO-friendly?",
+        "answer": "Yes, all our websites are optimized for search engines with best practices for structure, speed, and mobile responsiveness."
+    }
+]

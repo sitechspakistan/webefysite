@@ -1,6 +1,17 @@
 import PortfolioWeb from "../component/PortfolioWeb";
 import SecondHero from "../component/SecondHero";
 
+export const metadata = {
+    title: "Case Studies | Webefy Today",
+    description: "Trexa – AI Agency & SaaS HTML Template",
+    alternates: {
+        canonical: "https://webefytoday.com/case-studies",
+    },
+    icons: {
+        icon: "/assets/images/webefy-lgo/about-shape1_2.png",
+    }
+};
+
 export default function Portfolio() {
     return (
         <>

@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function ServiceDetail() {
     return (
         <div id="services" className="section-services flat-spacing container-fluid px-0">
@@ -36,10 +38,10 @@ export default function ServiceDetail() {
                                 <a href="#" className="tags-item fw-semibold">Mobile Responsive</a>
                             </div>
 
-                            <div className="text-body-1 num"><a href="#" className="tf-btn-2">
+                            <div className="text-body-1 num"><Link href="/services/web-development" className="tf-btn-2">
                                 Read more
                                 <i className="icon icon-arrow-top-right"></i>
-                            </a></div>
+                            </Link></div>
                         </div>
                     </div>
                 </div>
@@ -66,10 +68,10 @@ export default function ServiceDetail() {
                                 <a href="#" className="tags-item fw-semibold">AI Consulting</a>
                             </div>
 
-                            <div className="text-body-1 num"><a href="#" className="tf-btn-2">
+                            <div className="text-body-1 num"><Link href="/services/ai-automation" className="tf-btn-2">
                                 Read more
                                 <i className="icon icon-arrow-top-right"></i>
-                            </a></div>
+                            </Link></div>
                         </div>
 
 
@@ -109,10 +111,10 @@ export default function ServiceDetail() {
                                 <a href="#" className="tags-item fw-semibold">Brand Guidelines</a>
                             </div>
 
-                            <div className="text-body-1 num"><a href="#" className="tf-btn-2">
+                            <div className="text-body-1 num"><Link href="/services/branding" className="tf-btn-2">
                                 Read more
                                 <i className="icon icon-arrow-top-right"></i>
-                            </a>
+                            </Link>
                             </div>
                         </div>
 

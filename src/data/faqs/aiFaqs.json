@@ -1,0 +1,27 @@
+[
+    {
+        "id": 1,
+        "question": "What kind of AI solutions do you offer?",
+        "answer": "We develop AI-powered automation for email marketing, data analysis, customer support, and business workflow optimization."
+    },
+    {
+        "id": 2,
+        "question": "Can AI automation replace my team?",
+        "answer": "AI is designed to enhance productivity, reduce repetitive tasks, and support your team, not replace them."
+    },
+    {
+        "id": 3,
+        "question": "Is my data secure with AI automation?",
+        "answer": "Absolutely. We follow strict security protocols and encryption standards to protect your data and privacy."
+    },
+    {
+        "id": 4,
+        "question": "How quickly can I see results from AI automation?",
+        "answer": "Depending on the task, businesses often see efficiency improvements within weeks of deployment."
+    },
+    {
+        "id": 5,
+        "question": "Do I need technical knowledge to use your AI tools?",
+        "answer": "Not at all. We provide user-friendly interfaces and full training to ensure your team can use the tools effectively."
+    }
+]

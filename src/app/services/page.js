@@ -2,6 +2,18 @@ import Faqs from "../component/Faqs";
 import HomeProcess from "../component/HomeProcess";
 import SecondHero from "../component/SecondHero";
 import ServiceDetail from "../component/ServiceDetail";
+import servicesFaqs from "@/data/faqs/servicesFaqs"
+
+export const metadata = {
+    title: "Website Development, AI Automation & Branding Services",
+    description: "Trexa – AI Agency & SaaS HTML Template",
+    alternates: {
+        canonical: "https://webefytoday.com/services",
+    },
+    icons: {
+        icon: "/assets/images/webefy-lgo/about-shape1_2.png",
+    }
+};
 
 export default function Services() {
     return (
@@ -15,7 +27,7 @@ export default function Services() {
                 } />
             <ServiceDetail />
             <HomeProcess />
-            <Faqs />
+            <Faqs faqs={servicesFaqs} />
         </>
     );
 }

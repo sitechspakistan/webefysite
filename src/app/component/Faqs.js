@@ -1,59 +1,17 @@
 "use client";
 import { useState, useRef, useEffect } from "react";
 
-const faqs = [
-    {
-        id: 1,
-        question: "What does Webefy Today actually do?",
-        answer: "We are a full-service digital agency offering web development, AI automation, and branding helping businesses grow smarter and faster.",
-        defaultOpen: true,
-    },
-    {
-        id: 2,
-        question: "How do I know which service is right for me?",
-        answer: "Book a free consultation and we'll assess your business needs and recommend the best solution for you.",
-    },
-    {
-        id: 3,
-        question: "Do you work with startups or only established businesses?",
-        answer: "Both! We work with startups, small businesses, and growing companies at every stage.",
-    },
-    {
-        id: 4,
-        question: "How long does a typical project take?",
-        answer: "It depends on the scope. A branding project can take 2–3 weeks, while a full web app may take 6–12 weeks.",
-    },
-    {
-        id: 5,
-        question: "Do you offer packages or custom pricing?",
-        answer: "We offer both. Custom quotes are available based on your specific requirements.",
-    },
-    {
-        id: 6,
-        question: "Can I hire you for just one service?",
-        answer: "Absolutely. You can hire us for a single service or combine all three for maximum impact.",
-    },
-];
-
-// ✅ Alag component — har item ka apna ref hoga
 function FaqItem({ faq, isOpen, onToggle, index }) {
     const contentRef = useRef(null);
     const [height, setHeight] = useState(0);
 
     useEffect(() => {
-        if (isOpen) {
-            // Open hone par actual height lo
-            setHeight(contentRef.current.scrollHeight);
-        } else {
-            setHeight(0);
-        }
+        if (isOpen) setHeight(contentRef.current.scrollHeight);
+        else setHeight(0);
     }, [isOpen]);
 
     return (
-        <div
-            className="accordion-asked-item effectFade fadeRotateX"
-            data-delay={index * 0.1}
-        >
+        <div className="accordion-asked-item effectFade fadeRotateX" data-delay={index * 0.1}>
             <div className="accordion-asked-title">
                 <button
                     className={`accordion-button text-body-1 fw-semibold ${isOpen ? "" : "collapsed"}`}
@@ -65,14 +23,12 @@ function FaqItem({ faq, isOpen, onToggle, index }) {
                     <span className="right-icon"></span>
                 </button>
             </div>
-
-            {/* ✅ Height animate hogi — display:none nahi */}
             <div
                 ref={contentRef}
                 style={{
                     height: `${height}px`,
                     overflow: "hidden",
-                    transition: "height 0.4s ease",  // speed yahan badlain
+                    transition: "height 0.4s ease",
                 }}
             >
                 <div className="accordion-body">{faq.answer}</div>
@@ -81,12 +37,13 @@ function FaqItem({ faq, isOpen, onToggle, index }) {
     );
 }
 
-export default function Faqs() {
-    const [openId, setOpenId] = useState(1);
+export default function Faqs({ faqs }) {
+    // ✅ openId starts with first FAQ's ID
+    const [openId, setOpenId] = useState(faqs?.[0]?.id || null);
 
-    const toggle = (id) => {
-        setOpenId(openId === id ? null : id);
-    };
+    const toggle = (id) => setOpenId(openId === id ? null : id);
+
+    if (!faqs || !Array.isArray(faqs)) return null;
 
     return (
         <div className="section-faqs flat-spacing">
@@ -105,7 +62,7 @@ export default function Faqs() {
                                 <FaqItem
                                     key={faq.id}
                                     faq={faq}
-                                    isOpen={openId === faq.id}
+                                    isOpen={openId === faq.id} // ✅ first will be open
                                     onToggle={toggle}
                                     index={index}
                                 />

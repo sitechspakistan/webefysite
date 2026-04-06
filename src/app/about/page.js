@@ -3,6 +3,17 @@ import Cta from "../component/Cta";
 import Mission from "../component/OurMission";
 import SecondHero from "../component/SecondHero";
 
+export const metadata = {
+    title: "About Us | Webefy Today",
+    description: "Trexa – AI Agency & SaaS HTML Template",
+    alternates: {
+        canonical: "https://webefytoday.com/about",
+    },
+    icons: {
+        icon: "/assets/images/webefy-lgo/about-shape1_2.png",
+    }
+};
+
 export default function About() {
     return (
         <>
