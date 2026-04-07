@@ -618,6 +618,14 @@ footer {
     border: 3px solid var(--brand);
 }
 
+.section-work-single p {
+    padding: 10px 0;
+}
+
+.sub-menu {
+    min-width: 164px;
+}
+
 @media screen and (max-width:768px) {
     .tool-wrap .img-item {
         width: 52px;

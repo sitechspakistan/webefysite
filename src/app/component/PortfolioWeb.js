@@ -19,7 +19,7 @@ export default function PortfolioWeb() {
 
                 <div className="portfolio-filters text-center mb-4">
 
-                    {/* ✅ Desktop Buttons */}
+                    {/* Desktop Buttons */}
                     <div className="filters-desktop">
                         {categories.map((cat, index) => (
                             <span key={cat}>
@@ -39,7 +39,7 @@ export default function PortfolioWeb() {
 
 
                 </div >
-                {/* ✅ Mobile Dropdown */}
+                {/* Mobile Dropdown */}
                 < div className="filters-mobile" >
                     <select
                         value={filter}
@@ -52,7 +52,7 @@ export default function PortfolioWeb() {
                                 {cat}
                             </option>
                         ))}
-                        <i className="fa fa-carrot"></i>
+                        {/* <i className="fa fa-carrot"></i> */}
                     </select>
                 </div>
 

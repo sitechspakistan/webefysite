@@ -98,7 +98,7 @@ export default function HomeTool() {
                         </svg>
                     </div>
                 </div>
-                <a href="contact.html" className="tf-btn effectFade fadeRotateX">
+                <a href="/" className="tf-btn effectFade fadeRotateX">
                     Get Started
                 </a>
             </div>

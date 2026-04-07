@@ -35,7 +35,7 @@ export default function StartProject() {
                                         </div>
                                         <p className="text effectFade fadeUp">combining creativity, technology, and strategy to craft solutions that think, adapt, and inspire. Connect with us to turn visionary ideas into meaningful, data-driven realities.</p>
                                     </div>
-                                    <div className="row mb-lg-60 mb-4">
+                                    <div className="row mb-lg-60 mb-md-4">
                                         <div className="col-md-6 md-mb-24">
                                             <div className="box-contact-item text-center effectFade fadeUp">
                                                 <i className="icon icon-envelope-solid"></i>

@@ -112,7 +112,7 @@ export default function BrandingKit() {
                                         </ul>
 
                                     </div>
-                                    <a href="contact.html" className="tf-btn">
+                                    <a href="/start-a-project" className="tf-btn">
                                         Get Started
                                     </a>
                                 </div>
@@ -126,11 +126,8 @@ export default function BrandingKit() {
                         <div className="pricing-item h-100 effectFade fadeRotateX">
                             <div className="top d-flex justify-content-center align-items-center">
                                 <div className="d-flex gap-8 align-items-center">
-                                    {/* <i className="icon icon-user-friends-solid fs-24"></i> */}
                                     <div className="fw-semibold text">Basic</div>
                                 </div>
-                                {/* <div className="line"></div>
-                                <div className="fw-semibold text-secondary">For startups</div> */}
                             </div>
                             <div className="text-center">Branding Kit</div>
                             <div className="heading justify-content-center">
@@ -139,12 +136,6 @@ export default function BrandingKit() {
                             </div>
                             <div className="line"></div>
                             <div className="content">
-                                {/* <div>
-                                    <div className="title fw-semibold mb-4">What’s included</div>
-                                    <div className="text fw-semibold">
-                                        Prove value in two weeks with a clickable UX, tech spike, and a clear go/no-go roadmap.
-                                    </div>
-                                </div> */}
                                 <ul className="list-text type-check">
                                     <li>
                                         <i className="icon icon-check-solid"></i>
@@ -161,7 +152,7 @@ export default function BrandingKit() {
                                 </ul>
                             </div>
                             <div className="pri-btn">
-                                <a href="contact.html" className="tf-btn ">
+                                <a href="/start-a-project" className="tf-btn ">
                                     Get Started
                                 </a>
                             </div>
@@ -205,7 +196,7 @@ export default function BrandingKit() {
                                 </ul>
                             </div>
                             <div className="pri-btn">
-                                <a href="contact.html" className="tf-btn ">
+                                <a href="/start-a-project" className="tf-btn ">
                                     Get Started
                                 </a>
                             </div>
@@ -257,7 +248,7 @@ export default function BrandingKit() {
                                 </ul>
                             </div>
                             <div className="pri-btn">
-                                <a href="contact.html" className="tf-btn ">
+                                <a href="/start-a-project" className="tf-btn ">
                                     Get Started
                                 </a>
                             </div>
@@ -316,7 +307,7 @@ export default function BrandingKit() {
                                 </ul>
                             </div>
                             <div className="pri-btn">
-                                <a href="contact.html" className="tf-btn ">
+                                <a href="/start-a-project" className="tf-btn ">
                                     Get Started
                                 </a>
                             </div>

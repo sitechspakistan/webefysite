@@ -42,6 +42,24 @@ export async function generateMetadata({ params }) {
 
 }
 
+const renderContent = (content) => {
+    if (!content) return null;
+    const arr = Array.isArray(content) ? content : [content];
+
+    return arr.map((item, i) => {
+        if (typeof item === "string") {
+            return <p key={i} className="text-secondary effectFade fadeUp">{item}</p>;
+        }
+        if (item?.type === "list") {
+            return (
+                <ul key={i} className="text-secondary effectFade fadeUp">
+                    {item.items.map((li, j) => <li key={j}>{li}</li>)}
+                </ul>
+            );
+        }
+        return null;
+    });
+};
 
 export default async function Page({ params }) {
     const { slug } = await params;
@@ -78,7 +96,9 @@ export default async function Page({ params }) {
                                 DELIVERABLES
                             </div>
                             <div className="list-tags effectFade fadeUp">
-                                <a href="#" className="tags-item fw-semibold">{project.deliverables}</a>
+                                {project.deliverables?.map((item, i) => (
+                                    <a key={i} href="#" className="tags-item fw-semibold">{item}</a>
+                                ))}
                             </div>
                         </div>
 
@@ -86,16 +106,13 @@ export default async function Page({ params }) {
                     <div className="row mb-60">
                         <div className="col-12">
                             <h2 className="heading fw-semibold mb-20 effectFade fadeUp">Our Solution</h2>
-                            <p className="text-secondary effectFade fadeUp">
-                                {project.solution}
-                            </p>
+                            {renderContent(project.solution)}
                         </div>
                     </div>
                     <div className="row mb-60">
                         <div className="col-12">
                             <h2 className="heading fw-semibold mb-20 effectFade fadeUp">Results</h2>
-                            <p className="text-secondary effectFade fadeUp">
-                                {project.result}                </p>
+                            {renderContent(project.result)}
                         </div>
                     </div>
 

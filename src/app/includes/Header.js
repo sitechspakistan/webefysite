@@ -1,5 +1,6 @@
 "use client";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useState, useEffect, useRef } from "react";
 
 export default function Header() {
@@ -7,16 +8,19 @@ export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
   const lastScrollY = useRef(0);
   const [servicesOpen, setServicesOpen] = useState(false);
+  const pathname = usePathname();
 
+
+  const isActive = (href) => pathname === href || pathname.startsWith(href + "/");
 
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
 
       if (currentScrollY > lastScrollY.current) {
-        setScrolled(true); // scroll down
+        setScrolled(true);
       } else {
-        setScrolled(false); // scroll up
+        setScrolled(false);
       }
 
       lastScrollY.current = currentScrollY;
@@ -30,7 +34,6 @@ export default function Header() {
     <>
       <header className={`tf-header header2 ${scrolled && "header-scrolled"}`}>
         <div className="header-inner ">
-          {/* Header Logo */}
           <Link href="/" className="logo-site">
             {scrolled ? (
               <img src="/assets/images/logo/fav.webp" alt="Webefy Logo" />
@@ -39,24 +42,23 @@ export default function Header() {
             )}
           </Link>
 
-          {/* Navigation */}
           <div className={`box-navigation ${scrolled ? "nav-hide" : "nav-show"}`}>
             <ul className="nav-menu-main">
               <li className="menu-item">
-                <Link href="/about" className="item-link link1">
+                <Link href="/about" className={`item-link link1 ${isActive("/about") ? "active" : ""}`}>
                   About
                 </Link>
               </li>
 
               <li className="menu-item has-child">
-                <Link href="/services" className="item-link link1">
+                <Link href="/services" className={`item-link link1 ${isActive("/services") ? "active" : ""}`}>
                   Services
                 </Link>
                 <ul className="sub-menu">
                   <li className="sub-menu-item">
                     <Link
                       href="/services/web-development"
-                      className="item-link link1"
+                      className={`item-link link1 ${isActive("/services/web-development") ? "active" : ""}`}
                     >
                       Web Development
                     </Link>
@@ -64,26 +66,26 @@ export default function Header() {
                   <li className="sub-menu-item">
                     <Link
                       href="/services/ai-automation"
-                      className="item-link link1"
+                      className={`item-link link1 ${isActive("/services/ai-automation") ? "active" : ""}`}
                     >
                       AI Automation
                     </Link>
                   </li>
                   <li className="sub-menu-item">
-                    <Link href="/services/branding" className="item-link link1">
+                    <Link href="/services/branding" className={`item-link link1 ${isActive("/services/branding") ? "active" : ""}`}>
                       Branding
                     </Link>
                   </li>
                 </ul>
               </li>
               <li className="menu-item">
-                <Link href="/pricing" className="item-link link1">
+                <Link href="/pricing" className={`item-link link1 ${isActive("/pricing") ? "active" : ""}`}>
                   Pricing
                 </Link>
               </li>
 
               <li className="menu-item">
-                <Link href="/case-studies" className="item-link link1">
+                <Link href="/case-studies" className={`item-link link1 ${isActive("/case-studies") ? "active" : ""}`}>
                   Case Studies
                 </Link>
               </li>
@@ -96,7 +98,7 @@ export default function Header() {
             </ul>
           </div>
 
-          {/* Buttons */}
+
           <div className="header-actions">
             <Link
               href="/start-a-project"
@@ -130,25 +132,27 @@ export default function Header() {
 
       </header>
 
+
+      {/* offcanvas Start Here */}
       <div className={`offcanvas-menu ${menuOpen ? "show" : ""}`}>
         <div className="offcanvas-content">
           <div className="container h-100">
             <div className="offcanvas-content_wrapin">
 
-              {/* Head */}
+
               <div className="canvas_head">
                 <Link href="/" className="logo-site">
                   <img src="/assets/images/logo/webefy-logo.png" alt="Webefy Logo" />
                 </Link>
                 <button
                   className="btn-mobile-menu close-mb-menu text-caption link"
-                  onClick={() => setMenuOpen(false)}  // ← close
+                  onClick={() => setMenuOpen(false)}
                 >
                   <i className="icon icon-close"></i> CLOSE
                 </button>
               </div>
 
-              {/* Menu Links */}
+
               <div className="canvas_center">
                 <ul className="nav-ul-mb">
                   <li>
@@ -207,13 +211,11 @@ export default function Header() {
                   </li>
                   <li>
                     <Link href="/start-a-project" className="mb-menu-link text-display-1" onClick={() => setMenuOpen(false)}>
-                      <span className="text">Contact</span>
+                      <span className="text">Start A Project</span>
                     </Link>
                   </li>
                 </ul>
               </div>
-
-              {/* Footer */}
               <div className="canvas_foot">
                 <div className="left">
                   <a href="mailto:hello@webefy.today" className="text-caption text-neutral-200">hello@webefy.today</a>
@@ -228,6 +230,7 @@ export default function Header() {
           </div>
         </div>
       </div>
+      {/* offcanvas End Here */}
 
     </>
   );

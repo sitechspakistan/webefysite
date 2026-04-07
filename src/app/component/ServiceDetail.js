@@ -22,7 +22,7 @@ export default function ServiceDetail() {
                         </div>
 
                         <div className="col-md-6 d-flex flex-column justify-content-between">
-                            <h3 className="text-white"><span>(01)</span> Web Development</h3>
+                            <h3 className="text-white"><span className="fs-5">(01)</span> Web Development</h3>
 
                             <p>
                                 From sleek landing pages to powerful web applications. We design and develop digital
@@ -51,7 +51,7 @@ export default function ServiceDetail() {
                     <div className="row">
 
                         <div className="col-md-6 d-flex flex-column justify-content-between">
-                            <h3><span>(02)</span> AI Automation</h3>
+                            <h3><span className="fs-5">(02)</span> AI Automation</h3>
 
                             <p>
                                 We integrate intelligent automation
@@ -94,7 +94,7 @@ export default function ServiceDetail() {
                         </div>
 
                         <div className="col-md-6 d-flex flex-column justify-content-between">
-                            <h3 className="text-white"><span>(03)</span> Branding</h3>
+                            <h3 className="text-white"><span className="fs-5">(03)</span> Branding</h3>
 
                             <p>
                                 Your brand is the first impression

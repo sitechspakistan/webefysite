@@ -3,11 +3,8 @@ export default function WebsitePricing() {
         <div id="pricing" className="section-pricing flat-spacing pt-5 pb-0">
             <div className="container">
                 <div className="heading-section mb-40">
-                    {/* <div className="heading-sub fw-semibold effectFade fadeUp">Pricing Plans</div> */}
                     <div className="heading-title pricing-heading text-gradient-3 gap-8 effectFade fadeRotateX">
                         WEBSITE PACKAGES
-                        {/* <div className="h-8 d-none d-lg-block"></div>
-                        clear scope, transparent costs <br /> */}
                     </div>
                 </div>
                 <div className="row">
@@ -15,11 +12,8 @@ export default function WebsitePricing() {
                         <div className="pricing-item h-100 effectFade fadeRotateX">
                             <div className="top d-flex justify-content-center align-items-center">
                                 <div className="d-flex gap-8 align-items-center">
-                                    {/* <i className="icon icon-user-friends-solid fs-24"></i> */}
                                     <div className="fw-semibold text">Static</div>
                                 </div>
-                                {/* <div className="line"></div>
-                                <div className="fw-semibold text-secondary">For startups</div> */}
                             </div>
                             <div className="text-center">Website</div>
                             <div className="heading justify-content-center">
@@ -28,12 +22,6 @@ export default function WebsitePricing() {
                             </div>
                             <div className="line"></div>
                             <div className="content">
-                                {/* <div>
-                                    <div className="title fw-semibold mb-4">What’s included</div>
-                                    <div className="text fw-semibold">
-                                        Prove value in two weeks with a clickable UX, tech spike, and a clear go/no-go roadmap.
-                                    </div>
-                                </div> */}
                                 <ul className="list-text type-check">
                                     <li>
                                         <i className="icon icon-check-solid"></i>
@@ -65,7 +53,7 @@ export default function WebsitePricing() {
                                 </ul>
                             </div>
                             <div className="pri-btn">
-                                <a href="contact.html" className="tf-btn ">
+                                <a href="/start-a-project" className="tf-btn ">
                                     Get Started
                                 </a>
                             </div>
@@ -132,7 +120,7 @@ export default function WebsitePricing() {
                                 </ul>
                             </div>
                             <div className="pri-btn">
-                                <a href="contact.html" className="tf-btn ">
+                                <a href="/start-a-project" className="tf-btn ">
                                     Get Started
                                 </a>
                             </div>
@@ -233,7 +221,7 @@ export default function WebsitePricing() {
                                 </ul>
                             </div>
                             <div className="pri-btn">
-                                <a href="contact.html" className="tf-btn ">
+                                <a href="/start-a-project" className="tf-btn ">
                                     Get Started
                                 </a>
                             </div>
@@ -313,7 +301,7 @@ export default function WebsitePricing() {
                                 </ul>
                             </div>
                             <div className="pri-btn">
-                                <a href="contact.html" className="tf-btn ">
+                                <a href="/start-a-project" className="tf-btn ">
                                     Get Started
                                 </a>
                             </div>
