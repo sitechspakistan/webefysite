@@ -1,11 +1,11 @@
 export default function WebsitePricing() {
     return (
-        <div id="pricing" className="section-pricing flat-spacing pt-5 pb-0">
+        <div id="pricing" className="section-pricing flat-spacing pt-4 pb-0">
             <div className="container">
-                <div className="heading-section mb-40">
-                    <div className="heading-title pricing-heading text-gradient-3 gap-8 effectFade fadeRotateX">
+                <div className="heading-section pb-4">
+                    <h2 className="heading-title pricing-heading text-gradient-3 gap-8 effectFade fadeRotateX">
                         WEBSITE PACKAGES
-                    </div>
+                    </h2>
                 </div>
                 <div className="row">
                     <div className="col-lg-3 lg-mb-24">

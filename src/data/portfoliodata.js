@@ -80,7 +80,30 @@ const portfolioData = [
         solution: ["We built Upfeeds, a custom web portal designed to monitor Upwork job listings in real time. Using intelligent filters and user preferences, it automatically detects relevant job posts and sends instant desktop alerts. This allows freelancers and agencies to stay on top of new leads without manually refreshing Upwork all day."],
         result: "A productivity-boosting platform that helped Creative Triplet save time, increase their Upwork response rate, and secure more projects through instant job alerts."
     },
-    { slug: "css-patch-hats-store", image: "/assets/images/portfolio/csspatch.webp", category: ["Website Development"], title: "CSS Patch Hats Store", deliverables: ["UI Design"] },
+    {
+        slug: "custom-patch-hats-store",
+        image: "/assets/images/portfolio/csspatch.webp",
+        description: ["Custom Patch Hats needed a fully functional online store to sell their custom patch hats and embroidery products. They wanted a clean, professional eCommerce experience that made it easy for customers to browse categories and place orders."],
+        category: ["Website Development"],
+        title: "Custom Patch Hats Store",
+        deliverables: ["UI Design", "eCommerce", "Responsive"],
+        solution: [
+            "We designed and developed a full eCommerce store that:",
+            {
+                type: "list",
+                items: [
+                    "Features product categories like Charleston & South Carolina Designs and Hunting & Fishing Designs",
+                    "Includes a powerful search bar for browsing pre-patched hats",
+                    "Displays latest products with pricing and add-to-cart functionality",
+                    "Highlights free shipping on domestic orders over $250",
+                    "Fully responsive across desktop, tablet, and mobile devices"
+                ]
+            }
+        ],
+        result: [
+            "The result? A polished, conversion-focused hat store that makes it effortless for customers to find, customize, and order their perfect patch hat Your Logo, Your Way."
+        ]
+    },
     {
         slug: "creative-triplet",
         image: "/assets/images/portfolio/ct.webp",
@@ -121,7 +144,29 @@ const portfolioData = [
             }
         ]
     },
-    { slug: "eventshub-dubai", image: "/assets/images/portfolio/eh.webp", category: ["Branding"], title: "EventsHub Dubai", deliverables: ["Logo Design", "Branding"] },
+    {
+        slug: "eventshub-dubai",
+        image: "/assets/images/portfolio/eh.webp",
+        description: ["EventsHub Dubai needed a brand identity that captures the energy and grandeur of Dubai's events scene. The logo had to feel bold, modern, and deeply rooted in Dubai's iconic culture."],
+        category: ["Branding"],
+        title: "EventsHub Dubai Logo",
+        deliverables: ["Logo Design", "Branding"],
+        solution: [
+            "We designed a distinctive brand identity that:",
+            {
+                type: "list",
+                items: [
+                    "Integrates Dubai's iconic skyline Burj Khalifa and Ain Dubai as a backdrop",
+                    "Blends English and Arabic typography for a bilingual, culturally rooted feel",
+                    "Uses vibrant blue and purple tones to convey energy, trust, and creativity",
+                    "Creates a bold wordmark that stands out across digital and print media"
+                ]
+            }
+        ],
+        result: [
+            "The result? A powerful brand identity that instantly communicates Dubai's world-class events culture bold, iconic, and unmistakably local."
+        ]
+    },
     {
         slug: "inizio-solutions",
         image: "/assets/images/portfolio/inizio-website.webp",
@@ -151,8 +196,52 @@ const portfolioData = [
             "A fast, fully responsive, and SEO-optimized website that gave Inizio Solutions a strong digital presence in their niche. The advanced SEO setup helped them rank for targeted keywords, bringing in consistent organic traffic and new business inquiries."
         ]
     },
-    { slug: "yfi-brand-logo", image: "/assets/images/portfolio/yfi-logo.webp", category: ["Branding"], title: "Your Friend Infertility Brand Logo", deliverables: ["Logo Design", "Branding"] },
-    { slug: "yfi-website", image: "/assets/images/portfolio/yfi-website.webp", category: ["Website Development"], title: "Your Friend Infertility Website", deliverables: ["Web Design", "Next.js", "Responsive"] }
-];
+    {
+        slug: "yfi-brand-logo",
+        image: "/assets/images/portfolio/yfi-logo.webp",
+        description: ["Your Friend Infertility needed a brand identity that felt warm, trustworthy, and deeply human. The logo had to reflect compassion and hope for women navigating one of life's most emotional journeys."],
+        category: ["Branding"],
+        title: "Your Friend Infertility Logo",
+        deliverables: ["Logo Design", "Branding"],
+        solution: [
+            "We crafted a brand identity that:",
+            {
+                type: "list",
+                items: [
+                    "Communicates warmth, empathy, and feminine strength",
+                    "Uses soft, faith-inspired tones to reflect the community's values",
+                    "Balances professionalism with emotional approachability",
+                    "Works seamlessly across web, print, and social media"
+                ]
+            }
+        ],
+        result: [
+            "The result? A cohesive brand identity that instantly communicates trust and compassion giving women a visual home they feel safe stepping into."
+        ]
+    },
+    {
+        slug: "yfi-website",
+        image: "/assets/images/portfolio/yfi-website.webp",
+        description: ["Your Friend Infertility came to us needing a warm, faith-filled online presence for their growing support community. They had a clear mission ensuring no woman walks through infertility alone but no website to bring that vision to life."],
+        category: ["Website Development"],
+        title: "Your Friend Infertility",
+        deliverables: ["Web Design", "WordPress", "Responsive"],
+        solution: [
+            "We designed and developed a compassionate, community-driven WordPress website that:",
+            {
+                type: "list",
+                items: [
+                    "Showcases stories of hope and real women's journeys",
+                    "Provides a resource hub with guides, webinars, and practical tools",
+                    "Includes a faith & encouragement section with devotionals and prayer support",
+                    "Features a community space for safe, judgment-free discussions",
+                    "Integrates volunteer sign-up and get involved functionality"
+                ]
+            }
+        ],
+        result: [
+            "The result? A beautiful, responsive platform that gives thousands of women a safe space to find support, share their stories, and navigate their fertility journey with hope and faith."
+        ]
+    },];
 
 export default portfolioData;

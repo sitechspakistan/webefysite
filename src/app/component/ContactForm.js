@@ -34,23 +34,23 @@ export default function ContactForm() {
                         </div>
                         <div className="col-lg-6">
                             <form className="form-contact effectFade fadeUp">
-                                <h4 className="heading fw-semibold">Fill this form below</h4>
+                                <h4 className="heading fw-semibold">We'd Love to Hear From You</h4>
                                 <fieldset className="mb-21">
                                     <label className="fw-semibold text-body-3 mb-20">Your Name</label>
                                     <input className="" type="text" placeholder="Enter your full name" required />
                                 </fieldset>
                                 <fieldset className="mb-21">
-                                    <label className="fw-semibold text-body-3 mb-20">Your Phone</label>
-                                    <input className="" type="text" placeholder="Enter the e-mail" required />
+                                    <label className="fw-semibold text-body-3 mb-20">Your E-mail</label>
+                                    <input className="" type="email" placeholder="Enter the e-mail" required />
                                 </fieldset>
                                 <fieldset className="mb-18">
-                                    <label className="fw-semibold text-body-3 mb-0">More About The Project</label>
+                                    <label className="fw-semibold text-body-3 mb-0">Message</label>
                                     <textarea name="text" className=""></textarea>
                                 </fieldset>
-                                <div className="attachment d-flex gap-8 align-items-center">
+                                {/* <div className="attachment d-flex gap-8 align-items-center">
                                     <i className="icon icon-paperclip-solid fs-24"></i>
                                     <div className="fw-semibold text-body-3">Add an Attachment</div>
-                                </div>
+                                </div> */}
                                 <button type="submit" className="tf-btn w-100">Submit Message</button>
                             </form>
                         </div>

@@ -2,10 +2,10 @@ export default function LogoPricing() {
     return (
         <div id="pricing" className="section-pricing flat-spacing pt-4 pb-0">
             <div className="container">
-                <div className="heading-section mb-40">
-                    <div className="heading-title pricing-heading text-gradient-3 gap-8 effectFade fadeRotateX">
+                <div className="heading-section pb-4">
+                    <h2 className="heading-title pricing-heading text-gradient-3 gap-8 effectFade fadeRotateX">
                         LOGO PACKAGES
-                    </div>
+                    </h2>
                 </div>
                 <div className="row">
                     <div className="col-lg-3 lg-mb-24">

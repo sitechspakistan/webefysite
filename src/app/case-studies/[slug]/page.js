@@ -90,7 +90,7 @@ export default async function Page({ params }) {
                             </p>
                         </div>
                     </div>
-                    <div className="row mb-60 " >
+                    <div className="row mb-30 " >
                         <div className="col-md-8 md-mb-24">
                             <div className="text-body-1 fw-semibold text-secondary mb-15 effectFade fadeUp">
                                 DELIVERABLES

@@ -1,11 +1,11 @@
 export default function BrandingKit() {
     return (
-        <div id="pricing" className="section-pricing flat-spacing pt-5 pb-0">
+        <div id="pricing" className="section-pricing flat-spacing pt-4 pb-0">
             <div className="container">
-                <div className="heading-section  mb-40">
-                    <div className="heading-title pricing-heading text-gradient-3 gap-8 effectFade fadeRotateX">
+                <div className="heading-section pb-4">
+                    <h2 className="heading-title pricing-heading text-gradient-3 gap-8 effectFade fadeRotateX">
                         BRANDING KITS
-                    </div>
+                    </h2>
                 </div>
                 <div className="row">
                     <div className="col-lg-12 lg-mb-24">
@@ -129,7 +129,7 @@ export default function BrandingKit() {
                                     <div className="fw-semibold text">Basic</div>
                                 </div>
                             </div>
-                            <div className="text-center">Branding Kit</div>
+                            <div className="text-center pb-2">Branding Kit</div>
                             <div className="heading justify-content-center">
                                 <div className="price-number fw-bold" data-month="1000" data-year="59">$59</div>
 
@@ -165,7 +165,7 @@ export default function BrandingKit() {
                                     <div className="fw-semibold text">Startup</div>
                                 </div>
                             </div>
-                            <div className="text-white text-center">Branding Kit</div>
+                            <div className="text-white text-center pt-2 pb-2">Branding Kit</div>
                             <div className="heading justify-content-center">
                                 <div className="price-number fw-bold" data-month="1700" data-year="99">$99</div>
 
@@ -209,7 +209,7 @@ export default function BrandingKit() {
                                     <div className="fw-semibold text">Pro</div>
                                 </div>
                             </div>
-                            <div className="text-center">Branding Kit</div>
+                            <div className="text-center pb-2">Branding Kit</div>
                             <div className="heading justify-content-center">
                                 <div className="price-number fw-bold" data-month="1000" data-year="139">$139</div>
 
@@ -261,7 +261,7 @@ export default function BrandingKit() {
                                     <div className="fw-semibold text">Corporate</div>
                                 </div>
                             </div>
-                            <div className="text-white text-center">Branding Kit</div>
+                            <div className="text-white text-center pb-2">Branding Kit</div>
                             <div className="heading justify-content-center">
                                 <div className="price-number fw-bold" data-month="1700" data-year="189">$189</div>
 

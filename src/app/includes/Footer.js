@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Footer() {
     return (
         <footer>
@@ -7,16 +9,16 @@ export default function Footer() {
                 <div className="footer-bottom">
                     <ul className="footer-links d-flex gap-24 align-items-center">
                         <li>
-                            <a href="/about" className="fw-semibold link-underline link1">About</a>
+                            <Link href="/about" className="fw-semibold link-underline link1">About</Link>
                         </li>
                         <li>
-                            <a href="/services" className="fw-semibold link-underline link1">Services</a>
+                            <Link href="/services" className="fw-semibold link-underline link1">Services</Link>
                         </li>
                         <li>
-                            <a href="/case-stuidies" className="fw-semibold link-underline link1">Case Studies</a>
+                            <Link href="/case-stuidies" className="fw-semibold link-underline link1">Case Studies</Link>
                         </li>
                         <li>
-                            <a href="/start-a-project" className="fw-semibold link-underline link1">Start a Project</a>
+                            <Link href="/start-a-project" className="fw-semibold link-underline link1">Start a Project</Link>
                         </li>
                     </ul>
                     <p className="text-secondary coppy-rights text-center">Copyright &copy; Webefy Today 2026, All rights

@@ -1,24 +1,26 @@
 "use client";
+import Script from "next/script";
 import { useEffect } from "react";
+import { usePathname } from "next/navigation";
 
 export default function ClutchWidget() {
+    const pathname = usePathname();
+
     useEffect(() => {
-        if (document.querySelector('script[src="https://widget.clutch.co/static/js/widget.js"]')) {
-            if (window.CLUTCH) window.CLUTCH.init();
-            return;
-        }
+        const timer = setTimeout(() => {
+            if (window.CLUTCHCO && typeof window.CLUTCHCO.Init === "function") {
+                window.CLUTCHCO.Init();
+            }
+        }, 600);
 
-        const script = document.createElement("script");
-        script.src = "https://widget.clutch.co/static/js/widget.js";
-        script.async = true;
-        document.body.appendChild(script);
-
-    }, []);
+        return () => clearTimeout(timer);
+    }, [pathname]);
 
     return (
-        <section className="flat-spacing pt-0">
+        <section className="flat-spacing pt-0 pb-4">
             <div className="container">
                 <div
+                    key={pathname}
                     className="clutch-widget px-0"
                     data-url="https://widget.clutch.co"
                     data-widget-type="12"
@@ -29,6 +31,14 @@ export default function ClutchWidget() {
                     data-reviews="167465,340300,336045,330708,169289,153525,150494"
                     data-clutchcompany-id="1810871"
                 ></div>
+                <Script
+                    id="clutch-script-webefy"
+                    src="https://widget.clutch.co/static/js/widget.js"
+                    strategy="afterInteractive"
+                    onLoad={() => {
+                        if (window.CLUTCHCO) window.CLUTCHCO.Init();
+                    }}
+                />
             </div>
         </section>
     );

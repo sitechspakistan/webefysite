@@ -28,12 +28,13 @@ export default function StartProject() {
                                 <div className="col-left p-0">
                                     <div className="mb-24">
                                         <div className="heading-section mb-48">
-                                            <div className="heading-sub fw-semibold effectFade fadeUp">Contact</div>
+                                            {/* <div className="heading-sub fw-semibold effectFade fadeUp">Contact</div> */}
                                             <div className="heading-title text-gradient-3 effectFade fadeRotateX">
-                                                Let’s Build <br /> Intelligent Things
+                                                Let's Turn Your <br /> Idea Into Reality
                                             </div>
                                         </div>
-                                        <p className="text effectFade fadeUp">combining creativity, technology, and strategy to craft solutions that think, adapt, and inspire. Connect with us to turn visionary ideas into meaningful, data-driven realities.</p>
+                                        <p className="text effectFade fadeUp">Your Next Big Project Starts Here.
+                                            Tell us about your goals, and we'll craft a strategy tailored to your business. From design to development to automation we build it all.</p>
                                     </div>
                                     <div className="row mb-lg-60 mb-md-4">
                                         <div className="col-md-6 md-mb-24">
@@ -88,14 +89,24 @@ export default function StartProject() {
                             </div>
                             <div className="col-lg-6 pt-lg-0 pt-3">
                                 <form className="form-contact m-0 effectFade fadeUp">
-                                    <h4 className="heading fw-semibold">Fill this form below</h4>
+                                    <h4 className="heading fw-semibold">Tell Us About Your Project</h4>
+                                    <div className="row">
+                                        <div className="col-lg-6">
+                                            <fieldset className="mb-21">
+                                                <label className="fw-semibold text-body-3 mb-20">Your Name</label>
+                                                <input className="" type="text" placeholder="Enter your full name" required />
+                                            </fieldset>
+                                        </div>
+                                        <div className="col-lg-6">
+                                            <fieldset className="mb-21">
+                                                <label className="fw-semibold text-body-3 mb-20">Your E-mail</label>
+                                                <input className="" type="email" placeholder="Enter the e-mail" required />
+                                            </fieldset>
+                                        </div>
+                                    </div>
                                     <fieldset className="mb-21">
-                                        <label className="fw-semibold text-body-3 mb-20">Your Name</label>
-                                        <input className="" type="text" placeholder="Enter your full name" required />
-                                    </fieldset>
-                                    <fieldset className="mb-21">
-                                        <label className="fw-semibold text-body-3 mb-20">Your Phone</label>
-                                        <input className="" type="text" placeholder="Enter the e-mail" required />
+                                        <label className="fw-semibold text-body-3 mb-20">Your Phone Number</label>
+                                        <input className="" type="tel" placeholder="Enter the Phone Number" required />
                                     </fieldset>
                                     <fieldset className="mb-18">
                                         <label className="fw-semibold text-body-3 mb-0">More About The Project</label>

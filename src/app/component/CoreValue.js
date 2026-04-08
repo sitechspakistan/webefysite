@@ -4,7 +4,7 @@ export default function CoreValue() {
             <div className="container">
                 <div className="heading-section center mb-64">
                     <div className="heading-sub fw-semibold effectFade fadeUp">Core Values</div>
-                    <div className="heading-title text-gradient-3 effectFade fadeRotateX">Guided by Principles</div>
+                    <h2 className="heading-title text-gradient-3 effectFade fadeRotateX">Guided by Principles</h2>
                 </div>
                 <div className="row">
                     <div className="col-md-6 mb-24">

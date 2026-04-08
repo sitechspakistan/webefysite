@@ -10,7 +10,7 @@ export default function ServiceSection({ Subtitle, Heading1, Heading2, Para, Ima
                             <div className="col-left">
                                 <div className="heading-section mb-48">
                                     <div className="heading-sub fw-semibold effectFade fadeUp">{Subtitle}</div>
-                                    <div className="heading-title text-gradient-3 effectFade fadeRotateX">{Heading1} <br /> {Heading2}</div>
+                                    <h2 className="heading-title text-gradient-3 effectFade fadeRotateX">{Heading1} <br /> {Heading2}</h2>
                                 </div>
                                 <p className="effectFade fadeUp">{Para}</p>
                             </div>

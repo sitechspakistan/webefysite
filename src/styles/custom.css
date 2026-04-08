@@ -626,6 +626,11 @@ footer {
     min-width: 164px;
 }
 
+.tf-social-1 {
+    justify-content: center;
+}
+
+
 @media screen and (max-width:768px) {
     .tool-wrap .img-item {
         width: 52px;
