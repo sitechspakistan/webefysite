@@ -108,7 +108,8 @@ export default function Header() {
             </Link>
 
             <Link
-              href="/contact"
+              href="https://calendly.com/webefytoday/meeting"
+              target="blank"
               className={`tf-btn me-2 ${scrolled ? "btn-show" : "btn-hide"}`}
             >
               Book a Call

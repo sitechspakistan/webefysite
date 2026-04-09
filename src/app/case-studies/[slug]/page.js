@@ -17,12 +17,12 @@ export async function generateMetadata({ params }) {
     }
 
     return {
-        title: `${project.slug} | Case Studies`,
-        description: project.description?.slice(0, 150),
+        title: project.seo?.metaTitle || `${project.title} | Case Studies`,
+        description: project.seo?.metaDescription || project.description?.slice(0, 150),
 
         openGraph: {
-            title: project.title,
-            description: project.description,
+            title: project.seo?.metaTitle || project.title,
+            description: project.seo?.metaDescription || project.description,
             images: [
                 {
                     url: project.image,
@@ -39,7 +39,6 @@ export async function generateMetadata({ params }) {
             icon: "/assets/images/webefy-lgo/about-shape1_2.png",
         },
     };
-
 }
 
 const renderContent = (content) => {

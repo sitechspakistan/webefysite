@@ -15,7 +15,7 @@ export default function Footer() {
                             <Link href="/services" className="fw-semibold link-underline link1">Services</Link>
                         </li>
                         <li>
-                            <Link href="/case-stuidies" className="fw-semibold link-underline link1">Case Studies</Link>
+                            <Link href="/case-studies" className="fw-semibold link-underline link1">Case Studies</Link>
                         </li>
                         <li>
                             <Link href="/start-a-project" className="fw-semibold link-underline link1">Start a Project</Link>

@@ -2,6 +2,10 @@ const portfolioData = [
     {
         slug: "ai-email-automation",
         image: "/assets/images/portfolio/1.jpg",
+        seo: {
+            metaTitle: "AI Email Automation for Follow-Ups | Webefy Today",
+            metaDescription: "Webefy Today built an AI-powered Follow-Up Agent that automates customer reminders from Google Sheets — saving hours of manual work and improving customer satisfaction.",
+        },
         description: ["A client came to Webefy Today with a common challenge, missed follow-ups. They had a Google Sheet to track customers and an email inbox, but manually sending reminders was eating up valuable time."],
         category: ["AI Automation"],
         title: "AI Email Automation",
@@ -24,6 +28,10 @@ const portfolioData = [
     {
         slug: "hiller-media-group",
         image: "/assets/images/portfolio/2.jpg",
+        seo: {
+            metaTitle: "Hiller Media Group Website Redesign | Webefy Today",
+            metaDescription: "Webefy Today redesigned Hiller Media Group's website with a modern WordPress build — improving load speed, SEO structure, and user engagement for their media brand.",
+        },
         description: ["Hiller Media Group approached Webefy Today to revamp their outdated website and improve their digital presence. They needed a modern, fast, and easy-to-manage platform that aligned with their brand and showcased their services effectively."],
         category: ["Website Development"],
         title: "Hiller Media Group",
@@ -34,6 +42,10 @@ const portfolioData = [
     {
         slug: "whatsapp-crm-bot",
         image: "/assets/images/portfolio/5.jpg ",
+        seo: {
+            metaTitle: "WhatsApp CRM Bot – Zoop AI Agent | Webefy Today",
+            metaDescription: "Webefy Today built Zoop — a WhatsApp AI agent that connects directly to your CRM, letting customers create invoices, check payments, and manage tickets via simple chat messages.",
+        },
         description: "A client approached Webefy Today with a unique idea Can my CRM talk on WhatsApp? They wanted their customers to perform tasks directly from WhatsApp instead of logging into the CRM every time.",
         category: ["Website Development"],
         title: "WhatsApp CRM Bot",
@@ -63,6 +75,10 @@ const portfolioData = [
     {
         slug: "vezyon-dashboard",
         image: "/assets/images/portfolio/3.jpg",
+        seo: {
+            metaTitle: "Vezyon HR & Attendance Dashboard | Webefy Today",
+            metaDescription: "Webefy Today developed a Laravel-based office management portal for Vezyon — integrating biometric attendance, shift scheduling, and HR operations into one powerful dashboard.",
+        },
         description: "Vezyon needed a centralized platform to manage employee attendance, shifts, and HR operations. Their existing manual process created inefficiencies in tracking biometric data, managing leaves, and maintaining employee records.",
         category: ["Website Development"],
         title: "Vezyon Dashboard",
@@ -73,6 +89,10 @@ const portfolioData = [
     {
         slug: "upfeeds",
         image: "/assets/images/portfolio/4.jpg",
+        seo: {
+            metaTitle: "Upfeeds – Real-Time Upwork Job Alert Portal | Webefy Today",
+            metaDescription: "Webefy Today built Upfeeds for Creative Triplet — a custom portal that monitors Upwork in real time and sends instant desktop alerts for relevant job postings, boosting response rates.",
+        },
         description: "Creative Triplet approached Webefy Today to develop a custom tool that could simplify Upwork job monitoring. They needed a system that delivers real-time, personalized job alerts directly to their desktop — helping them respond faster and never miss new opportunities.",
         category: ["AI Automation"],
         title: "Upfeeds",
@@ -83,6 +103,10 @@ const portfolioData = [
     {
         slug: "custom-patch-hats-store",
         image: "/assets/images/portfolio/csspatch.webp",
+        seo: {
+            metaTitle: "Custom Patch Hats eCommerce Store | Webefy Today",
+            metaDescription: "Webefy Today designed and developed a fully responsive eCommerce store for Custom Patch Hats — featuring product categories, search, add-to-cart, and free shipping on orders over $250.",
+        },
         description: ["Custom Patch Hats needed a fully functional online store to sell their custom patch hats and embroidery products. They wanted a clean, professional eCommerce experience that made it easy for customers to browse categories and place orders."],
         category: ["Website Development"],
         title: "Custom Patch Hats Store",
@@ -107,6 +131,10 @@ const portfolioData = [
     {
         slug: "creative-triplet",
         image: "/assets/images/portfolio/ct.webp",
+        seo: {
+            metaTitle: "Creative Triplet – Next.js Website Rebuild | Webefy Today",
+            metaDescription: "Webefy Today migrated Creative Triplet from Elementor to a custom Next.js website — drastically improving load speed, Core Web Vitals, and video performance for their explainer video agency.",
+        },
         category: ["Website Development"],
         title: "Creative Triplet",
         deliverables: ["Next.js"],
@@ -139,7 +167,7 @@ const portfolioData = [
                     "Improved engagement due to faster interactions and smoother navigation",
                     "Stronger brand credibility with a premium, high-performance website",
                     "Scalable infrastructure capable of handling future media expansion",
-                    "Supported by 16+ verified 5-star reviews on Clutch, reinforcing the brand’s credibility and consistent delivery of high-quality animation projects"
+                    "Supported by 16+ verified 5-star reviews on Clutch, reinforcing the brand's credibility and consistent delivery of high-quality animation projects"
                 ]
             }
         ]
@@ -147,6 +175,10 @@ const portfolioData = [
     {
         slug: "eventshub-dubai",
         image: "/assets/images/portfolio/eh.webp",
+        seo: {
+            metaTitle: "EventsHub Dubai Brand Identity & Logo Design | Webefy Today",
+            metaDescription: "Webefy Today created a bold bilingual brand identity for EventsHub Dubai — blending iconic Dubai landmarks, Arabic typography, and vibrant colors to capture the city's world-class events culture.",
+        },
         description: ["EventsHub Dubai needed a brand identity that captures the energy and grandeur of Dubai's events scene. The logo had to feel bold, modern, and deeply rooted in Dubai's iconic culture."],
         category: ["Branding"],
         title: "EventsHub Dubai Logo",
@@ -170,6 +202,10 @@ const portfolioData = [
     {
         slug: "inizio-solutions",
         image: "/assets/images/portfolio/inizio-website.webp",
+        seo: {
+            metaTitle: "Inizio Solutions – SEO-Optimized Next.js Website | Webefy Today",
+            metaDescription: "Webefy Today built a high-performance Next.js website for Inizio Solutions, ranking them in 50+ cities across USA, UK, Australia & New Zealand for embroidery and custom patch keywords.",
+        },
         category: ["Website Development"],
         title: "Inizio Solutions",
         deliverables: [["Next.js"], ["SEO"]],
@@ -199,6 +235,10 @@ const portfolioData = [
     {
         slug: "yfi-brand-logo",
         image: "/assets/images/portfolio/yfi-logo.webp",
+        seo: {
+            metaTitle: "Your Friend Infertility – Compassionate Brand Logo | Webefy Today",
+            metaDescription: "Webefy Today crafted a warm, faith-inspired brand identity for Your Friend Infertility — a logo that communicates empathy, hope, and feminine strength for women navigating infertility.",
+        },
         description: ["Your Friend Infertility needed a brand identity that felt warm, trustworthy, and deeply human. The logo had to reflect compassion and hope for women navigating one of life's most emotional journeys."],
         category: ["Branding"],
         title: "Your Friend Infertility Logo",
@@ -222,6 +262,10 @@ const portfolioData = [
     {
         slug: "yfi-website",
         image: "/assets/images/portfolio/yfi-website.webp",
+        seo: {
+            metaTitle: "Your Friend Infertility – WordPress Community Website | Webefy Today",
+            metaDescription: "Webefy Today built a compassionate WordPress website for Your Friend Infertility — featuring stories of hope, a resource hub, devotionals, and a safe community space for women facing infertility.",
+        },
         description: ["Your Friend Infertility came to us needing a warm, faith-filled online presence for their growing support community. They had a clear mission ensuring no woman walks through infertility alone but no website to bring that vision to life."],
         category: ["Website Development"],
         title: "Your Friend Infertility",
@@ -242,6 +286,7 @@ const portfolioData = [
         result: [
             "The result? A beautiful, responsive platform that gives thousands of women a safe space to find support, share their stories, and navigate their fertility journey with hope and faith."
         ]
-    },];
+    },
+];
 
 export default portfolioData;
