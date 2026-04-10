@@ -116,7 +116,7 @@ export default function StartProject() {
                                         <i className="icon icon-paperclip-solid fs-24"></i>
                                         <div className="fw-semibold text-body-3">Add an Attachment</div>
                                     </div>
-                                    <button type="submit" className="tf-btn w-100">Submit Message</button>
+                                    <button type="submit" className="tf-btn w-100">Submit</button>
                                 </form>
                             </div>
                         </div>
