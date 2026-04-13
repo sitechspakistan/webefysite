@@ -6,8 +6,6 @@ import portfolioData from "@/data/portfoliodata";
 export default function PortfolioWeb() {
     const [filter, setFilter] = useState("All");
     const categories = ["All", "Website Development", "Branding", "AI Automation"];
-
-
     const filteredItems =
         filter === "All"
             ? portfolioData
@@ -35,9 +33,6 @@ export default function PortfolioWeb() {
                             </span>
                         ))}
                     </div>
-
-
-
                 </div >
                 {/* Mobile Dropdown */}
                 < div className="filters-mobile" >
@@ -55,10 +50,9 @@ export default function PortfolioWeb() {
                         {/* <i className="fa fa-carrot"></i> */}
                     </select>
                 </div>
-
                 <div className="portfolio-grid mt-5">
                     {filteredItems.map((item) => (
-                        <div key={item.slug} className="portfolio-card position-relative">
+                        <div key={item.slug} className="portfolio-card position-relative d-flex">
 
                             <img src={item.image} alt={item.title} />
 
@@ -84,7 +78,6 @@ export default function PortfolioWeb() {
                         </div>
                     ))}
                 </div>
-
             </div>
         </section>
     );
