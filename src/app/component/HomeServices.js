@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 import { useState, useRef, useEffect } from "react";
 
 const services = [
@@ -81,7 +82,7 @@ function ServiceItem({ service, isOpen, onToggle }) {
     );
 }
 
-export default function HomeService() {
+export default function HomeService({ classname }) {
     const [openIndex, setOpenIndex] = useState(1);
 
     const toggle = (id) => {
@@ -106,10 +107,10 @@ export default function HomeService() {
                                         and powerful branding to position your business at the pinnacle
                                         of its industry.
                                     </p>
-                                    <a href="/services" className="tf-btn-2 mt-4">
+                                    <Link href="/services" className={`tf-btn mt-4`}>
                                         Our Services
                                         <i className="icon icon-arrow-top-right"></i>
-                                    </a>
+                                    </Link>
                                 </div>
                             </div>
                         </div>

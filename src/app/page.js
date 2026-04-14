@@ -26,7 +26,7 @@ export default function Home() {
     <>
       <Hero />
       <HomeSlider />
-      <HomeService />
+      <HomeService classname={"btn-white"} />
       <HomePortfolio />
       <HomeTool />
       <HomeProcess />

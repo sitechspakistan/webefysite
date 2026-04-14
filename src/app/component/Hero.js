@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Hero() {
     return (
         <div className="section-hero">
@@ -21,12 +23,13 @@ export default function Hero() {
                         precision and purpose to help your business grow with confidence.
                     </p>
                     <div className="bot-btns effectFade fadeRotateX">
-                        <a href="/services" className="tf-btn">
-                            Explore Our Work
-                        </a>
-                        <a href="/pricing" className="tf-btn-2">
+                        <Link
+                            href="/services" className="tf-btn">
+                            Explore Our Services
+                        </Link>
+                        <Link href="/pricing" className="tf-btn-2">
                             View Pricing Plans
-                        </a>
+                        </Link>
                     </div>
                 </div>
             </div>

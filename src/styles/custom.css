@@ -30,6 +30,7 @@
 .featured-works-item .content .bot .heading {
     width: 100%;
     font-size: 30px;
+    line-height: 32px;
 }
 
 .featured-works-item .content .bot {
@@ -95,6 +96,10 @@
 
 .featured-works-item .content .grid-text .item:nth-child(1) {
     width: 100%;
+}
+
+.featured-works-item {
+    height: 525px;
 }
 
 .featured-works-item .content .grid-text {
@@ -184,6 +189,11 @@
     margin-bottom: 40px;
 }
 
+.tf-header .header-inner {
+
+    padding: 8px 8px 8px 15px;
+
+}
 
 
 footer {
@@ -495,7 +505,7 @@ footer {
 
 .portfolio-filters button:hover {
     color: #ff0cff;
-    background: radial-gradient(62.56% 62.56% at 50% -13%, #ffffffb3 0%, #fff0 100%), linear-gradient(0deg, #27272700, #27272700);
+    /* background: radial-gradient(62.56% 62.56% at 50% -13%, #ffffffb3 0%, #fff0 100%), linear-gradient(0deg, #27272700, #27272700); */
 }
 
 .section-work-single .wrap-image {
@@ -887,4 +897,66 @@ footer {
     .section-pricing .heading-title {
         text-align: center;
     }
+}
+
+.btn-white:hover {
+    color: black;
+}
+
+.tf-btn-2:hover {
+    color: #000 !important;
+}
+
+.contact-select {
+    /* background: #000; */
+    color: black;
+    border: none;
+    border-bottom: 1px solid #d4d4d8;
+    padding: 0 0 11px;
+}
+
+.form-contact select option {
+    background-color: white;
+    color: #111;
+}
+
+/* Container styling */
+.custom-phone-input .react-tel-input .form-control {
+    width: 100% !important;
+    /* height: 52px !important; */
+    border-radius: 0px !important;
+    background: transparent !important;
+    border: none;
+    border-bottom: 1px solid #d4d4d8;
+    color: #000 !important;
+    font-size: 14px !important;
+    line-height: 52px !important;
+}
+
+/* Flag button/dropdown styling */
+.custom-phone-input .react-tel-input .flag-dropdown {
+    background: transparent !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    border-radius: 10px 0 0 10px !important;
+}
+
+/* Dropdown list styling */
+.custom-phone-input .react-tel-input .country-list {
+    background-color: #1a1a1a !important;
+    color: #fff !important;
+}
+
+.custom-phone-input .react-tel-input .country-list .country:hover {
+    background-color: #333 !important;
+}
+
+.custom-phone-input .react-tel-input .country-list .country.highlight {
+    background-color: #444 !important;
+}
+
+.custom-phone-input .react-tel-input .form-control:focus {
+    /* Blue ki jagah light white border */
+    box-shadow: none !important;
+    /* Blue shadow hatane ke liye */
+    outline: none !important;
 }

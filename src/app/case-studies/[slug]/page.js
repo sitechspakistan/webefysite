@@ -1,3 +1,4 @@
+import ContactForm from "@/app/component/ContactForm";
 import SecondHero from "@/app/component/SecondHero";
 import portfolioData from "@/data/portfoliodata"
 
@@ -117,6 +118,8 @@ export default async function Page({ params }) {
 
                 </div>
             </div>
+
+            <ContactForm />
         </>
     );
 }
