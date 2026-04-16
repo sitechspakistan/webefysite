@@ -1,3 +1,4 @@
+import Link from "next/link";
 export default function HomeTool() {
     return (
         <div className="section-tools v2 ">
@@ -98,9 +99,9 @@ export default function HomeTool() {
                         </svg>
                     </div>
                 </div>
-                <a href="/" className="tf-btn effectFade fadeRotateX">
+                <Link href="/start-a-project" className="tf-btn effectFade fadeRotateX">
                     Get Started
-                </a>
+                </Link>
             </div>
         </div>
     );

@@ -4,7 +4,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import { Navigation } from "swiper/modules";
 import "swiper/css/navigation";
-import ClutchWidget from "./ClucthWidget";
+import ClutchWidget from "./ClutchWidget";
 
 export default function HomeProcess() {
     return (
