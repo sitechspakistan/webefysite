@@ -10,8 +10,8 @@ export default function Header() {
   const [servicesOpen, setServicesOpen] = useState(false);
   const pathname = usePathname();
 
-
-  const isActive = (href) => pathname === href || pathname.startsWith(href + "/");
+  const isActive = (href) =>
+    pathname === href || pathname.startsWith(href + "/");
 
   useEffect(() => {
     const handleScroll = () => {
@@ -38,24 +38,35 @@ export default function Header() {
             {scrolled ? (
               <img src="/assets/images/logo/fav.webp" alt="Webefy Logo" />
             ) : (
-              <img src="/assets/images/logo/webefy-logo.png" alt="Webefy Logo" />
+              <img
+                src="/assets/images/logo/webefy-logo.png"
+                alt="Webefy Logo"
+              />
             )}
           </Link>
 
-          <div className={`box-navigation ${scrolled ? "nav-hide" : "nav-show"}`}>
+          <div
+            className={`box-navigation ${scrolled ? "nav-hide" : "nav-show"}`}
+          >
             <ul className="nav-menu-main">
               <li className="menu-item">
-                <Link href="/about" className={`item-link link1 ${isActive("/about") ? "active" : ""}`}>
+                <Link
+                  href="/about"
+                  className={`item-link link1 ${isActive("/about") ? "active" : ""}`}
+                >
                   About
                 </Link>
               </li>
 
               <li className="menu-item has-child">
-                <Link href="/services" className={`item-link link1 ${isActive("/services") ? "active" : ""}`}>
+                <Link
+                  href="/services"
+                  className={`item-link link1 ${isActive("/services") ? "active" : ""}`}
+                >
                   Services
                 </Link>
                 <ul className="sub-menu">
-                  <li className="sub-menu-item">
+                  <li className="sub-menu-item link1">
                     <Link
                       href="/services/web-development"
                       className={`item-link link1 ${isActive("/services/web-development") ? "active" : ""}`}
@@ -72,20 +83,29 @@ export default function Header() {
                     </Link>
                   </li>
                   <li className="sub-menu-item">
-                    <Link href="/services/branding" className={`item-link link1 ${isActive("/services/branding") ? "active" : ""}`}>
+                    <Link
+                      href="/services/branding"
+                      className={`item-link link1 ${isActive("/services/branding") ? "active" : ""}`}
+                    >
                       Branding
                     </Link>
                   </li>
                 </ul>
               </li>
               <li className="menu-item">
-                <Link href="/pricing" className={`item-link link1 ${isActive("/pricing") ? "active" : ""}`}>
+                <Link
+                  href="/pricing"
+                  className={`item-link link1 ${isActive("/pricing") ? "active" : ""}`}
+                >
                   Pricing
                 </Link>
               </li>
 
               <li className="menu-item">
-                <Link href="/case-studies" className={`item-link link1 ${isActive("/case-studies") ? "active" : ""}`}>
+                <Link
+                  href="/case-studies"
+                  className={`item-link link1 ${isActive("/case-studies") ? "active" : ""}`}
+                >
                   Case Studies
                 </Link>
               </li>
@@ -97,7 +117,6 @@ export default function Header() {
             </li> */}
             </ul>
           </div>
-
 
           <div className="header-actions">
             <Link
@@ -120,8 +139,6 @@ export default function Header() {
             >
               Contact Us
             </Link>
-
-
           </div>
           <button
             className="tf-btn open-mb-menu mobile-menu d-lg-none d-flex"
@@ -130,20 +147,19 @@ export default function Header() {
             <i className="icon icon-grip-lines-solid"></i>
           </button>
         </div>
-
       </header>
-
 
       {/* offcanvas Start Here */}
       <div className={`offcanvas-menu ${menuOpen ? "show" : ""}`}>
         <div className="offcanvas-content">
           <div className="container h-100">
             <div className="offcanvas-content_wrapin">
-
-
               <div className="canvas_head">
                 <Link href="/" className="logo-site">
-                  <img src="/assets/images/logo/webefy-logo.png" alt="Webefy Logo" />
+                  <img
+                    src="/assets/images/logo/webefy-logo.png"
+                    alt="Webefy Logo"
+                  />
                 </Link>
                 <button
                   className="btn-mobile-menu close-mb-menu text-caption link"
@@ -153,11 +169,14 @@ export default function Header() {
                 </button>
               </div>
 
-
               <div className="canvas_center">
                 <ul className="nav-ul-mb">
                   <li>
-                    <Link href="/about" className="mb-menu-link text-display-1" onClick={() => setMenuOpen(false)}>
+                    <Link
+                      href="/about"
+                      className="mb-menu-link text-display-1"
+                      onClick={() => setMenuOpen(false)}
+                    >
                       <span className="text">About</span>
                     </Link>
                   </li>
@@ -167,32 +186,58 @@ export default function Header() {
                       onClick={() => setServicesOpen(!servicesOpen)}
                     >
                       <span className="text">Services</span>
-                      <i className={`icon ${servicesOpen ? "icon-chevron-up" : "icon-chevron-down"}`}></i>
+                      <i
+                        className={`icon ${servicesOpen ? "icon-chevron-up" : "icon-chevron-down"}`}
+                      ></i>
                     </a>
 
                     {servicesOpen && (
                       <ul className="sub-nav-menu">
                         <li>
-                          <Link href="/services" className="sub-nav-link text-white"
-                            onClick={() => { setMenuOpen(false); setServicesOpen(false); }}>
+                          <Link
+                            href="/services"
+                            className="sub-nav-link text-white"
+                            onClick={() => {
+                              setMenuOpen(false);
+                              setServicesOpen(false);
+                            }}
+                          >
                             All Services
                           </Link>
                         </li>
                         <li>
-                          <Link href="/services/web-development" className="sub-nav-link text-white"
-                            onClick={() => { setMenuOpen(false); setServicesOpen(false); }}>
+                          <Link
+                            href="/services/web-development"
+                            className="sub-nav-link text-white"
+                            onClick={() => {
+                              setMenuOpen(false);
+                              setServicesOpen(false);
+                            }}
+                          >
                             Web Development
                           </Link>
                         </li>
                         <li>
-                          <Link href="/services/ai-automation" className="sub-nav-link text-white"
-                            onClick={() => { setMenuOpen(false); setServicesOpen(false); }}>
+                          <Link
+                            href="/services/ai-automation"
+                            className="sub-nav-link text-white"
+                            onClick={() => {
+                              setMenuOpen(false);
+                              setServicesOpen(false);
+                            }}
+                          >
                             AI Automation
                           </Link>
                         </li>
                         <li>
-                          <Link href="/services/branding" className="sub-nav-link text-white"
-                            onClick={() => { setMenuOpen(false); setServicesOpen(false); }}>
+                          <Link
+                            href="/services/branding"
+                            className="sub-nav-link text-white"
+                            onClick={() => {
+                              setMenuOpen(false);
+                              setServicesOpen(false);
+                            }}
+                          >
                             Branding
                           </Link>
                         </li>
@@ -201,17 +246,29 @@ export default function Header() {
                   </li>
 
                   <li>
-                    <Link href="/pricing" className="mb-menu-link text-display-1" onClick={() => setMenuOpen(false)}>
+                    <Link
+                      href="/pricing"
+                      className="mb-menu-link text-display-1"
+                      onClick={() => setMenuOpen(false)}
+                    >
                       <span className="text">Pricing</span>
                     </Link>
                   </li>
                   <li>
-                    <Link href="/case-studies" className="mb-menu-link text-display-1" onClick={() => setMenuOpen(false)}>
+                    <Link
+                      href="/case-studies"
+                      className="mb-menu-link text-display-1"
+                      onClick={() => setMenuOpen(false)}
+                    >
                       <span className="text">Case Studies</span>
                     </Link>
                   </li>
                   <li>
-                    <Link href="/start-a-project" className="mb-menu-link text-display-1" onClick={() => setMenuOpen(false)}>
+                    <Link
+                      href="/start-a-project"
+                      className="mb-menu-link text-display-1"
+                      onClick={() => setMenuOpen(false)}
+                    >
                       <span className="text">Start A Project</span>
                     </Link>
                   </li>
@@ -219,20 +276,23 @@ export default function Header() {
               </div>
               <div className="canvas_foot">
                 <div className="left">
-                  <a href="mailto:hello@webefy.today" className="text-caption text-neutral-200">hello@webefy.today</a>
+                  <a
+                    href="mailto:hello@webefy.today"
+                    className="text-caption text-neutral-200"
+                  >
+                    hello@webefy.today
+                  </a>
                 </div>
                 {/* <div className="right">
                   <a href="#" className="tf-link-icon text-caption text-neutral-200"><i className="icon icon-arrow-top-right"></i> LINKEDIN</a>
                   <a href="#" className="tf-link-icon text-caption text-neutral-200"><i className="icon icon-arrow-top-right"></i> INSTAGRAM</a>
                 </div> */}
               </div>
-
             </div>
           </div>
         </div>
       </div>
       {/* offcanvas End Here */}
-
     </>
   );
 }
