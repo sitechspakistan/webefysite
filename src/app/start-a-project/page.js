@@ -20,6 +20,7 @@ export default function StartProject() {
     const [phone, setPhone] = useState("");
     const [success, setSuccess] = useState(false);
     const [error, setError] = useState("");
+    const [loading, setLoading] = useState(false);
 
     const [formData, setFormData] = useState({
         name: "",
@@ -45,6 +46,7 @@ export default function StartProject() {
             setError("Please fill all the required fields first! ⚠️");
             return;
         }
+        setLoading(true);
 
         const res = await fetch("/api/contact", {
             method: "POST",
@@ -70,6 +72,7 @@ export default function StartProject() {
         } else {
             setError("Something went wrong. Please try again.");
         }
+        setLoading(false);
     };
 
 
@@ -153,7 +156,7 @@ export default function StartProject() {
                                         Have a project in mind?
                                     </h4>
 
-                                    {success && <p className="text-success mb-3 fw-semibold">Your message has been sent successfully! 🎉</p>}
+                                    {/* {success && <p className="text-success mb-3 fw-semibold">Your message has been sent successfully! 🎉</p>} */}
                                     {error && <p className="text-danger mb-3 fw-semibold">{error}</p>}
 
                                     <div className="row">
@@ -235,8 +238,24 @@ export default function StartProject() {
                                         </fieldset>
                                     </div>
 
-                                    <button type="submit" className="tf-btn w-100">
-                                        Submit Message
+                                    <button
+                                        type="submit"
+                                        className={`tf-btn w-100 ${success ? 'btn-success-active' : ''}`}
+                                        disabled={loading || success}
+                                        style={{
+                                            background: success ? '#28a745' : '',
+                                            borderColor: success ? '#28a745' : '',
+                                            color: success ? '#fff' : '',
+                                            transition: 'all 0.3s ease'
+                                        }}
+                                    >
+                                        {loading ? (
+                                            <span>Sending... </span>
+                                        ) : success ? (
+                                            <span>Message Sent Successfully!</span>
+                                        ) : (
+                                            "Submit Message"
+                                        )}
                                     </button>
                                 </form>
                             </div>

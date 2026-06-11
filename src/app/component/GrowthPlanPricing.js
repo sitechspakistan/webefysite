@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 const GrowthPlanPricing = () => {
@@ -57,9 +58,9 @@ const GrowthPlanPricing = () => {
                 </ul>
               </div>
               <div className="pri-btn">
-                <a href="/start-a-project" className="tf-btn">
+                <Link href="/start-a-project" className="tf-btn">
                   Get Started
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -115,9 +116,9 @@ const GrowthPlanPricing = () => {
                 </ul>
               </div>
               <div className="pri-btn">
-                <a href="/start-a-project" className="tf-btn ">
+                <Link href="/start-a-project" className="tf-btn ">
                   Get Started
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -171,9 +172,9 @@ const GrowthPlanPricing = () => {
                 </ul>
               </div>
               <div className="pri-btn">
-                <a href="/start-a-project" className="tf-btn ">
+                <Link href="/start-a-project" className="tf-btn ">
                   Get Started
-                </a>
+                </Link>
               </div>
             </div>
           </div>
