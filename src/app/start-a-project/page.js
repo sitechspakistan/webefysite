@@ -222,6 +222,7 @@ export default function StartProject() {
                                                     <option value="Web Development">Web Development</option>
                                                     <option value="AI Automation">AI Automation</option>
                                                     <option value="Branding">Branding</option>
+                                                    <option value="Website care">Website Care</option>
                                                 </select>
                                             </fieldset>
                                         </div>
