@@ -3,6 +3,8 @@ import SecondHero from "../component/SecondHero";
 import GrowthPlanPricing from "../component/GrowthPlanPricing";
 import homeFaqs from "@/data/faqs/homeFaqs.json";
 import Faqs from "../component/Faqs";
+import PainPointSec from "../component/PainPointSec";
+import MaintenanceSec from "../component/MaintenanceSec";
 
 const growthPlans = () => {
   return (
@@ -23,6 +25,8 @@ const growthPlans = () => {
           </>
         }
       />
+      <PainPointSec />
+      <MaintenanceSec />
       <GrowthPlanPricing />
       <Faqs faqs={homeFaqs} />
     </>
