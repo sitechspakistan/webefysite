@@ -49,15 +49,6 @@ export default function Header() {
             className={`box-navigation ${scrolled ? "nav-hide" : "nav-show"}`}
           >
             <ul className="nav-menu-main">
-              <li className="menu-item">
-                <Link
-                  href="/about"
-                  className={`item-link link1 ${isActive("/about") ? "active" : ""}`}
-                >
-                  About
-                </Link>
-              </li>
-
               <li className="menu-item has-child">
                 <Link
                   href="/services"
@@ -98,6 +89,14 @@ export default function Header() {
                   className={`item-link link1 ${isActive("/pricing") ? "active" : ""}`}
                 >
                   Pricing
+                </Link>
+              </li>
+              <li className="menu-item">
+                <Link
+                  href="/growth-plans"
+                  className={`item-link link1 ${isActive("/growth-plans") ? "active" : ""}`}
+                >
+                  Website Care Plans
                 </Link>
               </li>
 

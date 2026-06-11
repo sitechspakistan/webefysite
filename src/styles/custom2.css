@@ -93,3 +93,6 @@
 .header-actions {
   display: flex;
 }
+.nav-menu-main {
+  gap: 20px;
+}

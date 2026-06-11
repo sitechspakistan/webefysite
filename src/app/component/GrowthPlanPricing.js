@@ -2,12 +2,16 @@ import React from "react";
 
 const GrowthPlanPricing = () => {
   return (
-    <div id="growth" className="section-pricing flat-spacing pt-5 pb-0">
+    <div id="growth" className="section-pricing flat-spacing pt-5 pb-5 ">
       <div className="container">
         <div className="heading-section pb-4">
-          <h2 className="heading-title pricing-heading text-gradient-3 gap-8 effectFade fadeRotateX">
-            GROWTH PACKAGES
+          <h2 className="heading-title text-black text-center gap-8 ">
+            Website Care & Growth Plans
           </h2>
+          <p className="sub-heading text-center ">
+            Flexible monthly plans designed to keep your website secure, fast &
+            growing.
+          </p>
         </div>
         <div className="row ">
           <div className="col-lg-4 lg-mb-24">

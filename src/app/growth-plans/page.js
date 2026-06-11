@@ -5,6 +5,8 @@ import homeFaqs from "@/data/faqs/homeFaqs.json";
 import Faqs from "../component/Faqs";
 import PainPointSec from "../component/PainPointSec";
 import MaintenanceSec from "../component/MaintenanceSec";
+import WhoIsItSec from "../component/WhoIsItSec";
+import WorkingSec from "../component/WorkingSec";
 
 const growthPlans = () => {
   return (
@@ -28,6 +30,8 @@ const growthPlans = () => {
       <PainPointSec />
       <MaintenanceSec />
       <GrowthPlanPricing />
+      <WhoIsItSec />
+      <WorkingSec />
       <Faqs faqs={homeFaqs} />
     </>
   );
