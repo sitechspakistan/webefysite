@@ -5,12 +5,12 @@ export async function POST(req) {
         const { name, email, phone, service, services, message } = await req.json();
 
         const transporter = nodemailer.createTransport({
-            host: "smtp.hostinger.com",
+            host: process.env.host,
             port: 465,
             secure: true,
             auth: {
-                user: "noreply@webefytoday.com",
-                pass: "e&xpXl+3N",
+                user: process.env.user,
+                pass: process.env.pass,
             },
         });
 
@@ -22,7 +22,7 @@ export async function POST(req) {
             from: '"Webefy Today" <noreply@webefytoday.com>',
             to: "webefytoday@gmail.com",
             replyTo: email,
-            subject: `🚀 New Project Inquiry: ${selectedService}`,
+            subject: `New Project Inquiry: ${selectedService}`,
             html: `
 <html>
     <head>
@@ -31,7 +31,7 @@ export async function POST(req) {
         </style>
     </head>
     <body>
-        <div style="font-family: 'Caveat', cursive; font-size: 16px; font-weight: 500;">
+        <div style="font-size: 16px; font-weight: 500;">
             <p><strong>Name:</strong> ${name}</p>
             <p><strong>E-mail:</strong> ${email}</p>
             <p><strong>Service:</strong> ${selectedService}</p>
