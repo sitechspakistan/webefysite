@@ -1,16 +1,76 @@
+"use client";
+import { useState } from "react";
 import SecondHero from "../component/SecondHero";
-export const metadata = {
-    title: "Start A Project | Webefy Today ",
-    description: "Trexa – AI Agency & SaaS HTML Template",
-    alternates: {
-        canonical: "https://webefytoday.com/start-a-project",
-    },
-    icons: {
-        icon: "/assets/images/webefy-lgo/about-shape1_2.png",
-    }
-};
+import PhoneInput from "react-phone-input-2";
+import "react-phone-input-2/lib/style.css";
+
+
+// export const metadata = {
+//     title: "Start A Project | Webefy Today ",
+//     description: "Built for the bold, made for the brave. Start your journey with Webefy Today. From design and development to automation, let's build your next big project.",
+//     alternates: {
+//         canonical: "https://webefytoday.com/start-a-project",
+//     },
+//     icons: {
+//         icon: "/assets/images/webefy-lgo/about-shape1_2.png",
+//     }
+// };
 
 export default function StartProject() {
+    const [phone, setPhone] = useState("");
+    const [success, setSuccess] = useState(false);
+    const [error, setError] = useState("");
+
+    const [formData, setFormData] = useState({
+        name: "",
+        email: "",
+        service: "",
+        message: ""
+    });
+
+    const handleChange = (e) => {
+        setFormData({
+            ...formData,
+            [e.target.name]: e.target.value
+        });
+        if (error) setError("");
+    };
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        setError("");
+        setSuccess(false);
+
+        if (!formData.name.trim() || !formData.email.trim()) {
+            setError("Please fill all the required fields first! ⚠️");
+            return;
+        }
+
+        const res = await fetch("/api/contact", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify({
+                name: formData.name,
+                email: formData.email,
+                phone: phone,
+                service: formData.service,
+                message: formData.message,
+            }),
+        });
+
+        const data = await res.json();
+
+        if (data.success) {
+            setSuccess(true);
+            setError("");
+            setFormData({ name: "", email: "", service: "", message: "" });
+            setPhone("");
+        } else {
+            setError("Something went wrong. Please try again.");
+        }
+    };
 
 
     return (
@@ -88,35 +148,96 @@ export default function StartProject() {
                                 </div>
                             </div>
                             <div className="col-lg-6 pt-lg-0 pt-3">
-                                <form className="form-contact m-0 effectFade fadeUp">
-                                    <h4 className="heading fw-semibold">Tell Us About Your Project</h4>
+                                <form onSubmit={handleSubmit} className="form-contact effectFade fadeUp">
+                                    <h4 className="heading fw-semibold">
+                                        Have a project in mind?
+                                    </h4>
+
+                                    {success && <p className="text-success mb-3 fw-semibold">Your message has been sent successfully! 🎉</p>}
+                                    {error && <p className="text-danger mb-3 fw-semibold">{error}</p>}
+
                                     <div className="row">
                                         <div className="col-lg-6">
                                             <fieldset className="mb-21">
-                                                <label className="fw-semibold text-body-3 mb-20">Your Name</label>
-                                                <input className="" type="text" placeholder="Enter your full name" required />
+                                                <label className="fw-semibold text-body-3 mb-20">
+                                                    Your Name
+                                                </label>
+                                                <input
+                                                    name="name"
+                                                    type="text"
+                                                    placeholder="Enter your full name"
+                                                    value={formData.name}
+                                                    onChange={handleChange}
+                                                    required
+                                                />
                                             </fieldset>
                                         </div>
                                         <div className="col-lg-6">
                                             <fieldset className="mb-21">
-                                                <label className="fw-semibold text-body-3 mb-20">Your E-mail</label>
-                                                <input className="" type="email" placeholder="Enter the e-mail" required />
+                                                <label className="fw-semibold text-body-3 mb-20">
+                                                    Your E-mail
+                                                </label>
+                                                <input
+                                                    name="email"
+                                                    type="email"
+                                                    value={formData.email}
+                                                    onChange={handleChange}
+                                                    placeholder="Enter the e-mail"
+                                                    required
+                                                />
                                             </fieldset>
                                         </div>
+                                        <div className="col-lg-6 custom-phone-input">
+                                            <fieldset className="mb-21">
+                                                <label className="fw-semibold text-body-3 mb-20">
+                                                    Your Phone Number
+                                                </label>
+                                                <PhoneInput
+                                                    country={"pk"}
+                                                    value={phone}
+                                                    onChange={(value) => setPhone(value)}
+                                                    placeholder="Enter phone number"
+                                                    inputProps={{
+                                                        name: "phone",
+                                                        required: true,
+                                                    }}
+                                                />
+                                            </fieldset>
+                                        </div>
+                                        <div className="col-lg-6">
+                                            <fieldset className="mb-21">
+                                                <label className="fw-semibold text-body-3 mb-20">
+                                                    Select Service
+                                                </label>
+                                                <select
+                                                    name="service"
+                                                    className="contact-select"
+                                                    value={formData.service}
+                                                    onChange={handleChange}
+                                                >
+                                                    <option value="">Choose a Service</option>
+                                                    <option value="Web Development">Web Development</option>
+                                                    <option value="AI Automation">AI Automation</option>
+                                                    <option value="Branding">Branding</option>
+                                                </select>
+                                            </fieldset>
+                                        </div>
+                                        <fieldset className="mb-18">
+                                            <label className="fw-semibold text-body-3 mb-20">
+                                                More About the Project
+                                            </label>
+                                            <textarea
+                                                name="message"
+                                                value={formData.message}
+                                                onChange={handleChange}
+                                                placeholder="Tell us details about your project"
+                                            ></textarea>
+                                        </fieldset>
                                     </div>
-                                    <fieldset className="mb-21">
-                                        <label className="fw-semibold text-body-3 mb-20">Your Phone Number</label>
-                                        <input className="" type="tel" placeholder="Enter the Phone Number" required />
-                                    </fieldset>
-                                    <fieldset className="mb-18">
-                                        <label className="fw-semibold text-body-3 mb-0">More About The Project</label>
-                                        <textarea name="text" className=""></textarea>
-                                    </fieldset>
-                                    <div className="attachment d-flex gap-8 align-items-center">
-                                        <i className="icon icon-paperclip-solid fs-24"></i>
-                                        <div className="fw-semibold text-body-3">Add an Attachment</div>
-                                    </div>
-                                    <button type="submit" className="tf-btn w-100">Submit</button>
+
+                                    <button type="submit" className="tf-btn w-100">
+                                        Submit Message
+                                    </button>
                                 </form>
                             </div>
                         </div>

@@ -7,7 +7,7 @@ import brandFaqs from "@/data/faqs/brandFaqs"
 
 export const metadata = {
     title: "Branding | Webefy Today",
-    description: "Trexa – AI Agency & SaaS HTML Template",
+    description: "Craft a memorable identity with Webefy Today. We design custom logos, premium business cards, and complete corporate branding kits that make your brand stick.",
     alternates: {
         canonical: "https://webefytoday.com/services/branding",
     },

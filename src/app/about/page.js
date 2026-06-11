@@ -5,7 +5,7 @@ import SecondHero from "../component/SecondHero";
 
 export const metadata = {
     title: "About Us | Webefy Today",
-    description: "Trexa – AI Agency & SaaS HTML Template",
+    description: "At Webefy Today, we turn vision into reality. From strategic web development to smart AI solutions, find out how we help brands scale from idea to production.",
     alternates: {
         canonical: "https://webefytoday.com/about",
     },

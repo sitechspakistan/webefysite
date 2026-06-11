@@ -4,8 +4,60 @@ import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/style.css";
 
 export default function ContactForm() {
-  const [service, setService] = useState("");
   const [phone, setPhone] = useState("");
+  const [success, setSuccess] = useState(false);
+  const [error, setError] = useState("");
+
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    service: "",
+    message: ""
+  });
+
+  const handleChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value
+    });
+    if (error) setError("");
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setError("");
+    setSuccess(false);
+
+    if (!formData.name.trim() || !formData.email.trim()) {
+      setError("Please fill all the required fields first! ⚠️");
+      return;
+    }
+
+    const res = await fetch("/api/contact", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        name: formData.name,
+        email: formData.email,
+        phone: phone,
+        service: formData.service,
+        message: formData.message,
+      }),
+    });
+
+    const data = await res.json();
+
+    if (data.success) {
+      setSuccess(true);
+      setError("");
+      setFormData({ name: "", email: "", service: "", message: "" });
+      setPhone("");
+    } else {
+      setError("Something went wrong. Please try again.");
+    }
+  };
 
   return (
     <div id="contact" className="flat-spacing pb-5">
@@ -46,12 +98,16 @@ export default function ContactForm() {
                 </div>
               </div>
             </div>
+
             <div className="col-lg-6">
-              <form className="form-contact effectFade fadeUp">
+              <form onSubmit={handleSubmit} className="form-contact effectFade fadeUp">
                 <h4 className="heading fw-semibold">
-                  {" "}
                   Have a project in mind?
                 </h4>
+
+                {success && <p className="text-success mb-3 fw-semibold">Your message has been sent successfully! 🎉</p>}
+                {error && <p className="text-danger mb-3 fw-semibold">{error}</p>}
+
                 <div className="row">
                   <div className="col-lg-6">
                     <fieldset className="mb-21">
@@ -59,9 +115,11 @@ export default function ContactForm() {
                         Your Name
                       </label>
                       <input
-                        className=""
+                        name="name"
                         type="text"
                         placeholder="Enter your full name"
+                        value={formData.name}
+                        onChange={handleChange}
                         required
                       />
                     </fieldset>
@@ -72,8 +130,10 @@ export default function ContactForm() {
                         Your E-mail
                       </label>
                       <input
-                        className=""
+                        name="email"
                         type="email"
+                        value={formData.email}
+                        onChange={handleChange}
                         placeholder="Enter the e-mail"
                         required
                       />
@@ -102,28 +162,31 @@ export default function ContactForm() {
                         Select Service
                       </label>
                       <select
+                        name="service"
                         className="contact-select"
-                        value={service}
-                        onChange={(e) => setService(e.target.value)}
+                        value={formData.service}
+                        onChange={handleChange}
                       >
                         <option value="">Choose a Service</option>
-                        <option value="web">Web Development</option>
-                        <option value="ai">AI Automation</option>
-                        <option value="branding">Branding</option>
+                        <option value="Web Development">Web Development</option>
+                        <option value="AI Automation">AI Automation</option>
+                        <option value="Branding">Branding</option>
                       </select>
                     </fieldset>
                   </div>
                   <fieldset className="mb-18">
-                    <label className="fw-semibold text-body-3 mb-0">
+                    <label className="fw-semibold text-body-3 mb-20">
                       More About the Project
                     </label>
-                    <textarea name="text" className=""></textarea>
+                    <textarea
+                      name="message"
+                      value={formData.message}
+                      onChange={handleChange}
+                      placeholder="Tell us details about your project"
+                    ></textarea>
                   </fieldset>
                 </div>
-                {/* <div className="attachment d-flex gap-8 align-items-center">
-                                    <i className="icon icon-paperclip-solid fs-24"></i>
-                                    <div className="fw-semibold text-body-3">Add an Attachment</div>
-                                </div> */}
+
                 <button type="submit" className="tf-btn w-100">
                   Submit Message
                 </button>

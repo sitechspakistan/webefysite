@@ -7,7 +7,7 @@ import aiFaqs from "@/data/faqs/aiFaqs"
 
 export const metadata = {
     title: "AI Automation | Webefy Today",
-    description: "Trexa – AI Agency & SaaS HTML Template",
+    description: "Automate repetitive tasks and scale smart with Webefy Today. We build intelligent AI agents and custom workflow solutions to optimize your business operations.",
     alternates: {
         canonical: "https://webefytoday.com/services/ai-automation",
     },

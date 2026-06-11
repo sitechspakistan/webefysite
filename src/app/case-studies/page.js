@@ -3,7 +3,7 @@ import SecondHero from "../component/SecondHero";
 
 export const metadata = {
     title: "Case Studies | Webefy Today",
-    description: "Trexa – AI Agency & SaaS HTML Template",
+    description: "Explore Webefy Today's case studies. See how we combine premium web development, smart AI automation, and strategic branding to create real business impact.",
     alternates: {
         canonical: "https://webefytoday.com/case-studies",
     },

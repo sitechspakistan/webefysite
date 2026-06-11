@@ -6,7 +6,7 @@ import WebsitePricing from "../component/WebsitePricing";
 
 export const metadata = {
     title: "Pricing | Webefy Today",
-    description: "Trexa – AI Agency & SaaS HTML Template",
+    description: "Explore Webefy Today's affordable pricing plans. Find transparent packages for professional web development, logo design, and complete branding kits.",
     alternates: {
         canonical: "https://webefytoday.com/pricing",
     },

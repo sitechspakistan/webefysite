@@ -6,7 +6,7 @@ import servicesFaqs from "@/data/faqs/servicesFaqs"
 
 export const metadata = {
     title: "Website Development, AI Automation & Branding Services",
-    description: "Trexa – AI Agency & SaaS HTML Template",
+    description: "Scale your business with Webefy Today. We craft strategic web experiences, implement smart AI automation, and build powerful brand identities to help you win.",
     alternates: {
         canonical: "https://webefytoday.com/services",
     },

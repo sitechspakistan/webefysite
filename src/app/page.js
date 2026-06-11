@@ -12,7 +12,7 @@ import homeFaqs from "@/data/faqs/homeFaqs.json"
 
 export const metadata = {
   title: "Webefy Today",
-  description: "Trexa – AI Agency & SaaS HTML Template",
+  description: "Webefy Today helps businesses scale with next-gen web development, seamless AI automation, and iconic branding. Let's build intelligent things together.",
   alternates: {
     canonical: "https://webefytoday.com",
   },
