@@ -8,37 +8,37 @@ function PerfectIndustry() {
                 <h2>Perfect for Industries That Run on Appointments</h2>
             </div>
             <div className='container industries-container'>
-                <div class="industry-item">
-                    <div class="icon-box">🩺</div>
-                    <p class="industry-text">Clinics & Healthcare</p>
+                <div className="industry-item">
+                    <div className="icon-box">🩺</div>
+                    <p className="industry-text">Clinics & Healthcare</p>
                 </div>
-                <div class="industry-item">
-                    <div class="icon-box" id='pur-col'>🩺</div>
-                    <p class="industry-text">Clinics & Healthcare</p>
+                <div className="industry-item">
+                    <div className="icon-box" id='pur-col'>🩺</div>
+                    <p className="industry-text">Dental Clinics</p>
                 </div>
-                <div class="industry-item">
-                    <div class="icon-box">🩺</div>
-                    <p class="industry-text">Clinics & Healthcare</p>
+                <div className="industry-item">
+                    <div className="icon-box">🩺</div>
+                    <p className="industry-text">Veterinary Clinics</p>
                 </div>
-                <div class="industry-item" >
-                    <div class="icon-box" id='org-col'>🩺</div>
-                    <p class="industry-text">Clinics & Healthcare</p>
+                <div className="industry-item" >
+                    <div className="icon-box" id='org-col'>🩺</div>
+                    <p className="industry-text">Restaurants & Cafes</p>
                 </div>
-                <div class="industry-item">
-                    <div class="icon-box">🩺</div>
-                    <p class="industry-text">Clinics & Healthcare</p>
+                <div className="industry-item">
+                    <div className="icon-box">🩺</div>
+                    <p className="industry-text">Salons & Spas</p>
                 </div>
-                <div class="industry-item">
-                    <div class="icon-box">🩺</div>
-                    <p class="industry-text">Clinics & Healthcare</p>
+                <div className="industry-item">
+                    <div className="icon-box">🩺</div>
+                    <p className="industry-text">Gyms & Fitness</p>
                 </div>
-                <div class="industry-item">
-                    <div class="icon-box" id='org-col'>🩺</div>
-                    <p class="industry-text">Clinics & Healthcare</p>
+                <div className="industry-item">
+                    <div className="icon-box" id='org-col'>🩺</div>
+                    <p className="industry-text">Consultants & Coaches</p>
                 </div>
-                <div class="industry-item">
-                    <div class="icon-box">🩺</div>
-                    <p class="industry-text">Clinics & Healthcare</p>
+                <div className="industry-item">
+                    <div className="icon-box">🩺</div>
+                    <p className="industry-text">And Many More...</p>
                 </div>
             </div>
         </section >
