@@ -63,7 +63,7 @@ function ThirdHero() {
 
                         </div>
                         <div className='col-lg-6 d-flex justify-content-center align-items-center'>
-                            <img className='hero-img' src="/assets/images/ai-booking.png"></img>
+                            <img className='hero-img' src="/assets/images/ai-hero-right.png"></img>
                         </div>
                     </div>
 
