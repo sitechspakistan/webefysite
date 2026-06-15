@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+
 import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/style.css";
 
@@ -13,13 +14,13 @@ export default function ContactForm() {
     name: "",
     email: "",
     service: "",
-    message: ""
+    message: "",
   });
 
   const handleChange = (e) => {
     setFormData({
       ...formData,
-      [e.target.name]: e.target.value
+      [e.target.name]: e.target.value,
     });
     if (error) setError("");
   };
@@ -75,7 +76,7 @@ export default function ContactForm() {
                     Contact
                   </div>
                   <h2 className="heading-title effectFade fadeRotateX">
-                    Let’s Build <br /> Intelligent Things
+                    Let's Build <br /> Intelligent Things
                   </h2>
                 </div>
                 <div>
@@ -103,13 +104,16 @@ export default function ContactForm() {
             </div>
 
             <div className="col-lg-6">
-              <form onSubmit={handleSubmit} className="form-contact effectFade fadeUp">
-                <h4 className="heading fw-semibold">
-                  Have a project in mind?
-                </h4>
+              <form
+                onSubmit={handleSubmit}
+                className="form-contact effectFade fadeUp"
+              >
+                <h4 className="heading fw-semibold">Have a project in mind?</h4>
 
                 {/* {success && <p className="text-success mb-3 fw-semibold">Your message has been sent successfully! 🎉</p>} */}
-                {error && <p className="text-danger mb-3 fw-semibold">{error}</p>}
+                {error && (
+                  <p className="text-danger mb-3 fw-semibold">{error}</p>
+                )}
 
                 <div className="row">
                   <div className="col-lg-6">
@@ -174,7 +178,7 @@ export default function ContactForm() {
                         <option value="Web Development">Web Development</option>
                         <option value="AI Automation">AI Automation</option>
                         <option value="Branding">Branding</option>
-                        <option value="Website care">Website Care</option>
+                        <option value="Website Care">Website Care</option>
                       </select>
                     </fieldset>
                   </div>
@@ -193,13 +197,13 @@ export default function ContactForm() {
 
                 <button
                   type="submit"
-                  className={`tf-btn w-100 ${success ? 'btn-success-active' : ''}`}
+                  className={`tf-btn w-100 ${success ? "btn-success-active" : ""}`}
                   disabled={loading || success}
                   style={{
-                    background: success ? '#28a745' : '',
-                    borderColor: success ? '#28a745' : '',
-                    color: success ? '#fff' : '',
-                    transition: 'all 0.3s ease'
+                    background: success ? "#28a745" : "",
+                    borderColor: success ? "#28a745" : "",
+                    color: success ? "#fff" : "",
+                    transition: "all 0.3s ease",
                   }}
                 >
                   {loading ? (

@@ -58,7 +58,10 @@ const GrowthPlanPricing = () => {
                 </ul>
               </div>
               <div className="pri-btn">
-                <Link href="/start-a-project" className="tf-btn">
+                <Link
+                  href="/start-a-project?service=website-care"
+                  className="tf-btn"
+                >
                   Get Started
                 </Link>
               </div>
@@ -116,7 +119,10 @@ const GrowthPlanPricing = () => {
                 </ul>
               </div>
               <div className="pri-btn">
-                <Link href="/start-a-project" className="tf-btn ">
+                <Link
+                  href="/start-a-project?service=website-care"
+                  className="tf-btn "
+                >
                   Get Started
                 </Link>
               </div>
@@ -172,7 +178,10 @@ const GrowthPlanPricing = () => {
                 </ul>
               </div>
               <div className="pri-btn">
-                <Link href="/start-a-project" className="tf-btn ">
+                <Link
+                  href="/start-a-project?service=website-care"
+                  className="tf-btn "
+                >
                   Get Started
                 </Link>
               </div>
