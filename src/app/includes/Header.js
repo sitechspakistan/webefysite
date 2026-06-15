@@ -171,15 +171,6 @@ export default function Header() {
               <div className="canvas_center">
                 <ul className="nav-ul-mb">
                   <li>
-                    <Link
-                      href="/about"
-                      className="mb-menu-link text-display-1"
-                      onClick={() => setMenuOpen(false)}
-                    >
-                      <span className="text">About</span>
-                    </Link>
-                  </li>
-                  <li>
                     <a
                       className="mb-menu-link text-display-1"
                       onClick={() => setServicesOpen(!servicesOpen)}
@@ -255,6 +246,15 @@ export default function Header() {
                   </li>
                   <li>
                     <Link
+                      href="/growth-plans"
+                      className="mb-menu-link text-display-1"
+                      onClick={() => setMenuOpen(false)}
+                    >
+                      <span className="text">Website Care Plans</span>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
                       href="/case-studies"
                       className="mb-menu-link text-display-1"
                       onClick={() => setMenuOpen(false)}
@@ -269,6 +269,16 @@ export default function Header() {
                       onClick={() => setMenuOpen(false)}
                     >
                       <span className="text">Start A Project</span>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="https://calendly.com/webefytoday/meeting"
+                      target="blank"
+                      className="mb-menu-link text-display-1"
+                      onClick={() => setMenuOpen(false)}
+                    >
+                      <span className="text"> Book a Call</span>
                     </Link>
                   </li>
                 </ul>

@@ -151,7 +151,7 @@ const PainPointSec = () => {
     <>
       <section
         id="painPoint"
-        className="container d-flex align-items-center gap-5 pt-5 pb-5"
+        className="container d-flex  align-items-center gap-5 pt-5 pb-5"
       >
         <div className="col-lg-3">
           <h2 className="pain-heading">
