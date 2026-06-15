@@ -134,7 +134,7 @@ function StartProjectContent() {
                   </div>
                   <div className="tf-social-1 gap-24 effectFade fadeRotateX">
                     
-                      href="https://x.com/"
+                      <a href="https://x.com/"
                       target="_blank"
                       className="text-body-1 fw-semibold"
                     >
@@ -144,7 +144,7 @@ function StartProjectContent() {
                       </div>
                     </a>
                     
-                      href="https://www.facebook.com/"
+                     <a href="https://www.facebook.com/"
                       target="_blank"
                       className="text-body-1 fw-semibold"
                     >
@@ -153,11 +153,7 @@ function StartProjectContent() {
                         <i className="icon icon-facebook-f"></i>
                       </div>
                     </a>
-                    
-                      href="https://www.instagram.com/"
-                      target="_blank"
-                      className="text-body-1 fw-semibold"
-                    >
+                     <a href="https://www.instagram.com/" target="_blank" className="text-body-1 fw-semibold">
                       Instagram
                       <div className="social-item">
                         <i className="icon icon-instagram"></i>
