@@ -1,6 +1,9 @@
 import AiAgent from '@/app/component/AiAgent'
+import BookingAgent from '@/app/component/BookingAgent'
+import CalendarTools from '@/app/component/CalendarTools'
 import ContactForm from '@/app/component/ContactForm'
 import PerfectIndustry from '@/app/component/PerfectIndustry'
+import ProductFrom from '@/app/component/ProductFrom'
 import ThirdHero from '@/app/component/ThirdHero'
 import React from 'react'
 
@@ -15,6 +18,9 @@ function AiBookingAgent() {
             <ThirdHero />
             <PerfectIndustry />
             <AiAgent />
+            <BookingAgent />
+            <CalendarTools />
+            <ProductFrom />
         </>
     )
 }

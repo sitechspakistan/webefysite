@@ -4,7 +4,7 @@ import React from 'react'
 function ThirdHero() {
     return (
         <div>
-            <div className="section-hero" id="third-hero">
+            <div id="third-hero" className="section-hero">
                 <div className="hero-image"></div>
                 <div className="container">
                     <div className='row'>
@@ -13,7 +13,7 @@ function ThirdHero() {
 
                                 <div className="heading-section">
 
-                                    <div className="heading-sub fw-semibold effectFade fadeUp">
+                                    <div className="sub fw-semibold effectFade fadeUp">
                                         AI AUTOMATION FOR BOOKINGS & APPOINTMENTS
                                     </div>
 
@@ -38,15 +38,15 @@ function ThirdHero() {
                                     Our AI agents handle calls, chats, and messages 24/7 to book, reschedule, and manage appointments automatically. Never miss a booking again.
                                 </p>
 
-                                <div className="d-flex justify-content-start align-items-center gap-5">
+                                <div className="third_hero_btn">
                                     <div>
-                                        <Link href="/start-a-project" className="tf-btn">
+                                        <Link href="#contact" className="tf-btn">
                                             Book a Demo ⇾
                                         </Link>
                                     </div>
                                     <div className='btn-css'>
                                         <Link href="/start-a-project" className="tf-btn">
-                                            See How Its Works
+                                            Start a project
                                         </Link>
                                     </div>
                                 </div>

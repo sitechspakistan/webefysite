@@ -1,21 +1,20 @@
-import Link from 'next/link'
 import React from 'react'
 
 function AiAgent() {
     return (
-        <section className='ai-agent pb-5'>
+        <section className='ai-agent'>
             <div className='container-fluid bg-white'>
-                <div className='container text-center'>
+                <div className='container text-center pt-5'>
                     <h2>Multiple Ai Agents. One Goal: More Booking.</h2>
 
-                    <div className='row'>
+                    <div className='row pt-4'>
 
                         <div className='col-lg-4'>
                             <div className='ai-main-box'>
                                 <div className='row'>
                                     <div className='col-lg-3'>
                                         <div className='icon'>
-                                            <i class="fa-solid fa-phone"></i>
+                                            <i className="fa-solid fa-phone"></i>
                                         </div>
                                     </div>
                                     <div className='col-lg-9'>
@@ -28,7 +27,6 @@ function AiAgent() {
                                                 <li ><i className="icon icon-check-solid"></i>Books, reschedules, or cancels</li>
                                                 <li ><i className="icon icon-check-solid"></i>Calendar & CRM integration</li>
                                             </ul>
-                                            <Link href={"#"}>Learn More</Link>
                                         </div>
                                     </div>
                                 </div>
@@ -39,7 +37,7 @@ function AiAgent() {
                                 <div className='row'>
                                     <div className='col-lg-3'>
                                         <div className='icon'>
-                                            <i class="fa-brands fa-whatsapp"></i>
+                                            <i className="fa-brands fa-whatsapp"></i>
                                         </div>
                                     </div>
                                     <div className='col-lg-9'>
@@ -52,7 +50,6 @@ function AiAgent() {
                                                 <li ><i className="icon icon-check-solid"></i>Shares availability & links</li>
                                                 <li ><i className="icon icon-check-solid"></i>Reminders & follow-ups</li>
                                             </ul>
-                                            <Link href={"#"}>Learn More</Link>
                                         </div>
                                     </div>
                                 </div>
@@ -63,7 +60,7 @@ function AiAgent() {
                                 <div className='row'>
                                     <div className='col-lg-3'>
                                         <div className='icon'>
-                                            <i class="fa-solid fa-comment"></i>
+                                            <i className="fa-solid fa-comment"></i>
                                         </div>
                                     </div>
                                     <div className='col-lg-9'>
@@ -76,7 +73,6 @@ function AiAgent() {
                                                 <li ><i className="icon icon-check-solid"></i>Books appointments</li>
                                                 <li ><i className="icon icon-check-solid"></i>Works 24/7</li>
                                             </ul>
-                                            <Link href={"#"}>Learn More</Link>
                                         </div>
                                     </div>
                                 </div>
