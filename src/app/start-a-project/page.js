@@ -1,23 +1,12 @@
 "use client";
-import { useEffect, useState } from "react";
+import { useEffect, useState, Suspense } from "react";
 import SecondHero from "../component/SecondHero";
 import PhoneInput from "react-phone-input-2";
 import { useSearchParams } from "next/navigation";
 
 import "react-phone-input-2/lib/style.css";
 
-// export const metadata = {
-//     title: "Start A Project | Webefy Today ",
-//     description: "Built for the bold, made for the brave. Start your journey with Webefy Today. From design and development to automation, let's build your next big project.",
-//     alternates: {
-//         canonical: "https://webefytoday.com/start-a-project",
-//     },
-//     icons: {
-//         icon: "/assets/images/webefy-lgo/about-shape1_2.png",
-//     }
-// };
-
-export default function StartProject() {
+function StartProjectContent() {
   const searchParams = useSearchParams();
 
   const [phone, setPhone] = useState("");
@@ -31,9 +20,9 @@ export default function StartProject() {
     service: "",
     message: "",
   });
+
   useEffect(() => {
     const service = searchParams.get("service");
-
     if (service === "website-care") {
       setFormData((prev) => ({
         ...prev,
@@ -109,7 +98,6 @@ export default function StartProject() {
                 <div className="col-left p-0">
                   <div className="mb-24">
                     <div className="heading-section mb-48">
-                      {/* <div className="heading-sub fw-semibold effectFade fadeUp">Contact</div> */}
                       <div className="heading-title text-gradient-3 effectFade fadeRotateX">
                         Let's Turn Your <br /> Idea Into Reality
                       </div>
@@ -143,18 +131,9 @@ export default function StartProject() {
                         </a>
                       </div>
                     </div>
-                    {/* <div className="col-md-4">
-                                            <div className="box-contact-item text-center effectFade fadeUp" data-delay="0.2">
-                                                <i className="icon icon-map-marker-solid"></i>
-                                                <h6 className="title fw-semibold">Our Location</h6>
-                                                <p className="text">
-                                                    USA, New York – 1060 Str.
-                                                </p>
-                                            </div>
-                                        </div> */}
                   </div>
                   <div className="tf-social-1 gap-24 effectFade fadeRotateX">
-                    <a
+                    
                       href="https://x.com/"
                       target="_blank"
                       className="text-body-1 fw-semibold"
@@ -164,7 +143,7 @@ export default function StartProject() {
                         <i className="icon icon-twitter-x"></i>
                       </div>
                     </a>
-                    <a
+                    
                       href="https://www.facebook.com/"
                       target="_blank"
                       className="text-body-1 fw-semibold"
@@ -174,7 +153,7 @@ export default function StartProject() {
                         <i className="icon icon-facebook-f"></i>
                       </div>
                     </a>
-                    <a
+                    
                       href="https://www.instagram.com/"
                       target="_blank"
                       className="text-body-1 fw-semibold"
@@ -196,7 +175,6 @@ export default function StartProject() {
                     Have a project in mind?
                   </h4>
 
-                  {/* {success && <p className="text-success mb-3 fw-semibold">Your message has been sent successfully! 🎉</p>} */}
                   {error && (
                     <p className="text-danger mb-3 fw-semibold">{error}</p>
                   )}
@@ -309,5 +287,13 @@ export default function StartProject() {
         </div>
       </div>
     </>
+  );
+}
+
+export default function StartProject() {
+  return (
+    <Suspense fallback={null}>
+      <StartProjectContent />
+    </Suspense>
   );
 }
