@@ -10,6 +10,13 @@ import React from 'react'
 export const metadata = {
     title: "AI Booking Agent | Webefy Today",
     description: "Webefy Today helps businesses scale with next-gen web development, seamless AI automation, and iconic branding. Let's build intelligent things together.",
+    alternates: {
+        canonical: "https://webefytoday.com/products",
+    },
+    icons: {
+        icon: "/assets/images/webefy-lgo/about-shape1_2.png",
+    }
+
 };
 
 function AiBookingAgent() {
