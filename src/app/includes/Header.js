@@ -133,7 +133,7 @@ export default function Header() {
               Book a Call
             </Link>
             <Link
-              href="/contact"
+              href="/start-a-project"
               className={`tf-btn  ${scrolled ? "btn-show" : "btn-hide"}`}
             >
               Contact Us
