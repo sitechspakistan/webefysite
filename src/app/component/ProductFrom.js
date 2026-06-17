@@ -1,5 +1,5 @@
 "use client";
-import React from 'react'
+import React, { useState } from 'react'
 import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/style.css";
 
@@ -84,6 +84,68 @@ const ProductFrom = () => {
         }
     ];
 
+    const [phone, setPhone] = useState("");
+    const [success, setSuccess] = useState(false);
+    const [error, setError] = useState("");
+    const [loading, setLoading] = useState(false);
+
+    const [formData, setFormData] = useState({
+        name: "",
+        email: "",
+        business: "",
+        businesstype: "",
+        volume: "",
+        message: "",
+    });
+
+    const handleChange = (e) => {
+        setFormData({
+            ...formData,
+            [e.target.name]: e.target.value,
+        });
+        if (error) setError("");
+    };
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        setError("");
+        setSuccess(false);
+
+        if (!formData.name.trim() || !formData.email.trim()) {
+            setError("Please fill all the required fields first! ⚠️");
+            return;
+        }
+        setLoading(true);
+
+        const res = await fetch("/api/product", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify({
+                name: formData.name,
+                email: formData.email,
+                phone: phone,
+                businessName: formData.business,
+                businessType: formData.businesstype,
+                volume: formData.volume,
+                message: formData.message,
+            }),
+        });
+
+        const data = await res.json();
+
+        if (data.success) {
+            setSuccess(true);
+            setError("");
+            setFormData({ name: "", email: "", business: "", businesstype: "", volume: "", message: "" });
+            setPhone("");
+        } else {
+            setError("Something went wrong. Please try again.");
+        }
+        setLoading(false);
+    };
+
 
     return (
         <section id='product-form' className="section-hero bg-white pb-5">
@@ -151,7 +213,10 @@ const ProductFrom = () => {
                             </div>
                         </div>
 
-                        <form>
+                        <form onSubmit={handleSubmit}>
+                            {error && (
+                                <p className="text-danger mb-3 fw-semibold">{error}</p>
+                            )}
                             <div className="row">
                                 <div className="col-lg-6">
                                     <fieldset className="mb-21">
@@ -161,6 +226,8 @@ const ProductFrom = () => {
                                         <input
                                             name="name"
                                             type="text"
+                                            value={formData.name}
+                                            onChange={handleChange}
                                             placeholder="Enter your full name"
                                             required
                                         />
@@ -174,6 +241,8 @@ const ProductFrom = () => {
                                         <input
                                             name="email"
                                             type="email"
+                                            value={formData.email}
+                                            onChange={handleChange}
                                             placeholder="Enter the e-mail"
                                             required
                                         />
@@ -187,6 +256,8 @@ const ProductFrom = () => {
                                         </label>
                                         <PhoneInput
                                             country={"pk"}
+                                            value={phone}
+                                            onChange={(value) => setPhone(value)}
                                             placeholder="Enter phone number"
                                             inputProps={{
                                                 name: "phone",
@@ -203,6 +274,8 @@ const ProductFrom = () => {
                                         <input
                                             name="business"
                                             type="text"
+                                            value={formData.business}
+                                            onChange={handleChange}
                                             placeholder="Enter your business name"
                                             required
                                         />
@@ -215,8 +288,10 @@ const ProductFrom = () => {
                                             Business Type
                                         </label>
                                         <select
-                                            name="service"
+                                            name="businesstype"
                                             className="contact-select"
+                                            value={formData.businesstype}
+                                            onChange={handleChange}
                                         >
                                             <option value="">Select your business type</option>
                                             <option value="Clinic">Clinic</option>
@@ -239,6 +314,8 @@ const ProductFrom = () => {
                                         <select
                                             name="volume"
                                             className="contact-select"
+                                            value={formData.volume}
+                                            onChange={handleChange}
                                         >
                                             <option value="">Select Approximate Monthly bookings</option>
                                             <option value="0-50">0-50</option>
@@ -256,15 +333,31 @@ const ProductFrom = () => {
                                         </label>
                                         <textarea
                                             name="message"
-                                            placeholder="How do you currently hande booking and appointments?"
+                                            value={formData.message}
+                                            onChange={handleChange}
+                                            placeholder="How do you currently handle booking and appointments?"
                                         ></textarea>
                                     </fieldset>
                                 </div>
                             </div>
                             <button
                                 type="submit"
-                                className="tf-btn w-100">
-                                <i className='fas fa-arrow-right'></i> Book My Demo
+                                className={`tf-btn w-100 ${success ? "btn-success-active" : ""}`}
+                                disabled={loading || success}
+                                style={{
+                                    background: success ? "#28a745" : "",
+                                    borderColor: success ? "#28a745" : "",
+                                    color: success ? "#fff" : "",
+                                    transition: "all 0.3s ease",
+                                }}
+                            >
+                                {loading ? (
+                                    <span>Sending... </span>
+                                ) : success ? (
+                                    <span>Message Sent Successfully!</span>
+                                ) : (
+                                    "Submit Message"
+                                )}
                             </button>
                         </form>
 

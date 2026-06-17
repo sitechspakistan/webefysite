@@ -5,8 +5,8 @@ import ProjectForm from "./ProjectForm";
 import { Suspense } from "react";
 
 export const metadata = {
-  title: "Start A Project | Webefy Today",
-  description: "Automate repetitive tasks and scale smart with Webefy Today. We build intelligent AI agents and custom workflow solutions to optimize your business operations.",
+  title: "Start Your Project With Webefy Today | Get a Free Quote",
+  description: "Ready to build something great? Tell us about your project and get a custom quote for web design, AI automation, or branding. It starts with a simple conversation.",
   alternates: {
     canonical: "https://webefytoday.com/start-a-project",
   },

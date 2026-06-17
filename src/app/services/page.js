@@ -5,8 +5,8 @@ import ServiceDetail from "../component/ServiceDetail";
 import servicesFaqs from "@/data/faqs/servicesFaqs"
 
 export const metadata = {
-    title: "Website Development, AI Automation & Branding Services",
-    description: "Scale your business with Webefy Today. We craft strategic web experiences, implement smart AI automation, and build powerful brand identities to help you win.",
+    title: "Web Design, AI Automation & Branding Services | Webefy Today",
+    description: "Explore Webefy Today's full suite of digital services — custom web development, AI-powered automation, and strategic branding. One agency, three superpowers.",
     alternates: {
         canonical: "https://webefytoday.com/services",
     },

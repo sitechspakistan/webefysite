@@ -1294,8 +1294,9 @@ footer {
   background-color: white;
   padding: 40px 0;
   border-radius: 24px;
-  box-shadow:
-    0 7.77px 16px #00000000, 0 3px 3px #00000029, inset 0 -8px #0000001f, inset 0 6px #e5e5e5;
+  /* box-shadow:
+    0 7.77px 16px #00000000, 0 3px 3px #00000029, inset 0 -8px #0000001f, inset 0 6px #e5e5e5; */
+  box-shadow: 0 8px 20px rgba(111, 34, 134, 0.12), 0 3px 6px rgba(234, 43, 137, 0.08), inset 0 -8px #6f2286, inset 0 6px #ea2b89;
 }
 
 #purple-box h4,
@@ -1878,7 +1879,8 @@ footer {
   }
 
   .third_hero_btn {
-    flex-direction: column;
+    margin: 0 auto;
+    justify-content: center;
   }
 
   #third-hero p {
@@ -1900,10 +1902,14 @@ footer {
 
   #third-hero ul {
     justify-content: center;
-    gap: 12px;
+    gap: 8px;
     padding-top: 20px;
-    flex-direction: column;
     padding-bottom: 20px;
+  }
+
+  #third-hero ul li {
+    font-size: 10px;
+    gap: 0;
   }
 
   .perfect-industry h2 {
@@ -1938,12 +1944,14 @@ footer {
   }
 
   .calendar_products {
-    justify-content: center;
+
+    justify-content: flex-start;
     align-items: center;
-    gap: 18px;
-    margin: 0 20px !important;
-    display: grid !important;
-    grid-template-columns: repeat(2, 1fr);
+    white-space: nowrap;
+    gap: 15px;
+    display: flex !important;
+    overflow-x: auto;
+    padding: 0 10px;
   }
 
   #third-hero .content-wrap .sub {
@@ -1951,10 +1959,100 @@ footer {
   }
 
   #third-hero .btn-css a {
-    padding: 14px 14px;
+    width: 100%;
   }
 
   .list-text.type-check {
     justify-content: center;
+  }
+
+  #product-form h2 {
+    font-size: 30px;
+    line-height: 28px;
+  }
+
+  #product-form .content-wrap .text {
+    font-size: 14px;
+    line-height: 18px;
+    margin-top: 10px;
+  }
+
+  .feature-lst .feature-icon {
+    padding: 5px 10px;
+    font-size: 15px;
+  }
+
+  .feature-text strong {
+    font-size: 14px;
+  }
+
+  .feature-text p {
+    font-size: 12px;
+    line-height: 14px;
+  }
+
+  #product-form .form-icon p {
+
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  #product-form .form-icon h3 {
+    font-size: 24px;
+  }
+
+  #product-form #form {
+
+    padding: 20px 10px;
+
+  }
+
+  #product-form .form-feature .icon i {
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  #product-form .form-feature .icon {
+    justify-content: start;
+    gap: 5px;
+  }
+
+  #product-form .form-feature .icon h6 {
+    font-size: 12px;
+    line-height: 12px;
+  }
+
+  #product-form .form-feature .icon p {
+    font-size: 10px;
+    line-height: 10px;
+  }
+
+  #product-form .form-feature {
+    margin: 10px;
+    gap: 10px;
+
+  }
+
+  #product-form {
+    height: 100%;
+  }
+
+  .main-icon-box {
+    display: none;
+  }
+
+  #product-form .container {
+    padding: 20px !important;
+  }
+
+  .calendar_tools img {
+    width: 100px;
+    height: auto;
+    object-fit: contain;
+  }
+
+  #product-form .content-wrap .sub {
+    margin-left: auto !important;
+    margin-right: auto !important;
   }
 }
