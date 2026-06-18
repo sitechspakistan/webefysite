@@ -3,7 +3,7 @@ import React from "react";
 const BreadcrumHero = () => {
   return (
     <>
-      <div className="section-page-title">
+      <div className="section-page-title bg-dark">
         <div className="container text-center">
           <h1 className="page-title fw-semibold effectFade fadeZoom">
             Webefy Today

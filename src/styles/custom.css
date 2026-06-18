@@ -125,11 +125,6 @@
   animation: infiniteSlide 25s linear infinite;
 }
 
-.slide-item img {
-  height: 40px;
-  width: auto;
-  object-fit: contain;
-}
 
 @keyframes infiniteSlide {
   0% {
@@ -335,8 +330,7 @@ footer {
   height: 50px;
   width: auto;
   object-fit: contain;
-  filter: grayscale(100%);
-  opacity: 0.7;
+  opacity: 0.8;
 }
 
 .section-featured-works .swiper {
@@ -1551,7 +1545,102 @@ footer {
   font-weight: 500;
 }
 
+.hover-img .img-style>img {
+  object-fit: cover;
+  width: 100% !important;
+  height: 100%;
+  transition: opacity .5s, transform 1.5s cubic-bezier(0, 0, .44, 1.18);
+}
+
+.text-secondary h2 {
+  font-size: 40px;
+  line-height: 38px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+.text-secondary h3 {
+  font-size: 30px;
+  padding-top: 10px;
+}
+
+.text-secondary strong {
+  color: #000;
+  font-weight: 700;
+}
+
+.text-secondary a {
+  color: #000;
+  font-weight: 500;
+}
+
+.text-secondary a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  background-color: #000;
+  position: relative;
+  padding: 0;
+  border-radius: 24px 24px 0 0;
+  margin: 0 20px;
+}
+
+.footer-links a {
+  color: white;
+}
+
+.link-underline {
+  text-decoration-color: white;
+}
+
+footer p {
+  color: #cecece;
+}
+
+.tf-social-1 a .social-item {
+  background:
+    radial-gradient(62.56% 62.56% at 28.14% -10.42%, #fff3 0%, #fff0 100%),
+    linear-gradient(#c6108f, #3652a6);
+}
+
+@keyframes infiniteSlide {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(calc(-50% - 20px));
+  }
+}
+
+.article-blog .blog-content {
+  padding: 2px 20px;
+  position: absolute;
+  bottom: 0px;
+  background: #000000cf;
+}
+
+.article-blog .infor_name {
+  -webkit-line-clamp: 2;
+  padding-bottom: 5px;
+  color: white;
+}
+
+.link1:hover {
+  color: #fff !important;
+}
+
 @media screen and (max-width: 768px) {
+  .partner-wrap {
+    align-items: center;
+  }
+
+  footer .footer-bottom>* {
+    justify-content: space-between !important;
+    gap: 0 !important;
+  }
+
   .tool-wrap .img-item {
     width: 52px;
     height: 52px;
