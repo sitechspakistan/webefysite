@@ -1,4 +1,4 @@
-// import portfolioData from '@/data/portfoliodata.js';
+import blogData from '@/data/blogdata.json';
 
 export default function sitemap() {
     const baseUrl = 'https://www.webefytoday.com';
@@ -14,15 +14,15 @@ export default function sitemap() {
         { url: `${baseUrl}/case-studies`, lastModified: currentDate, priority: 0.7 },
         { url: `${baseUrl}/pricing`, lastModified: currentDate, priority: 0.7 },
         { url: `${baseUrl}/growth-plans`, lastModified: currentDate, priority: 0.7 },
-        // { url: `${baseUrl}/products/ai-booking-agent`, lastModified: currentDate, priority: 0.8 },
+        { url: `${baseUrl}/blog`, lastModified: currentDate, priority: 0.8 },
         { url: `${baseUrl}/start-a-project`, lastModified: currentDate, priority: 0.9 },
     ];
 
-    // const portfolioPages = portfolioData.map(item => ({
-    //     url: `${baseUrl}/case-studies/${item.slug}`,
-    //     lastModified: currentDate,
-    //     priority: 0.7,
-    // }));
+    const blogPages = blogData.map(item => ({
+        url: `${baseUrl}/blog/${item.slug}`,
+        lastModified: currentDate,
+        priority: 0.7,
+    }));
 
-    return [...staticPages];
+    return [...staticPages, ...blogPages];
 }

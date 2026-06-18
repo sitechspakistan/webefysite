@@ -1553,15 +1553,22 @@ footer {
 }
 
 .text-secondary h2 {
-  font-size: 40px;
-  line-height: 38px;
-  padding-bottom: 10px;
   padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 40px;
+  line-height: 46px;
+  font-weight: 500;
+}
+
+.section-work-single .heading {
+  letter-spacing: -.02em;
+  font-size: 45px;
+  line-height: 55px;
 }
 
 .text-secondary h3 {
-  font-size: 30px;
   padding-top: 10px;
+  font-size: 26px;
 }
 
 .text-secondary strong {
@@ -1630,6 +1637,9 @@ footer p {
 .link1:hover {
   color: #fff !important;
 }
+
+
+
 
 @media screen and (max-width: 768px) {
   .partner-wrap {

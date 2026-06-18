@@ -63,12 +63,12 @@ export default async function Page({ params }) {
                 <div className="container">
 
                     <div className="row mb-32">
-                        <h2 className="heading fw-semibold mb-32 text-center text-white pt-4">
+                        <h2 className="heading fw-semibold mb-32 text-center text-white pt-4" style={{ marginBottom: "18px !important" }}>
                             {project.title}
                         </h2>
                         <div className="heading-section">
 
-                            <div className="heading-sub fw-semibold effectFade fadeUp mx-auto">
+                            <div className="heading-sub fw-semibold effectFade fadeUp mx-auto" style={{ marginBottom: "8px" }}>
                                 {project.date}
 
                             </div>
@@ -95,61 +95,3 @@ export default async function Page({ params }) {
 }
 
 
-{/* <div className="row mb-30">
-                        <div className="col-md-8">
-
-                            <div className="text-body-1 fw-semibold text-secondary mb-15">
-                                DELIVERABLES
-                            </div>
-
-                            <div className="list-tags">
-                                {project.deliverables?.map((item, i) => (
-                                    <span key={i} className="tags-item fw-semibold">
-                                        {item}
-                                    </span>
-                                ))}
-                            </div>
-
-                        </div>
-                    </div> */}
-
-{/* Solution */ }
-{/* <div className="row mb-60">
-                        <div className="col-12">
-                            {/* <h2 className="heading fw-semibold mb-20"></h2> */}
-{/* {project.solution?.map((item, i) => { */ }
-{/* if (typeof item === "string") { */ }
-// Agar string ke andar <h2 ya <h3 ya <strong mojud hai
-// if (item.includes("<h2") || item.includes("<h3") || item.includes("<strong")) {
-// return <div key={i} dangerouslySetInnerHTML={{ __html: item }} />;
-// }
-// Normal text ke liye
-// return <p key={i} className="text-secondary">{item}</p>;
-// }
-
-// if (item.type === "list") {
-// return (
-// <ul key={i} className="text-secondary">
-// {item.items.map((li, index) => (
-// <li key={index}>{li}</li>
-// ))}
-// </ul>
-// );
-// }
-// return null;
-// })}
-// </div>
-// </div> 
-
-{/* Result */ }
-// <div className="row mb-60">
-// <div className="col-12">
-{/* <h2 className="heading fw-semibold mb-20">Results</h2> */ }
-// {project.result?.map((item, i) => {
-// if (item.includes("<h2")) {
-// return <div key={i} dangerouslySetInnerHTML={{ __html: item }} />;
-// }
-// return <p key={i} className="text-secondary">{item}</p>;
-// })}
-// </div>
-{/* </div> */ }
