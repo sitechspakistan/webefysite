@@ -30,6 +30,14 @@ export default function Footer() {
             </li>
             <li>
               <Link
+                href="/blog"
+                className="fw-semibold link-underline link1"
+              >
+                Blog
+              </Link>
+            </li>
+            <li>
+              <Link
                 href="/start-a-project"
                 className="fw-semibold link-underline link1"
               >

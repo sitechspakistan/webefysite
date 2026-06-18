@@ -16,10 +16,12 @@ export const metadata = {
 const Blogpage = () => {
     return (
         <>
-            <SecondHero Subheading={"Solutions We Deliver"} Heading1={"We Don’t Just Build"} Heading2={"We Create Impact"}
+            <SecondHero Subheading={"Webefy Insights"} Heading1={
+                <>Smart Ideas For <br /> Business Scaling</>
+            }
                 Description={<>
-                    We combine branding, web development, and AI automation to build <br />
-                    powerful digital experiences for modern businesses.
+                    Explore our latest articles, guides, and expert insights on AI automation, <br />
+                    web development, and branding built for growth-focused brands.
                 </>}
             />
             <BlogGrid />
