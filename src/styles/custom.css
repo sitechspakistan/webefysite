@@ -5,12 +5,16 @@
 
 .section-hero .hero-image {
   background: linear-gradient(150deg, #ff0cff, #2720da);
-  background: linear-gradient(90deg,
-      hsla(303, 69%, 34%, 1) 0%,
-      hsla(221, 53%, 43%, 1) 100%);
-  background: linear-gradient(180deg,
-      hsla(303, 82%, 70%, 1) 0%,
-      hsla(225, 90%, 19%, 1) 100%);
+  background: linear-gradient(
+    90deg,
+    hsla(303, 69%, 34%, 1) 0%,
+    hsla(221, 53%, 43%, 1) 100%
+  );
+  background: linear-gradient(
+    180deg,
+    hsla(303, 82%, 70%, 1) 0%,
+    hsla(225, 90%, 19%, 1) 100%
+  );
 }
 
 .text-gradient-1 {
@@ -125,7 +129,6 @@
   animation: infiniteSlide 25s linear infinite;
 }
 
-
 @keyframes infiniteSlide {
   0% {
     transform: translateX(0);
@@ -137,9 +140,11 @@
 }
 
 .accordion-faq_item {
-  background: linear-gradient(210deg,
-      hsla(303, 82%, 70%, 1) 0%,
-      hsla(225, 90%, 19%, 1) 100%);
+  background: linear-gradient(
+    210deg,
+    hsla(303, 82%, 70%, 1) 0%,
+    hsla(225, 90%, 19%, 1) 100%
+  );
 }
 
 .accordion-faq_item .accordion-title {
@@ -167,9 +172,11 @@
 }
 
 .section-contact .contact-image {
-  background: linear-gradient(51deg,
-      hsla(303, 82%, 70%, 1) 0%,
-      hsla(225, 90%, 19%, 1) 100%);
+  background: linear-gradient(
+    51deg,
+    hsla(303, 82%, 70%, 1) 0%,
+    hsla(225, 90%, 19%, 1) 100%
+  );
 }
 
 .heading-section .heading-title {
@@ -182,9 +189,11 @@
 
 .process-card .icon {
   color: var(--white);
-  background: linear-gradient(180deg,
-      hsla(303, 82%, 70%, 1) 0%,
-      hsla(225, 90%, 19%, 1) 100%);
+  background: linear-gradient(
+    180deg,
+    hsla(303, 82%, 70%, 1) 0%,
+    hsla(225, 90%, 19%, 1) 100%
+  );
   box-shadow:
     1px 3.44px 5.57px 0px rgba(0, 0, 0, 0.0862745098),
     0px 8px 20px rgba(0, 0, 0, 0.08),
@@ -275,10 +284,12 @@ footer {
   margin-bottom: 20px;
   height: 1px;
   width: 100%;
-  background: linear-gradient(90deg,
-      rgba(212, 212, 216, 0) 0%,
-      #d4d4d8 50%,
-      rgba(212, 212, 216, 0) 100%);
+  background: linear-gradient(
+    90deg,
+    rgba(212, 212, 216, 0) 0%,
+    #d4d4d8 50%,
+    rgba(212, 212, 216, 0) 100%
+  );
 }
 
 .section-about-us .col-left {
@@ -405,9 +416,11 @@ footer {
 .overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(to top,
-      rgba(0, 0, 0, 0.85) 0%,
-      rgba(0, 0, 0, 0.4) 100%);
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.85) 0%,
+    rgba(0, 0, 0, 0.4) 100%
+  );
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
@@ -608,12 +621,12 @@ footer {
   padding: 40px 15px 40px;
 }
 
-.pricing-item>.line {
+.pricing-item > .line {
   margin-top: 30px;
   margin-bottom: 30px;
 }
 
-.pricing-item .content>* {
+.pricing-item .content > * {
   width: 100%;
 }
 
@@ -675,6 +688,7 @@ footer {
 
 .tf-social-1 {
   justify-content: center;
+  margin-right: 10px;
 }
 
 #growth .heading-title {
@@ -1201,7 +1215,7 @@ footer {
 }
 
 .industry-item #colr-2 {
-  background: #7C3AED;
+  background: #7c3aed;
   color: white;
 }
 
@@ -1211,12 +1225,12 @@ footer {
 }
 
 .industry-item #colr-3 {
-  background: #EC4899;
+  background: #ec4899;
   color: #000;
 }
 
 .industry-item #colr-4 {
-  background: #3B82F6;
+  background: #3b82f6;
   color: #fff;
 }
 
@@ -1225,10 +1239,9 @@ footer {
   color: #000;
 }
 
-
 .industry-item:hover .icon-box {
   transform: translateY(-5px);
-  border-color: #4F46E5;
+  border-color: #4f46e5;
   box-shadow: 0 4px 12px rgba(79, 70, 229, 0.1);
 }
 
@@ -1239,7 +1252,6 @@ footer {
   margin: 0;
   line-height: 1.4;
 }
-
 
 .ai-agent h2 {
   padding-bottom: 20px;
@@ -1290,7 +1302,11 @@ footer {
   border-radius: 24px;
   /* box-shadow:
     0 7.77px 16px #00000000, 0 3px 3px #00000029, inset 0 -8px #0000001f, inset 0 6px #e5e5e5; */
-  box-shadow: 0 8px 20px rgba(111, 34, 134, 0.12), 0 3px 6px rgba(234, 43, 137, 0.08), inset 0 -8px #6f2286, inset 0 6px #ea2b89;
+  box-shadow:
+    0 8px 20px rgba(111, 34, 134, 0.12),
+    0 3px 6px rgba(234, 43, 137, 0.08),
+    inset 0 -8px #6f2286,
+    inset 0 6px #ea2b89;
 }
 
 #purple-box h4,
@@ -1308,7 +1324,7 @@ footer {
 .booking_agent {
   display: flex;
   align-items: center;
-  gap: 10px
+  gap: 10px;
 }
 
 .booking_agent .agent_content {
@@ -1425,7 +1441,6 @@ footer {
   border: 1px solid #ffffff38;
   padding: 20px 0px;
   border-radius: 12px;
-
 }
 
 .main-icon-box .icon-wrapper {
@@ -1490,7 +1505,11 @@ footer {
   background-color: #fff;
   border-radius: 18px;
   padding: 20px 30px;
-  box-shadow: 0 7.77px 16px #0000, 0 3px 3px #00000029, inset 0 -8px #0000001f, inset 0 8px #e5e5e5;
+  box-shadow:
+    0 7.77px 16px #0000,
+    0 3px 3px #00000029,
+    inset 0 -8px #0000001f,
+    inset 0 8px #e5e5e5;
 }
 
 #product-form #form textarea {
@@ -1517,7 +1536,6 @@ footer {
   display: flex;
   justify-content: space-between;
   margin: 20px 20px;
-
 }
 
 #product-form .form-feature .icon {
@@ -1545,11 +1563,13 @@ footer {
   font-weight: 500;
 }
 
-.hover-img .img-style>img {
+.hover-img .img-style > img {
   object-fit: cover;
   width: 100% !important;
   height: 100%;
-  transition: opacity .5s, transform 1.5s cubic-bezier(0, 0, .44, 1.18);
+  transition:
+    opacity 0.5s,
+    transform 1.5s cubic-bezier(0, 0, 0.44, 1.18);
 }
 
 .text-secondary h2 {
@@ -1561,7 +1581,7 @@ footer {
 }
 
 .section-work-single .heading {
-  letter-spacing: -.02em;
+  letter-spacing: -0.02em;
   font-size: 45px;
   line-height: 55px;
 }
@@ -1606,9 +1626,11 @@ footer p {
 }
 
 .tf-social-1 a .social-item {
-  background:
+  /* background:
     radial-gradient(62.56% 62.56% at 28.14% -10.42%, #fff3 0%, #fff0 100%),
-    linear-gradient(#c6108f, #3652a6);
+    linear-gradient(#c6108f, #3652a6); */
+  background: white;
+  color: black;
 }
 
 @keyframes infiniteSlide {
@@ -1638,15 +1660,12 @@ footer p {
   color: #fff !important;
 }
 
-
-
-
 @media screen and (max-width: 768px) {
   .partner-wrap {
     align-items: center;
   }
 
-  footer .footer-bottom>* {
+  footer .footer-bottom > * {
     justify-content: space-between !important;
     gap: 0 !important;
   }
@@ -1974,7 +1993,6 @@ footer p {
   #third-hero h1 {
     font-size: 28px;
     line-height: 30px;
-
   }
 
   .third_hero_btn {
@@ -2043,7 +2061,6 @@ footer p {
   }
 
   .calendar_products {
-
     justify-content: flex-start;
     align-items: center;
     white-space: nowrap;
@@ -2091,7 +2108,6 @@ footer p {
   }
 
   #product-form .form-icon p {
-
     font-size: 14px;
     line-height: 16px;
   }
@@ -2101,9 +2117,7 @@ footer p {
   }
 
   #product-form #form {
-
     padding: 20px 10px;
-
   }
 
   #product-form .form-feature .icon i {
@@ -2129,7 +2143,6 @@ footer p {
   #product-form .form-feature {
     margin: 10px;
     gap: 10px;
-
   }
 
   #product-form {

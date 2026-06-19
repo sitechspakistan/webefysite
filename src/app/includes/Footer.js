@@ -29,10 +29,7 @@ export default function Footer() {
               </Link>
             </li>
             <li>
-              <Link
-                href="/blog"
-                className="fw-semibold link-underline link1"
-              >
+              <Link href="/blog" className="fw-semibold link-underline link1">
                 Blog
               </Link>
             </li>
@@ -45,7 +42,7 @@ export default function Footer() {
               </Link>
             </li> */}
           </ul>
-          <p className="copy-rights text-center">
+          <p className="copy-rights text-center text-md-end">
             Copyright &copy; Webefy Today 2026, All rights reserved.
           </p>
           <div className="tf-social-1 justify-content-end">
