@@ -4,10 +4,10 @@
       "step": "service_selection"
     },
     "services": [
-      { "id": "web", "label": "🌐 Website Development", "description": "Landing pages, business sites, e-commerce" },
-      { "id": "ai", "label": "⚡ AI Automation", "description": "Workflows, chatbots, integrations" },
-      { "id": "branding", "label": "🎨 Branding & Identity", "description": "Logo, style guide, visual identity" },
-      { "id": "other", "label": "💬 Other Inquiry", "description": "Tell us what's on your mind" }
+      { "id": "web", "label": "🌐 Website Development", "description": " - Landing pages, business sites, e-commerce" },
+      { "id": "ai", "label": "⚡ AI Automation", "description": " - Workflows, chatbots, integrations" },
+      { "id": "branding", "label": "🎨 Branding & Identity", "description": " - Logo, style guide, visual identity" },
+      { "id": "other", "label": "💬 Other Inquiry", "description": " - Tell us what's on your mind" }
     ],
     "flows": {
       "web": [
