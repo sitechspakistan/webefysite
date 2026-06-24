@@ -115,3 +115,21 @@
   /* Disabled input state */
   .wb-input:disabled { opacity: 0.5; cursor: not-allowed; }
   .wb-send:disabled  { opacity: 0.35; cursor: default; }
+
+  @media only screen and (max-width: 600px) {
+    .wb-chat-window {
+        width: 96%;
+        height: 90vh;
+        position: fixed;
+        bottom: 10px;
+        right: 7px;
+    }
+    .wb-minimized {
+        bottom: 93px;
+        right: 16px;
+    }
+    .wb-chat-teaser {
+        bottom: 10px;
+        right: 8px;
+    }
+  }
