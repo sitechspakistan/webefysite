@@ -14,6 +14,7 @@ import "../../public/assets/fonts/fonts.css";
 import Header from "./includes/Header";
 import Footer from "./includes/Footer";
 import GotoTop from "./component/GoToTop";
+import ChatBot from "./component/ChatBot";
 
 
 
@@ -51,6 +52,7 @@ export default function RootLayout({ children }) {
         <Header />
         <main id="wrapper">{children}</main>
         <Footer />
+        <ChatBot />
 
         <Script src="/assets/js/jquery.min.js" strategy="afterInteractive" />
       </body>

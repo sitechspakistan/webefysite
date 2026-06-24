@@ -42,7 +42,7 @@ export default function Footer() {
               </Link>
             </li> */}
           </ul>
-          <p className="copy-rights text-center text-md-end">
+          <p className="copy-rights text-center">
             Copyright &copy; Webefy Today 2026, All rights reserved.
           </p>
           <div className="tf-social-1 justify-content-end">
