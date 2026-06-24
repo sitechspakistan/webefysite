@@ -8,6 +8,24 @@ export async function POST(req) {
             return Response.json({ success: false, error: "Missing required fields" }, { status: 400 });
         }
 
+        // ── Get visitor IP ───────────────────────────────────────────────────
+        // x-forwarded-for is set by Vercel/proxies; falls back to a direct IP
+        const forwarded = req.headers.get("x-forwarded-for");
+        const ip = forwarded ? forwarded.split(",")[0].trim() : "unknown";
+
+        // ── Geolocate via ip-api.com (free, no API key needed) ──────────────
+        let location = "Unknown";
+        try {
+            const geoRes = await fetch(`http://ip-api.com/json/${ip}?fields=city,country,status`);
+            const geo = await geoRes.json();
+            if (geo.status === "success") {
+                location = `${geo.city}, ${geo.country}`;
+            }
+        } catch {
+            // Silently skip — don't fail the whole submission if geo fails
+        }
+
+        // ── Nodemailer ───────────────────────────────────────────────────────
         const transporter = nodemailer.createTransport({
             host: process.env.host,
             port: 465,
@@ -20,7 +38,6 @@ export async function POST(req) {
 
         const label = serviceLabel || service;
 
-        // Build answer rows from whatever the flow collected
         const answerRows = Object.entries(answers)
             .map(([key, value]) => {
                 const formattedKey = key.replace(/_/g, " ").replace(/\b\w/g, (c) => c.toUpperCase());
@@ -38,6 +55,7 @@ export async function POST(req) {
     <body>
         <div style="font-size: 16px; font-weight: 500;">
             <p><strong>Service:</strong> ${label}</p>
+            <p><strong>Location:</strong> 📍 ${location}</p>
             <hr style="border:none;border-top:1px solid #eee;margin:12px 0;" />
             ${answerRows}
         </div>
