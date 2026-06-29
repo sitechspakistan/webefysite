@@ -1799,7 +1799,7 @@ footer p {
   box-shadow: 0 20px 60px #00000026;
   position: fixed;
   bottom: 0;
-  right: 88px;
+  right: 0px;
   z-index: 99999;
 }
 
