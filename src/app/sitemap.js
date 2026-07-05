@@ -16,6 +16,7 @@ export default function sitemap() {
         { url: `${baseUrl}/growth-plans`, lastModified: currentDate, priority: 0.7 },
         { url: `${baseUrl}/blog`, lastModified: currentDate, priority: 0.8 },
         { url: `${baseUrl}/start-a-project`, lastModified: currentDate, priority: 0.9 },
+        { url: `${baseUrl}/solutions/ai-booking-agent`, lastModified: currentDate, priority: 0.8 },
     ];
 
     const blogPages = blogData.map(item => ({

@@ -9,7 +9,7 @@ export const metadata = {
     title: "Custom Web Design & Development Services | Webefy Today",
     description: "Get a fast, responsive, and conversion-optimized website built from scratch. Webefy Today delivers custom web design, UI/UX, e-commerce, and web app development.",
     alternates: {
-        canonical: "https://webefytoday.com/services/web-development",
+        canonical: "https://www.webefytoday.com/services/web-development",
     },
     icons: {
         icon: "/assets/images/webefy-lgo/about-shape1_2.png",

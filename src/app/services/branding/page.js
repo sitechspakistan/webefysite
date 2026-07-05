@@ -9,7 +9,7 @@ export const metadata = {
     title: "Logo Design & Brand Identity Services | Webefy Today",
     description: "Build a brand that people remember. Webefy Today crafts custom logos, visual identities, brand strategies, and complete brand guidelines for lasting impact.",
     alternates: {
-        canonical: "https://webefytoday.com/services/branding",
+        canonical: "https://www.webefytoday.com/services/branding",
     },
     icons: {
         icon: "/assets/images/webefy-lgo/about-shape1_2.png",

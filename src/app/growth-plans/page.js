@@ -12,7 +12,7 @@ export const metadata = {
   title: "Website Care & Monthly Growth Plans | Webefy Today",
   description: "Keep your website fast, secure, and converting every month. Webefy Today's Website Care Plans offer ongoing WordPress, Shopify, and custom dev support from $299/mo.",
   alternates: {
-    canonical: "https://webefytoday.com/growth-plans",
+    canonical: "https://www.webefytoday.com/growth-plans",
   },
   icons: {
     icon: "/assets/images/webefy-lgo/about-shape1_2.png",

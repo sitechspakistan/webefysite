@@ -5,7 +5,7 @@ export const metadata = {
     title: "Case Studies | Webefy Today",
     description: "Explore Webefy Today's case studies. See how we combine premium web development, smart AI automation, and strategic branding to create real business impact.",
     alternates: {
-        canonical: "https://webefytoday.com/case-studies",
+        canonical: "https://www.webefytoday.com/case-studies",
     },
     icons: {
         icon: "/assets/images/webefy-lgo/about-shape1_2.png",

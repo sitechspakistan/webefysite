@@ -14,7 +14,7 @@ export const metadata = {
   title: "Web Design, AI Automation \u0026 Branding Agency | Webefy Today",
   description: "Webefy Today builds high-converting websites, intelligent AI automation systems, and iconic brand identities. Trusted by 100+ businesses. Start your project today.",
   alternates: {
-    canonical: "https://webefytoday.com",
+    canonical: "https://www.webefytoday.com",
   },
   icons: {
     icon: "/assets/images/webefy-lgo/about-shape1_2.png",

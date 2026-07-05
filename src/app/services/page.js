@@ -8,7 +8,7 @@ export const metadata = {
     title: "Web Design, AI Automation & Branding Services | Webefy Today",
     description: "Explore Webefy Today's full suite of digital services — custom web development, AI-powered automation, and strategic branding. One agency, three superpowers.",
     alternates: {
-        canonical: "https://webefytoday.com/services",
+        canonical: "https://www.webefytoday.com/services",
     },
     icons: {
         icon: "/assets/images/webefy-lgo/about-shape1_2.png",

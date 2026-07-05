@@ -7,7 +7,7 @@ export const metadata = {
     title: "About Us | Webefy Today",
     description: "At Webefy Today, we turn vision into reality. From strategic web development to smart AI solutions, find out how we help brands scale from idea to production.",
     alternates: {
-        canonical: "https://webefytoday.com/about",
+        canonical: "https://www.webefytoday.com/about",
     },
     icons: {
         icon: "/assets/images/webefy-lgo/about-shape1_2.png",

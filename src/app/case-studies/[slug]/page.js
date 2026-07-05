@@ -34,7 +34,7 @@ export async function generateMetadata({ params }) {
         },
 
         alternates: {
-            canonical: `https://webefytoday.com/case-studies/${slug}`,
+            canonical: `https://www.webefytoday.com/case-studies/${slug}`,
         },
         icons: {
             icon: "/assets/images/webefy-lgo/about-shape1_2.png",

@@ -6,7 +6,7 @@ export const metadata = {
     title: "Blogs | Webefy Today",
     description: "See Our Latest Blogs",
     alternates: {
-        canonical: "https://webefytoday.com/blog",
+        canonical: "https://www.webefytoday.com/blog",
     },
     icons: {
         icon: "/assets/images/webefy-lgo/about-shape1_2.png",

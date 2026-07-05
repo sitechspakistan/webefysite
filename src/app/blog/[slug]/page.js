@@ -20,12 +20,12 @@ export async function generateMetadata({ params }) {
         title: `${project.seo.title || project.title} | Webefy Today`,
         description: project.seo.description || project.summary,
         alternates: {
-            canonical: project.seo.canonical || `https://webefytoday.com/blog/${slug}`,
+            canonical: project.seo.canonical || `https://www.webefytoday.com/blog/${slug}`,
         },
         openGraph: {
             title: project.seo.title || project.title,
             description: project.seo.description || project.summary,
-            url: project.seo.canonical || `https://webefytoday.com/blog/${slug}`,
+            url: project.seo.canonical || `https://www.webefytoday.com/blog/${slug}`,
             images: [
                 {
                     url: project.image,

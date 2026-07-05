@@ -9,7 +9,7 @@ export const metadata = {
     title: "AI Automation Services for Business Growth | Webefy Today",
     description: "Automate repetitive tasks, reduce errors, and scale faster with Webefy Today's custom AI solutions — chatbots, workflow automation, API integrations, and more.",
     alternates: {
-        canonical: "https://webefytoday.com/services/ai-automation",
+        canonical: "https://www.webefytoday.com/services/ai-automation",
     },
     icons: {
         icon: "/assets/images/webefy-lgo/about-shape1_2.png",

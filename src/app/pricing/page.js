@@ -8,7 +8,7 @@ export const metadata = {
     title: "Transparent Web Design & Branding Pricing | Webefy Today",
     description: "View Webefy Today's clear, affordable pricing for logo design, website packages, and branding kits. No hidden fees — plans starting from $49.",
     alternates: {
-        canonical: "https://webefytoday.com/pricing",
+        canonical: "https://www.webefytoday.com/pricing",
     },
     icons: {
         icon: "/assets/images/webefy-lgo/about-shape1_2.png",
