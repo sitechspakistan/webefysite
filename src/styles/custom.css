@@ -5,12 +5,16 @@
 
 .section-hero .hero-image {
   background: linear-gradient(150deg, #ff0cff, #2720da);
-  background: linear-gradient(90deg,
-      hsla(303, 69%, 34%, 1) 0%,
-      hsla(221, 53%, 43%, 1) 100%);
-  background: linear-gradient(180deg,
-      hsla(303, 82%, 70%, 1) 0%,
-      hsla(225, 90%, 19%, 1) 100%);
+  background: linear-gradient(
+    90deg,
+    hsla(303, 69%, 34%, 1) 0%,
+    hsla(221, 53%, 43%, 1) 100%
+  );
+  background: linear-gradient(
+    180deg,
+    hsla(303, 82%, 70%, 1) 0%,
+    hsla(225, 90%, 19%, 1) 100%
+  );
 }
 
 .text-gradient-1 {
@@ -136,9 +140,11 @@
 }
 
 .accordion-faq_item {
-  background: linear-gradient(210deg,
-      hsla(303, 82%, 70%, 1) 0%,
-      hsla(225, 90%, 19%, 1) 100%);
+  background: linear-gradient(
+    210deg,
+    hsla(303, 82%, 70%, 1) 0%,
+    hsla(225, 90%, 19%, 1) 100%
+  );
 }
 
 .accordion-faq_item .accordion-title {
@@ -166,9 +172,11 @@
 }
 
 .section-contact .contact-image {
-  background: linear-gradient(51deg,
-      hsla(303, 82%, 70%, 1) 0%,
-      hsla(225, 90%, 19%, 1) 100%);
+  background: linear-gradient(
+    51deg,
+    hsla(303, 82%, 70%, 1) 0%,
+    hsla(225, 90%, 19%, 1) 100%
+  );
 }
 
 .heading-section .heading-title {
@@ -181,9 +189,11 @@
 
 .process-card .icon {
   color: var(--white);
-  background: linear-gradient(180deg,
-      hsla(303, 82%, 70%, 1) 0%,
-      hsla(225, 90%, 19%, 1) 100%);
+  background: linear-gradient(
+    180deg,
+    hsla(303, 82%, 70%, 1) 0%,
+    hsla(225, 90%, 19%, 1) 100%
+  );
   box-shadow:
     1px 3.44px 5.57px 0px rgba(0, 0, 0, 0.0862745098),
     0px 8px 20px rgba(0, 0, 0, 0.08),
@@ -274,10 +284,12 @@ footer {
   margin-bottom: 20px;
   height: 1px;
   width: 100%;
-  background: linear-gradient(90deg,
-      rgba(212, 212, 216, 0) 0%,
-      #d4d4d8 50%,
-      rgba(212, 212, 216, 0) 100%);
+  background: linear-gradient(
+    90deg,
+    rgba(212, 212, 216, 0) 0%,
+    #d4d4d8 50%,
+    rgba(212, 212, 216, 0) 100%
+  );
 }
 
 .section-about-us .col-left {
@@ -404,9 +416,11 @@ footer {
 .overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(to top,
-      rgba(0, 0, 0, 0.85) 0%,
-      rgba(0, 0, 0, 0.4) 100%);
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.85) 0%,
+    rgba(0, 0, 0, 0.4) 100%
+  );
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
@@ -607,12 +621,12 @@ footer {
   padding: 40px 15px 40px;
 }
 
-.pricing-item>.line {
+.pricing-item > .line {
   margin-top: 30px;
   margin-bottom: 30px;
 }
 
-.pricing-item .content>* {
+.pricing-item .content > * {
   width: 100%;
 }
 
@@ -1549,7 +1563,7 @@ footer {
   font-weight: 500;
 }
 
-.hover-img .img-style>img {
+.hover-img .img-style > img {
   object-fit: cover;
   width: 100% !important;
   height: 100%;
@@ -1698,9 +1712,7 @@ footer p {
   border-radius: 50px;
   color: #fff;
   font-weight: 600;
-  background: linear-gradient(135deg,
-      #4338ca,
-      #d946ef);
+  background: linear-gradient(135deg, #4338ca, #d946ef);
   display: block;
 }
 
@@ -1709,7 +1721,7 @@ footer p {
   background: #fff;
   border-radius: 24px;
   overflow: hidden;
-  box-shadow: 0 20px 60px rgba(0, 0, 0, .12);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.12);
 }
 
 .wb-header {
@@ -1719,9 +1731,7 @@ footer p {
   align-items: center;
   justify-content: space-evenly;
 
-  background: linear-gradient(135deg,
-      #736dd5,
-      #d946ef);
+  background: linear-gradient(135deg, #736dd5, #d946ef);
 }
 
 .wb-header span i {
@@ -1780,7 +1790,7 @@ footer p {
   margin-bottom: 10px;
   padding-left: 18px;
   font-weight: 600;
-  transition: all .25s;
+  transition: all 0.25s;
   display: block;
 }
 
@@ -1798,8 +1808,8 @@ footer p {
   overflow: hidden;
   box-shadow: 0 20px 60px #00000026;
   position: fixed;
-  bottom: 0;
-  right: 0px;
+  bottom: 10px;
+  right: 10px;
   z-index: 99999;
 }
 
@@ -1821,9 +1831,7 @@ footer p {
 .wb-user {
   max-width: 80%;
   margin-left: auto;
-  background: linear-gradient(135deg,
-      #4f46e5,
-      #d946ef);
+  background: linear-gradient(135deg, #4f46e5, #d946ef);
   color: #fff;
   padding: 14px;
   border-radius: 18px;
@@ -1867,14 +1875,11 @@ footer p {
   color: #fff;
   cursor: pointer;
   border-radius: 50%;
-  background: linear-gradient(135deg,
-      #4f46e5,
-      #d946ef);
+  background: linear-gradient(135deg, #4f46e5, #d946ef);
   display: block;
 }
 
 .wb-minimized {
-
   position: fixed;
   bottom: 40px;
   right: 88px;
@@ -1895,7 +1900,7 @@ footer p {
     align-items: center;
   }
 
-  footer .footer-bottom>* {
+  footer .footer-bottom > * {
     justify-content: space-between !important;
     gap: 0 !important;
   }
