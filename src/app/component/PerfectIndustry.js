@@ -1,11 +1,11 @@
 import React from 'react'
 
-function PerfectIndustry() {
+function PerfectIndustry({ heading, classIn }) {
     return (
         <section className='perfect-industry pt-4 pb-4'>
             <div className='container-fluid text-center'>
-                <span>BUILT FOR EVERY APPOINTMENT-BASED BUSINESS</span>
-                <h2>Perfect for Industries That Run on Appointments</h2>
+                <span className={`${classIn}`}>BUILT FOR EVERY APPOINTMENT-BASED BUSINESS</span>
+                <h2>{heading}</h2>
             </div>
             <div className='container industries-container'>
                 <div className="industry-item">

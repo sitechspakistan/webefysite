@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import React from 'react'
 
-function ThirdHero() {
+function ThirdHero({ subheading, headingone, headingtwo, para, btntxtone, btntxttwo, image, features = [] }) {
     return (
         <div>
             <div id="third-hero" className="section-hero">
@@ -12,64 +12,61 @@ function ThirdHero() {
                             <div className="content-wrap text-white">
 
                                 <div className="heading-section">
-
                                     <div className="sub fw-semibold effectFade fadeUp">
-                                        AI AUTOMATION FOR BOOKINGS & APPOINTMENTS
+                                        {subheading}
                                     </div>
-
-
                                 </div>
+
                                 <div className="title text-display-2 effectFade fadeRotateX">
                                     <h1>
                                         <span className="title1 fw-semibold text-gradient-1">
-                                            AI Agents That Book Appointments for You
+                                            {headingone}
                                         </span>
                                         <br />
-
-                                        <div className="title2 d-flex gap-20 justify-content-center flex-wrap">
+                                        <div className="title2 d-flex gap-20 flex-wrap">
                                             <span className="fw-semibold text-gradient-1">
-                                                While You Focus on What Matters
+                                                {headingtwo}
                                             </span>
                                         </div>
-
                                     </h1>
                                 </div>
+
                                 <p className="text effectFade fadeUp">
-                                    Our AI agents handle calls, chats, and messages 24/7 to book, reschedule, and manage appointments automatically. Never miss a booking again.
+                                    {para}
                                 </p>
 
                                 <div className="third_hero_btn">
                                     <div>
                                         <Link href="#contact" className="tf-btn">
-                                            Book a Demo ⇾
+                                            {btntxtone}
                                         </Link>
                                     </div>
                                     <div className='btn-css'>
                                         <Link href="/start-a-project" className="tf-btn">
-                                            Start a project
+                                            {btntxttwo}
                                         </Link>
                                     </div>
                                 </div>
 
-
                                 <div>
                                     <ul>
-                                        <li><img src="/assets/images/products/clock.svg" width={30} height={28}></img>24/7 Availability</li>
-                                        <li><img src="/assets/images/products/task.svg" width={30} height={28}></img>No Missed Bookings</li>
-                                        <li><img src="/assets/images/products/ai.svg" width={30} height={28}></img>Fully Automated</li>
+                                        {features.map((item, index) => (
+                                            <li key={index}>
+                                                <img src={item.icon} width={30} height={28} alt="" />
+                                                {item.text}
+                                            </li>
+                                        ))}
                                     </ul>
                                 </div>
                             </div>
-
                         </div>
                         <div className='col-lg-6 d-flex justify-content-center align-items-center'>
-                            <img className='hero-img' src="/assets/images/ai-hero-right.png"></img>
+                            <img className='hero-img' src={`/assets/images/${image}`}></img>
                         </div>
                     </div>
-
                 </div>
             </div>
-        </div >
+        </div>
     )
 }
 
