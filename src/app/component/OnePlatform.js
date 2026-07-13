@@ -2,13 +2,13 @@
 import { Weight } from 'lucide-react';
 import React, { useRef, useState } from 'react'
 
-const BusinessAutomation = () => {
+const OnePlatform = () => {
     const automations = [
         {
             bgcolor: "#f88181",
-            title: "CRM Automation",
-            desc: "Automate lead capture, follow-ups, and pipeline updates. Sync data smoothly between tools.",
-            tools: "Zapier, Zoho CRM, HubSpot, Google Sheets",
+            title: "Professional Webstie",
+            // desc: "Automate lead capture, follow-ups, and pipeline updates. Sync data smoothly between tools.",
+            image: "img.jpg",
             icon: (
                 <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <mask id="mask0_2230_475" maskUnits="userSpaceOnUse" x="1" y="1" width="38" height="38" style={{ maskType: "luminance" }}>
@@ -34,7 +34,7 @@ const BusinessAutomation = () => {
             bgcolor: "#f700907c",
             title: "Marketing Automation",
             desc: "Automate email campaigns, lead nurturing, onboarding, and customer journeys.",
-            tools: "Mailchimp, ActiveCampaign, Klaviyo, ConvertKit, Zara",
+            image: "img-s-1.jpg",
             icon: (
                 <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M22.1659 25.2949C22.1659 26.6188 21.1569 27.6919 19.9124 27.6919H14.9512" stroke="white" strokeWidth="1.4" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round" />
@@ -50,7 +50,7 @@ const BusinessAutomation = () => {
             bgcolor: "#7bff00",
             title: "Sales Automation",
             desc: "Automate proposals, invoices, reminders, and CRM data management. Boost sales efficiency.",
-            tools: "Zoho CRM, HubSpot, Salesforce, Google Sheets",
+            image: "img-s-3.jpg",
             icon: (
                 <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M34.504 20.8641L31.9195 22.3563C31.8423 22.4008 31.7435 22.3744 31.6989 22.2971L27.0451 14.2366C27.0005 14.1593 27.027 14.0606 27.1042 14.016L29.6887 12.5238" stroke="white" strokeWidth="1.2" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round" />
@@ -65,7 +65,7 @@ const BusinessAutomation = () => {
             bgcolor: "#ffc58f",
             title: "Operations Automation",
             desc: "Automate standard workflows, reports, notifications, and data management.",
-            tools: "Zapier, Make.com, n8n, Google Workspace",
+            image: "img-s-4.jpg",
             icon: (
                 <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M10.3677 37.4541L10.3904 35.043C10.3943 34.5564 10.2167 34.0866 9.89494 33.7234L3.62982 26.6579C3.00605 25.9552 2.65664 25.0502 2.64483 24.1106L2.53332 14.7592C2.52244 13.8552 3.24782 13.115 4.15189 13.1081H4.1637C5.01849 13.1081 5.73106 13.7694 5.79121 14.625L6.28371 21.5968C6.32224 22.1377 6.54231 22.6489 6.9094 23.0486L11.0348 27.5373C11.4829 28.0238 12.2301 28.085 12.7502 27.6754" stroke="white" strokeWidth="1.2" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round" />
@@ -78,7 +78,7 @@ const BusinessAutomation = () => {
             bgcolor: "#ffabff",
             title: "AI Automation",
             desc: "Integrate AI agents, chatbots, voice agents, and content generation into workflows.",
-            tools: "OpenAI, Anthropic, Vapi, Bland.ai, ElevenLabs",
+            image: "img-s-5.jpg",
             icon: (
                 <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <circle cx="20" cy="14" r="6" stroke="white" strokeWidth="1.4" />
@@ -92,7 +92,7 @@ const BusinessAutomation = () => {
             bgcolor: "#65a06ac2",
             title: "Reporting Automation",
             desc: "Automate dashboards, reports, and data sync across platforms.",
-            tools: "Google Sheets, Looker Studio, Power BI",
+            image: "img-s-6.jpg",
             icon: (
                 <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <rect x="6" y="22" width="6" height="12" stroke="white" strokeWidth="1.4" />
@@ -149,7 +149,7 @@ const BusinessAutomation = () => {
     };
 
     return (
-        <div className="section-features flat-spacing pt-5 pb-0">
+        <div className="section-features flat-spacing pt-5 pb-0" id='section_platform'>
             <div className="container">
                 <div className="heading-section center mb-64">
                     <h2 className=" effectFade fadeRotateX">Automations We Build</h2>
@@ -190,13 +190,22 @@ const BusinessAutomation = () => {
                             <div className="features-item style-2 h-100 text-center effectFade fadeRotateX">
                                 <div
                                     className="icon "
-                                    style={{ background: item.bgcolor, display: 'flex', justifyContent: 'center', alignItems: 'center', margin: "0px auto" }}
+                                    style={{ background: item.bgcolor, display: 'flex', justifyContent: 'center', alignItems: 'center', margin: "0px" }}
                                 >
                                     {item.icon}
                                 </div>
                                 <h4 className="title fw-semibold">{item.title}</h4>
-                                <p className="text-secondary">{item.desc}</p>
-                                <span><strong style={{ fontWeight: "700", color: "#000", fontSize: "16px" }}>Tools:</strong>{item.tools}</span>
+                                {/* <p className="text-secondary">{item.desc}</p> */}
+                                <ul>
+                                    <li><i className='fas'></i>Mobile responsive</li>
+                                    <li>Mobile responsive</li>
+                                    <li>Mobile responsive</li>
+                                    <li>Mobile responsive</li>
+
+                                </ul>
+                                <div className="automation-img-wrap">
+                                    <img src={`/assets/images/restaurant/${item.image}`} alt={item.title} />
+                                </div>
                             </div>
                         </div>
                     ))}
@@ -206,4 +215,4 @@ const BusinessAutomation = () => {
     )
 }
 
-export default BusinessAutomation
+export default OnePlatform

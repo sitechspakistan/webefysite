@@ -2,7 +2,7 @@ import React from 'react'
 
 const BusinessTools = () => {
     return (
-        <section className='calendar_tools_two bg-white pt-5 pb-5'>
+        <section className='calendar_tools_two pt-5 pb-5'>
             <div className='container'>
                 <h4 className='text-center'>Platforms & Tool We Work With</h4>
                 <p className='text-center'>We connect the apps you use and love </p>

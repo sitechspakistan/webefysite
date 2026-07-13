@@ -1,47 +1,41 @@
 import React from 'react'
 
-function PerfectIndustry({ heading, classIn }) {
+const defaultIndustries = [
+    { id: 1, iconClass: "fa-solid fa-stethoscope", colorId: "colr-1", text: "Clinics & Healthcare" },
+    { id: 2, iconClass: "fas fa-tooth", colorId: "pur-col", text: "Dental Clinics" },
+    { id: 3, iconClass: "fa-solid fa-paw", colorId: "colr-2", text: "Veterinary Clinics" },
+    { id: 4, iconClass: "fa-solid fa-utensils", colorId: "org-col", text: "Restaurants & Cafes" },
+    { id: 5, iconClass: "fa-solid fa-scissors", colorId: "colr-3", text: "Salons & Spas" },
+    { id: 6, iconClass: "fa-solid fa-dumbbell", colorId: "colr-4", text: "Gyms & Fitness" },
+    { id: 7, iconClass: "fa-solid fa-user-tie", colorId: "org-col", text: "Consultants & Coaches" },
+    { id: 8, iconClass: "fa-solid fa-ellipsis", colorId: "colr-5", text: "And Many More..." },
+];
+
+function PerfectIndustry({
+    heading,
+    classIn,
+    bgclass,
+    eyebrow = "BUILT FOR EVERY APPOINTMENT-BASED BUSINESS",
+    industries = defaultIndustries,
+    gridclass,
+}) {
     return (
-        <section className='perfect-industry pt-4 pb-4'>
+        <section className={`perfect-industry pt-4 pb-4 ${bgclass}`}>
             <div className='container-fluid text-center'>
-                <span className={`${classIn}`}>BUILT FOR EVERY APPOINTMENT-BASED BUSINESS</span>
+                <span className={`${classIn}`}>{eyebrow}</span>
                 <h2>{heading}</h2>
             </div>
-            <div className='container industries-container'>
-                <div className="industry-item">
-                    <div className="icon-box" id='colr-1'><i className="fa-solid fa-stethoscope"></i></div>
-                    <p className="industry-text">Clinics & Healthcare</p>
-                </div>
-                <div className="industry-item">
-                    <div className="icon-box" id='pur-col'><i className="fas fa-tooth"></i></div>
-                    <p className="industry-text">Dental Clinics</p>
-                </div>
-                <div className="industry-item">
-                    <div className="icon-box" id='colr-2'><i className="fa-solid fa-paw"></i></div>
-                    <p className="industry-text">Veterinary Clinics</p>
-                </div>
-                <div className="industry-item" >
-                    <div className="icon-box" id='org-col'><i className="fa-solid fa-utensils"></i></div>
-                    <p className="industry-text">Restaurants & Cafes</p>
-                </div>
-                <div className="industry-item">
-                    <div className="icon-box" id='colr-3'><i className="fa-solid fa-scissors"></i></div>
-                    <p className="industry-text">Salons & Spas</p>
-                </div>
-                <div className="industry-item">
-                    <div className="icon-box" id='colr-4'><i className="fa-solid fa-dumbbell"></i></div>
-                    <p className="industry-text">Gyms & Fitness</p>
-                </div>
-                <div className="industry-item">
-                    <div className="icon-box" id='org-col'><i className="fa-solid fa-user-tie"></i></div>
-                    <p className="industry-text">Consultants & Coaches</p>
-                </div>
-                <div className="industry-item">
-                    <div className="icon-box" id='colr-5'><i className="fa-solid fa-ellipsis"></i></div>
-                    <p className="industry-text">And Many More...</p>
-                </div>
+            <div className={`container industries-container ${gridclass} `}>
+                {industries.map((item) => (
+                    <div className="industry-item" key={item.id}>
+                        <div className="icon-box" id={item.colorId}>
+                            <i className={item.iconClass}></i>
+                        </div>
+                        <p className="industry-text">{item.text}</p>
+                    </div>
+                ))}
             </div>
-        </section >
+        </section>
     )
 }
 
