@@ -20,7 +20,7 @@ function PerfectIndustry({
     gridclass,
 }) {
     return (
-        <section className={`perfect-industry pt-4 pb-4 ${bgclass}`}>
+        <section className={`perfect-industry pt-5 ${bgclass}`}>
             <div className='container-fluid text-center'>
                 <span className={`${classIn}`}>{eyebrow}</span>
                 <h2>{heading}</h2>

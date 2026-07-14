@@ -72,7 +72,7 @@ function FourthHero() {
                             </div>
                         </div>
                         <div className='col-lg-6 d-flex justify-content-center align-items-center'>
-                            <img className='hero-img' src={`/assets/images/hero-img.png`}></img>
+                            <img className='hero-img' src={`/assets/images/restaurant/hero-img.png`}></img>
                         </div>
                     </div>
                 </div>
