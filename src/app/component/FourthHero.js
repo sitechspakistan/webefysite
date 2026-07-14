@@ -48,7 +48,7 @@ function FourthHero() {
                                 <div className="third_hero_btn">
                                     <div>
                                         <Link href="#contact" className="tf-btn">
-                                            Book Free Demo →
+                                            Contact Us →
                                         </Link>
                                     </div>
                                     <div className='btn-css'>

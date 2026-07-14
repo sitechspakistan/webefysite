@@ -5,6 +5,7 @@ import FourthHero from '@/app/component/FourthHero'
 import OnePlatform from '@/app/component/OnePlatform';
 import PerfectIndustry from '@/app/component/PerfectIndustry'
 import PowerfulIntegration from '@/app/component/PowerfulIntegration';
+import RestaurantCta from '@/app/component/RestaurantCta';
 import RestaurantWorkflow from '@/app/component/RestaurantWorkflow';
 import React from 'react'
 const foodIndustries = [
@@ -27,11 +28,7 @@ const RestaurantManagement = () => {
             <PowerfulIntegration />
             <Benefit />
             <CheckListSection />
-            <BusinessCta heading='Ready to Modernize Your Restaurant?'
-                description={<>Let's build a smart digital solution that helps you serve better, operate efficiently and grow your business.</>}
-                classOne={"d-none"} classtwo={"d-none"}
-                spantxt={<> <br />No commitment. Just a friendly conversation.</>}
-                classtrd={"col-lg-6 text-end text-white"} />
+            <RestaurantCta />
         </>
     )
 }

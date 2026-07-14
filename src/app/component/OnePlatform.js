@@ -1,5 +1,5 @@
 "use client"
-import { Globe, Calendar, QrCode, ShoppingBag, Tv, Bot } from 'lucide-react';
+import { Globe, Calendar, QrCode, ShoppingBag, Tv, Bot, CircleCheck } from 'lucide-react';
 import React, { useRef, useState } from 'react'
 
 const OnePlatform = () => {
@@ -170,7 +170,10 @@ const OnePlatform = () => {
                                 <h4 className="title fw-semibold text-start">{item.title}</h4>
                                 <ul className="text-secondary text-start">
                                     {item.desc.map((point, i) => (
-                                        <li key={i}>{point}</li>
+                                        <li key={i}>
+                                            <CircleCheck size={16} color="#ff00ea" strokeWidth={2} />
+                                            <span>{point}</span>
+                                        </li>
                                     ))}
                                 </ul>
                                 <div className="automation-img-wrap">

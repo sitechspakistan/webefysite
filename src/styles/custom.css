@@ -2430,7 +2430,7 @@ footer p {
 
 .build-box,
 .choose-box {
-  background: #f1f0f0;
+  background: #3139eb12;
   border: 1px solid #eee;
   border-radius: 12px;
   padding: 30px;
@@ -2466,6 +2466,37 @@ footer p {
   right: 14px;
   width: 310px;
 }
+
+#rest-cta h2 {
+  font-size: 32px;
+  padding-bottom: 0;
+}
+
+#rest-cta span {
+  font-size: 10px;
+  color: #fff;
+}
+
+#rest-cta .tf-btn {
+  width: 50%;
+}
+
+.features-item span {
+  color: #000;
+  font-size: 14px;
+  font-weight: 700;
+  margin-left: 5px;
+}
+
+.perfect-industry h2,
+.section-features h2,
+.process-heading,
+#calendar_tools_trd h4,
+#benefit h2 {
+  font-size: 40px;
+  font-weight: normal;
+}
+
 
 /* Responsive */
 @media (max-width: 992px) {
