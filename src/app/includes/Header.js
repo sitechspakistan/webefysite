@@ -164,7 +164,28 @@ export default function Header() {
                   className="btn-mobile-menu close-mb-menu text-caption link"
                   onClick={() => setMenuOpen(false)}
                 >
-                  <i className="icon icon-close"></i> CLOSE
+                  <svg
+                    width="37"
+                    height="38"
+                    viewBox="0 0 37 38"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M9.19141 9.80762L27.5762 28.1924"
+                      stroke="black"
+                      strokeWidth="1.5"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    ></path>
+                    <path
+                      d="M9.19141 28.1924L27.5762 9.80761"
+                      stroke="black"
+                      strokeWidth="1.5"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    ></path>
+                  </svg>
                 </button>
               </div>
 
@@ -186,7 +207,7 @@ export default function Header() {
                         <li>
                           <Link
                             href="/services"
-                            className="sub-nav-link text-white"
+                            className="sub-nav-link "
                             onClick={() => {
                               setMenuOpen(false);
                               setServicesOpen(false);
@@ -198,7 +219,7 @@ export default function Header() {
                         <li>
                           <Link
                             href="/services/web-development"
-                            className="sub-nav-link text-white"
+                            className="sub-nav-link "
                             onClick={() => {
                               setMenuOpen(false);
                               setServicesOpen(false);
@@ -210,7 +231,7 @@ export default function Header() {
                         <li>
                           <Link
                             href="/services/ai-automation"
-                            className="sub-nav-link text-white"
+                            className="sub-nav-link "
                             onClick={() => {
                               setMenuOpen(false);
                               setServicesOpen(false);
@@ -222,7 +243,7 @@ export default function Header() {
                         <li>
                           <Link
                             href="/services/branding"
-                            className="sub-nav-link text-white"
+                            className="sub-nav-link"
                             onClick={() => {
                               setMenuOpen(false);
                               setServicesOpen(false);
@@ -285,10 +306,7 @@ export default function Header() {
               </div>
               <div className="canvas_foot">
                 <div className="left">
-                  <a
-                    href="mailto:hello@webefy.today"
-                    className="text-caption text-neutral-200"
-                  >
+                  <a href="mailto:hello@webefy.today" className="text-caption">
                     hello@webefy.today
                   </a>
                 </div>
