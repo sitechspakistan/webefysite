@@ -1,7 +1,7 @@
 import React from 'react'
 import blogData from "@/data/blogdata.json"
 import SecondHero from '@/app/component/SecondHero';
-
+import { SquareArrowLeft } from 'lucide-react';
 export async function generateMetadata({ params }) {
     const { slug } = await params;
 
@@ -59,14 +59,20 @@ export default async function Page({ params }) {
         <>
             <SecondHero variant={2} />
 
-            <div id="works" className="section-work-single box-white flat-spacing pt-0">
+            <div id="works" className="section-work-single box-white flat-spacing pt-0 blog-section">
                 <div className="container">
+
                     <div className="heading-section ">
-
-                        <div className="heading-sub fw-semibold effectFade fadeUp mx-auto mb-0">
-                            {project.date}
-
+                        <div >
+                            <a href="/blog">
+                                <SquareArrowLeft size={40} strokeWidth={1.5} color='#fff' />
+                            </a>
                         </div>
+                        <div className="heading-sub fw-semibold effectFade fadeUp mb-0">
+                            {project.date}
+                        </div>
+
+
                     </div>
                     <div className="row mb-32">
                         <h2 className="heading fw-semibold mb-32 text-center text-white pt-4" style={{ marginBottom: "18px !important" }}>

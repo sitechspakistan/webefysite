@@ -93,9 +93,11 @@
 .header-actions {
   display: flex;
 }
+
 .nav-menu-main {
   gap: 20px;
 }
+
 .offcanvas-menu {
   background-color: white;
 }
@@ -103,7 +105,7 @@
 .offcanvas-menu .canvas_center {
   align-items: center;
   padding-top: 20%;
-  overflow-y: hidden;
+  overflow-y: visible;
 }
 
 .offcanvas-menu .mb-menu-link {
@@ -113,6 +115,7 @@
 .canvas_head .text-caption {
   font-size: 24px;
 }
+
 .mb-menu-link .text {
   color: black;
 }
@@ -120,12 +123,15 @@
 .sub-nav-menu li a {
   color: black;
 }
+
 .nav-ul-mb li {
   text-align: center;
 }
+
 .offcanvas-menu.show .canvas_head {
   transform: translateY(0);
 }
+
 .offcanvas-menu .canvas_head {
   transform: translateY(0);
 }

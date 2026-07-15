@@ -2554,6 +2554,12 @@ footer p {
   background: rgba(255, 255, 255, 0.2);
 }
 
+.blog-section .heading-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
 
 /* Responsive */
 @media (max-width: 992px) {
@@ -3226,5 +3232,22 @@ footer p {
 
   .benefit_pt .box {
     border-right: none;
+  }
+
+  .section-work-single {
+    margin-top: -300px;
+  }
+
+  .section-work-single .heading {
+    font-size: 28px;
+    line-height: 32px;
+  }
+
+  .text-secondary h2 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 36px;
   }
 }
