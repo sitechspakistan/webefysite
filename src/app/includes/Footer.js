@@ -33,17 +33,9 @@ export default function Footer() {
                 Blog
               </Link>
             </li>
-            {/* <li>
-              <Link
-                href="/start-a-project"
-                className="fw-semibold link-underline link1"
-              >
-                Start a Project
-              </Link>
-            </li> */}
           </ul>
           <p className="copy-rights text-center">
-            Copyright &copy; Webefy Today 2026, All rights reserved.
+            &copy; Webefy Today 2026, All rights reserved.
           </p>
           <div className="tf-social-1 justify-content-end">
             <a
