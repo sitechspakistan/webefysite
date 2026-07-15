@@ -41,12 +41,12 @@ const businesswithus = [
 ]
 
 const benefits = [
-    { percent: "+40%", title: "More Reservations", desc: "Increase in direct bookings", txtcol: "#000" },
-    { percent: "+60%", title: "More Online Orders", desc: "Higher revenue & growth", txtcol: "#000" },
-    { percent: "-30%", title: "Lower Operating Costs", desc: "Save time and money", txtcol: "#000" },
-    { percent: "+25%", title: "Faster Service", desc: "Happy customers", txtcol: "#000" },
-    { percent: "+90%", title: "Customer Satisfaction", desc: "Better reviews & loyalty", txtcol: "#000" },
-    { percent: "24/7", title: "Always Open", desc: "Bookings & orders", txtcol: "#000" },
+    { percent: "+40%", title: "More Reservations", desc: "Increase in direct bookings", txtcol: "#1b1b1b" },
+    { percent: "+60%", title: "More Online Orders", desc: "Higher revenue & growth", txtcol: "#1b1b1b" },
+    { percent: "-30%", title: "Lower Operating Costs", desc: "Save time and money", txtcol: "#1b1b1b" },
+    { percent: "+25%", title: "Faster Service", desc: "Happy customers", txtcol: "#1b1b1b" },
+    { percent: "+90%", title: "Customer Satisfaction", desc: "Better reviews & loyalty", txtcol: "#1b1b1b" },
+    { percent: "24/7", title: "Always Open", desc: "Bookings & orders", txtcol: "#1b1b1b" },
 ]
 const Benefit = () => {
     return (
@@ -71,7 +71,7 @@ const Benefit = () => {
                     ))}
                 </div>
                 <div className='benefit_pt'>
-                    <div className='row g-0'>
+                    <div className='row g-lg-0 g-3'>
                         {benefits.map((item, index) => (
                             <div
                                 className={`col-lg-2 col-6 ${index === benefits.length - 1 ? "last-box" : ""}`}

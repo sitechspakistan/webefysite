@@ -57,7 +57,7 @@ const CheckListSection = () => {
                             <h4>What We Can Build For Your Restaurant</h4>
                             <div className='row'>
                                 {buildColumns.map((col, colIndex) => (
-                                    <div className='col-lg-4 col-4' key={colIndex}>
+                                    <div className='col-lg-4 col-12' key={colIndex}>
                                         <ul className='build-list'>
                                             {col.items.map((item, itemIndex) => (
                                                 <li key={itemIndex}>

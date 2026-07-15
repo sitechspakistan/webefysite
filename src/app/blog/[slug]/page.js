@@ -61,18 +61,18 @@ export default async function Page({ params }) {
 
             <div id="works" className="section-work-single box-white flat-spacing pt-0">
                 <div className="container">
+                    <div className="heading-section ">
 
+                        <div className="heading-sub fw-semibold effectFade fadeUp mx-auto mb-0">
+                            {project.date}
+
+                        </div>
+                    </div>
                     <div className="row mb-32">
                         <h2 className="heading fw-semibold mb-32 text-center text-white pt-4" style={{ marginBottom: "18px !important" }}>
                             {project.title}
                         </h2>
-                        <div className="heading-section">
 
-                            <div className="heading-sub fw-semibold effectFade fadeUp mx-auto" style={{ marginBottom: "8px" }}>
-                                {project.date}
-
-                            </div>
-                        </div>
                         <div className="col-12">
                             <div className="wrap-image mb-30 text-center">
                                 <img src={project.image} alt={project.title} />

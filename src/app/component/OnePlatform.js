@@ -148,6 +148,8 @@ const OnePlatform = () => {
                         scrollSnapType: isDragging ? 'none' : 'x mandatory',
                         cursor: isDragging ? 'grabbing' : 'grab',
                         userSelect: 'none',
+                        maskImage: 'linear-gradient(to right, #000 0%, #000 85%, transparent 100%)',
+                        WebkitMaskImage: 'linear-gradient(to right, #000 0%, #000 85%, transparent 100%)',
                     }}
                 >
                     {automations.map((item, index) => (
@@ -156,7 +158,6 @@ const OnePlatform = () => {
                             className="automation-card-outer"
                             style={{
                                 flex: '0 0 auto',
-                                width: 'calc((100% - 4 * 24px) / 4.5)',
                                 scrollSnapAlign: 'start',
                             }}
                         >

@@ -156,50 +156,54 @@ const BusinessAutomation = () => {
                     <p>Powerful solutions to automate and grow your business</p>
                 </div>
 
-                <div
-                    ref={scrollRef}
-                    className="automation-scroll-wrap"
-                    onMouseDown={handleMouseDown}
-                    onMouseLeave={handleMouseLeave}
-                    onMouseUp={handleMouseUp}
-                    onMouseMove={handleMouseMove}
-                    onTouchStart={handleTouchStart}
-                    onTouchMove={handleTouchMove}
-                    onTouchEnd={handleTouchEnd}
-                    style={{
-                        display: 'flex',
-                        flexWrap: 'nowrap',
-                        overflowX: 'hidden',
-                        gap: '24px',
-                        paddingBottom: '16px',
-                        scrollSnapType: isDragging ? 'none' : 'x mandatory',
-                        cursor: isDragging ? 'grabbing' : 'grab',
-                        userSelect: 'none',
-                    }}
-                >
-                    {automations.map((item, index) => (
-                        <div
-                            key={index}
-                            className="automation-card-outer"
-                            style={{
-                                flex: '0 0 auto',
-                                width: 'calc((100% - 4 * 24px) / 4.5)',
-                                scrollSnapAlign: 'start',
-                            }}
-                        >
-                            <div className="features-item style-2 h-100 text-center effectFade fadeRotateX">
-                                <div
-                                    className="icon "
-                                    style={{ background: item.bgcolor, display: 'flex', justifyContent: 'center', alignItems: 'center', margin: "0px auto" }}
-                                >
-                                    {item.icon}
+                {/* Wrapper for scroll + fade overlay */}
+                <div style={{ position: 'relative' }}>
+                    <div
+                        ref={scrollRef}
+                        className="automation-scroll-wrap"
+                        onMouseDown={handleMouseDown}
+                        onMouseLeave={handleMouseLeave}
+                        onMouseUp={handleMouseUp}
+                        onMouseMove={handleMouseMove}
+                        onTouchStart={handleTouchStart}
+                        onTouchMove={handleTouchMove}
+                        onTouchEnd={handleTouchEnd}
+                        style={{
+                            display: 'flex',
+                            flexWrap: 'nowrap',
+                            overflowX: 'hidden',
+                            gap: '24px',
+                            paddingBottom: '16px',
+                            scrollSnapType: isDragging ? 'none' : 'x mandatory',
+                            cursor: isDragging ? 'grabbing' : 'grab',
+                            userSelect: 'none',
+                            maskImage: 'linear-gradient(to right, #000 0%, #000 85%, transparent 100%)',
+                            WebkitMaskImage: 'linear-gradient(to right, #000 0%, #000 85%, transparent 100%)',
+                        }}
+                    >
+                        {automations.map((item, index) => (
+                            <div
+                                key={index}
+                                className="automation-card-outer"
+                                style={{
+                                    flex: '0 0 auto',
+                                    scrollSnapAlign: 'start',
+                                }}
+                            >
+                                <div className="features-item style-2 h-100 text-center effectFade fadeRotateX">
+                                    <div
+                                        className="icon "
+                                        style={{ background: item.bgcolor, display: 'flex', justifyContent: 'center', alignItems: 'center', margin: "0px auto" }}
+                                    >
+                                        {item.icon}
+                                    </div>
+                                    <h4 className="title fw-semibold">{item.title}</h4>
+                                    <p className="text-secondary">{item.desc}</p>
+                                    <span><strong style={{ fontWeight: "700", color: "#000", fontSize: "16px" }}>Tools:</strong>{item.tools}</span>
                                 </div>
-                                <h4 className="title fw-semibold">{item.title}</h4>
-                                <p className="text-secondary">{item.desc}</p>
-                                <span><strong style={{ fontWeight: "700", color: "#000", fontSize: "16px" }}>Tools:</strong>{item.tools}</span>
                             </div>
-                        </div>
-                    ))}
+                        ))}
+                    </div>
                 </div>
             </div>
         </div>

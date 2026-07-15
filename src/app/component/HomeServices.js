@@ -104,7 +104,7 @@ export default function HomeService({ classname }) {
                     design, and powerful branding to position your business at
                     the pinnacle of its industry.
                   </p>
-                  <Link href="/services" className={`tf-btn mt-4 mb-4 mb-md-0`}>
+                  <Link href="/services" className={`tf-btn mt-4 mb-3 mb-md-0`}>
                     Our Services
                     <i className="icon icon-arrow-top-right"></i>
                   </Link>
