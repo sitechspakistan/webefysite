@@ -18,7 +18,7 @@ export default function ServiceDetail() {
                     <div className="row">
 
                         <div className="col-md-6">
-                            <img src="assets/images/services/web.jpg" className="img-fluid" alt="" />
+                            <img src="/assets/images/services/web.jpg" className="img-fluid" alt="" />
                         </div>
 
                         <div className="col-md-6 d-flex flex-column justify-content-between">
@@ -76,7 +76,7 @@ export default function ServiceDetail() {
 
 
                         <div className="col-md-6">
-                            <img src="assets/images/services/AI.avif" className="img-fluid" alt="" />
+                            <img src="/assets/images/services/AI.avif" className="img-fluid" alt="" />
                         </div>
 
 
@@ -90,7 +90,7 @@ export default function ServiceDetail() {
                     <div className="row">
 
                         <div className="col-md-6">
-                            <img src="assets/images/services/brand.jpg" className="img-fluid" alt="" />
+                            <img src="/assets/images/services/brand.jpg" className="img-fluid" alt="" />
                         </div>
 
                         <div className="col-md-6 d-flex flex-column justify-content-between">
