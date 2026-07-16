@@ -14,15 +14,15 @@ export default function HomeTool() {
                     exceptional websites<br /> and iconic brand identities.
                 </div>
                 <div className="position-relative tool-image-box">
-                    <img className="img-item img-item-1" src="assets/images/webefy-lgo/i-1.png" alt="" />
-                    <img className="img-item img-item-2" src="assets/images/webefy-lgo/i-2.png" alt="" />
-                    <img className="img-item img-item-3" src="assets/images/webefy-lgo/Adobe-Illustrator.webp" alt="" />
+                    <img className="img-item img-item-1" src="/assets/images/webefy-lgo/i-1.png" alt="" />
+                    <img className="img-item img-item-2" src="/assets/images/webefy-lgo/i-2.png" alt="" />
+                    <img className="img-item img-item-3" src="/assets/images/webefy-lgo/Adobe-Illustrator.webp" alt="" />
                     <div className="image-center flex-shrink">
-                        <img src="assets/images/logo/webefy-logo.png" alt="" />
+                        <img src="/assets/images/logo/webefy-logo.png" alt="" />
                     </div>
-                    <img className="img-item img-item-4" src="assets/images/webefy-lgo/figma.png" alt="" />
-                    <img className="img-item img-item-5" src="assets/images/webefy-lgo/i-6.png" alt="" />
-                    <img className="img-item img-item-6" src="assets/images/webefy-lgo/nextjs.png" alt="" />
+                    <img className="img-item img-item-4" src="/assets/images/webefy-lgo/figma.png" alt="" />
+                    <img className="img-item img-item-5" src="/assets/images/webefy-lgo/i-6.png" alt="" />
+                    <img className="img-item img-item-6" src="/assets/images/webefy-lgo/nextjs.png" alt="" />
                     <div className="side-line">
                         <svg data-viewbox-desktop="0 0 302 157" data-viewbox-mobile="0 0 300 100" className="line-1"
                             width="300" height="157" viewBox="0 0 302 157" fill="none"
