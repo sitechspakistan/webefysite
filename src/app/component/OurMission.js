@@ -29,7 +29,7 @@ export default function Mission() {
                                     </p>
                                 </div>
                             </div>
-                            <img className="effectFade fadeRotateX" src="assets/images/aboutus.png" alt="" />
+                            <img className="effectFade fadeRotateX" src="/assets/images/aboutus.png" alt="" />
                         </div>
                     </div>
                     <div className="col-xxl-5 col-lg-6">
