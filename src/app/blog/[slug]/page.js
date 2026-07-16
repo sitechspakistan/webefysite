@@ -2,6 +2,8 @@ import React from 'react'
 import blogData from "@/data/blogdata.json"
 import SecondHero from '@/app/component/SecondHero';
 import { SquareArrowLeft } from 'lucide-react';
+import AdSense from '@/app/component/AdSense';
+
 export async function generateMetadata({ params }) {
     const { slug } = await params;
 
@@ -90,8 +92,8 @@ export default async function Page({ params }) {
                                 dangerouslySetInnerHTML={{ __html: project.content }}
                             />
                         </div>
+                        <AdSense />
                     </div>
-
 
 
                 </div>

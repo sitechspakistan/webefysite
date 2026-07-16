@@ -91,7 +91,8 @@ export default function RootLayout({ children }) {
         <main id="wrapper">{children}</main>
         <Footer />
         <ChatBot />
-
+        
+        <Script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9417797128494503" crossOrigin="anonymous" strategy="afterInteractive" />
         <Script src="/assets/js/jquery.min.js" strategy="afterInteractive" />
       </body>
     </html>
