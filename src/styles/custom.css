@@ -709,7 +709,8 @@ footer {
 }
 
 .link1:hover {
-  color: black !important;
+  color: #929292 !important;
+  text-decoration: underline;
 }
 
 #growth .pricing-item {
@@ -1200,22 +1201,23 @@ footer {
 }
 
 .industry-item #colr-1 {
-  background: #98b5f3 !important;
+  background: #c8dbff17 !important;
+  color: #42a8ff;
 }
 
 .industry-item #pur-col {
-  background: #3d5596;
-  color: white;
+  color: #af00fc;
+  background: #dfb8ff75;
 }
 
 .industry-item #colr-2 {
-  background: #7c3aed;
-  color: white;
+  color: #3aedaf;
+  background: #3aedaf26;
 }
 
 .industry-item #org-col {
-  background: #f88181;
-  color: #000;
+  color: #ff9531;
+  background: #fc8c0029;
 }
 
 .icon#org-col {
@@ -1230,18 +1232,18 @@ footer {
 }
 
 .industry-item #colr-3 {
-  background: #ec4899;
-  color: #000;
+  color: #ff00d8;
+  background: #ec48992b;
 }
 
 .industry-item #colr-4 {
-  background: #3b82f6;
-  color: #fff;
+  color: #08c0ff;
+  background: #3b82f621;
 }
 
 .industry-item #colr-5 {
-  background: #bcffa1;
-  color: #000;
+  color: #33a12a;
+  background: #bcffa173;
 }
 
 .industry-item:hover .icon-box {
@@ -1698,9 +1700,9 @@ footer p {
   color: white;
 }
 
-.link1:hover {
+/* .link1:hover {
   color: #fff !important;
-}
+} */
 
 .wb-chat-teaser {
   position: fixed;
@@ -2414,7 +2416,7 @@ footer p {
   font-weight: 600;
   color: white;
   margin-bottom: 4px;
-  line-height: 5px;
+  line-height: 16px;
 }
 
 .benefit_pt p {
@@ -2620,7 +2622,7 @@ footer p {
   }
 
   .section-hero {
-    height: 590px;
+    height: 535px;
   }
 
   .section-hero .content-wrap .title {
@@ -2632,12 +2634,18 @@ footer p {
   }
 
   .heading-section .heading-title {
-    font-size: 32px;
+    font-size: 28px;
     line-height: 40px;
   }
 
+  .tf-btn,
   .tf-btn-2 {
-    margin-bottom: 24px;
+    padding: 12px;
+    margin-bottom: 0;
+  }
+
+  .section-hero .content-wrap .bot-btns {
+    flex-direction: row;
   }
 
   .flat-spacing {
@@ -2660,7 +2668,7 @@ footer p {
   }
 
   .custom-height {
-    height: 450px !important;
+    max-height: 430px !important;
   }
 
   .section-hero h1 {
@@ -2713,6 +2721,7 @@ footer p {
 
   .section-cta .box-black {
     padding: 30px 10px;
+    margin: 0;
   }
 
   .section-cta h2 {
@@ -3005,7 +3014,7 @@ footer p {
   }
 
   #third-hero .content-wrap .sub {
-    font-size: 14px;
+    font-size: 12px;
   }
 
   #third-hero .btn-css a {
@@ -3155,7 +3164,7 @@ footer p {
   #third-hero span {
     text-align: center;
     margin: 0px auto;
-    line-height: 20px;
+    line-height: 24px;
   }
 
   #third-hero .content-wrap .sub {
@@ -3190,16 +3199,20 @@ footer p {
 
   .process-card {
     margin: 0 0px 10px 0;
+    min-width: 100%;
   }
 
   .process-wrap {
-    flex-direction: column;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    padding: 5px;
+    margin-top: 10px;
   }
 
-  .process-connector {
+  /* .process-connector {
 
     display: none;
-  }
+  } */
 
   .hero-feature-text strong {
     line-height: 14px;
@@ -3250,4 +3263,52 @@ footer p {
     font-weight: 500;
     line-height: 36px;
   }
+
+  .heading-section .heading-sub {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  .section-hero .heading-section .heading-sub {
+    margin-bottom: 0px;
+  }
+
+  .business-cta .container {
+    padding: 20px 20px !important;
+  }
+
+  .comparison-section {
+    padding: 30px 0px;
+  }
+
+  .benefit_pt h6 {
+    margin-bottom: 0px;
+  }
+
+  #faqs .heading-title,
+  #workingSec .heading-title {
+    font-size: 30px;
+    line-height: 30px;
+  }
+
+  .tf-social-1 {
+    flex-direction: row;
+    gap: 5px !important;
+    flex-wrap: nowrap;
+  }
+
+  .section-project .tf-social-1 a {
+    gap: 8px;
+    padding: 5px 8px;
+  }
+
+  .tf-social-1 a .social-item {
+    width: 24px;
+    height: 26px;
+
+  }
+}
+
+.accordion-asked .accordion-button:hover {
+  color: #000;
 }

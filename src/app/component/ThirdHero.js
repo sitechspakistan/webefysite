@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import React from 'react'
 
-function ThirdHero({ subheading, headingone, headingtwo, para, btntxtone, btntxttwo, image, features = [] }) {
+function ThirdHero({ subheading, headingone, headingtwo, para, btntxtone, btntxttwo, image, features = [], hOneid }) {
     return (
         <div>
             <div id="third-hero" className="section-hero">
@@ -17,7 +17,7 @@ function ThirdHero({ subheading, headingone, headingtwo, para, btntxtone, btntxt
                                     </div>
                                 </div>
 
-                                <div className="title text-display-2 effectFade fadeRotateX">
+                                <div className="title text-display-2 effectFade fadeRotateX" id={`${hOneid}`}>
                                     <h1>
                                         <span className="title1 fw-semibold text-gradient-1">
                                             {headingone}

@@ -14,7 +14,7 @@ const BusinessProcess = () => {
     return (
         <section className='bg-white'>
             <div className="container pt-5 pb-5">
-                <div className="text-center mb-5">
+                <div className="text-center mb-lg-5 mb-0">
                     <h2 className="process-heading">Our Automation Process</h2>
                     <p className="process-subheading">Simple, transparent and effective</p>
                 </div>

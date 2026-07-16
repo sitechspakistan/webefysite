@@ -20,7 +20,7 @@ export const metadata = {
 function AiBookingAgent() {
     return (
         <>
-            <ThirdHero subheading={"AI AUTOMATION FOR BOOKINGS & APPOINTMENTS"} headingone={"AI Agents That Book Appointments for You"}
+            <ThirdHero subheading={"AI AUTOMATION FOR BOOKINGS & APPOINTMENTS"} hOneid={"main-head"} headingone={"AI Agents That Book Appointments for You"}
                 headingtwo={"While You Focus on What Matters"} para={"Our AI agents handle calls, chats, and messages 24/7 to book, reschedule, and manage appointments automatically. Never miss a booking again."}
                 btntxtone={"Book a Demo ⇾"} btntxttwo={"Start a project"}
                 features={[
@@ -30,7 +30,7 @@ function AiBookingAgent() {
                 ]}
                 image={"ai-hero-right.png"}
             />
-            <PerfectIndustry heading={"Perfect for Industries That Run on Appointments"} />
+            <PerfectIndustry heading={"Perfect for Industries That Run on Appointments"} gridclass={"food-container"} />
             <AiAgent />
             <BookingAgent />
             <CalendarTools />
