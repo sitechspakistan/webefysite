@@ -3251,6 +3251,10 @@ footer p {
     margin-top: -300px;
   }
 
+  .process-card .icon {
+    margin: 0 auto 20px;
+  }
+
   .section-work-single .heading {
     font-size: 28px;
     line-height: 32px;
