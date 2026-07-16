@@ -82,6 +82,7 @@ export default function RootLayout({ children }) {
           rel="apple-touch-icon-precomposed"
           href="/assets/images/webefy-lgo/about-shape1_2.png"
         />
+        <meta name="google-adsense-account" content="ca-pub-9417797128494503"></meta>
       </head>
 
       <body className="counter-scroll">
