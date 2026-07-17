@@ -74,7 +74,7 @@ const GrowthPlanPricing = () => {
             >
               <div className="top d-flex justify-content-center align-items-center">
                 <div className="d-flex gap-8 align-items-center">
-                  <div className="fw-semibold text-white text-center growth-title">
+                  <div className="fw-semibold text-center growth-title">
                     Growth Optimization Plan
                   </div>
                 </div>
@@ -87,10 +87,10 @@ const GrowthPlanPricing = () => {
                 >
                   $299 - $599
                 </div>
-                <span className="fw-bold text-white"> / month</span>
+                <span className="fw-bold"> / month</span>
               </div>
 
-              <div className="text-white text-center ">
+              <div className="text-center ">
                 For improving performance & conversions every month.
               </div>
               <div className="line"></div>

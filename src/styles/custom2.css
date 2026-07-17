@@ -78,6 +78,7 @@
 .tf-btn {
   transition: all 0.35s ease;
   white-space: nowrap;
+  background: #000;
 }
 
 .btn-hide {

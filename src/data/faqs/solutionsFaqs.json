@@ -1,0 +1,27 @@
+[
+    {
+        "id": 1,
+        "question": "What's the difference between your Services and Solutions?",
+        "answer": "Services are the core skills we offer like web development and branding. Solutions are ready-to-use systems built on top of those services, like our AI Booking Agent or Restaurant Management system, designed to solve a specific business problem out of the box."
+    },
+    {
+        "id": 2,
+        "question": "Can the AI Booking Agent work with my existing calendar or booking system?",
+        "answer": "Yes. Our AI Booking Agent integrates with most popular calendar and scheduling tools, so it fits into your current workflow instead of replacing it."
+    },
+    {
+        "id": 3,
+        "question": "How long does it take to set up Business Automation for my company?",
+        "answer": "Most automation setups take between 1–3 weeks, depending on how many workflows and tools need to be connected. We'll give you a clear timeline after understanding your current process."
+    },
+    {
+        "id": 4,
+        "question": "Is the Restaurant Management system suitable for small restaurants, or only large chains?",
+        "answer": "It works for both. The system scales with your business whether you're running a single restaurant or managing operations across multiple locations."
+    },
+    {
+        "id": 5,
+        "question": "Do I need technical knowledge to use these solutions?",
+        "answer": "Not at all. We design every solution to be simple and intuitive for non-technical users, and we provide onboarding support to get your team comfortable from day one."
+    }
+]

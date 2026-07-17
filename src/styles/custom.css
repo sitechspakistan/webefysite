@@ -561,10 +561,17 @@ footer {
 }
 
 .section-services img {
+  object-fit: contain;
+  border-radius: 20px;
   width: 100%;
   height: auto;
-  object-fit: contain;
-  border-radius: 8px;
+
+}
+
+#image-bg {
+  background: #f5f5f5;
+  max-height: 400px;
+  padding: 14px;
 }
 
 .filters-mobile {
@@ -669,7 +676,12 @@ footer {
 }
 
 .sub-menu {
-  min-width: 164px;
+  min-width: 190px;
+}
+
+li.sub-menu-item a {
+  text-align: center;
+  font-size: 14px;
 }
 
 .tf-social-1 {
@@ -708,13 +720,24 @@ footer {
   color: black;
 }
 
-.link1:hover {
+li.sub-menu-item a:hover {
   color: #929292 !important;
   text-decoration: underline;
 }
 
 #growth .pricing-item {
   padding: 40px 30px;
+  box-shadow: 0 8px 20px #6f22861f, 0 3px 6px #ea2b8914, inset 0 -8px #6f2286, inset 0 6px #ea2b89;
+  background: #fff;
+}
+
+.pricing-item.style-black .content .title,
+.pricing-item.style-black .content .list-text li {
+  color: #000000;
+}
+
+.pricing-item.style-black .heading .price-number {
+  color: #000000;
 }
 
 #growth .style-black .tf-btn,
@@ -730,7 +753,7 @@ footer {
 }
 
 #growth .style-black .growth-title {
-  background: linear-gradient(to right, #df318c 0%, #ffffff 100%);
+  background: linear-gradient(to right, #df318c 0%, #6a2ef8 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -1608,9 +1631,9 @@ footer {
 }
 
 .hover-img .img-style>img {
-  object-fit: cover;
-  width: 100% !important;
-  height: 100%;
+  object-fit: fill;
+  width: 825px !important;
+  max-height: 274px;
   transition:
     opacity 0.5s,
     transform 1.5s cubic-bezier(0, 0, 0.44, 1.18);
@@ -1647,6 +1670,11 @@ footer {
 
 .text-secondary a:hover {
   text-decoration: underline;
+}
+
+.list-tags a {
+  border-radius: 10px;
+
 }
 
 footer {
@@ -1690,8 +1718,14 @@ footer p {
 .article-blog .blog-content {
   padding: 2px 20px;
   position: absolute;
-  bottom: 0px;
+  bottom: 5px;
   background: #000000cf;
+  width: 100%;
+}
+
+.heading-section .heading-sub {
+
+  font-size: 16px;
 }
 
 .article-blog .infor_name {
@@ -1699,10 +1733,6 @@ footer p {
   padding-bottom: 5px;
   color: white;
 }
-
-/* .link1:hover {
-  color: #fff !important;
-} */
 
 .wb-chat-teaser {
   position: fixed;
@@ -2563,6 +2593,10 @@ footer p {
   gap: 5px;
 }
 
+.accordion-asked .accordion-button:hover {
+  color: #000;
+}
+
 /* Responsive */
 @media (max-width: 992px) {
   .solutions-grid {
@@ -3311,8 +3345,4 @@ footer p {
     height: 26px;
 
   }
-}
-
-.accordion-asked .accordion-button:hover {
-  color: #000;
 }

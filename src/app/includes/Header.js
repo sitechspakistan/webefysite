@@ -8,6 +8,7 @@ export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
   const lastScrollY = useRef(0);
   const [servicesOpen, setServicesOpen] = useState(false);
+  const [solutionOpen, setSolutionOpen] = useState(false);
   const pathname = usePathname();
 
   const isActive = (href) =>
@@ -83,13 +84,47 @@ export default function Header() {
                   </li>
                 </ul>
               </li>
-              <li className="menu-item">
+              {/* <li className="menu-item">
                 <Link
                   href="/pricing"
                   className={`item-link link1 ${isActive("/pricing") ? "active" : ""}`}
                 >
                   Pricing
                 </Link>
+              </li> */}
+              <li className="menu-item has-child">
+                <Link
+                  href="/solutions"
+                  className={`item-link link1 ${isActive("/solutions") ? "active" : ""}`}
+                >
+                  Solutions
+                </Link>
+                <ul className="sub-menu">
+                  <li className="sub-menu-item link1">
+                    <Link
+                      href="/solutions/ai-booking-agent"
+                      className={`item-link link1 ${isActive("/solutions/ai-booking-agent") ? "active" : ""}`}
+                    >
+                      AI Booking Agent
+                    </Link>
+                  </li>
+                  <li className="sub-menu-item">
+                    <Link
+                      href="/solutions/business-automation"
+                      className={`item-link link1 ${isActive("/solutions/business-automation") ? "active" : ""}`}
+                    >
+                      Business Automation
+                    </Link>
+                  </li>
+                  <li className="sub-menu-item">
+                    <Link
+                      href="/solutions/restaurant-management"
+                      className={`item-link link1 ${isActive("/solutions/restaurant-management") ? "active" : ""}`}
+                    >
+                      Restaurant Management
+                    </Link>
+                  </li>
+                </ul>
               </li>
               <li className="menu-item">
                 <Link
@@ -255,8 +290,71 @@ export default function Header() {
                       </ul>
                     )}
                   </li>
-
                   <li>
+                    <a
+                      className="mb-menu-link text-display-1"
+                      onClick={() => setSolutionOpen(!solutionOpen)}
+                    >
+                      <span className="text">Solutions</span>
+                      <i
+                        className={`icon ${solutionOpen ? "icon-chevron-up" : "icon-chevron-down"}`}
+                      ></i>
+                    </a>
+
+                    {solutionOpen && (
+                      <ul className="sub-nav-menu">
+                        <li>
+                          <Link
+                            href="/solution"
+                            className="sub-nav-link "
+                            onClick={() => {
+                              setMenuOpen(false);
+                              setSolutionOpen(false);
+                            }}
+                          >
+                            All Solutions
+                          </Link>
+                        </li>
+                        <li>
+                          <Link
+                            href="/solutions/ai-booking-agent"
+                            className="sub-nav-link "
+                            onClick={() => {
+                              setMenuOpen(false);
+                              setSolutionOpen(false);
+                            }}
+                          >
+                            Ai Booking Agent
+                          </Link>
+                        </li>
+                        <li>
+                          <Link
+                            href="/services/business-automation"
+                            className="sub-nav-link "
+                            onClick={() => {
+                              setMenuOpen(false);
+                              setSolutionOpen(false);
+                            }}
+                          >
+                            Business Automation
+                          </Link>
+                        </li>
+                        <li>
+                          <Link
+                            href="/services/restaurant-management"
+                            className="sub-nav-link"
+                            onClick={() => {
+                              setMenuOpen(false);
+                              setSolutionOpen(false);
+                            }}
+                          >
+                            Restaurant Management
+                          </Link>
+                        </li>
+                      </ul>
+                    )}
+                  </li>
+                  {/* <li>
                     <Link
                       href="/pricing"
                       className="mb-menu-link text-display-1"
@@ -264,7 +362,7 @@ export default function Header() {
                     >
                       <span className="text">Pricing</span>
                     </Link>
-                  </li>
+                  </li> */}
                   <li>
                     <Link
                       href="/growth-plans"
