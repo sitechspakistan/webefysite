@@ -329,7 +329,7 @@ export default function Header() {
                         </li>
                         <li>
                           <Link
-                            href="/services/business-automation"
+                            href="/solutions/business-automation"
                             className="sub-nav-link "
                             onClick={() => {
                               setMenuOpen(false);
@@ -341,7 +341,7 @@ export default function Header() {
                         </li>
                         <li>
                           <Link
-                            href="/services/restaurant-management"
+                            href="/solutions/restaurant-management"
                             className="sub-nav-link"
                             onClick={() => {
                               setMenuOpen(false);
