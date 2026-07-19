@@ -7,7 +7,7 @@
         "image": "/assets/uploads/blogs/4.jpg",
         "date": "July 20, 2026",
         "seo": {
-          "title": "What is RAG? A Beginner's Guide (2026) | Webefy Today",
+          "title": "What is RAG? A Beginner's Guide (2026)",
           "description": "Learn what Retrieval-Augmented Generation (RAG) is, how it works, and why it's the foundation of modern AI chatbots, knowledge bases, and AI automation in 2026.",
           "canonical": "https://www.webefytoday.com/blog/what-is-rag-beginners-guide-2026"
         }
@@ -20,7 +20,7 @@
         "image": "/assets/uploads/blogs/3.jpg",
         "date": "July 15, 2026",
         "seo": {
-          "title": "Best VPS for AI Agents in 2026 | Webefy Today",
+          "title": "Best VPS for AI Agents in 2026",
           "description": "Discover the best VPS for AI agents in 2026. Learn what server specifications you need, why Hostinger VPS is our top recommendation, and how to run n8n and AI automation projects.",
           "canonical": "https://www.webefytoday.com/blog/best-vps-for-ai-agents-2026"
         }
@@ -33,7 +33,7 @@
         "image": "/assets/uploads/blogs/2.jpg",
         "date": "July 15, 2026",
         "seo": {
-          "title": "How to Self-Host n8n on Hostinger VPS (2026 Guide) | Webefy Today",
+          "title": "How to Self-Host n8n on Hostinger VPS (2026 Guide)",
           "description": "A beginner-friendly guide to self-hosting n8n on Hostinger VPS. Learn how to deploy your own automation server, save money, and run powerful AI workflows.",
           "canonical": "https://www.webefytoday.com/blog/how-to-self-host-n8n-on-hostinger-vps-2026-guide"
         }
@@ -46,7 +46,7 @@
         "image": "/assets/uploads/blogs/1.jpg",
         "date": "March 18, 2026",
         "seo": {
-            "title": "How Small Businesses Use AI Automation to Compete With Big Brands | Webefy Today",
+            "title": "How Small Businesses Use AI Automation to Compete With Big Brands",
             "description": "Discover how small businesses are using AI automation tools to match the speed, personalisation, and efficiency of big brands without the big budget.",
             "canonical": "https://www.webefytoday.com/blog/small-businesses-ai-automation-compete-big-brands"
         }
