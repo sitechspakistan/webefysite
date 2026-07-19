@@ -6,7 +6,7 @@ import ServiceSection from "@/app/component/ServiceSection";
 import brandFaqs from "@/data/faqs/brandFaqs"
 
 export const metadata = {
-    title: "Logo Design & Brand Identity Services | Webefy Today",
+    title: "Logo Design & Brand Identity Services",
     description: "Build a brand that people remember. Webefy Today crafts custom logos, visual identities, brand strategies, and complete brand guidelines for lasting impact.",
     alternates: {
         canonical: "https://www.webefytoday.com/services/branding",

@@ -5,7 +5,7 @@ import SecondHero from "../component/SecondHero";
 import WebsitePricing from "../component/WebsitePricing";
 
 export const metadata = {
-    title: "Transparent Web Design & Branding Pricing | Webefy Today",
+    title: "Transparent Web Design & Branding Pricing",
     description: "View Webefy Today's clear, affordable pricing for logo design, website packages, and branding kits. No hidden fees — plans starting from $49.",
     alternates: {
         canonical: "https://www.webefytoday.com/pricing",

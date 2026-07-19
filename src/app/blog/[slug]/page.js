@@ -19,7 +19,7 @@ export async function generateMetadata({ params }) {
     }
 
     return {
-        title: `${project.seo.title || project.title} | Webefy Today`,
+        title: `${project.seo.title || project.title}`,
         description: project.seo.description || project.summary,
         alternates: {
             canonical: project.seo.canonical || `https://www.webefytoday.com/blog/${slug}`,

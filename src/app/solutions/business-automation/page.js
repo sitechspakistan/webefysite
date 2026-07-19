@@ -9,7 +9,7 @@ import ProductFrom from '@/app/component/ProductFrom';
 import ThirdHero from '@/app/component/ThirdHero';
 import React from 'react'
 export const metadata = {
-    title: "Business-Automation | Webefy Today",
+    title: "Business-Automation",
     description: "Webefy Today helps businesses scale with next-gen web development, seamless AI automation, and iconic branding. Let's build intelligent things together.",
     alternates: {
         canonical: "https://www.webefytoday.com/solutions/ai-booking-agent",

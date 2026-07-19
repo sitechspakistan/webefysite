@@ -4,7 +4,7 @@ import Mission from "../component/OurMission";
 import SecondHero from "../component/SecondHero";
 
 export const metadata = {
-    title: "About Us | Webefy Today",
+    title: "About Us",
     description: "At Webefy Today, we turn vision into reality. From strategic web development to smart AI solutions, find out how we help brands scale from idea to production.",
     alternates: {
         canonical: "https://www.webefytoday.com/about",

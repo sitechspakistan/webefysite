@@ -6,7 +6,7 @@ import ServiceSection from "@/app/component/ServiceSection";
 import webFaqs from "@/data/faqs/webFaqs"
 
 export const metadata = {
-    title: "Custom Web Design & Development Services | Webefy Today",
+    title: "Custom Web Design & Development Services",
     description: "Get a fast, responsive, and conversion-optimized website built from scratch. Webefy Today delivers custom web design, UI/UX, e-commerce, and web app development.",
     alternates: {
         canonical: "https://www.webefytoday.com/services/web-development",

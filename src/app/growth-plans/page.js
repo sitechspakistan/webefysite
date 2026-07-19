@@ -9,7 +9,7 @@ import WhoIsItSec from "../component/WhoIsItSec";
 import WorkingSec from "../component/WorkingSec";
 
 export const metadata = {
-  title: "Website Care & Monthly Growth Plans | Webefy Today",
+  title: "Website Care & Monthly Growth Plans",
   description: "Keep your website fast, secure, and converting every month. Webefy Today's Website Care Plans offer ongoing WordPress, Shopify, and custom dev support from $299/mo.",
   alternates: {
     canonical: "https://www.webefytoday.com/growth-plans",

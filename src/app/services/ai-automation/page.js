@@ -6,7 +6,7 @@ import ServiceSection from "@/app/component/ServiceSection";
 import aiFaqs from "@/data/faqs/aiFaqs"
 
 export const metadata = {
-    title: "AI Automation Services for Business Growth | Webefy Today",
+    title: "AI Automation Services for Business Growth",
     description: "Automate repetitive tasks, reduce errors, and scale faster with Webefy Today's custom AI solutions — chatbots, workflow automation, API integrations, and more.",
     alternates: {
         canonical: "https://www.webefytoday.com/services/ai-automation",

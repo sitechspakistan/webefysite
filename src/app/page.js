@@ -11,7 +11,7 @@ import homeFaqs from "@/data/faqs/homeFaqs.json"
 
 
 export const metadata = {
-  title: "Web Design, AI Automation \u0026 Branding Agency | Webefy Today",
+  title: "Web Design, AI Automation & Branding Agency",
   description: "Webefy Today builds high-converting websites, intelligent AI automation systems, and iconic brand identities. Trusted by 100+ businesses. Start your project today.",
   alternates: {
     canonical: "https://www.webefytoday.com",

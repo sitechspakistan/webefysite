@@ -5,7 +5,7 @@ import ServiceDetail from "../component/ServiceDetail";
 import servicesFaqs from "@/data/faqs/servicesFaqs"
 
 export const metadata = {
-    title: "Web Design, AI Automation & Branding Services | Webefy Today",
+    title: "Web Design, AI Automation & Branding Services",
     description: "Explore Webefy Today's full suite of digital services — custom web development, AI-powered automation, and strategic branding. One agency, three superpowers.",
     alternates: {
         canonical: "https://www.webefytoday.com/services",

@@ -2,7 +2,7 @@ import PortfolioWeb from "../component/PortfolioWeb";
 import SecondHero from "../component/SecondHero";
 
 export const metadata = {
-    title: "Case Studies | Webefy Today",
+    title: "Case Studies",
     description: "Explore Webefy Today's case studies. See how we combine premium web development, smart AI automation, and strategic branding to create real business impact.",
     alternates: {
         canonical: "https://www.webefytoday.com/case-studies",
