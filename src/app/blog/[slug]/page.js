@@ -92,7 +92,7 @@ export default async function Page({ params }) {
                                 dangerouslySetInnerHTML={{ __html: project.content }}
                             />
                         </div>
-                        {/* <AdSense /> */}
+                        <AdSense />
                     </div>
 
 
