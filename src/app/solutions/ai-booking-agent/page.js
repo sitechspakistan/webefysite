@@ -29,6 +29,7 @@ function AiBookingAgent() {
                     { icon: "/assets/images/products/ai.svg", text: "Fully Automated" },
                 ]}
                 image={"ai-hero-right.png"}
+                altname={"Ai Booking Agent"}
             />
             <PerfectIndustry heading={"Perfect for Industries That Run on Appointments"} gridclass={"food-container"} />
             <AiAgent />

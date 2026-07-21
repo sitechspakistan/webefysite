@@ -235,7 +235,7 @@ const ChatBot = () => {
       {mode === 'teaser' && (
         <div className="wb-chat-teaser">
           <span className="wb-close" onClick={() => setMode('minimized')}>✖</span>
-          <div className="wb-gift"><img src='/assets/images/robot.png' /></div>
+          <div className="wb-gift"><img src='/assets/images/robot.png' alt='webefy-ai-assistance' /></div>
           <h4>Hey there!</h4>
           <p>I'm Webefy AI Assistant.<br />How can I help you today?</p>
           <button className="wb-chat-btn" onClick={openChat}>Chat with me</button>
@@ -306,7 +306,7 @@ const ChatBot = () => {
       {/* ── Minimized bubble ── */}
       {mode === 'minimized' && (
         <div className="wb-minimized" onClick={openChat}>
-          <img src='/assets/images/robot.png' />
+          <img src='/assets/images/robot.png' alt='webefy-ai-assistance' />
         </div>
       )}
 

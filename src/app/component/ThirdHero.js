@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import React from 'react'
 
-function ThirdHero({ subheading, headingone, headingtwo, para, btntxtone, btntxttwo, image, features = [], hOneid }) {
+function ThirdHero({ subheading, headingone, headingtwo, para, btntxtone, btntxttwo, image, features = [], hOneid, altname }) {
     return (
         <div>
             <div id="third-hero" className="section-hero">
@@ -52,7 +52,7 @@ function ThirdHero({ subheading, headingone, headingtwo, para, btntxtone, btntxt
                                     <ul>
                                         {features.map((item, index) => (
                                             <li key={index}>
-                                                <img src={item.icon} width={30} height={28} alt="" />
+                                                <img src={item.icon} width={30} height={28} alt={`${altname}`} />
                                                 {item.text}
                                             </li>
                                         ))}
@@ -61,7 +61,7 @@ function ThirdHero({ subheading, headingone, headingtwo, para, btntxtone, btntxt
                             </div>
                         </div>
                         <div className='col-lg-6 d-flex justify-content-center align-items-center'>
-                            <img className='hero-img' src={`/assets/images/${image}`}></img>
+                            <img className='hero-img' src={`/assets/images/${image}`} alt={`${altname}`}></img>
                         </div>
                     </div>
                 </div>

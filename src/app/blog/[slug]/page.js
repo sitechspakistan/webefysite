@@ -3,6 +3,8 @@ import blogData from "@/data/blogdata.json"
 import SecondHero from '@/app/component/SecondHero';
 import { SquareArrowLeft } from 'lucide-react';
 import AdSense from '@/app/component/AdSense';
+import BlogGrid from '@/app/component/BlogGrid';
+import BlogHero from '@/app/component/BlogHero';
 
 export async function generateMetadata({ params }) {
     const { slug } = await params;
@@ -59,7 +61,8 @@ export default async function Page({ params }) {
 
     return (
         <>
-            <SecondHero variant={2} />
+            {/* <SecondHero variant={2} /> */}
+            <BlogHero />
 
             <div id="works" className="section-work-single box-white flat-spacing pt-0 blog-section">
                 <div className="container">
@@ -77,9 +80,9 @@ export default async function Page({ params }) {
 
                     </div>
                     <div className="row mb-32">
-                        <h2 className="heading fw-semibold mb-32 text-center text-white pt-4" style={{ marginBottom: "18px !important" }}>
+                        <h1 className="heading fw-semibold mb-32 text-center text-white pt-4" style={{ marginBottom: "18px !important" }}>
                             {project.title}
-                        </h2>
+                        </h1>
 
                         <div className="col-12">
                             <div className="wrap-image mb-30 text-center">

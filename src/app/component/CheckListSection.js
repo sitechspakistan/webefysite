@@ -84,7 +84,7 @@ const CheckListSection = () => {
                                     </li>
                                 ))}
                             </ul>
-                            <img src='/assets/images/restaurant/img1.png'></img>
+                            <img src='/assets/images/restaurant/img1.png' alt='Restaurant-Management'></img>
                         </div>
                     </div>
                 </div>

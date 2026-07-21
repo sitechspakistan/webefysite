@@ -8,6 +8,19 @@ import PowerfulIntegration from '@/app/component/PowerfulIntegration';
 import RestaurantCta from '@/app/component/RestaurantCta';
 import RestaurantWorkflow from '@/app/component/RestaurantWorkflow';
 import React from 'react'
+export const metadata = {
+    title: "Restaurant-Management",
+    description: "Webefy Today helps businesses scale with next-gen web development, seamless AI automation, and iconic branding. Let's build intelligent things together.",
+    alternates: {
+        canonical: "https://www.webefytoday.com/solutions/restaurant-management",
+    },
+    icons: {
+        icon: "/assets/images/webefy-lgo/about-shape1_2.png",
+    }
+
+};
+
+
 const foodIndustries = [
     { id: 1, iconClass: "fa-solid fa-bell-concierge", colorId: "pur-col", text: "Restaurants" },
     { id: 2, iconClass: "fa-solid fa-mug-saucer", colorId: "org-col", text: "Cafés" },

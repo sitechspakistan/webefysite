@@ -12,7 +12,7 @@ export const metadata = {
     title: "Business-Automation",
     description: "Webefy Today helps businesses scale with next-gen web development, seamless AI automation, and iconic branding. Let's build intelligent things together.",
     alternates: {
-        canonical: "https://www.webefytoday.com/solutions/ai-booking-agent",
+        canonical: "https://www.webefytoday.com/solutions/business-automation",
     },
     icons: {
         icon: "/assets/images/webefy-lgo/about-shape1_2.png",
@@ -43,7 +43,8 @@ const page = () => {
                     { icon: "/assets/images/products/task.svg", text: "Eradicate human errors" },
                     { icon: "/assets/images/products/ai.svg", text: "Custom built for your business" },
                 ]}
-                image={"business-hero.png"} />
+                image={"business-hero.png"} altname={"Business Automation"} />
+
             <BusinessAutomation />
             <BusinessTools />
             <AutomationSolutions />

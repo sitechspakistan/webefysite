@@ -1663,13 +1663,28 @@ li.sub-menu-item a:hover {
   font-weight: 700;
 }
 
-.text-secondary a strong {
+
+.text-secondary a {
   color: #0022fc;
   font-weight: 500;
   text-decoration: underline;
   font-weight: 600;
 }
 
+.text-secondary a strong {
+  color: inherit;
+  font-weight: 700;
+}
+
+.text-secondary table td,
+.text-secondary table th {
+
+  border: 1px solid;
+  font-size: 15px;
+  padding: 10px 24px;
+  background-color: #ececec;
+  color: #444444;
+}
 
 .list-tags a {
   border-radius: 10px;
