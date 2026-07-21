@@ -1663,14 +1663,13 @@ li.sub-menu-item a:hover {
   font-weight: 700;
 }
 
-.text-secondary a {
-  color: #000;
+.text-secondary a strong {
+  color: #0022fc;
   font-weight: 500;
+  text-decoration: underline;
+  font-weight: 600;
 }
 
-.text-secondary a:hover {
-  text-decoration: underline;
-}
 
 .list-tags a {
   border-radius: 10px;
@@ -2597,6 +2596,10 @@ footer p {
   color: #000;
 }
 
+a.sub-nav-link {
+  font-size: 18px;
+}
+
 /* Responsive */
 @media (max-width: 992px) {
   .solutions-grid {
@@ -2772,7 +2775,7 @@ footer p {
   .service-black-box {
     padding: 0px 0;
     padding-top: 25px;
-    padding-bottom: 0px;
+    padding-bottom: 25px;
   }
 
   .service-black-box h3 {
@@ -2801,7 +2804,7 @@ footer p {
   .service-box {
     padding: 0px 0;
     padding-top: 25px;
-    padding-bottom: 0px;
+    padding-bottom: 25px;
   }
 
   .service-box .row {

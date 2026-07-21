@@ -305,7 +305,7 @@ export default function Header() {
                       <ul className="sub-nav-menu">
                         <li>
                           <Link
-                            href="/solution"
+                            href="/solutions"
                             className="sub-nav-link "
                             onClick={() => {
                               setMenuOpen(false);
