@@ -2615,6 +2615,10 @@ a.sub-nav-link {
   font-size: 18px;
 }
 
+.features-item.style-2#cities_item {
+  height: 280px !important;
+}
+
 /* Responsive */
 @media (max-width: 992px) {
   .solutions-grid {
