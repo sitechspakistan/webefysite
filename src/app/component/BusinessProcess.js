@@ -1,7 +1,8 @@
 import React from 'react'
 import { ClipboardEdit, FileText, Boxes, Wrench, Rocket, Headphones, ArrowRight } from 'lucide-react'
 
-const steps = [
+// ✅ Default array (icons) — agar koi steps prop na diya to yehi use hoga
+const defaultSteps = [
     { number: 1, title: "Discover", desc: "We understand your business and goals", color: "#4A90D9", bg: "#EAF3FC", Icon: ClipboardEdit },
     { number: 2, title: "Plan", desc: "We design the right automation workflow", color: "#D94FA0", bg: "#FCEAF5", Icon: FileText },
     { number: 3, title: "Build", desc: "We build and integrate your automation", color: "#7B5BD9", bg: "#F1EAFC", Icon: Boxes },
@@ -10,13 +11,13 @@ const steps = [
     { number: 6, title: "Support", desc: "We provide ongoing support & optimization", color: "#4A90D9", bg: "#EAF3FC", Icon: Headphones },
 ]
 
-const BusinessProcess = () => {
+const BusinessProcess = ({ heading, Paragraph, steps = defaultSteps }) => {
     return (
         <section className='bg-white'>
-            <div className="container pt-5 pb-5">
+            <div className="container pt-5 pb-3">
                 <div className="text-center mb-lg-5 mb-0">
-                    <h2 className="process-heading">Our Automation Process</h2>
-                    <p className="process-subheading">Simple, transparent and effective</p>
+                    <h2 className="process-heading">{heading}</h2>
+                    <p className="process-subheading">{Paragraph}</p>
                 </div>
 
                 <div className="process-wrap">
@@ -25,7 +26,17 @@ const BusinessProcess = () => {
                             <div className="process-card">
                                 <div className="step-icon-wrap">
                                     <div className="step-icon" style={{ background: step.bg }}>
-                                        <step.Icon size={22} color={step.color} strokeWidth={2} />
+                                        {step.image ? (
+                                            <img
+                                                src={step.image}
+                                                alt={step.title}
+                                                width={22}
+                                                height={22}
+                                                style={{ objectFit: 'contain' }}
+                                            />
+                                        ) : (
+                                            <step.Icon size={22} color={step.color} strokeWidth={2} />
+                                        )}
                                     </div>
                                     <div className="step-number" style={{ background: step.color }}>
                                         {step.number}

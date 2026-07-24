@@ -49,8 +49,8 @@ const page = () => {
             <BusinessTools />
             <AutomationSolutions />
             <PerfectIndustry heading={"Industries We Serve"} classIn={"d-none"} bgclass={"bg-white"} industries={businessAutomationIndustries} />
-            <BusinessWithUs />
-            <BusinessProcess />
+            <BusinessWithUs heading={"Why Businesses Automate With Us"} className={"d-none"} />
+            <BusinessProcess heading={"Our Automation Process"} Paragraph={"Simple, transparent and effective"} />
             <BusinessCta />
         </>
     )

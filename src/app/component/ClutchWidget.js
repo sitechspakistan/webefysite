@@ -3,7 +3,7 @@ import Script from "next/script";
 import { useEffect } from "react";
 import { usePathname } from "next/navigation";
 
-export default function ClutchWidget() {
+export default function ClutchWidget({ classbg }) {
     const pathname = usePathname();
 
     useEffect(() => {
@@ -17,7 +17,7 @@ export default function ClutchWidget() {
     }, [pathname]);
 
     return (
-        <section className="flat-spacing pt-0 pb-4">
+        <section className={`flat-spacing pt-0 pb-4 ${classbg}`}>
             <div className="container">
                 <div
                     key={pathname}

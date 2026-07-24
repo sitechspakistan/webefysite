@@ -34,14 +34,15 @@ const businesswithus = [
     },
 ]
 
-const BusinessWithUs = () => {
+const BusinessWithUs = ({ heading, description, className, classtwo, stats = businesswithus }) => {
     return (
-        <section className='bg-white pt-5 pb-2'>
-            <div className='container'>
-                <h2 className='text-center pb-3'>Why Businesses Automate With Us</h2>
 
+        <section className={`bg-white pt-5 pb-2 ${classtwo}`}>
+            <div className='container'>
+                <h2 className='text-center pb-3'>{heading}</h2>
+                <p className={`${className}`}>{description}</p>
                 <div className='row g-4'>
-                    {businesswithus.map((item, index) => (
+                    {stats.map((item, index) => (
                         <div className='col-lg-3 col-md-6' key={index}>
                             <div className='stat-card'>
                                 <div className='stat-icon' style={{ background: item.bg }}>
@@ -49,7 +50,6 @@ const BusinessWithUs = () => {
                                 </div>
                                 <div className='stat-content'>
                                     <h3 className='stat-title' style={{ color: item.txtcolor }}>{item.title}</h3>
-                                    {/* <h6 className='stat-label'>{item.label}</h6> */}
                                     <p className='stat-desc'>{item.desc}</p>
                                 </div>
                             </div>
