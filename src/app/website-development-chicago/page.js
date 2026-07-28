@@ -1,3 +1,4 @@
+
 import React from 'react'
 import { ClipboardEdit, FileText, Boxes, Wrench, Rocket, Headphones, MapPin, TrendingUp, Users, Star } from 'lucide-react'
 import HeroForm from '../component/HeroForm'
@@ -10,8 +11,8 @@ import ClutchWidget from '../component/ClutchWidget'
 import HomePortfolio from '../component/HomePortfolio'
 
 export const metadata = {
-    title: "Website Development Company in Dallas, TX | YourCompany",
-    description: "We build high-performance websites that help Dallas businesses attract more customers, rank higher on Google, and grow faster online.",
+    title: "Website Development Company in Chicago, IL | YourCompany",
+    description: "We build high-performance websites that help Chicago businesses attract more customers, rank higher on Google, and grow faster online.",
 }
 
 const industries = [
@@ -38,7 +39,7 @@ const imageSteps = [
 const businessStats = [
     {
         title: "150+",
-        desc: "Dallas Businesses Served: Trusted by local companies across the DFW area.",
+        desc: "Chicago Businesses Served: Trusted by local companies across the DFW area.",
         Icon: MapPin,
         color: "#4A90D9",
         txtcolor: "#4A90D9",
@@ -46,7 +47,7 @@ const businessStats = [
     },
     {
         title: "45%",
-        desc: "Average Growth: Dallas clients see measurable growth after automating operations.",
+        desc: "Average Growth: Chicago clients see measurable growth after automating operations.",
         Icon: TrendingUp,
         color: "#7B5BD9",
         bg: "#F1EAFC",
@@ -54,7 +55,7 @@ const businessStats = [
     },
     {
         title: "500+",
-        desc: "Local Team Members Supported: Helping Dallas teams work smarter, not harder.",
+        desc: "Local Team Members Supported: Helping Chicago teams work smarter, not harder.",
         Icon: Users,
         color: "#D94FA0",
         bg: "#FCEAF5",
@@ -62,7 +63,7 @@ const businessStats = [
     },
     {
         title: "4.9/5",
-        desc: "Client Satisfaction: Rated highly by Dallas business owners for reliability and support.",
+        desc: "Client Satisfaction: Rated highly by Chicago business owners for reliability and support.",
         Icon: Star,
         color: "#2ECC71",
         bg: "#E9FBF1",
@@ -70,15 +71,17 @@ const businessStats = [
     },
 ]
 
-const DallasPage = () => {
+
+const Chicago = () => {
     return (
         <>
             <HeroForm
-                subheading={"Dallas, Tx"} heading={"Dallas, Tx"} desccityname={"Dallas"} />
+                subheading={"Chicago, IL"} heading={"Chicago, IL"} desccityname={"Chicago"}
+            />
             <WebDevSlider />
             <PerfectIndustry
                 industries={industries}
-                heading="Website Development For Every Industry In Dallas"
+                heading="Website Development For Every Industry In Chicago"
                 eyebrow='Industries We Serve'
             />
             <BusinessProcess
@@ -89,7 +92,7 @@ const DallasPage = () => {
             <WebTool />
             <HomePortfolio />
             <BusinessWithUs
-                heading="Helping Dallas Businesses Succeed Online"
+                heading="Helping Chicago Businesses Succeed Online"
                 description="We combine creativity, technology, and data-driven strategies to deliver websites that get real results."
                 className="text-center pb-3"
                 stats={businessStats}
@@ -100,4 +103,4 @@ const DallasPage = () => {
     )
 }
 
-export default DallasPage
+export default Chicago

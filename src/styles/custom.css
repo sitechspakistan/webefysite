@@ -482,26 +482,13 @@ footer {
 
 .portfolio-filters {
   text-align: center;
-  margin-bottom: 10px;
-  background:
-    radial-gradient(62.56% 62.56% at 28.14% -10.42%, #fff3 0%, #fff0 100%),
-    linear-gradient(0deg, #272727, #272727);
-  border-radius: 99px;
+  background: #575757;
+  border-radius: 20px;
+  width: 50%;
+  margin: 0 auto;
   position: relative;
   overflow: hidden;
-  box-shadow:
-    inset 0 -3px #080808,
-    inset 0 1px #ffffff4d,
-    0 2.77px 2.21px #0000001f,
-    0 6.65px 5.32px #00000021,
-    0 12.52px 10.02px #0002,
-    0 22.34px 17.87px #00000024,
-    0 41.78px 33.42px #00000026,
-    0 100px 80px #00000026,
-    0 3px 3px #00000024,
-    0 2.77px 2.21px #0000001f;
-  margin: 0 auto;
-  width: 50%;
+  /* box-shadow: inset 0 -3px #080808, inset 0 1px #ffffff4d, 0 2.77px 2.21px #0000001f, 0 6.65px 5.32px #00000021, 0 12.52px 10.02px #0002, 0 22.34px 17.87px #00000024, 0 41.78px 33.42px #00000026, 0 100px 80px #00000026, 0 3px 3px #00000024, 0 2.77px 2.21px #0000001f; */
 }
 
 .portfolio-filters button {
@@ -3406,6 +3393,16 @@ a.sub-nav-link {
   .tf-social-1 a .social-item {
     width: 24px;
     height: 26px;
+
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .portfolio-filters button {
+
+    gap: 1px;
+    padding: 14px 12px;
+    font-size: 16px;
 
   }
 }

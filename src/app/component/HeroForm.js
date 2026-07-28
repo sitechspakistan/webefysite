@@ -16,7 +16,7 @@ const trustPoints = [
 ];
 
 
-function HeroForm() {
+function HeroForm({ subheading, heading, desccityname }) {
     return (
         <div>
             <div id="third-hero" className="section-hero">
@@ -28,7 +28,7 @@ function HeroForm() {
 
                                 <div className="heading-section">
                                     <div className="sub fw-semibold effectFade fadeUp">
-                                        Website Development in Dallas, TX
+                                        Website Development in {subheading}
                                     </div>
                                 </div>
 
@@ -45,14 +45,14 @@ function HeroForm() {
                                         </div>
                                         <div className="title2 d-flex gap-20 flex-wrap">
                                             <span className="fw-semibold " style={{ color: "#ffaaff" }}>
-                                                Dallas, TX
+                                                {heading}
                                             </span>
                                         </div>
                                     </h1>
                                 </div>
 
                                 <p className="text effectFade fadeUp">
-                                    We build high-performance websites that help Dallas businesses attract more customers, rank higher on Google, and grow faster online.
+                                    We build high-performance websites that help {desccityname} businesses attract more customers, rank higher on Google, and grow faster online.
                                 </p>
                                 <div className="d-flex gap-3 py-3">
                                     {heroFeatures.map((item) => (
