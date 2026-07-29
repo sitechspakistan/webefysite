@@ -1682,7 +1682,7 @@ footer {
   background-color: #000;
   position: relative;
   padding: 0;
-  border-radius: 24px 24px 0 0;
+  border-radius: 24px 24px 24px 24px;
   margin: 0 20px;
 }
 
@@ -2024,7 +2024,7 @@ footer p {
   background: #ffffff;
   border: 1px solid #eeeeee;
   border-radius: 14px;
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.04);
+  box-shadow: 0 2px 8px #00000052;
   padding: 24px 14px;
   text-align: center;
   min-width: 0;
@@ -2663,6 +2663,7 @@ a.sub-nav-link {
 @media screen and (max-width: 768px) {
   .partner-wrap {
     align-items: center;
+    padding: 50px 0 0px 0;
   }
 
   footer .footer-bottom .footer-links {
@@ -3062,7 +3063,7 @@ a.sub-nav-link {
   }
 
   .industries-container {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .ai-agent .content {
@@ -3283,7 +3284,7 @@ a.sub-nav-link {
 
   .process-card {
     margin: 0 0px 10px 0;
-    min-width: 100%;
+    min-width: 60%;
   }
 
   .process-wrap {
@@ -3394,6 +3395,51 @@ a.sub-nav-link {
     width: 24px;
     height: 26px;
 
+  }
+
+  .calendar_tools_two .web_tool_products {
+    display: flex;
+    justify-content: start;
+    overflow-x: scroll;
+    padding: 10px 5px;
+  }
+
+  .hero-form .section-contact .form-contact {
+    width: 94%;
+    margin: 0 auto;
+  }
+
+  .hero-form .text-body-3 {
+    display: block;
+    text-align: start;
+  }
+
+  .hero-form .form-contact select option {
+    color: #111;
+    background-color: #fff;
+    text-align: start;
+  }
+
+  .hero-form #city-icon {
+    width: 24px;
+  }
+
+
+
+  .hero-form .city-icons span {
+    font-size: 10px !important;
+    line-height: 12px !important;
+  }
+
+  /* .city-icons-two {
+    gap: 10px !important;
+  }
+  .hero-form .city-icon-two {
+    width: 24px !important;
+  } */
+  .city-icon-two span {
+    font-size: 12px;
+    line-height: 14px !important;
   }
 }
 

@@ -87,7 +87,7 @@ export default function HomeService({ classname }) {
   };
 
   return (
-    <div className="box-white">
+    <div className="box-white mt-lg-0 mt-5">
       <div id="services" className="section-services flat-spacing">
         <div className="container">
           <div className="row justify-content-between">

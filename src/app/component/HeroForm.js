@@ -19,7 +19,7 @@ const trustPoints = [
 function HeroForm({ subheading, heading, desccityname }) {
     return (
         <div>
-            <div id="third-hero" className="section-hero">
+            <div id="third-hero" className="section-hero hero-form">
                 <div className="hero-image"></div>
                 <div className="container">
                     <div className='row'>
@@ -54,10 +54,10 @@ function HeroForm({ subheading, heading, desccityname }) {
                                 <p className="text effectFade fadeUp">
                                     We build high-performance websites that help {desccityname} businesses attract more customers, rank higher on Google, and grow faster online.
                                 </p>
-                                <div className="d-flex gap-3 py-3">
+                                <div className="d-flex gap-3 py-3 city-icons">
                                     {heroFeatures.map((item) => (
                                         <div className="d-flex align-items-center gap-2" key={item.id}>
-                                            <item.iconClass className="w-5 h-5 text-purple-600" />
+                                            <item.iconClass id="city-icon" />
                                             <span className="whitespace-nowrap">{item.spanText}</span>
                                         </div>
                                     ))}
@@ -77,7 +77,7 @@ function HeroForm({ subheading, heading, desccityname }) {
                                 </div>
                             </div>
                         </div>
-                        <div className='col-lg-6 pt-5 d-flex justify-content-center align-items-center'>
+                        <div className='col-lg-6 pt-lg-5 pt-3 d-flex justify-content-center align-items-center'>
                             <div id="contact" className="flat-spacing">
                                 <div className="section-contact  section-project p-0">
 
@@ -175,9 +175,9 @@ function HeroForm({ subheading, heading, desccityname }) {
 
                                             </button>
 
-                                            <div className="d-flex gap-5 mx-auto justify-content-center pt-3 text-gray-500">
+                                            <div className="city-icons-two d-flex gap-5 mx-auto justify-content-center pt-3 text-gray-500">
                                                 {trustPoints.map((item) => (
-                                                    <div className="d-flex align-items-center gap-1" key={item.id}>
+                                                    <div className="d-flex align-items-center gap-1 city-icon-two" key={item.id}>
                                                         <item.icon className="w-4 h-4" />
                                                         <span>{item.text}</span>
                                                     </div>
