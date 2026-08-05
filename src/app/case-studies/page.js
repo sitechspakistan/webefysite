@@ -1,5 +1,8 @@
 import PortfolioWeb from "../component/PortfolioWeb";
 import SecondHero from "../component/SecondHero";
+import FeaturedCaseStudy from "../component/FeaturedCaseStudy";
+import BeforeAfterSection from "../component/BeforeAfterSection";
+import CaseStudiesCta from "../component/CaseStudiesCta";
 
 export const metadata = {
     title: "Case Studies",
@@ -21,7 +24,10 @@ export default function Portfolio() {
                     powerful digital experiences for modern businesses.
                 </>}
             />
+            <FeaturedCaseStudy />
+            <BeforeAfterSection />
             <PortfolioWeb />
+            <CaseStudiesCta />
         </>
     );
 }

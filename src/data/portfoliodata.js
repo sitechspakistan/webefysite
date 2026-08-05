@@ -41,7 +41,7 @@ const portfolioData = [
     },
     {
         slug: "whatsapp-crm-bot",
-        image: "/assets/images/portfolio/5.jpg ",
+        image: "/assets/images/portfolio/5.jpg",
         seo: {
             metaTitle: "WhatsApp CRM Bot – Zoop AI Agent | Webefy Today",
             metaDescription: "Webefy Today built Zoop — a WhatsApp AI agent that connects directly to your CRM, letting customers create invoices, check payments, and manage tickets via simple chat messages.",
