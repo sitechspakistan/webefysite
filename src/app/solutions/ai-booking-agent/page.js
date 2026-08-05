@@ -1,9 +1,13 @@
-import AiAgent from '@/app/component/AiAgent'
-import BookingAgent from '@/app/component/BookingAgent'
+import AiCta from '@/app/component/AiCta'
+import AiProcess from '@/app/component/AiProcess'
+import AiSolutions from '@/app/component/AiSolutions'
+import AutomateSolution from '@/app/component/AutomateSolution'
 import CalendarTools from '@/app/component/CalendarTools'
-import PerfectIndustry from '@/app/component/PerfectIndustry'
-import ProductFrom from '@/app/component/ProductFrom'
-import ThirdHero from '@/app/component/ThirdHero'
+import Faqs from '@/app/component/Faqs'
+import HeroFormTwo from '@/app/component/HeroFormTwo'
+import SavingsCalculator from '@/app/component/SavingCalculator'
+import aiautomation from '@/data/faqs/aiautomationFaqs.json'
+
 
 export const metadata = {
     title: "AI Booking Agent",
@@ -20,24 +24,21 @@ export const metadata = {
 function AiBookingAgent() {
     return (
         <>
-            <ThirdHero subheading={"AI AUTOMATION FOR BOOKINGS & APPOINTMENTS"} hOneid={"main-head"} headingone={"AI Agents That Book Appointments for You"}
-                headingtwo={"While You Focus on What Matters"} para={"Our AI agents handle calls, chats, and messages 24/7 to book, reschedule, and manage appointments automatically. Never miss a booking again."}
-                btntxtone={"Book a Demo ⇾"} btntxttwo={"Start a project"}
-                features={[
-                    { icon: "/assets/images/products/clock.svg", text: "24/7 Availability" },
-                    { icon: "/assets/images/products/task.svg", text: "No Missed Bookings" },
-                    { icon: "/assets/images/products/ai.svg", text: "Fully Automated" },
-                ]}
-                image={"ai-hero-right.png"}
-                altname={"Ai Booking Agent"}
-            />
-            <PerfectIndustry heading={"Perfect for Industries That Run on Appointments"} gridclass={"food-container"} />
-            <AiAgent />
-            <BookingAgent />
+            <HeroFormTwo />
             <CalendarTools />
-            <ProductFrom />
+            <AutomateSolution />
+            <AiSolutions />
+            <AiProcess />
+            <SavingsCalculator />
+            <Faqs faqs={aiautomation} classbg={"bg-white"} />
+            <AiCta />
         </>
     )
 }
 
 export default AiBookingAgent
+{/* <PerfectIndustry heading={"Perfect for Industries That Run on Appointments"} gridclass={"food-container"} />
+            <AiAgent />
+            <BookingAgent />
+
+            <ProductFrom /> */}

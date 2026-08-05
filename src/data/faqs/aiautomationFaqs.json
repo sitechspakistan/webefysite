@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "question": "What kind of AI automation can you build?",
+        "answer": "We build AI chatbots, AI agents, workflow automations, CRM automation, document processing systems, reporting dashboards and more — customized to your business."
+    },
+    {
+        "id": 2,
+        "question": "Do I need technical knowledge to use your solutions?",
+        "answer": "No. We design every system to run in the background — your team uses the tools you already have while automation works behind the scenes."
+    },
+    {
+        "id": 3,
+        "question": "How long does it take to implement an automation?",
+        "answer": "Most projects launch within 2–6 weeks depending on scope, from discovery call through testing and go-live."
+    },
+    {
+        "id": 4,
+        "question": "Can you integrate with my existing tools?",
+        "answer": "Yes — we integrate with your CRM, email, calendars and the platforms you already rely on, including OpenAI, Google, Microsoft and HubSpot."
+    },
+    {
+        "id": 5,
+        "question": "Is my data secure with AI automation?",
+        "answer": "Yes. We follow strict data-handling practices and only connect to systems you explicitly authorize."
+    },
+    {
+        "id": 6,
+        "question": "How much does AI automation cost?",
+        "answer": "Cost depends on scope and complexity. Share your goals in the audit form above and we'll give you a clear estimate."
+    }
+]

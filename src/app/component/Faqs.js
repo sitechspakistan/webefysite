@@ -40,7 +40,7 @@ function FaqItem({ faq, isOpen, onToggle, index }) {
   );
 }
 
-export default function Faqs({ faqs }) {
+export default function Faqs({ faqs, classbg }) {
   // ✅ openId starts with first FAQ's ID
   const [openId, setOpenId] = useState(faqs?.[0]?.id || null);
 
@@ -49,7 +49,7 @@ export default function Faqs({ faqs }) {
   if (!faqs || !Array.isArray(faqs)) return null;
 
   return (
-    <div className="section-faqs flat-spacing" id="faqs">
+    <div className={`section-faqs flat-spacing ${classbg}`} id="faqs">
       <div className="container">
         <div className="heading-section center mb-64">
           {/* <div className="heading-sub fw-semibold effectFade fadeUp">FAQs</div> */}

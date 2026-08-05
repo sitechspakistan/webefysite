@@ -2028,6 +2028,7 @@ footer p {
   padding: 24px 14px;
   text-align: center;
   min-width: 0;
+  height: 190px;
 }
 
 .step-icon-wrap {
@@ -2067,6 +2068,7 @@ footer p {
   font-weight: 600;
   margin-bottom: 6px;
   color: #1a1a1a;
+  line-height: 18px;
 }
 
 .process-card p {
@@ -2647,6 +2649,326 @@ a.sub-nav-link {
   background: #fff !important;
 }
 
+.hero-form-two .form-contact {
+  padding: 20px 40px;
+}
+
+.hero-form-two .form-contact .heading {
+  font-size: 28px;
+  padding-bottom: 0 !important;
+}
+
+.hero-form-two .row {
+  align-items: flex-start;
+}
+
+/* IMPORTANT */
+.left-sticky {
+  position: sticky;
+  top: 100px;
+  align-self: flex-start;
+}
+
+#third-hero,
+.container,
+body {
+  overflow: visible;
+  /* hidden/auto NAHI hona chahiye */
+}
+
+/* Optional: chhoti screens pe sticky disable karo taake mobile pe normal scroll ho */
+@media (max-width: 991px) {
+  .hero-form-two .sticky-wrapper {
+    position: static;
+  }
+}
+
+.calendar_tools.ai-booking-agent .container {
+  background-color: #fff;
+
+}
+
+.calendar_tools.ai-booking-agent img {
+  object-fit: contain;
+  background: #eaeaea8f;
+  border-radius: 40px;
+  width: 119px;
+  height: 60px;
+  padding: 0 18px;
+}
+
+.solution_card {
+  border: 1px solid #e1e0e0;
+  padding: 40px;
+  margin-bottom: 10px;
+  border-radius: 18px;
+  height: 220px;
+  margin-top: 20px;
+  box-shadow: 0 4px 14px rgba(30, 10, 60, 0.06);
+  transition: transform .15s ease, box-shadow .15s ease;
+}
+
+.solution_card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 32px rgba(30, 10, 60, 0.08);
+
+}
+
+.icon_box i {
+
+  padding: 10px;
+  font-size: 28px !important;
+  border-radius: 12px;
+}
+
+.solution_card h5 {
+  font-size: 18px;
+  font-weight: 700;
+  padding-top: 10px;
+}
+
+.solution_card p {
+  font-size: 16px;
+  font-weight: 500;
+  padding-top: 10px;
+  color: #4c4c4c;
+}
+
+.auto_solution span {
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--brand-2);
+}
+
+.auto_solution h2 {
+  font-size: 40px;
+  font-weight: 700;
+  padding: 10px 0;
+}
+
+.auto_solution p {
+  font-size: 18px;
+  padding: 10px 0;
+  color: #646464;
+}
+
+
+.ai_solution .solution_card {
+  border: 1px solid #e1e0e0;
+  padding: 40px;
+  margin-bottom: 10px;
+  border-radius: 18px;
+  height: 220px;
+  margin-top: 20px;
+  box-shadow: 0 4px 14px rgba(30, 10, 60, 0.06);
+  transition: transform .15s ease, box-shadow .15s ease;
+}
+
+.ai_solution .solution_card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 32px rgba(30, 10, 60, 0.08);
+
+}
+
+.ai_solution .icon_box i {
+
+  padding: 10px;
+  font-size: 28px !important;
+  border-radius: 12px;
+}
+
+.ai_solution .solution_card h5 {
+  font-size: 18px;
+  font-weight: 700;
+  padding-top: 10px;
+}
+
+.ai_solution .solution_card p {
+  font-size: 16px;
+  font-weight: 500;
+  padding-top: 10px;
+  color: #4c4c4c;
+}
+
+.ai_solution span {
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--brand-2);
+}
+
+.ai_solution h2 {
+  font-size: 40px;
+  font-weight: 700;
+  padding: 10px 0;
+}
+
+.ai_solution p {
+  font-size: 18px;
+  padding: 10px 0;
+  color: #646464;
+}
+
+.ai_process span {
+  color: var(--brand-2);
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.calculator_card {
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 10px 40px #00000038;
+  padding: 40px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.savings_calculator span {
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--brand-2);
+}
+
+.savings_calculator h2 {
+  font-size: 40px;
+  font-weight: 700;
+  padding-top: 10px;
+}
+
+.savings_calculator p {
+  font-size: 14px;
+  font-weight: 500;
+  color: #646464;
+  padding-top: 0px;
+}
+
+.form_group {
+  margin-bottom: 24px;
+}
+
+.form_group label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.form_group input {
+  width: 100%;
+  padding: 12px 16px;
+  background: #f4f2fb;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+}
+
+.form_group input:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #d63384;
+}
+
+.result_box {
+  margin-bottom: 20px;
+}
+
+.result_box h3 {
+  /* margin-bottom: 4px; */
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.result_box p {
+  color: #6b7280;
+}
+
+.accordion-asked .accordion-asked-item {
+  box-shadow: unset;
+  background-color: #f7f5fb;
+  border: 1px solid #eee9f4;
+  border-radius: 16px;
+  width: 80%;
+  margin: 0 auto;
+  padding: 10px 30px;
+}
+
+.accordion-asked .accordion-button {
+  font-size: 16.5px;
+}
+
+.accordion-asked .accordion-body {
+  font-size: 14.5px;
+  color: #5c5866;
+}
+
+.accordion-asked .accordion-button span {
+  background: #fff;
+  box-shadow: unset;
+}
+
+.accordion-asked .accordion-button span:before {
+  background-color: var(--brand-2);
+
+}
+
+.accordion-asked .accordion-button span:after {
+
+  background-color: var(--brand-2);
+}
+
+.ai_cta .container {
+  background-color: #000;
+  padding: 40px;
+  border-radius: 18px;
+}
+
+.ai_cta h2,
+.ai_cta p {
+
+  padding-bottom: 10px;
+}
+
+.ai_cta h2 {
+  font-size: 38px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.ai_cta p {
+  color: #bdbdbd;
+}
+
+.ai_cta a {
+  background: var(--brand-2);
+  color: #fff;
+  border-radius: 28px;
+  padding: 10px 18px;
+  font-size: 14px;
+  font-weight: 600;
+  margin-top: 5px;
+  box-shadow: 0 4px 14px #ff08ef66;
+}
+
+.ai_process h2 {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.ai_process p {
+  font-size: 16px;
+  font-weight: 500;
+  color: #6d6d6d;
+  padding-top: 10px;
+}
+
+.ai_process .process-card p {
+  font-size: 12px;
+  color: #4c4a4a;
+  /* margin-bottom: 10px; */
+}
+
 /* Responsive */
 @media (max-width: 992px) {
   .solutions-grid {
@@ -3204,26 +3526,6 @@ a.sub-nav-link {
     width: calc((100% - 1 * 0px) / 1);
   }
 
-  /* #rest_workflow .process-wrap {
-    justify-content: unset !important;
-    align-items: unset !important;
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    gap: 0;
-  }
-
-  #rest_workflow .container,
-  .container-fluid,
-  .container-lg,
-  .container-md,
-  .container-sm,
-  .container-xl,
-  .container-xxl {
-    padding-right: unset !important;
-    padding-left: unset !important;
-
-  } */
-
   .choose-box img {
     display: none;
   }
@@ -3431,15 +3733,120 @@ a.sub-nav-link {
     line-height: 12px !important;
   }
 
-  /* .city-icons-two {
-    gap: 10px !important;
-  }
-  .hero-form .city-icon-two {
-    width: 24px !important;
-  } */
   .city-icon-two span {
     font-size: 12px;
     line-height: 14px !important;
+  }
+
+  .left-sticky {
+    position: static;
+  }
+
+  .hero-form-two .form-contact {
+    padding: 20px 25px;
+    margin: 0 auto;
+    width: 94%;
+  }
+
+  .hero-form-two label {
+    display: block;
+    text-align: start;
+  }
+
+  .hero-form-two form input::placeholder {
+    font-size: 14px;
+  }
+
+  .hero-form-two .contact-select {
+    text-align: start;
+    font-size: 14px;
+  }
+
+  .form-contact textarea::placeholder {
+    font-size: 14px;
+  }
+
+  .hero-form-two .form-contact .heading {
+    font-size: 20px;
+  }
+
+  .hero-form-two .whitespace-nowrap {
+    font-size: 14px;
+  }
+
+  .hero-form-two .title1 span,
+  .hero-form-two .title2 span {
+    font-size: 30px !important;
+  }
+
+  .auto_solution h2 {
+
+    font-size: 30px;
+
+  }
+
+  .auto_solution p {
+    padding: 5px 0;
+    font-size: 16px;
+  }
+
+  .ai_solution h2 {
+
+    font-size: 30px;
+  }
+
+  .ai_solution p {
+    padding: 5px 0;
+    font-size: 16px;
+  }
+
+  .savings_calculator h2 {
+    padding-top: 5px;
+    font-size: 28px;
+
+  }
+
+  .savings_calculator p {
+
+    padding-top: 5px;
+    font-size: 16px;
+  }
+
+  .calculator_card {
+
+    width: 100%;
+
+  }
+
+  .accordion-asked .accordion-asked-item {
+
+    width: 100%;
+
+  }
+
+  .accordion-asked .accordion-button {
+    font-size: 14.5px;
+  }
+
+  .accordion-asked .accordion-body {
+    color: rgb(92, 88, 102);
+    font-size: 12.5px;
+  }
+
+  .ai_cta h2 {
+
+    font-size: 30px;
+
+  }
+
+  .ai_cta .container {
+
+    width: 95%;
+  }
+
+  .calendar_tools.ai-booking-agent h4 {
+    font-weight: 700;
+    font-size: 30px;
   }
 }
 

@@ -2,21 +2,22 @@ import React from 'react'
 import { ClipboardEdit, FileText, Boxes, Wrench, Rocket, Headphones, ArrowRight } from 'lucide-react'
 
 const defaultSteps = [
-    { number: 1, title: "Discover", desc: "We understand your business and goals", color: "#4A90D9", bg: "#EAF3FC", Icon: ClipboardEdit },
-    { number: 2, title: "Plan", desc: "We design the right automation workflow", color: "#D94FA0", bg: "#FCEAF5", Icon: FileText },
-    { number: 3, title: "Build", desc: "We build and integrate your automation", color: "#7B5BD9", bg: "#F1EAFC", Icon: Boxes },
-    { number: 4, title: "Test", desc: "We test thoroughly to ensure it works perfectly", color: "#E85D3D", bg: "#FDEDE8", Icon: Wrench },
-    { number: 5, title: "Launch", desc: "We launch and monitor the automation", color: "#2ECC71", bg: "#E9FBF1", Icon: Rocket },
-    { number: 6, title: "Support", desc: "We provide ongoing support & optimization", color: "#4A90D9", bg: "#EAF3FC", Icon: Headphones },
+    { number: 1, title: "Discovery Call", desc: "We understand your business and challenges.", color: "#4A90D9", bg: "#EAF3FC", Icon: ClipboardEdit },
+    { number: 2, title: "Workflow Audit", desc: "We analyze your current process in detail.", color: "#D94FA0", bg: "#FCEAF5", Icon: FileText },
+    { number: 3, title: "Solution Design", desc: "We design the right AI automation for you.", color: "#7B5BD9", bg: "#F1EAFC", Icon: Boxes },
+    { number: 4, title: "Development & Integration", desc: "We build and integrate with your existing tools.", color: "#E85D3D", bg: "#FDEDE8", Icon: Wrench },
+    { number: 5, title: "Testing & Launch", desc: "We test thoroughly and launch your solution.", color: "#2ECC71", bg: "#E9FBF1", Icon: Rocket },
+    { number: 6, title: "Ongoing Support", desc: "We monitor, optimize and support continuously.", color: "#4A90D9", bg: "#EAF3FC", Icon: Headphones },
 ]
 
-const BusinessProcess = ({ heading, Paragraph, steps = defaultSteps }) => {
+const AiProcess = ({ steps = defaultSteps }) => {
     return (
-        <section className='bg-white'>
+        <section className='bg-white ai_process'>
             <div className="container pt-5 pb-3">
                 <div className="text-center mb-lg-5 mb-0">
-                    <h2 className="process-heading">{heading}</h2>
-                    <p className="process-subheading">{Paragraph}</p>
+                    <span>The Process</span>
+                    <h2 >How It Works</h2>
+                    <p>A clear, six-step path from first call to ongoing optimization.</p>
                 </div>
 
                 <div className="process-wrap">
@@ -59,4 +60,4 @@ const BusinessProcess = ({ heading, Paragraph, steps = defaultSteps }) => {
     )
 }
 
-export default BusinessProcess
+export default AiProcess
