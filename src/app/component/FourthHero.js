@@ -34,7 +34,7 @@ function FourthHero() {
                                             </span>
                                         </div>
                                         <div className="title2 d-flex gap-20 flex-wrap">
-                                            <span className="fw-semibold " style={{ color: "#ffaaff !important" }}>
+                                            <span className="fw-semibold " style={{ color: "#f703ff " }}>
                                                 One Smart Digital Solution.
                                             </span>
                                         </div>

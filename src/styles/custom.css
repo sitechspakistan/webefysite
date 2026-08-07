@@ -537,7 +537,8 @@ li.sub-menu-item a {
 
 .item-link:hover,
 .item-link.active {
-  color: black;
+  color: black !important;
+  font-weight: 700;
 }
 
 li.sub-menu-item a:hover {
@@ -1861,7 +1862,6 @@ footer p {
   padding: 24px 14px;
   text-align: center;
   min-width: 0;
-  height: 190px;
 }
 
 .step-icon-wrap {
@@ -4157,6 +4157,11 @@ body {
 
 .portfolio-card-new:hover .pc-link {
   color: #5a24e8;
+}
+
+.ai_process .process-card {
+
+  height: 190px;
 }
 
 @media (max-width: 1200px) {

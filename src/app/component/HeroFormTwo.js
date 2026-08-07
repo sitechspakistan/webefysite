@@ -84,7 +84,7 @@ const HeroFormTwo = () => {
 
 
                                             <div className="row">
-                                                <div className="col-lg-6">
+                                                <div className="col-lg-6 col-6">
                                                     <fieldset className="mb-21">
                                                         <label className="fw-semibold text-body-3 mb-20">
                                                             Full Name*
@@ -97,7 +97,7 @@ const HeroFormTwo = () => {
                                                         />
                                                     </fieldset>
                                                 </div>
-                                                <div className="col-lg-6">
+                                                <div className="col-lg-6 col-6">
                                                     <fieldset className="mb-21">
                                                         <label className="fw-semibold text-body-3 mb-20">
                                                             Work Email*
@@ -111,7 +111,7 @@ const HeroFormTwo = () => {
                                                         />
                                                     </fieldset>
                                                 </div>
-                                                <div className="col-lg-6">
+                                                <div className="col-lg-6 col-6">
                                                     <fieldset className="mb-21">
                                                         <label className="fw-semibold text-body-3 mb-20">
                                                             Website IP / URL
@@ -125,7 +125,7 @@ const HeroFormTwo = () => {
                                                         />
                                                     </fieldset>
                                                 </div>
-                                                <div className="col-lg-6">
+                                                <div className="col-lg-6 col-6">
                                                     <fieldset className="mb-21">
                                                         <label className="fw-semibold text-body-3 mb-20">
                                                             Company Name*
