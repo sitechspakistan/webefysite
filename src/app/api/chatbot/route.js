@@ -2,7 +2,7 @@ import nodemailer from "nodemailer";
 
 export async function POST(req) {
     try {
-        const { service, serviceLabel, answers } = await req.json();
+        const { service, serviceLabel, answers, journey } = await req.json();
 
         if (!service || !answers) {
             return Response.json({ success: false, error: "Missing required fields" }, { status: 400 });
@@ -38,6 +38,9 @@ export async function POST(req) {
 
         const label = serviceLabel || service;
 
+        const journeyTrail =
+            Array.isArray(journey) && journey.length > 0 ? journey.join(" → ") : null;
+
         const answerRows = Object.entries(answers)
             .map(([key, value]) => {
                 const formattedKey = key.replace(/_/g, " ").replace(/\b\w/g, (c) => c.toUpperCase());
@@ -56,6 +59,7 @@ export async function POST(req) {
         <div style="font-size: 16px; font-weight: 500;">
             <p><strong>Service:</strong> ${label}</p>
             <p><strong>Location:</strong> 📍 ${location}</p>
+            ${journeyTrail ? `<p><strong>Journey:</strong> 🧭 ${journeyTrail}</p>` : ""}
             <hr style="border:none;border-top:1px solid #eee;margin:12px 0;" />
             ${answerRows}
         </div>
