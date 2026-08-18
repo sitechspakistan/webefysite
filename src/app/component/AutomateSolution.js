@@ -56,7 +56,7 @@ const AutomateSolution = () => {
         <section className='auto_solution bg-white'>
             <div className='container'>
                 <div className='text-center'>
-                    <span>Why Automate</span>
+                    <span className='section-kicker'>Why Automate</span>
                     <h2>We Solve Problems That Slow Your Business</h2>
                     <p>The friction that keeps teams from moving faster and where automation earns its keep.</p>
                 </div>

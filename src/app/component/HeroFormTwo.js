@@ -78,7 +78,7 @@ const HeroFormTwo = () => {
                                                 Get Your Free AI Automation Audit
                                             </h4>
                                             <p className="text effectFade fadeUp pb-4">
-                                                Tell us about your business we'll map the automation opportunities.
+                                                Tell us about your business we&apos;ll map the automation opportunities.
                                             </p>
 
 

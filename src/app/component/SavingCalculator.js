@@ -14,10 +14,10 @@ const SavingsCalculator = () => {
 
 
     return (
-        <section className='savings_calculator bg-white pt-5 pb-5' id='calculator'>
+        <section className='savings_calculator bg-white' id='calculator'>
             <div className='container'>
-                <div className='box text-center pb-5'>
-                    <span>Do The Math</span>
+                <div className='box text-center'>
+                    <span className='section-kicker'>Do The Math</span>
                     <h2>Calculate Your Potential Savings</h2>
                     <p>See how much time and money you can save with AI automation.</p>
                 </div>
@@ -61,7 +61,7 @@ const SavingsCalculator = () => {
                         </div>
 
                         {/* Right side - Results */}
-                        <div className='col-lg-6'>
+                        <div className='col-lg-6 results_col'>
                             <div className='result_box'>
                                 <h3>{formatNumber(hoursPerMonth)}</h3>
                                 <p>Hours / Month</p>
@@ -76,10 +76,9 @@ const SavingsCalculator = () => {
                                 <h3>${formatNumber(savingsPerYear)}</h3>
                                 <p>Potential Savings / Year</p>
                             </div>
-
-                            <small>Results are estimates based on average calculations.</small>
                         </div>
                     </div>
+                    <small>Results are estimates based on average calculations.</small>
                 </div>
             </div>
         </section>

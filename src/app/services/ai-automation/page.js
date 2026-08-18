@@ -4,8 +4,12 @@ import AiSolutions from '@/app/component/AiSolutions'
 import AutomateSolution from '@/app/component/AutomateSolution'
 import CalendarTools from '@/app/component/CalendarTools'
 import Faqs from '@/app/component/Faqs'
+import FeaturedAutomationCase from '@/app/component/FeaturedAutomationCase'
 import HeroFormTwo from '@/app/component/HeroFormTwo'
+import PricingTiers from '@/app/component/PricingTiers'
 import SavingsCalculator from '@/app/component/SavingCalculator'
+import SeeItInAction from '@/app/component/SeeItInAction'
+import TrustBar from '@/app/component/TrustBar'
 import aiautomation from '@/data/faqs/aiautomationFaqs.json'
 
 export const metadata = {
@@ -24,11 +28,15 @@ export default function Automation() {
         <>
             <>
                 <HeroFormTwo />
+                <TrustBar />
                 <CalendarTools />
                 <AutomateSolution />
                 <AiSolutions />
+                <SeeItInAction />
+                <FeaturedAutomationCase />
                 <AiProcess />
                 <SavingsCalculator />
+                <PricingTiers />
                 <Faqs faqs={aiautomation} classbg={"bg-white"} />
                 <AiCta />
             </>

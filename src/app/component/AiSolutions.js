@@ -53,10 +53,10 @@ const aiSolutionsData = [
 
 const AiSolutions = () => {
     return (
-        <section className='ai_solution bg-white pt-5 pb-5'>
+        <section className='ai_solution bg-white'>
             <div className='container'>
                 <div className='text-center'>
-                    <span>What We Build</span>
+                    <span className='section-kicker'>What We Build</span>
                     <h2>AI Solutions We Build</h2>
                     <p>Purpose-built automation systems tailored to how your business actually runs.</p>
                 </div>

@@ -13,9 +13,9 @@ const defaultSteps = [
 const AiProcess = ({ steps = defaultSteps }) => {
     return (
         <section className='bg-white ai_process'>
-            <div className="container pt-5 pb-3">
-                <div className="text-center mb-lg-5 mb-0">
-                    <span>The Process</span>
+            <div className="container">
+                <div className="text-center ai-process-intro">
+                    <span className='section-kicker'>The Process</span>
                     <h2 >How It Works</h2>
                     <p>A clear, six-step path from first call to ongoing optimization.</p>
                 </div>
