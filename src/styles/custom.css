@@ -2701,7 +2701,7 @@ body {
   margin: 0;
 }
 
-.calculator_card > small {
+.calculator_card>small {
   display: block;
   color: #9691a0;
   font-size: 12.5px;
@@ -4314,7 +4314,7 @@ body {
   padding: 56px 0;
 }
 
-.see_action > .container > .text-center {
+.see_action>.container>.text-center {
   margin-bottom: 40px;
 }
 
@@ -4582,7 +4582,7 @@ body {
   padding: 56px 0;
 }
 
-.pricing_tiers > .container > .text-center p {
+.pricing_tiers>.container>.text-center p {
   max-width: 560px;
   margin: 0 auto;
   color: #6b6675;
@@ -4608,6 +4608,7 @@ body {
   position: relative;
   box-shadow: 0 10px 30px rgba(20, 10, 40, 0.06);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
+  text-align: center;
 }
 
 .pricing_card:hover {
@@ -4648,6 +4649,10 @@ body {
   margin: 6px 0 6px;
 }
 
+.pricing_card.pricing_card--featured h4 {
+  color: #fff;
+}
+
 .pricing_tagline {
   font-size: 13px;
   opacity: 0.75;
@@ -4667,11 +4672,13 @@ body {
 }
 
 .pricing_features {
-  flex: 1;
-  display: flex;
   flex-direction: column;
+  flex: 1;
   gap: 10px;
   margin-bottom: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .pricing_feature {
