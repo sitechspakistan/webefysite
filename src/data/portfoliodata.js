@@ -8,7 +8,7 @@ const portfolioData = [
         },
         description: ["A service-based agency was manually calling every lead from their spreadsheet, answering the same pricing and FAQ questions on repeat, then manually confirming bookings and sending follow-up emails. It was slow, repetitive, and impossible to scale."],
         category: ["AI Automation"],
-        title: "AI Calling Agent for Service Businesses",
+        title: "AI Calling Agent",
         deliverables: ["AI Integration", "Voice Automation", "Workflow Automation"],
         solution: [
             "We built an AI Calling Agent trained on the client's pricing structure, FAQs, and company details that:",
