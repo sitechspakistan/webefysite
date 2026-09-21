@@ -107,7 +107,7 @@ const ProjectForm = () => {
                                                 </a>
                                             </div>
                                         </div>
-                                        <div className="col-md-6 md-mb-24">
+                                        {/* <div className="col-md-6 md-mb-24">
                                             <div
                                                 className="box-contact-item text-center effectFade fadeUp"
                                                 data-delay="0.1"
@@ -118,7 +118,7 @@ const ProjectForm = () => {
                                                     +1 (302) 779-1338
                                                 </a>
                                             </div>
-                                        </div>
+                                        </div> */}
                                     </div>
                                     <div className="tf-social-1 gap-24 effectFade fadeRotateX">
 

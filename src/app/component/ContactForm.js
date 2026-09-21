@@ -89,7 +89,7 @@ export default function ContactForm() {
                       <div className="text">hello@webefytoday.com</div>
                     </div>
                   </div>
-                  <div
+                  {/* <div
                     className="contact-item effectFade fadeRotateX"
                     data-delay="0.1"
                   >
@@ -98,7 +98,7 @@ export default function ContactForm() {
                       <div className="title fw-semibold mb-2">Phone number</div>
                       <div className="text">+1 (302) 779-1338</div>
                     </div>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </div>
